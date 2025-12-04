@@ -1,0 +1,1772 @@
+[
+  {
+    "id": 1,
+    "name": "Garden & Outdoors Product 1",
+    "category": "Garden & Outdoors",
+    "price": 60.77,
+    "sku": "SKU-1-7990",
+    "description": "High-quality Garden & Outdoors Product 1 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 149
+  },
+  {
+    "id": 4,
+    "name": "Garden & Outdoors Product 4",
+    "category": "Garden & Outdoors",
+    "price": 107.63,
+    "sku": "SKU-4-1817",
+    "description": "High-quality Garden & Outdoors Product 4 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 118
+  },
+  {
+    "id": 12,
+    "name": "Garden & Outdoors Product 12",
+    "category": "Garden & Outdoors",
+    "price": 23.03,
+    "sku": "SKU-12-3487",
+    "description": "High-quality Garden & Outdoors Product 12 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 91
+  },
+  {
+    "id": 14,
+    "name": "Garden & Outdoors Product 14",
+    "category": "Garden & Outdoors",
+    "price": 172.86,
+    "sku": "SKU-14-9241",
+    "description": "High-quality Garden & Outdoors Product 14 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 93
+  },
+  {
+    "id": 17,
+    "name": "Garden & Outdoors Product 17",
+    "category": "Garden & Outdoors",
+    "price": 119.14,
+    "sku": "SKU-17-9352",
+    "description": "High-quality Garden & Outdoors Product 17 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 110
+  },
+  {
+    "id": 25,
+    "name": "Garden & Outdoors Product 25",
+    "category": "Garden & Outdoors",
+    "price": 137.94,
+    "sku": "SKU-25-7106",
+    "description": "High-quality Garden & Outdoors Product 25 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 115
+  },
+  {
+    "id": 56,
+    "name": "Garden & Outdoors Product 56",
+    "category": "Garden & Outdoors",
+    "price": 57.33,
+    "sku": "SKU-56-9259",
+    "description": "High-quality Garden & Outdoors Product 56 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 134
+  },
+  {
+    "id": 69,
+    "name": "Garden & Outdoors Product 69",
+    "category": "Garden & Outdoors",
+    "price": 182.95,
+    "sku": "SKU-69-6733",
+    "description": "High-quality Garden & Outdoors Product 69 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 118
+  },
+  {
+    "id": 74,
+    "name": "Garden & Outdoors Product 74",
+    "category": "Garden & Outdoors",
+    "price": 102.36,
+    "sku": "SKU-74-5798",
+    "description": "High-quality Garden & Outdoors Product 74 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 129
+  },
+  {
+    "id": 76,
+    "name": "Garden & Outdoors Product 76",
+    "category": "Garden & Outdoors",
+    "price": 122.4,
+    "sku": "SKU-76-3683",
+    "description": "High-quality Garden & Outdoors Product 76 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 129
+  },
+  {
+    "id": 79,
+    "name": "Garden & Outdoors Product 79",
+    "category": "Garden & Outdoors",
+    "price": 181.1,
+    "sku": "SKU-79-4277",
+    "description": "High-quality Garden & Outdoors Product 79 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 111,
+    "name": "Garden & Outdoors Product 111",
+    "category": "Garden & Outdoors",
+    "price": 12.11,
+    "sku": "SKU-111-2147",
+    "description": "High-quality Garden & Outdoors Product 111 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 117,
+    "name": "Garden & Outdoors Product 117",
+    "category": "Garden & Outdoors",
+    "price": 90.38,
+    "sku": "SKU-117-9681",
+    "description": "High-quality Garden & Outdoors Product 117 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 145
+  },
+  {
+    "id": 119,
+    "name": "Garden & Outdoors Product 119",
+    "category": "Garden & Outdoors",
+    "price": 118.65,
+    "sku": "SKU-119-9877",
+    "description": "High-quality Garden & Outdoors Product 119 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 147
+  },
+  {
+    "id": 121,
+    "name": "Garden & Outdoors Product 121",
+    "category": "Garden & Outdoors",
+    "price": 188.67,
+    "sku": "SKU-121-9755",
+    "description": "High-quality Garden & Outdoors Product 121 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 118
+  },
+  {
+    "id": 130,
+    "name": "Garden & Outdoors Product 130",
+    "category": "Garden & Outdoors",
+    "price": 125.89,
+    "sku": "SKU-130-2798",
+    "description": "High-quality Garden & Outdoors Product 130 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 5
+  },
+  {
+    "id": 132,
+    "name": "Garden & Outdoors Product 132",
+    "category": "Garden & Outdoors",
+    "price": 80.72,
+    "sku": "SKU-132-8803",
+    "description": "High-quality Garden & Outdoors Product 132 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 29
+  },
+  {
+    "id": 133,
+    "name": "Garden & Outdoors Product 133",
+    "category": "Garden & Outdoors",
+    "price": 151.85,
+    "sku": "SKU-133-4923",
+    "description": "High-quality Garden & Outdoors Product 133 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 136,
+    "name": "Garden & Outdoors Product 136",
+    "category": "Garden & Outdoors",
+    "price": 108.92,
+    "sku": "SKU-136-7736",
+    "description": "High-quality Garden & Outdoors Product 136 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 58
+  },
+  {
+    "id": 138,
+    "name": "Garden & Outdoors Product 138",
+    "category": "Garden & Outdoors",
+    "price": 182.32,
+    "sku": "SKU-138-3506",
+    "description": "High-quality Garden & Outdoors Product 138 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 135
+  },
+  {
+    "id": 141,
+    "name": "Garden & Outdoors Product 141",
+    "category": "Garden & Outdoors",
+    "price": 158.73,
+    "sku": "SKU-141-2989",
+    "description": "High-quality Garden & Outdoors Product 141 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 40
+  },
+  {
+    "id": 167,
+    "name": "Garden & Outdoors Product 167",
+    "category": "Garden & Outdoors",
+    "price": 53.79,
+    "sku": "SKU-167-4874",
+    "description": "High-quality Garden & Outdoors Product 167 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 171,
+    "name": "Garden & Outdoors Product 171",
+    "category": "Garden & Outdoors",
+    "price": 158.03,
+    "sku": "SKU-171-3225",
+    "description": "High-quality Garden & Outdoors Product 171 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 75
+  },
+  {
+    "id": 173,
+    "name": "Garden & Outdoors Product 173",
+    "category": "Garden & Outdoors",
+    "price": 36.91,
+    "sku": "SKU-173-8480",
+    "description": "High-quality Garden & Outdoors Product 173 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 176,
+    "name": "Garden & Outdoors Product 176",
+    "category": "Garden & Outdoors",
+    "price": 23.92,
+    "sku": "SKU-176-2850",
+    "description": "High-quality Garden & Outdoors Product 176 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 93
+  },
+  {
+    "id": 177,
+    "name": "Garden & Outdoors Product 177",
+    "category": "Garden & Outdoors",
+    "price": 75.11,
+    "sku": "SKU-177-1682",
+    "description": "High-quality Garden & Outdoors Product 177 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 43
+  },
+  {
+    "id": 183,
+    "name": "Garden & Outdoors Product 183",
+    "category": "Garden & Outdoors",
+    "price": 69.77,
+    "sku": "SKU-183-2676",
+    "description": "High-quality Garden & Outdoors Product 183 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 48
+  },
+  {
+    "id": 187,
+    "name": "Garden & Outdoors Product 187",
+    "category": "Garden & Outdoors",
+    "price": 35.16,
+    "sku": "SKU-187-9439",
+    "description": "High-quality Garden & Outdoors Product 187 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 190,
+    "name": "Garden & Outdoors Product 190",
+    "category": "Garden & Outdoors",
+    "price": 175.36,
+    "sku": "SKU-190-2432",
+    "description": "High-quality Garden & Outdoors Product 190 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 20
+  },
+  {
+    "id": 191,
+    "name": "Garden & Outdoors Product 191",
+    "category": "Garden & Outdoors",
+    "price": 31.75,
+    "sku": "SKU-191-4327",
+    "description": "High-quality Garden & Outdoors Product 191 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 54
+  },
+  {
+    "id": 213,
+    "name": "Garden & Outdoors Product 213",
+    "category": "Garden & Outdoors",
+    "price": 67.53,
+    "sku": "SKU-213-8815",
+    "description": "High-quality Garden & Outdoors Product 213 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 14
+  },
+  {
+    "id": 216,
+    "name": "Garden & Outdoors Product 216",
+    "category": "Garden & Outdoors",
+    "price": 11.16,
+    "sku": "SKU-216-7399",
+    "description": "High-quality Garden & Outdoors Product 216 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 121
+  },
+  {
+    "id": 228,
+    "name": "Garden & Outdoors Product 228",
+    "category": "Garden & Outdoors",
+    "price": 81.25,
+    "sku": "SKU-228-2972",
+    "description": "High-quality Garden & Outdoors Product 228 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 23
+  },
+  {
+    "id": 232,
+    "name": "Garden & Outdoors Product 232",
+    "category": "Garden & Outdoors",
+    "price": 185.76,
+    "sku": "SKU-232-4000",
+    "description": "High-quality Garden & Outdoors Product 232 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 22
+  },
+  {
+    "id": 234,
+    "name": "Garden & Outdoors Product 234",
+    "category": "Garden & Outdoors",
+    "price": 45.24,
+    "sku": "SKU-234-3897",
+    "description": "High-quality Garden & Outdoors Product 234 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 19
+  },
+  {
+    "id": 253,
+    "name": "Garden & Outdoors Product 253",
+    "category": "Garden & Outdoors",
+    "price": 23.43,
+    "sku": "SKU-253-7733",
+    "description": "High-quality Garden & Outdoors Product 253 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 105
+  },
+  {
+    "id": 254,
+    "name": "Garden & Outdoors Product 254",
+    "category": "Garden & Outdoors",
+    "price": 39.48,
+    "sku": "SKU-254-8323",
+    "description": "High-quality Garden & Outdoors Product 254 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 138
+  },
+  {
+    "id": 259,
+    "name": "Garden & Outdoors Product 259",
+    "category": "Garden & Outdoors",
+    "price": 175.08,
+    "sku": "SKU-259-8893",
+    "description": "High-quality Garden & Outdoors Product 259 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 62
+  },
+  {
+    "id": 261,
+    "name": "Garden & Outdoors Product 261",
+    "category": "Garden & Outdoors",
+    "price": 88.64,
+    "sku": "SKU-261-9520",
+    "description": "High-quality Garden & Outdoors Product 261 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 98
+  },
+  {
+    "id": 270,
+    "name": "Garden & Outdoors Product 270",
+    "category": "Garden & Outdoors",
+    "price": 119.24,
+    "sku": "SKU-270-2810",
+    "description": "High-quality Garden & Outdoors Product 270 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 72
+  },
+  {
+    "id": 273,
+    "name": "Garden & Outdoors Product 273",
+    "category": "Garden & Outdoors",
+    "price": 52.39,
+    "sku": "SKU-273-9276",
+    "description": "High-quality Garden & Outdoors Product 273 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 41
+  },
+  {
+    "id": 281,
+    "name": "Garden & Outdoors Product 281",
+    "category": "Garden & Outdoors",
+    "price": 23.07,
+    "sku": "SKU-281-2355",
+    "description": "High-quality Garden & Outdoors Product 281 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 120
+  },
+  {
+    "id": 288,
+    "name": "Garden & Outdoors Product 288",
+    "category": "Garden & Outdoors",
+    "price": 28.12,
+    "sku": "SKU-288-9388",
+    "description": "High-quality Garden & Outdoors Product 288 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 147
+  },
+  {
+    "id": 297,
+    "name": "Garden & Outdoors Product 297",
+    "category": "Garden & Outdoors",
+    "price": 148.23,
+    "sku": "SKU-297-9575",
+    "description": "High-quality Garden & Outdoors Product 297 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 298,
+    "name": "Garden & Outdoors Product 298",
+    "category": "Garden & Outdoors",
+    "price": 115.43,
+    "sku": "SKU-298-9162",
+    "description": "High-quality Garden & Outdoors Product 298 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 37
+  },
+  {
+    "id": 304,
+    "name": "Garden & Outdoors Product 304",
+    "category": "Garden & Outdoors",
+    "price": 102.18,
+    "sku": "SKU-304-9710",
+    "description": "High-quality Garden & Outdoors Product 304 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 79
+  },
+  {
+    "id": 311,
+    "name": "Garden & Outdoors Product 311",
+    "category": "Garden & Outdoors",
+    "price": 74.8,
+    "sku": "SKU-311-4624",
+    "description": "High-quality Garden & Outdoors Product 311 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 124
+  },
+  {
+    "id": 313,
+    "name": "Garden & Outdoors Product 313",
+    "category": "Garden & Outdoors",
+    "price": 62.19,
+    "sku": "SKU-313-1769",
+    "description": "High-quality Garden & Outdoors Product 313 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 150
+  },
+  {
+    "id": 324,
+    "name": "Garden & Outdoors Product 324",
+    "category": "Garden & Outdoors",
+    "price": 34.77,
+    "sku": "SKU-324-8624",
+    "description": "High-quality Garden & Outdoors Product 324 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 0
+  },
+  {
+    "id": 325,
+    "name": "Garden & Outdoors Product 325",
+    "category": "Garden & Outdoors",
+    "price": 84.33,
+    "sku": "SKU-325-8958",
+    "description": "High-quality Garden & Outdoors Product 325 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 95
+  },
+  {
+    "id": 330,
+    "name": "Garden & Outdoors Product 330",
+    "category": "Garden & Outdoors",
+    "price": 51.11,
+    "sku": "SKU-330-3178",
+    "description": "High-quality Garden & Outdoors Product 330 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 23
+  },
+  {
+    "id": 346,
+    "name": "Garden & Outdoors Product 346",
+    "category": "Garden & Outdoors",
+    "price": 82.63,
+    "sku": "SKU-346-1467",
+    "description": "High-quality Garden & Outdoors Product 346 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 10
+  },
+  {
+    "id": 349,
+    "name": "Garden & Outdoors Product 349",
+    "category": "Garden & Outdoors",
+    "price": 57.67,
+    "sku": "SKU-349-5462",
+    "description": "High-quality Garden & Outdoors Product 349 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 82
+  },
+  {
+    "id": 350,
+    "name": "Garden & Outdoors Product 350",
+    "category": "Garden & Outdoors",
+    "price": 42.4,
+    "sku": "SKU-350-1493",
+    "description": "High-quality Garden & Outdoors Product 350 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 372,
+    "name": "Garden & Outdoors Product 372",
+    "category": "Garden & Outdoors",
+    "price": 155.11,
+    "sku": "SKU-372-1654",
+    "description": "High-quality Garden & Outdoors Product 372 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 11
+  },
+  {
+    "id": 380,
+    "name": "Garden & Outdoors Product 380",
+    "category": "Garden & Outdoors",
+    "price": 160.52,
+    "sku": "SKU-380-9816",
+    "description": "High-quality Garden & Outdoors Product 380 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 120
+  },
+  {
+    "id": 386,
+    "name": "Garden & Outdoors Product 386",
+    "category": "Garden & Outdoors",
+    "price": 105.04,
+    "sku": "SKU-386-9281",
+    "description": "High-quality Garden & Outdoors Product 386 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 14
+  },
+  {
+    "id": 387,
+    "name": "Garden & Outdoors Product 387",
+    "category": "Garden & Outdoors",
+    "price": 119.03,
+    "sku": "SKU-387-8911",
+    "description": "High-quality Garden & Outdoors Product 387 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 148
+  },
+  {
+    "id": 394,
+    "name": "Garden & Outdoors Product 394",
+    "category": "Garden & Outdoors",
+    "price": 73.13,
+    "sku": "SKU-394-3816",
+    "description": "High-quality Garden & Outdoors Product 394 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 47
+  },
+  {
+    "id": 414,
+    "name": "Garden & Outdoors Product 414",
+    "category": "Garden & Outdoors",
+    "price": 81.27,
+    "sku": "SKU-414-9213",
+    "description": "High-quality Garden & Outdoors Product 414 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 84
+  },
+  {
+    "id": 430,
+    "name": "Garden & Outdoors Product 430",
+    "category": "Garden & Outdoors",
+    "price": 8.81,
+    "sku": "SKU-430-9437",
+    "description": "High-quality Garden & Outdoors Product 430 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 106
+  },
+  {
+    "id": 431,
+    "name": "Garden & Outdoors Product 431",
+    "category": "Garden & Outdoors",
+    "price": 186.47,
+    "sku": "SKU-431-3206",
+    "description": "High-quality Garden & Outdoors Product 431 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 57
+  },
+  {
+    "id": 434,
+    "name": "Garden & Outdoors Product 434",
+    "category": "Garden & Outdoors",
+    "price": 184.03,
+    "sku": "SKU-434-7509",
+    "description": "High-quality Garden & Outdoors Product 434 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 84
+  },
+  {
+    "id": 438,
+    "name": "Garden & Outdoors Product 438",
+    "category": "Garden & Outdoors",
+    "price": 185.16,
+    "sku": "SKU-438-6255",
+    "description": "High-quality Garden & Outdoors Product 438 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 95
+  },
+  {
+    "id": 451,
+    "name": "Garden & Outdoors Product 451",
+    "category": "Garden & Outdoors",
+    "price": 154.24,
+    "sku": "SKU-451-3231",
+    "description": "High-quality Garden & Outdoors Product 451 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 115
+  },
+  {
+    "id": 456,
+    "name": "Garden & Outdoors Product 456",
+    "category": "Garden & Outdoors",
+    "price": 100.37,
+    "sku": "SKU-456-3789",
+    "description": "High-quality Garden & Outdoors Product 456 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 23
+  },
+  {
+    "id": 465,
+    "name": "Garden & Outdoors Product 465",
+    "category": "Garden & Outdoors",
+    "price": 17.45,
+    "sku": "SKU-465-6706",
+    "description": "High-quality Garden & Outdoors Product 465 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 17
+  },
+  {
+    "id": 467,
+    "name": "Garden & Outdoors Product 467",
+    "category": "Garden & Outdoors",
+    "price": 31.5,
+    "sku": "SKU-467-6400",
+    "description": "High-quality Garden & Outdoors Product 467 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 22
+  },
+  {
+    "id": 510,
+    "name": "Garden & Outdoors Product 510",
+    "category": "Garden & Outdoors",
+    "price": 140.22,
+    "sku": "SKU-510-2312",
+    "description": "High-quality Garden & Outdoors Product 510 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 57
+  },
+  {
+    "id": 512,
+    "name": "Garden & Outdoors Product 512",
+    "category": "Garden & Outdoors",
+    "price": 142.08,
+    "sku": "SKU-512-1685",
+    "description": "High-quality Garden & Outdoors Product 512 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 124
+  },
+  {
+    "id": 515,
+    "name": "Garden & Outdoors Product 515",
+    "category": "Garden & Outdoors",
+    "price": 99.65,
+    "sku": "SKU-515-4948",
+    "description": "High-quality Garden & Outdoors Product 515 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 96
+  },
+  {
+    "id": 530,
+    "name": "Garden & Outdoors Product 530",
+    "category": "Garden & Outdoors",
+    "price": 29.97,
+    "sku": "SKU-530-3422",
+    "description": "High-quality Garden & Outdoors Product 530 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 15
+  },
+  {
+    "id": 535,
+    "name": "Garden & Outdoors Product 535",
+    "category": "Garden & Outdoors",
+    "price": 120.61,
+    "sku": "SKU-535-4106",
+    "description": "High-quality Garden & Outdoors Product 535 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 22
+  },
+  {
+    "id": 538,
+    "name": "Garden & Outdoors Product 538",
+    "category": "Garden & Outdoors",
+    "price": 197.23,
+    "sku": "SKU-538-9121",
+    "description": "High-quality Garden & Outdoors Product 538 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 58
+  },
+  {
+    "id": 542,
+    "name": "Garden & Outdoors Product 542",
+    "category": "Garden & Outdoors",
+    "price": 203.04,
+    "sku": "SKU-542-4841",
+    "description": "High-quality Garden & Outdoors Product 542 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 5
+  },
+  {
+    "id": 552,
+    "name": "Garden & Outdoors Product 552",
+    "category": "Garden & Outdoors",
+    "price": 56.51,
+    "sku": "SKU-552-1502",
+    "description": "High-quality Garden & Outdoors Product 552 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 31
+  },
+  {
+    "id": 560,
+    "name": "Garden & Outdoors Product 560",
+    "category": "Garden & Outdoors",
+    "price": 19.4,
+    "sku": "SKU-560-9544",
+    "description": "High-quality Garden & Outdoors Product 560 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 585,
+    "name": "Garden & Outdoors Product 585",
+    "category": "Garden & Outdoors",
+    "price": 161.92,
+    "sku": "SKU-585-2664",
+    "description": "High-quality Garden & Outdoors Product 585 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 13
+  },
+  {
+    "id": 587,
+    "name": "Garden & Outdoors Product 587",
+    "category": "Garden & Outdoors",
+    "price": 83.29,
+    "sku": "SKU-587-9772",
+    "description": "High-quality Garden & Outdoors Product 587 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 80
+  },
+  {
+    "id": 590,
+    "name": "Garden & Outdoors Product 590",
+    "category": "Garden & Outdoors",
+    "price": 85.14,
+    "sku": "SKU-590-6717",
+    "description": "High-quality Garden & Outdoors Product 590 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 593,
+    "name": "Garden & Outdoors Product 593",
+    "category": "Garden & Outdoors",
+    "price": 103.61,
+    "sku": "SKU-593-9111",
+    "description": "High-quality Garden & Outdoors Product 593 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 2
+  },
+  {
+    "id": 596,
+    "name": "Garden & Outdoors Product 596",
+    "category": "Garden & Outdoors",
+    "price": 117.27,
+    "sku": "SKU-596-9531",
+    "description": "High-quality Garden & Outdoors Product 596 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 122
+  },
+  {
+    "id": 605,
+    "name": "Garden & Outdoors Product 605",
+    "category": "Garden & Outdoors",
+    "price": 67.01,
+    "sku": "SKU-605-8797",
+    "description": "High-quality Garden & Outdoors Product 605 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 137
+  },
+  {
+    "id": 608,
+    "name": "Garden & Outdoors Product 608",
+    "category": "Garden & Outdoors",
+    "price": 197.98,
+    "sku": "SKU-608-2763",
+    "description": "High-quality Garden & Outdoors Product 608 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 147
+  },
+  {
+    "id": 619,
+    "name": "Garden & Outdoors Product 619",
+    "category": "Garden & Outdoors",
+    "price": 34.24,
+    "sku": "SKU-619-7051",
+    "description": "High-quality Garden & Outdoors Product 619 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 648,
+    "name": "Garden & Outdoors Product 648",
+    "category": "Garden & Outdoors",
+    "price": 11.06,
+    "sku": "SKU-648-8040",
+    "description": "High-quality Garden & Outdoors Product 648 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 72
+  },
+  {
+    "id": 653,
+    "name": "Garden & Outdoors Product 653",
+    "category": "Garden & Outdoors",
+    "price": 157.09,
+    "sku": "SKU-653-2475",
+    "description": "High-quality Garden & Outdoors Product 653 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 114
+  },
+  {
+    "id": 664,
+    "name": "Garden & Outdoors Product 664",
+    "category": "Garden & Outdoors",
+    "price": 145.96,
+    "sku": "SKU-664-9853",
+    "description": "High-quality Garden & Outdoors Product 664 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 86
+  },
+  {
+    "id": 676,
+    "name": "Garden & Outdoors Product 676",
+    "category": "Garden & Outdoors",
+    "price": 129.53,
+    "sku": "SKU-676-9146",
+    "description": "High-quality Garden & Outdoors Product 676 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 64
+  },
+  {
+    "id": 688,
+    "name": "Garden & Outdoors Product 688",
+    "category": "Garden & Outdoors",
+    "price": 149.22,
+    "sku": "SKU-688-2118",
+    "description": "High-quality Garden & Outdoors Product 688 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 55
+  },
+  {
+    "id": 692,
+    "name": "Garden & Outdoors Product 692",
+    "category": "Garden & Outdoors",
+    "price": 94.7,
+    "sku": "SKU-692-4475",
+    "description": "High-quality Garden & Outdoors Product 692 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 59
+  },
+  {
+    "id": 698,
+    "name": "Garden & Outdoors Product 698",
+    "category": "Garden & Outdoors",
+    "price": 121.37,
+    "sku": "SKU-698-4351",
+    "description": "High-quality Garden & Outdoors Product 698 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 91
+  },
+  {
+    "id": 709,
+    "name": "Garden & Outdoors Product 709",
+    "category": "Garden & Outdoors",
+    "price": 7.83,
+    "sku": "SKU-709-1297",
+    "description": "High-quality Garden & Outdoors Product 709 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 114
+  },
+  {
+    "id": 713,
+    "name": "Garden & Outdoors Product 713",
+    "category": "Garden & Outdoors",
+    "price": 53.92,
+    "sku": "SKU-713-3180",
+    "description": "High-quality Garden & Outdoors Product 713 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 82
+  },
+  {
+    "id": 725,
+    "name": "Garden & Outdoors Product 725",
+    "category": "Garden & Outdoors",
+    "price": 9.53,
+    "sku": "SKU-725-4069",
+    "description": "High-quality Garden & Outdoors Product 725 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 46
+  },
+  {
+    "id": 732,
+    "name": "Garden & Outdoors Product 732",
+    "category": "Garden & Outdoors",
+    "price": 45.22,
+    "sku": "SKU-732-8869",
+    "description": "High-quality Garden & Outdoors Product 732 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 25
+  },
+  {
+    "id": 734,
+    "name": "Garden & Outdoors Product 734",
+    "category": "Garden & Outdoors",
+    "price": 175.67,
+    "sku": "SKU-734-4819",
+    "description": "High-quality Garden & Outdoors Product 734 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 56
+  },
+  {
+    "id": 750,
+    "name": "Garden & Outdoors Product 750",
+    "category": "Garden & Outdoors",
+    "price": 23.11,
+    "sku": "SKU-750-3974",
+    "description": "High-quality Garden & Outdoors Product 750 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 31
+  },
+  {
+    "id": 755,
+    "name": "Garden & Outdoors Product 755",
+    "category": "Garden & Outdoors",
+    "price": 200.13,
+    "sku": "SKU-755-1295",
+    "description": "High-quality Garden & Outdoors Product 755 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 61
+  },
+  {
+    "id": 763,
+    "name": "Garden & Outdoors Product 763",
+    "category": "Garden & Outdoors",
+    "price": 130.56,
+    "sku": "SKU-763-4271",
+    "description": "High-quality Garden & Outdoors Product 763 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 111
+  },
+  {
+    "id": 767,
+    "name": "Garden & Outdoors Product 767",
+    "category": "Garden & Outdoors",
+    "price": 181.81,
+    "sku": "SKU-767-7481",
+    "description": "High-quality Garden & Outdoors Product 767 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 20
+  },
+  {
+    "id": 770,
+    "name": "Garden & Outdoors Product 770",
+    "category": "Garden & Outdoors",
+    "price": 146.21,
+    "sku": "SKU-770-8918",
+    "description": "High-quality Garden & Outdoors Product 770 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 28
+  },
+  {
+    "id": 771,
+    "name": "Garden & Outdoors Product 771",
+    "category": "Garden & Outdoors",
+    "price": 158.38,
+    "sku": "SKU-771-9531",
+    "description": "High-quality Garden & Outdoors Product 771 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 79
+  },
+  {
+    "id": 776,
+    "name": "Garden & Outdoors Product 776",
+    "category": "Garden & Outdoors",
+    "price": 182.91,
+    "sku": "SKU-776-6322",
+    "description": "High-quality Garden & Outdoors Product 776 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 17
+  },
+  {
+    "id": 799,
+    "name": "Garden & Outdoors Product 799",
+    "category": "Garden & Outdoors",
+    "price": 194.91,
+    "sku": "SKU-799-3455",
+    "description": "High-quality Garden & Outdoors Product 799 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 39
+  },
+  {
+    "id": 809,
+    "name": "Garden & Outdoors Product 809",
+    "category": "Garden & Outdoors",
+    "price": 131.11,
+    "sku": "SKU-809-2477",
+    "description": "High-quality Garden & Outdoors Product 809 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 25
+  },
+  {
+    "id": 812,
+    "name": "Garden & Outdoors Product 812",
+    "category": "Garden & Outdoors",
+    "price": 105.42,
+    "sku": "SKU-812-2423",
+    "description": "High-quality Garden & Outdoors Product 812 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 106
+  },
+  {
+    "id": 819,
+    "name": "Garden & Outdoors Product 819",
+    "category": "Garden & Outdoors",
+    "price": 137.41,
+    "sku": "SKU-819-7999",
+    "description": "High-quality Garden & Outdoors Product 819 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 69
+  },
+  {
+    "id": 826,
+    "name": "Garden & Outdoors Product 826",
+    "category": "Garden & Outdoors",
+    "price": 21.67,
+    "sku": "SKU-826-9972",
+    "description": "High-quality Garden & Outdoors Product 826 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 119
+  },
+  {
+    "id": 842,
+    "name": "Garden & Outdoors Product 842",
+    "category": "Garden & Outdoors",
+    "price": 153.67,
+    "sku": "SKU-842-5507",
+    "description": "High-quality Garden & Outdoors Product 842 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 137
+  },
+  {
+    "id": 843,
+    "name": "Garden & Outdoors Product 843",
+    "category": "Garden & Outdoors",
+    "price": 133.72,
+    "sku": "SKU-843-6417",
+    "description": "High-quality Garden & Outdoors Product 843 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 126
+  },
+  {
+    "id": 857,
+    "name": "Garden & Outdoors Product 857",
+    "category": "Garden & Outdoors",
+    "price": 58.78,
+    "sku": "SKU-857-9355",
+    "description": "High-quality Garden & Outdoors Product 857 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 83
+  },
+  {
+    "id": 863,
+    "name": "Garden & Outdoors Product 863",
+    "category": "Garden & Outdoors",
+    "price": 169.21,
+    "sku": "SKU-863-5962",
+    "description": "High-quality Garden & Outdoors Product 863 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 65
+  },
+  {
+    "id": 870,
+    "name": "Garden & Outdoors Product 870",
+    "category": "Garden & Outdoors",
+    "price": 69.83,
+    "sku": "SKU-870-7847",
+    "description": "High-quality Garden & Outdoors Product 870 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 111
+  },
+  {
+    "id": 880,
+    "name": "Garden & Outdoors Product 880",
+    "category": "Garden & Outdoors",
+    "price": 171.88,
+    "sku": "SKU-880-7908",
+    "description": "High-quality Garden & Outdoors Product 880 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 125
+  },
+  {
+    "id": 884,
+    "name": "Garden & Outdoors Product 884",
+    "category": "Garden & Outdoors",
+    "price": 60.57,
+    "sku": "SKU-884-5717",
+    "description": "High-quality Garden & Outdoors Product 884 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 148
+  },
+  {
+    "id": 889,
+    "name": "Garden & Outdoors Product 889",
+    "category": "Garden & Outdoors",
+    "price": 81.3,
+    "sku": "SKU-889-8609",
+    "description": "High-quality Garden & Outdoors Product 889 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 8
+  },
+  {
+    "id": 913,
+    "name": "Garden & Outdoors Product 913",
+    "category": "Garden & Outdoors",
+    "price": 97.18,
+    "sku": "SKU-913-2325",
+    "description": "High-quality Garden & Outdoors Product 913 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 22
+  },
+  {
+    "id": 920,
+    "name": "Garden & Outdoors Product 920",
+    "category": "Garden & Outdoors",
+    "price": 43.39,
+    "sku": "SKU-920-6493",
+    "description": "High-quality Garden & Outdoors Product 920 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 31
+  },
+  {
+    "id": 923,
+    "name": "Garden & Outdoors Product 923",
+    "category": "Garden & Outdoors",
+    "price": 147.79,
+    "sku": "SKU-923-5169",
+    "description": "High-quality Garden & Outdoors Product 923 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 4
+  },
+  {
+    "id": 926,
+    "name": "Garden & Outdoors Product 926",
+    "category": "Garden & Outdoors",
+    "price": 129.56,
+    "sku": "SKU-926-5707",
+    "description": "High-quality Garden & Outdoors Product 926 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 50
+  },
+  {
+    "id": 928,
+    "name": "Garden & Outdoors Product 928",
+    "category": "Garden & Outdoors",
+    "price": 149.69,
+    "sku": "SKU-928-1851",
+    "description": "High-quality Garden & Outdoors Product 928 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 111
+  },
+  {
+    "id": 929,
+    "name": "Garden & Outdoors Product 929",
+    "category": "Garden & Outdoors",
+    "price": 61.98,
+    "sku": "SKU-929-4269",
+    "description": "High-quality Garden & Outdoors Product 929 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 134
+  },
+  {
+    "id": 937,
+    "name": "Garden & Outdoors Product 937",
+    "category": "Garden & Outdoors",
+    "price": 40.76,
+    "sku": "SKU-937-2301",
+    "description": "High-quality Garden & Outdoors Product 937 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 14
+  },
+  {
+    "id": 966,
+    "name": "Garden & Outdoors Product 966",
+    "category": "Garden & Outdoors",
+    "price": 48.83,
+    "sku": "SKU-966-7317",
+    "description": "High-quality Garden & Outdoors Product 966 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 36
+  },
+  {
+    "id": 968,
+    "name": "Garden & Outdoors Product 968",
+    "category": "Garden & Outdoors",
+    "price": 166.08,
+    "sku": "SKU-968-7085",
+    "description": "High-quality Garden & Outdoors Product 968 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 92
+  },
+  {
+    "id": 970,
+    "name": "Garden & Outdoors Product 970",
+    "category": "Garden & Outdoors",
+    "price": 63.05,
+    "sku": "SKU-970-2975",
+    "description": "High-quality Garden & Outdoors Product 970 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 94
+  },
+  {
+    "id": 979,
+    "name": "Garden & Outdoors Product 979",
+    "category": "Garden & Outdoors",
+    "price": 31.84,
+    "sku": "SKU-979-6043",
+    "description": "High-quality Garden & Outdoors Product 979 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 144
+  },
+  {
+    "id": 993,
+    "name": "Garden & Outdoors Product 993",
+    "category": "Garden & Outdoors",
+    "price": 185.48,
+    "sku": "SKU-993-2951",
+    "description": "High-quality Garden & Outdoors Product 993 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 30
+  },
+  {
+    "id": 1000,
+    "name": "Garden & Outdoors Product 1000",
+    "category": "Garden & Outdoors",
+    "price": 118.76,
+    "sku": "SKU-1000-3415",
+    "description": "High-quality Garden & Outdoors Product 1000 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 110
+  },
+  {
+    "id": 1001,
+    "name": "Garden & Outdoors Product 1001",
+    "category": "Garden & Outdoors",
+    "price": 155.33,
+    "sku": "SKU-1001-8601",
+    "description": "High-quality Garden & Outdoors Product 1001 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 52
+  },
+  {
+    "id": 1005,
+    "name": "Garden & Outdoors Product 1005",
+    "category": "Garden & Outdoors",
+    "price": 142.54,
+    "sku": "SKU-1005-6928",
+    "description": "High-quality Garden & Outdoors Product 1005 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 134
+  },
+  {
+    "id": 1006,
+    "name": "Garden & Outdoors Product 1006",
+    "category": "Garden & Outdoors",
+    "price": 119.9,
+    "sku": "SKU-1006-4739",
+    "description": "High-quality Garden & Outdoors Product 1006 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 103
+  },
+  {
+    "id": 1016,
+    "name": "Garden & Outdoors Product 1016",
+    "category": "Garden & Outdoors",
+    "price": 92.9,
+    "sku": "SKU-1016-3058",
+    "description": "High-quality Garden & Outdoors Product 1016 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 144
+  },
+  {
+    "id": 1019,
+    "name": "Garden & Outdoors Product 1019",
+    "category": "Garden & Outdoors",
+    "price": 52.59,
+    "sku": "SKU-1019-1144",
+    "description": "High-quality Garden & Outdoors Product 1019 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 65
+  },
+  {
+    "id": 1034,
+    "name": "Garden & Outdoors Product 1034",
+    "category": "Garden & Outdoors",
+    "price": 167.72,
+    "sku": "SKU-1034-4727",
+    "description": "High-quality Garden & Outdoors Product 1034 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 143
+  },
+  {
+    "id": 1048,
+    "name": "Garden & Outdoors Product 1048",
+    "category": "Garden & Outdoors",
+    "price": 93.07,
+    "sku": "SKU-1048-7863",
+    "description": "High-quality Garden & Outdoors Product 1048 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  },
+  {
+    "id": 1050,
+    "name": "Garden & Outdoors Product 1050",
+    "category": "Garden & Outdoors",
+    "price": 87.45,
+    "sku": "SKU-1050-9322",
+    "description": "High-quality Garden & Outdoors Product 1050 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 55
+  },
+  {
+    "id": 1054,
+    "name": "Garden & Outdoors Product 1054",
+    "category": "Garden & Outdoors",
+    "price": 59.23,
+    "sku": "SKU-1054-5853",
+    "description": "High-quality Garden & Outdoors Product 1054 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 60
+  },
+  {
+    "id": 1060,
+    "name": "Garden & Outdoors Product 1060",
+    "category": "Garden & Outdoors",
+    "price": 196.48,
+    "sku": "SKU-1060-8967",
+    "description": "High-quality Garden & Outdoors Product 1060 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 24
+  },
+  {
+    "id": 1088,
+    "name": "Garden & Outdoors Product 1088",
+    "category": "Garden & Outdoors",
+    "price": 8.77,
+    "sku": "SKU-1088-9128",
+    "description": "High-quality Garden & Outdoors Product 1088 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 48
+  },
+  {
+    "id": 1092,
+    "name": "Garden & Outdoors Product 1092",
+    "category": "Garden & Outdoors",
+    "price": 130.34,
+    "sku": "SKU-1092-8631",
+    "description": "High-quality Garden & Outdoors Product 1092 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 66
+  },
+  {
+    "id": 1109,
+    "name": "Garden & Outdoors Product 1109",
+    "category": "Garden & Outdoors",
+    "price": 133.33,
+    "sku": "SKU-1109-1136",
+    "description": "High-quality Garden & Outdoors Product 1109 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 128
+  },
+  {
+    "id": 1149,
+    "name": "Garden & Outdoors Product 1149",
+    "category": "Garden & Outdoors",
+    "price": 160.07,
+    "sku": "SKU-1149-4964",
+    "description": "High-quality Garden & Outdoors Product 1149 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 23
+  },
+  {
+    "id": 1166,
+    "name": "Garden & Outdoors Product 1166",
+    "category": "Garden & Outdoors",
+    "price": 157.01,
+    "sku": "SKU-1166-8162",
+    "description": "High-quality Garden & Outdoors Product 1166 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 82
+  },
+  {
+    "id": 1173,
+    "name": "Garden & Outdoors Product 1173",
+    "category": "Garden & Outdoors",
+    "price": 55.04,
+    "sku": "SKU-1173-1694",
+    "description": "High-quality Garden & Outdoors Product 1173 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 106
+  },
+  {
+    "id": 1174,
+    "name": "Garden & Outdoors Product 1174",
+    "category": "Garden & Outdoors",
+    "price": 67.11,
+    "sku": "SKU-1174-1134",
+    "description": "High-quality Garden & Outdoors Product 1174 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 46
+  },
+  {
+    "id": 1182,
+    "name": "Garden & Outdoors Product 1182",
+    "category": "Garden & Outdoors",
+    "price": 11.62,
+    "sku": "SKU-1182-8891",
+    "description": "High-quality Garden & Outdoors Product 1182 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 143
+  },
+  {
+    "id": 1187,
+    "name": "Garden & Outdoors Product 1187",
+    "category": "Garden & Outdoors",
+    "price": 40.3,
+    "sku": "SKU-1187-7686",
+    "description": "High-quality Garden & Outdoors Product 1187 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 47
+  },
+  {
+    "id": 1190,
+    "name": "Garden & Outdoors Product 1190",
+    "category": "Garden & Outdoors",
+    "price": 20.17,
+    "sku": "SKU-1190-6816",
+    "description": "High-quality Garden & Outdoors Product 1190 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 70
+  },
+  {
+    "id": 1201,
+    "name": "Garden & Outdoors Product 1201",
+    "category": "Garden & Outdoors",
+    "price": 39.98,
+    "sku": "SKU-1201-1548",
+    "description": "High-quality Garden & Outdoors Product 1201 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 41
+  },
+  {
+    "id": 1210,
+    "name": "Garden & Outdoors Product 1210",
+    "category": "Garden & Outdoors",
+    "price": 134.38,
+    "sku": "SKU-1210-4494",
+    "description": "High-quality Garden & Outdoors Product 1210 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 1224,
+    "name": "Garden & Outdoors Product 1224",
+    "category": "Garden & Outdoors",
+    "price": 15.44,
+    "sku": "SKU-1224-3290",
+    "description": "High-quality Garden & Outdoors Product 1224 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 12
+  },
+  {
+    "id": 1227,
+    "name": "Garden & Outdoors Product 1227",
+    "category": "Garden & Outdoors",
+    "price": 177.45,
+    "sku": "SKU-1227-8206",
+    "description": "High-quality Garden & Outdoors Product 1227 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 82
+  },
+  {
+    "id": 1232,
+    "name": "Garden & Outdoors Product 1232",
+    "category": "Garden & Outdoors",
+    "price": 74.99,
+    "sku": "SKU-1232-1381",
+    "description": "High-quality Garden & Outdoors Product 1232 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 32
+  },
+  {
+    "id": 1240,
+    "name": "Garden & Outdoors Product 1240",
+    "category": "Garden & Outdoors",
+    "price": 75.8,
+    "sku": "SKU-1240-2377",
+    "description": "High-quality Garden & Outdoors Product 1240 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 1244,
+    "name": "Garden & Outdoors Product 1244",
+    "category": "Garden & Outdoors",
+    "price": 102.62,
+    "sku": "SKU-1244-2389",
+    "description": "High-quality Garden & Outdoors Product 1244 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 21
+  },
+  {
+    "id": 1259,
+    "name": "Garden & Outdoors Product 1259",
+    "category": "Garden & Outdoors",
+    "price": 24.25,
+    "sku": "SKU-1259-5619",
+    "description": "High-quality Garden & Outdoors Product 1259 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 31
+  },
+  {
+    "id": 1274,
+    "name": "Garden & Outdoors Product 1274",
+    "category": "Garden & Outdoors",
+    "price": 167.27,
+    "sku": "SKU-1274-3795",
+    "description": "High-quality Garden & Outdoors Product 1274 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 97
+  },
+  {
+    "id": 1301,
+    "name": "Garden & Outdoors Product 1301",
+    "category": "Garden & Outdoors",
+    "price": 79.05,
+    "sku": "SKU-1301-7621",
+    "description": "High-quality Garden & Outdoors Product 1301 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 131
+  },
+  {
+    "id": 1305,
+    "name": "Garden & Outdoors Product 1305",
+    "category": "Garden & Outdoors",
+    "price": 44.1,
+    "sku": "SKU-1305-7226",
+    "description": "High-quality Garden & Outdoors Product 1305 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 1309,
+    "name": "Garden & Outdoors Product 1309",
+    "category": "Garden & Outdoors",
+    "price": 51.64,
+    "sku": "SKU-1309-4439",
+    "description": "High-quality Garden & Outdoors Product 1309 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 1322,
+    "name": "Garden & Outdoors Product 1322",
+    "category": "Garden & Outdoors",
+    "price": 45.9,
+    "sku": "SKU-1322-6627",
+    "description": "High-quality Garden & Outdoors Product 1322 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 76
+  },
+  {
+    "id": 1329,
+    "name": "Garden & Outdoors Product 1329",
+    "category": "Garden & Outdoors",
+    "price": 67.87,
+    "sku": "SKU-1329-8110",
+    "description": "High-quality Garden & Outdoors Product 1329 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 1
+  },
+  {
+    "id": 1353,
+    "name": "Garden & Outdoors Product 1353",
+    "category": "Garden & Outdoors",
+    "price": 69.65,
+    "sku": "SKU-1353-1892",
+    "description": "High-quality Garden & Outdoors Product 1353 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 127
+  },
+  {
+    "id": 1368,
+    "name": "Garden & Outdoors Product 1368",
+    "category": "Garden & Outdoors",
+    "price": 192.11,
+    "sku": "SKU-1368-3304",
+    "description": "High-quality Garden & Outdoors Product 1368 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 21
+  },
+  {
+    "id": 1372,
+    "name": "Garden & Outdoors Product 1372",
+    "category": "Garden & Outdoors",
+    "price": 59.41,
+    "sku": "SKU-1372-8936",
+    "description": "High-quality Garden & Outdoors Product 1372 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 93
+  },
+  {
+    "id": 1373,
+    "name": "Garden & Outdoors Product 1373",
+    "category": "Garden & Outdoors",
+    "price": 190.99,
+    "sku": "SKU-1373-2908",
+    "description": "High-quality Garden & Outdoors Product 1373 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 69
+  },
+  {
+    "id": 1387,
+    "name": "Garden & Outdoors Product 1387",
+    "category": "Garden & Outdoors",
+    "price": 140.48,
+    "sku": "SKU-1387-6355",
+    "description": "High-quality Garden & Outdoors Product 1387 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 1435,
+    "name": "Garden & Outdoors Product 1435",
+    "category": "Garden & Outdoors",
+    "price": 58.88,
+    "sku": "SKU-1435-5066",
+    "description": "High-quality Garden & Outdoors Product 1435 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 51
+  },
+  {
+    "id": 1447,
+    "name": "Garden & Outdoors Product 1447",
+    "category": "Garden & Outdoors",
+    "price": 148.81,
+    "sku": "SKU-1447-5674",
+    "description": "High-quality Garden & Outdoors Product 1447 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 145
+  },
+  {
+    "id": 1448,
+    "name": "Garden & Outdoors Product 1448",
+    "category": "Garden & Outdoors",
+    "price": 47.48,
+    "sku": "SKU-1448-6209",
+    "description": "High-quality Garden & Outdoors Product 1448 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 56
+  },
+  {
+    "id": 1453,
+    "name": "Garden & Outdoors Product 1453",
+    "category": "Garden & Outdoors",
+    "price": 168.69,
+    "sku": "SKU-1453-3869",
+    "description": "High-quality Garden & Outdoors Product 1453 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 77
+  },
+  {
+    "id": 1456,
+    "name": "Garden & Outdoors Product 1456",
+    "category": "Garden & Outdoors",
+    "price": 112.82,
+    "sku": "SKU-1456-9719",
+    "description": "High-quality Garden & Outdoors Product 1456 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 40
+  },
+  {
+    "id": 1457,
+    "name": "Garden & Outdoors Product 1457",
+    "category": "Garden & Outdoors",
+    "price": 203.89,
+    "sku": "SKU-1457-2967",
+    "description": "High-quality Garden & Outdoors Product 1457 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 60
+  },
+  {
+    "id": 1478,
+    "name": "Garden & Outdoors Product 1478",
+    "category": "Garden & Outdoors",
+    "price": 163.34,
+    "sku": "SKU-1478-2452",
+    "description": "High-quality Garden & Outdoors Product 1478 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 44
+  },
+  {
+    "id": 1480,
+    "name": "Garden & Outdoors Product 1480",
+    "category": "Garden & Outdoors",
+    "price": 155.53,
+    "sku": "SKU-1480-3526",
+    "description": "High-quality Garden & Outdoors Product 1480 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 12
+  }
+]

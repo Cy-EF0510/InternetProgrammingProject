@@ -1,0 +1,138 @@
+{
+  "products": [
+    {
+      "productId": "SKU-12345",
+      "productName": "Wireless Noise-Cancelling Headphones",
+      "averageRating": 4.4,
+      "totalReviews": 3,
+      "reviews": [
+        {
+          "reviewId": "rev-001",
+          "userName": "John M.",
+          "rating": 5,
+          "title": "Amazing sound quality!",
+          "content": "These headphones exceeded my expectations. The noise cancelling is top-notch.",
+          "date": "2025-01-12T14:23:00Z",
+          "verifiedPurchase": true,
+          "helpfulVotes": 12,
+          "images": []
+        },
+        {
+          "reviewId": "rev-002",
+          "userName": "Sarah K.",
+          "rating": 4,
+          "title": "Very comfortable",
+          "content": "Comfortable and great sound, but the touch controls took a while to master.",
+          "date": "2025-02-01T09:47:00Z",
+          "verifiedPurchase": true,
+          "helpfulVotes": 5,
+          "images": []
+        },
+        {
+          "reviewId": "rev-003",
+          "userName": "David L.",
+          "rating": 4,
+          "title": "Solid headphones",
+          "content": "Good overall performance for the price.",
+          "date": "2025-02-15T18:10:00Z",
+          "verifiedPurchase": false,
+          "helpfulVotes": 2,
+          "images": []
+        }
+      ]
+    },
+    {
+      "productId": "SKU-56789",
+      "productName": "Smart Fitness Watch Pro",
+      "averageRating": 4.7,
+      "totalReviews": 4,
+      "reviews": [
+        {
+          "reviewId": "rev-101",
+          "userName": "Amy W.",
+          "rating": 5,
+          "title": "Love the features!",
+          "content": "Tracks my workouts perfectly and the battery life is amazing.",
+          "date": "2025-03-02T10:21:00Z",
+          "verifiedPurchase": true,
+          "helpfulVotes": 11,
+          "images": []
+        },
+        {
+          "reviewId": "rev-102",
+          "userName": "Paul S.",
+          "rating": 5,
+          "title": "Best smartwatch I've owned",
+          "content": "Fast, accurate, and the display is beautiful.",
+          "date": "2025-03-05T16:44:00Z",
+          "verifiedPurchase": true,
+          "helpfulVotes": 7,
+          "images": ["images/reviews/watch_review1.jpg"]
+        },
+        {
+          "reviewId": "rev-103",
+          "userName": "Melissa R.",
+          "rating": 4,
+          "title": "Very good but pricey",
+          "content": "Great watch, but I think it could be slightly cheaper.",
+          "date": "2025-03-10T13:55:00Z",
+          "verifiedPurchase": false,
+          "helpfulVotes": 1,
+          "images": []
+        },
+        {
+          "reviewId": "rev-104",
+          "userName": "Tom F.",
+          "rating": 5,
+          "title": "Perfect companion for workouts",
+          "content": "The heart rate monitoring is extremely accurate.",
+          "date": "2025-03-12T09:30:00Z",
+          "verifiedPurchase": true,
+          "helpfulVotes": 3,
+          "images": []
+        }
+      ]
+    },
+    {
+      "productId": "SKU-24680",
+      "productName": "Ergonomic Office Chair Deluxe",
+      "averageRating": 4.2,
+      "totalReviews": 3,
+      "reviews": [
+        {
+          "reviewId": "rev-201",
+          "userName": "Tim H.",
+          "rating": 4,
+          "title": "Much better than my old chair",
+          "content": "Comfortable and supportive. Great for long work sessions.",
+          "date": "2025-01-25T08:19:00Z",
+          "verifiedPurchase": true,
+          "helpfulVotes": 6,
+          "images": []
+        },
+        {
+          "reviewId": "rev-202",
+          "userName": "Rachel P.",
+          "rating": 5,
+          "title": "Fantastic chair!",
+          "content": "Super comfortable, high quality, and easy to assemble.",
+          "date": "2025-02-10T19:37:00Z",
+          "verifiedPurchase": true,
+          "helpfulVotes": 9,
+          "images": ["images/reviews/chair1.jpg"]
+        },
+        {
+          "reviewId": "rev-203",
+          "userName": "Kevin B.",
+          "rating": 3,
+          "title": "Good but heavy",
+          "content": "Good back support but it’s heavier than I expected.",
+          "date": "2025-03-01T12:02:00Z",
+          "verifiedPurchase": false,
+          "helpfulVotes": 1,
+          "images": []
+        }
+      ]
+    }
+  ]
+}

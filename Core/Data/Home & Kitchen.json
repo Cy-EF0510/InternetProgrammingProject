@@ -1,0 +1,1452 @@
+[
+  {
+    "id": 3,
+    "name": "Home & Kitchen Product 3",
+    "category": "Home & Kitchen",
+    "price": 200.06,
+    "sku": "SKU-3-3161",
+    "description": "High-quality Home & Kitchen Product 3 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 21
+  },
+  {
+    "id": 19,
+    "name": "Home & Kitchen Product 19",
+    "category": "Home & Kitchen",
+    "price": 139.73,
+    "sku": "SKU-19-7819",
+    "description": "High-quality Home & Kitchen Product 19 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 27,
+    "name": "Home & Kitchen Product 27",
+    "category": "Home & Kitchen",
+    "price": 201.76,
+    "sku": "SKU-27-9304",
+    "description": "High-quality Home & Kitchen Product 27 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 62
+  },
+  {
+    "id": 58,
+    "name": "Home & Kitchen Product 58",
+    "category": "Home & Kitchen",
+    "price": 53.96,
+    "sku": "SKU-58-7830",
+    "description": "High-quality Home & Kitchen Product 58 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 29
+  },
+  {
+    "id": 67,
+    "name": "Home & Kitchen Product 67",
+    "category": "Home & Kitchen",
+    "price": 34.95,
+    "sku": "SKU-67-1001",
+    "description": "High-quality Home & Kitchen Product 67 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 96
+  },
+  {
+    "id": 68,
+    "name": "Home & Kitchen Product 68",
+    "category": "Home & Kitchen",
+    "price": 194.35,
+    "sku": "SKU-68-4658",
+    "description": "High-quality Home & Kitchen Product 68 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 143
+  },
+  {
+    "id": 77,
+    "name": "Home & Kitchen Product 77",
+    "category": "Home & Kitchen",
+    "price": 100.11,
+    "sku": "SKU-77-9773",
+    "description": "High-quality Home & Kitchen Product 77 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 19
+  },
+  {
+    "id": 82,
+    "name": "Home & Kitchen Product 82",
+    "category": "Home & Kitchen",
+    "price": 79.68,
+    "sku": "SKU-82-6204",
+    "description": "High-quality Home & Kitchen Product 82 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 27
+  },
+  {
+    "id": 85,
+    "name": "Home & Kitchen Product 85",
+    "category": "Home & Kitchen",
+    "price": 65.09,
+    "sku": "SKU-85-5096",
+    "description": "High-quality Home & Kitchen Product 85 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 139
+  },
+  {
+    "id": 87,
+    "name": "Home & Kitchen Product 87",
+    "category": "Home & Kitchen",
+    "price": 14.21,
+    "sku": "SKU-87-8453",
+    "description": "High-quality Home & Kitchen Product 87 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 65
+  },
+  {
+    "id": 104,
+    "name": "Home & Kitchen Product 104",
+    "category": "Home & Kitchen",
+    "price": 125.31,
+    "sku": "SKU-104-6762",
+    "description": "High-quality Home & Kitchen Product 104 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 67
+  },
+  {
+    "id": 106,
+    "name": "Home & Kitchen Product 106",
+    "category": "Home & Kitchen",
+    "price": 195,
+    "sku": "SKU-106-1987",
+    "description": "High-quality Home & Kitchen Product 106 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 70
+  },
+  {
+    "id": 115,
+    "name": "Home & Kitchen Product 115",
+    "category": "Home & Kitchen",
+    "price": 86.46,
+    "sku": "SKU-115-6193",
+    "description": "High-quality Home & Kitchen Product 115 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 126,
+    "name": "Home & Kitchen Product 126",
+    "category": "Home & Kitchen",
+    "price": 127.98,
+    "sku": "SKU-126-1123",
+    "description": "High-quality Home & Kitchen Product 126 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 86
+  },
+  {
+    "id": 139,
+    "name": "Home & Kitchen Product 139",
+    "category": "Home & Kitchen",
+    "price": 165.49,
+    "sku": "SKU-139-2907",
+    "description": "High-quality Home & Kitchen Product 139 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 75
+  },
+  {
+    "id": 152,
+    "name": "Home & Kitchen Product 152",
+    "category": "Home & Kitchen",
+    "price": 37.67,
+    "sku": "SKU-152-2870",
+    "description": "High-quality Home & Kitchen Product 152 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 46
+  },
+  {
+    "id": 166,
+    "name": "Home & Kitchen Product 166",
+    "category": "Home & Kitchen",
+    "price": 194.6,
+    "sku": "SKU-166-9306",
+    "description": "High-quality Home & Kitchen Product 166 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 6
+  },
+  {
+    "id": 174,
+    "name": "Home & Kitchen Product 174",
+    "category": "Home & Kitchen",
+    "price": 73.84,
+    "sku": "SKU-174-3837",
+    "description": "High-quality Home & Kitchen Product 174 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 150
+  },
+  {
+    "id": 197,
+    "name": "Home & Kitchen Product 197",
+    "category": "Home & Kitchen",
+    "price": 96.58,
+    "sku": "SKU-197-8116",
+    "description": "High-quality Home & Kitchen Product 197 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 144
+  },
+  {
+    "id": 199,
+    "name": "Home & Kitchen Product 199",
+    "category": "Home & Kitchen",
+    "price": 85.21,
+    "sku": "SKU-199-3785",
+    "description": "High-quality Home & Kitchen Product 199 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 4
+  },
+  {
+    "id": 219,
+    "name": "Home & Kitchen Product 219",
+    "category": "Home & Kitchen",
+    "price": 204.88,
+    "sku": "SKU-219-6916",
+    "description": "High-quality Home & Kitchen Product 219 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 56
+  },
+  {
+    "id": 230,
+    "name": "Home & Kitchen Product 230",
+    "category": "Home & Kitchen",
+    "price": 108.43,
+    "sku": "SKU-230-1956",
+    "description": "High-quality Home & Kitchen Product 230 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 50
+  },
+  {
+    "id": 235,
+    "name": "Home & Kitchen Product 235",
+    "category": "Home & Kitchen",
+    "price": 54.8,
+    "sku": "SKU-235-1610",
+    "description": "High-quality Home & Kitchen Product 235 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 144
+  },
+  {
+    "id": 236,
+    "name": "Home & Kitchen Product 236",
+    "category": "Home & Kitchen",
+    "price": 158.1,
+    "sku": "SKU-236-7941",
+    "description": "High-quality Home & Kitchen Product 236 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 149
+  },
+  {
+    "id": 237,
+    "name": "Home & Kitchen Product 237",
+    "category": "Home & Kitchen",
+    "price": 110.85,
+    "sku": "SKU-237-2818",
+    "description": "High-quality Home & Kitchen Product 237 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 47
+  },
+  {
+    "id": 244,
+    "name": "Home & Kitchen Product 244",
+    "category": "Home & Kitchen",
+    "price": 172.09,
+    "sku": "SKU-244-6724",
+    "description": "High-quality Home & Kitchen Product 244 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 296,
+    "name": "Home & Kitchen Product 296",
+    "category": "Home & Kitchen",
+    "price": 108.32,
+    "sku": "SKU-296-4414",
+    "description": "High-quality Home & Kitchen Product 296 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 150
+  },
+  {
+    "id": 337,
+    "name": "Home & Kitchen Product 337",
+    "category": "Home & Kitchen",
+    "price": 8.72,
+    "sku": "SKU-337-7346",
+    "description": "High-quality Home & Kitchen Product 337 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 17
+  },
+  {
+    "id": 342,
+    "name": "Home & Kitchen Product 342",
+    "category": "Home & Kitchen",
+    "price": 170.2,
+    "sku": "SKU-342-2958",
+    "description": "High-quality Home & Kitchen Product 342 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 354,
+    "name": "Home & Kitchen Product 354",
+    "category": "Home & Kitchen",
+    "price": 140.62,
+    "sku": "SKU-354-9848",
+    "description": "High-quality Home & Kitchen Product 354 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 94
+  },
+  {
+    "id": 358,
+    "name": "Home & Kitchen Product 358",
+    "category": "Home & Kitchen",
+    "price": 85.42,
+    "sku": "SKU-358-6913",
+    "description": "High-quality Home & Kitchen Product 358 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 35
+  },
+  {
+    "id": 360,
+    "name": "Home & Kitchen Product 360",
+    "category": "Home & Kitchen",
+    "price": 132.12,
+    "sku": "SKU-360-3375",
+    "description": "High-quality Home & Kitchen Product 360 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 107
+  },
+  {
+    "id": 362,
+    "name": "Home & Kitchen Product 362",
+    "category": "Home & Kitchen",
+    "price": 8.06,
+    "sku": "SKU-362-7004",
+    "description": "High-quality Home & Kitchen Product 362 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 53
+  },
+  {
+    "id": 365,
+    "name": "Home & Kitchen Product 365",
+    "category": "Home & Kitchen",
+    "price": 199.28,
+    "sku": "SKU-365-5256",
+    "description": "High-quality Home & Kitchen Product 365 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 91
+  },
+  {
+    "id": 396,
+    "name": "Home & Kitchen Product 396",
+    "category": "Home & Kitchen",
+    "price": 42.06,
+    "sku": "SKU-396-9994",
+    "description": "High-quality Home & Kitchen Product 396 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 143
+  },
+  {
+    "id": 397,
+    "name": "Home & Kitchen Product 397",
+    "category": "Home & Kitchen",
+    "price": 49.38,
+    "sku": "SKU-397-5494",
+    "description": "High-quality Home & Kitchen Product 397 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 30
+  },
+  {
+    "id": 407,
+    "name": "Home & Kitchen Product 407",
+    "category": "Home & Kitchen",
+    "price": 156.02,
+    "sku": "SKU-407-9368",
+    "description": "High-quality Home & Kitchen Product 407 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 66
+  },
+  {
+    "id": 408,
+    "name": "Home & Kitchen Product 408",
+    "category": "Home & Kitchen",
+    "price": 203.53,
+    "sku": "SKU-408-4606",
+    "description": "High-quality Home & Kitchen Product 408 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 71
+  },
+  {
+    "id": 415,
+    "name": "Home & Kitchen Product 415",
+    "category": "Home & Kitchen",
+    "price": 51.3,
+    "sku": "SKU-415-1627",
+    "description": "High-quality Home & Kitchen Product 415 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 0
+  },
+  {
+    "id": 477,
+    "name": "Home & Kitchen Product 477",
+    "category": "Home & Kitchen",
+    "price": 157.01,
+    "sku": "SKU-477-3786",
+    "description": "High-quality Home & Kitchen Product 477 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 130
+  },
+  {
+    "id": 487,
+    "name": "Home & Kitchen Product 487",
+    "category": "Home & Kitchen",
+    "price": 174.09,
+    "sku": "SKU-487-8061",
+    "description": "High-quality Home & Kitchen Product 487 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 112
+  },
+  {
+    "id": 490,
+    "name": "Home & Kitchen Product 490",
+    "category": "Home & Kitchen",
+    "price": 198.87,
+    "sku": "SKU-490-5116",
+    "description": "High-quality Home & Kitchen Product 490 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 130
+  },
+  {
+    "id": 493,
+    "name": "Home & Kitchen Product 493",
+    "category": "Home & Kitchen",
+    "price": 39.79,
+    "sku": "SKU-493-4069",
+    "description": "High-quality Home & Kitchen Product 493 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 119
+  },
+  {
+    "id": 498,
+    "name": "Home & Kitchen Product 498",
+    "category": "Home & Kitchen",
+    "price": 190.37,
+    "sku": "SKU-498-9419",
+    "description": "High-quality Home & Kitchen Product 498 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 36
+  },
+  {
+    "id": 500,
+    "name": "Home & Kitchen Product 500",
+    "category": "Home & Kitchen",
+    "price": 193.62,
+    "sku": "SKU-500-9820",
+    "description": "High-quality Home & Kitchen Product 500 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 120
+  },
+  {
+    "id": 502,
+    "name": "Home & Kitchen Product 502",
+    "category": "Home & Kitchen",
+    "price": 81.44,
+    "sku": "SKU-502-3789",
+    "description": "High-quality Home & Kitchen Product 502 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 513,
+    "name": "Home & Kitchen Product 513",
+    "category": "Home & Kitchen",
+    "price": 76.2,
+    "sku": "SKU-513-2959",
+    "description": "High-quality Home & Kitchen Product 513 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 20
+  },
+  {
+    "id": 518,
+    "name": "Home & Kitchen Product 518",
+    "category": "Home & Kitchen",
+    "price": 27.57,
+    "sku": "SKU-518-2211",
+    "description": "High-quality Home & Kitchen Product 518 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 137
+  },
+  {
+    "id": 521,
+    "name": "Home & Kitchen Product 521",
+    "category": "Home & Kitchen",
+    "price": 161.85,
+    "sku": "SKU-521-5256",
+    "description": "High-quality Home & Kitchen Product 521 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 94
+  },
+  {
+    "id": 524,
+    "name": "Home & Kitchen Product 524",
+    "category": "Home & Kitchen",
+    "price": 160.27,
+    "sku": "SKU-524-6043",
+    "description": "High-quality Home & Kitchen Product 524 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 47
+  },
+  {
+    "id": 537,
+    "name": "Home & Kitchen Product 537",
+    "category": "Home & Kitchen",
+    "price": 50.02,
+    "sku": "SKU-537-5792",
+    "description": "High-quality Home & Kitchen Product 537 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 96
+  },
+  {
+    "id": 547,
+    "name": "Home & Kitchen Product 547",
+    "category": "Home & Kitchen",
+    "price": 147.2,
+    "sku": "SKU-547-5235",
+    "description": "High-quality Home & Kitchen Product 547 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 107
+  },
+  {
+    "id": 555,
+    "name": "Home & Kitchen Product 555",
+    "category": "Home & Kitchen",
+    "price": 11.54,
+    "sku": "SKU-555-4405",
+    "description": "High-quality Home & Kitchen Product 555 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 563,
+    "name": "Home & Kitchen Product 563",
+    "category": "Home & Kitchen",
+    "price": 60.69,
+    "sku": "SKU-563-4684",
+    "description": "High-quality Home & Kitchen Product 563 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 78
+  },
+  {
+    "id": 569,
+    "name": "Home & Kitchen Product 569",
+    "category": "Home & Kitchen",
+    "price": 66.15,
+    "sku": "SKU-569-4255",
+    "description": "High-quality Home & Kitchen Product 569 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 5
+  },
+  {
+    "id": 589,
+    "name": "Home & Kitchen Product 589",
+    "category": "Home & Kitchen",
+    "price": 158.7,
+    "sku": "SKU-589-9634",
+    "description": "High-quality Home & Kitchen Product 589 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 113
+  },
+  {
+    "id": 610,
+    "name": "Home & Kitchen Product 610",
+    "category": "Home & Kitchen",
+    "price": 42.39,
+    "sku": "SKU-610-3667",
+    "description": "High-quality Home & Kitchen Product 610 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 68
+  },
+  {
+    "id": 615,
+    "name": "Home & Kitchen Product 615",
+    "category": "Home & Kitchen",
+    "price": 201,
+    "sku": "SKU-615-5976",
+    "description": "High-quality Home & Kitchen Product 615 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 40
+  },
+  {
+    "id": 629,
+    "name": "Home & Kitchen Product 629",
+    "category": "Home & Kitchen",
+    "price": 65.03,
+    "sku": "SKU-629-8274",
+    "description": "High-quality Home & Kitchen Product 629 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 19
+  },
+  {
+    "id": 638,
+    "name": "Home & Kitchen Product 638",
+    "category": "Home & Kitchen",
+    "price": 37.42,
+    "sku": "SKU-638-7372",
+    "description": "High-quality Home & Kitchen Product 638 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 97
+  },
+  {
+    "id": 646,
+    "name": "Home & Kitchen Product 646",
+    "category": "Home & Kitchen",
+    "price": 130.47,
+    "sku": "SKU-646-2345",
+    "description": "High-quality Home & Kitchen Product 646 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 663,
+    "name": "Home & Kitchen Product 663",
+    "category": "Home & Kitchen",
+    "price": 33.6,
+    "sku": "SKU-663-7928",
+    "description": "High-quality Home & Kitchen Product 663 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 114
+  },
+  {
+    "id": 677,
+    "name": "Home & Kitchen Product 677",
+    "category": "Home & Kitchen",
+    "price": 30.65,
+    "sku": "SKU-677-9841",
+    "description": "High-quality Home & Kitchen Product 677 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 92
+  },
+  {
+    "id": 681,
+    "name": "Home & Kitchen Product 681",
+    "category": "Home & Kitchen",
+    "price": 159.12,
+    "sku": "SKU-681-4753",
+    "description": "High-quality Home & Kitchen Product 681 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 7
+  },
+  {
+    "id": 686,
+    "name": "Home & Kitchen Product 686",
+    "category": "Home & Kitchen",
+    "price": 19.19,
+    "sku": "SKU-686-8307",
+    "description": "High-quality Home & Kitchen Product 686 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 142
+  },
+  {
+    "id": 703,
+    "name": "Home & Kitchen Product 703",
+    "category": "Home & Kitchen",
+    "price": 127.22,
+    "sku": "SKU-703-6686",
+    "description": "High-quality Home & Kitchen Product 703 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 109
+  },
+  {
+    "id": 710,
+    "name": "Home & Kitchen Product 710",
+    "category": "Home & Kitchen",
+    "price": 62.27,
+    "sku": "SKU-710-7040",
+    "description": "High-quality Home & Kitchen Product 710 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 11
+  },
+  {
+    "id": 718,
+    "name": "Home & Kitchen Product 718",
+    "category": "Home & Kitchen",
+    "price": 184.51,
+    "sku": "SKU-718-5538",
+    "description": "High-quality Home & Kitchen Product 718 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 79
+  },
+  {
+    "id": 719,
+    "name": "Home & Kitchen Product 719",
+    "category": "Home & Kitchen",
+    "price": 131.28,
+    "sku": "SKU-719-3185",
+    "description": "High-quality Home & Kitchen Product 719 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 81
+  },
+  {
+    "id": 724,
+    "name": "Home & Kitchen Product 724",
+    "category": "Home & Kitchen",
+    "price": 38.46,
+    "sku": "SKU-724-6279",
+    "description": "High-quality Home & Kitchen Product 724 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 96
+  },
+  {
+    "id": 739,
+    "name": "Home & Kitchen Product 739",
+    "category": "Home & Kitchen",
+    "price": 153.57,
+    "sku": "SKU-739-9603",
+    "description": "High-quality Home & Kitchen Product 739 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 16
+  },
+  {
+    "id": 747,
+    "name": "Home & Kitchen Product 747",
+    "category": "Home & Kitchen",
+    "price": 117.01,
+    "sku": "SKU-747-6923",
+    "description": "High-quality Home & Kitchen Product 747 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 21
+  },
+  {
+    "id": 756,
+    "name": "Home & Kitchen Product 756",
+    "category": "Home & Kitchen",
+    "price": 12.28,
+    "sku": "SKU-756-7695",
+    "description": "High-quality Home & Kitchen Product 756 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 32
+  },
+  {
+    "id": 765,
+    "name": "Home & Kitchen Product 765",
+    "category": "Home & Kitchen",
+    "price": 36.05,
+    "sku": "SKU-765-9043",
+    "description": "High-quality Home & Kitchen Product 765 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 77
+  },
+  {
+    "id": 775,
+    "name": "Home & Kitchen Product 775",
+    "category": "Home & Kitchen",
+    "price": 33.09,
+    "sku": "SKU-775-5180",
+    "description": "High-quality Home & Kitchen Product 775 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 74
+  },
+  {
+    "id": 783,
+    "name": "Home & Kitchen Product 783",
+    "category": "Home & Kitchen",
+    "price": 134.02,
+    "sku": "SKU-783-3383",
+    "description": "High-quality Home & Kitchen Product 783 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 787,
+    "name": "Home & Kitchen Product 787",
+    "category": "Home & Kitchen",
+    "price": 55.77,
+    "sku": "SKU-787-1680",
+    "description": "High-quality Home & Kitchen Product 787 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 119
+  },
+  {
+    "id": 803,
+    "name": "Home & Kitchen Product 803",
+    "category": "Home & Kitchen",
+    "price": 164.49,
+    "sku": "SKU-803-9939",
+    "description": "High-quality Home & Kitchen Product 803 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 137
+  },
+  {
+    "id": 820,
+    "name": "Home & Kitchen Product 820",
+    "category": "Home & Kitchen",
+    "price": 195.8,
+    "sku": "SKU-820-4116",
+    "description": "High-quality Home & Kitchen Product 820 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 86
+  },
+  {
+    "id": 821,
+    "name": "Home & Kitchen Product 821",
+    "category": "Home & Kitchen",
+    "price": 38.43,
+    "sku": "SKU-821-1873",
+    "description": "High-quality Home & Kitchen Product 821 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 44
+  },
+  {
+    "id": 830,
+    "name": "Home & Kitchen Product 830",
+    "category": "Home & Kitchen",
+    "price": 164.02,
+    "sku": "SKU-830-9790",
+    "description": "High-quality Home & Kitchen Product 830 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 50
+  },
+  {
+    "id": 834,
+    "name": "Home & Kitchen Product 834",
+    "category": "Home & Kitchen",
+    "price": 83.83,
+    "sku": "SKU-834-1740",
+    "description": "High-quality Home & Kitchen Product 834 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 80
+  },
+  {
+    "id": 838,
+    "name": "Home & Kitchen Product 838",
+    "category": "Home & Kitchen",
+    "price": 42.15,
+    "sku": "SKU-838-4086",
+    "description": "High-quality Home & Kitchen Product 838 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 24
+  },
+  {
+    "id": 851,
+    "name": "Home & Kitchen Product 851",
+    "category": "Home & Kitchen",
+    "price": 116.13,
+    "sku": "SKU-851-7253",
+    "description": "High-quality Home & Kitchen Product 851 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 855,
+    "name": "Home & Kitchen Product 855",
+    "category": "Home & Kitchen",
+    "price": 183.26,
+    "sku": "SKU-855-2726",
+    "description": "High-quality Home & Kitchen Product 855 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 147
+  },
+  {
+    "id": 858,
+    "name": "Home & Kitchen Product 858",
+    "category": "Home & Kitchen",
+    "price": 75.09,
+    "sku": "SKU-858-5950",
+    "description": "High-quality Home & Kitchen Product 858 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 92
+  },
+  {
+    "id": 869,
+    "name": "Home & Kitchen Product 869",
+    "category": "Home & Kitchen",
+    "price": 77.96,
+    "sku": "SKU-869-5063",
+    "description": "High-quality Home & Kitchen Product 869 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 93
+  },
+  {
+    "id": 872,
+    "name": "Home & Kitchen Product 872",
+    "category": "Home & Kitchen",
+    "price": 115.64,
+    "sku": "SKU-872-5554",
+    "description": "High-quality Home & Kitchen Product 872 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 90
+  },
+  {
+    "id": 875,
+    "name": "Home & Kitchen Product 875",
+    "category": "Home & Kitchen",
+    "price": 168.62,
+    "sku": "SKU-875-7225",
+    "description": "High-quality Home & Kitchen Product 875 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 879,
+    "name": "Home & Kitchen Product 879",
+    "category": "Home & Kitchen",
+    "price": 133.36,
+    "sku": "SKU-879-3116",
+    "description": "High-quality Home & Kitchen Product 879 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 126
+  },
+  {
+    "id": 905,
+    "name": "Home & Kitchen Product 905",
+    "category": "Home & Kitchen",
+    "price": 42.92,
+    "sku": "SKU-905-5686",
+    "description": "High-quality Home & Kitchen Product 905 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 42
+  },
+  {
+    "id": 908,
+    "name": "Home & Kitchen Product 908",
+    "category": "Home & Kitchen",
+    "price": 125.77,
+    "sku": "SKU-908-3366",
+    "description": "High-quality Home & Kitchen Product 908 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 32
+  },
+  {
+    "id": 921,
+    "name": "Home & Kitchen Product 921",
+    "category": "Home & Kitchen",
+    "price": 181.16,
+    "sku": "SKU-921-3881",
+    "description": "High-quality Home & Kitchen Product 921 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 17
+  },
+  {
+    "id": 925,
+    "name": "Home & Kitchen Product 925",
+    "category": "Home & Kitchen",
+    "price": 155.22,
+    "sku": "SKU-925-1030",
+    "description": "High-quality Home & Kitchen Product 925 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 145
+  },
+  {
+    "id": 934,
+    "name": "Home & Kitchen Product 934",
+    "category": "Home & Kitchen",
+    "price": 96.04,
+    "sku": "SKU-934-5083",
+    "description": "High-quality Home & Kitchen Product 934 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 134
+  },
+  {
+    "id": 935,
+    "name": "Home & Kitchen Product 935",
+    "category": "Home & Kitchen",
+    "price": 25.58,
+    "sku": "SKU-935-1679",
+    "description": "High-quality Home & Kitchen Product 935 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 13
+  },
+  {
+    "id": 936,
+    "name": "Home & Kitchen Product 936",
+    "category": "Home & Kitchen",
+    "price": 12.4,
+    "sku": "SKU-936-8791",
+    "description": "High-quality Home & Kitchen Product 936 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 41
+  },
+  {
+    "id": 946,
+    "name": "Home & Kitchen Product 946",
+    "category": "Home & Kitchen",
+    "price": 178.13,
+    "sku": "SKU-946-5852",
+    "description": "High-quality Home & Kitchen Product 946 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 117
+  },
+  {
+    "id": 953,
+    "name": "Home & Kitchen Product 953",
+    "category": "Home & Kitchen",
+    "price": 111.36,
+    "sku": "SKU-953-5183",
+    "description": "High-quality Home & Kitchen Product 953 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 65
+  },
+  {
+    "id": 978,
+    "name": "Home & Kitchen Product 978",
+    "category": "Home & Kitchen",
+    "price": 74.78,
+    "sku": "SKU-978-3181",
+    "description": "High-quality Home & Kitchen Product 978 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 108
+  },
+  {
+    "id": 990,
+    "name": "Home & Kitchen Product 990",
+    "category": "Home & Kitchen",
+    "price": 171.94,
+    "sku": "SKU-990-6806",
+    "description": "High-quality Home & Kitchen Product 990 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 55
+  },
+  {
+    "id": 999,
+    "name": "Home & Kitchen Product 999",
+    "category": "Home & Kitchen",
+    "price": 5.93,
+    "sku": "SKU-999-6894",
+    "description": "High-quality Home & Kitchen Product 999 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 26
+  },
+  {
+    "id": 1012,
+    "name": "Home & Kitchen Product 1012",
+    "category": "Home & Kitchen",
+    "price": 149.68,
+    "sku": "SKU-1012-2092",
+    "description": "High-quality Home & Kitchen Product 1012 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 121
+  },
+  {
+    "id": 1021,
+    "name": "Home & Kitchen Product 1021",
+    "category": "Home & Kitchen",
+    "price": 204.36,
+    "sku": "SKU-1021-2609",
+    "description": "High-quality Home & Kitchen Product 1021 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 92
+  },
+  {
+    "id": 1031,
+    "name": "Home & Kitchen Product 1031",
+    "category": "Home & Kitchen",
+    "price": 64.12,
+    "sku": "SKU-1031-6742",
+    "description": "High-quality Home & Kitchen Product 1031 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 1057,
+    "name": "Home & Kitchen Product 1057",
+    "category": "Home & Kitchen",
+    "price": 38.7,
+    "sku": "SKU-1057-6674",
+    "description": "High-quality Home & Kitchen Product 1057 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 44
+  },
+  {
+    "id": 1073,
+    "name": "Home & Kitchen Product 1073",
+    "category": "Home & Kitchen",
+    "price": 80.76,
+    "sku": "SKU-1073-4850",
+    "description": "High-quality Home & Kitchen Product 1073 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 113
+  },
+  {
+    "id": 1081,
+    "name": "Home & Kitchen Product 1081",
+    "category": "Home & Kitchen",
+    "price": 19.02,
+    "sku": "SKU-1081-4150",
+    "description": "High-quality Home & Kitchen Product 1081 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 49
+  },
+  {
+    "id": 1096,
+    "name": "Home & Kitchen Product 1096",
+    "category": "Home & Kitchen",
+    "price": 15.94,
+    "sku": "SKU-1096-5038",
+    "description": "High-quality Home & Kitchen Product 1096 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 73
+  },
+  {
+    "id": 1099,
+    "name": "Home & Kitchen Product 1099",
+    "category": "Home & Kitchen",
+    "price": 88.29,
+    "sku": "SKU-1099-6429",
+    "description": "High-quality Home & Kitchen Product 1099 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 100
+  },
+  {
+    "id": 1104,
+    "name": "Home & Kitchen Product 1104",
+    "category": "Home & Kitchen",
+    "price": 22.16,
+    "sku": "SKU-1104-9750",
+    "description": "High-quality Home & Kitchen Product 1104 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 105
+  },
+  {
+    "id": 1116,
+    "name": "Home & Kitchen Product 1116",
+    "category": "Home & Kitchen",
+    "price": 115.93,
+    "sku": "SKU-1116-5434",
+    "description": "High-quality Home & Kitchen Product 1116 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 56
+  },
+  {
+    "id": 1120,
+    "name": "Home & Kitchen Product 1120",
+    "category": "Home & Kitchen",
+    "price": 57.98,
+    "sku": "SKU-1120-3483",
+    "description": "High-quality Home & Kitchen Product 1120 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 75
+  },
+  {
+    "id": 1121,
+    "name": "Home & Kitchen Product 1121",
+    "category": "Home & Kitchen",
+    "price": 85.66,
+    "sku": "SKU-1121-3087",
+    "description": "High-quality Home & Kitchen Product 1121 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 106
+  },
+  {
+    "id": 1124,
+    "name": "Home & Kitchen Product 1124",
+    "category": "Home & Kitchen",
+    "price": 198.73,
+    "sku": "SKU-1124-7608",
+    "description": "High-quality Home & Kitchen Product 1124 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 44
+  },
+  {
+    "id": 1139,
+    "name": "Home & Kitchen Product 1139",
+    "category": "Home & Kitchen",
+    "price": 86.02,
+    "sku": "SKU-1139-7866",
+    "description": "High-quality Home & Kitchen Product 1139 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 92
+  },
+  {
+    "id": 1141,
+    "name": "Home & Kitchen Product 1141",
+    "category": "Home & Kitchen",
+    "price": 115.04,
+    "sku": "SKU-1141-3765",
+    "description": "High-quality Home & Kitchen Product 1141 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 136
+  },
+  {
+    "id": 1154,
+    "name": "Home & Kitchen Product 1154",
+    "category": "Home & Kitchen",
+    "price": 18.22,
+    "sku": "SKU-1154-4363",
+    "description": "High-quality Home & Kitchen Product 1154 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 114
+  },
+  {
+    "id": 1199,
+    "name": "Home & Kitchen Product 1199",
+    "category": "Home & Kitchen",
+    "price": 196.53,
+    "sku": "SKU-1199-5471",
+    "description": "High-quality Home & Kitchen Product 1199 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 1203,
+    "name": "Home & Kitchen Product 1203",
+    "category": "Home & Kitchen",
+    "price": 136.57,
+    "sku": "SKU-1203-3022",
+    "description": "High-quality Home & Kitchen Product 1203 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 1213,
+    "name": "Home & Kitchen Product 1213",
+    "category": "Home & Kitchen",
+    "price": 118.37,
+    "sku": "SKU-1213-2321",
+    "description": "High-quality Home & Kitchen Product 1213 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 115
+  },
+  {
+    "id": 1230,
+    "name": "Home & Kitchen Product 1230",
+    "category": "Home & Kitchen",
+    "price": 117.67,
+    "sku": "SKU-1230-4879",
+    "description": "High-quality Home & Kitchen Product 1230 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 52
+  },
+  {
+    "id": 1238,
+    "name": "Home & Kitchen Product 1238",
+    "category": "Home & Kitchen",
+    "price": 70.53,
+    "sku": "SKU-1238-3905",
+    "description": "High-quality Home & Kitchen Product 1238 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 7
+  },
+  {
+    "id": 1247,
+    "name": "Home & Kitchen Product 1247",
+    "category": "Home & Kitchen",
+    "price": 88.32,
+    "sku": "SKU-1247-5187",
+    "description": "High-quality Home & Kitchen Product 1247 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 22
+  },
+  {
+    "id": 1250,
+    "name": "Home & Kitchen Product 1250",
+    "category": "Home & Kitchen",
+    "price": 125.07,
+    "sku": "SKU-1250-4056",
+    "description": "High-quality Home & Kitchen Product 1250 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 111
+  },
+  {
+    "id": 1258,
+    "name": "Home & Kitchen Product 1258",
+    "category": "Home & Kitchen",
+    "price": 59.18,
+    "sku": "SKU-1258-8728",
+    "description": "High-quality Home & Kitchen Product 1258 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 128
+  },
+  {
+    "id": 1264,
+    "name": "Home & Kitchen Product 1264",
+    "category": "Home & Kitchen",
+    "price": 90.16,
+    "sku": "SKU-1264-7617",
+    "description": "High-quality Home & Kitchen Product 1264 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 1267,
+    "name": "Home & Kitchen Product 1267",
+    "category": "Home & Kitchen",
+    "price": 50.67,
+    "sku": "SKU-1267-6924",
+    "description": "High-quality Home & Kitchen Product 1267 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 1275,
+    "name": "Home & Kitchen Product 1275",
+    "category": "Home & Kitchen",
+    "price": 133.12,
+    "sku": "SKU-1275-9160",
+    "description": "High-quality Home & Kitchen Product 1275 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 46
+  },
+  {
+    "id": 1281,
+    "name": "Home & Kitchen Product 1281",
+    "category": "Home & Kitchen",
+    "price": 10.15,
+    "sku": "SKU-1281-6923",
+    "description": "High-quality Home & Kitchen Product 1281 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 85
+  },
+  {
+    "id": 1282,
+    "name": "Home & Kitchen Product 1282",
+    "category": "Home & Kitchen",
+    "price": 175.18,
+    "sku": "SKU-1282-8694",
+    "description": "High-quality Home & Kitchen Product 1282 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 36
+  },
+  {
+    "id": 1287,
+    "name": "Home & Kitchen Product 1287",
+    "category": "Home & Kitchen",
+    "price": 137.64,
+    "sku": "SKU-1287-7419",
+    "description": "High-quality Home & Kitchen Product 1287 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 28
+  },
+  {
+    "id": 1288,
+    "name": "Home & Kitchen Product 1288",
+    "category": "Home & Kitchen",
+    "price": 160.94,
+    "sku": "SKU-1288-4336",
+    "description": "High-quality Home & Kitchen Product 1288 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 108
+  },
+  {
+    "id": 1315,
+    "name": "Home & Kitchen Product 1315",
+    "category": "Home & Kitchen",
+    "price": 15.69,
+    "sku": "SKU-1315-7125",
+    "description": "High-quality Home & Kitchen Product 1315 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 10
+  },
+  {
+    "id": 1333,
+    "name": "Home & Kitchen Product 1333",
+    "category": "Home & Kitchen",
+    "price": 137.91,
+    "sku": "SKU-1333-7783",
+    "description": "High-quality Home & Kitchen Product 1333 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 130
+  },
+  {
+    "id": 1355,
+    "name": "Home & Kitchen Product 1355",
+    "category": "Home & Kitchen",
+    "price": 91.37,
+    "sku": "SKU-1355-5703",
+    "description": "High-quality Home & Kitchen Product 1355 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 55
+  },
+  {
+    "id": 1356,
+    "name": "Home & Kitchen Product 1356",
+    "category": "Home & Kitchen",
+    "price": 24.74,
+    "sku": "SKU-1356-6372",
+    "description": "High-quality Home & Kitchen Product 1356 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 145
+  },
+  {
+    "id": 1360,
+    "name": "Home & Kitchen Product 1360",
+    "category": "Home & Kitchen",
+    "price": 21.59,
+    "sku": "SKU-1360-4669",
+    "description": "High-quality Home & Kitchen Product 1360 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 18
+  },
+  {
+    "id": 1403,
+    "name": "Home & Kitchen Product 1403",
+    "category": "Home & Kitchen",
+    "price": 195.31,
+    "sku": "SKU-1403-9252",
+    "description": "High-quality Home & Kitchen Product 1403 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 86
+  },
+  {
+    "id": 1415,
+    "name": "Home & Kitchen Product 1415",
+    "category": "Home & Kitchen",
+    "price": 100.02,
+    "sku": "SKU-1415-3770",
+    "description": "High-quality Home & Kitchen Product 1415 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 81
+  },
+  {
+    "id": 1420,
+    "name": "Home & Kitchen Product 1420",
+    "category": "Home & Kitchen",
+    "price": 202.45,
+    "sku": "SKU-1420-5027",
+    "description": "High-quality Home & Kitchen Product 1420 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 1433,
+    "name": "Home & Kitchen Product 1433",
+    "category": "Home & Kitchen",
+    "price": 113.56,
+    "sku": "SKU-1433-1610",
+    "description": "High-quality Home & Kitchen Product 1433 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 111
+  },
+  {
+    "id": 1462,
+    "name": "Home & Kitchen Product 1462",
+    "category": "Home & Kitchen",
+    "price": 112.34,
+    "sku": "SKU-1462-2278",
+    "description": "High-quality Home & Kitchen Product 1462 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 6
+  },
+  {
+    "id": 1464,
+    "name": "Home & Kitchen Product 1464",
+    "category": "Home & Kitchen",
+    "price": 79.52,
+    "sku": "SKU-1464-6712",
+    "description": "High-quality Home & Kitchen Product 1464 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 1498,
+    "name": "Home & Kitchen Product 1498",
+    "category": "Home & Kitchen",
+    "price": 71.83,
+    "sku": "SKU-1498-8427",
+    "description": "High-quality Home & Kitchen Product 1498 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 127
+  }
+]

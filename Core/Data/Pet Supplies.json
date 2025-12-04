@@ -1,0 +1,1392 @@
+[
+  {
+    "id": 41,
+    "name": "Pet Supplies Product 41",
+    "category": "Pet Supplies",
+    "price": 175.8,
+    "sku": "SKU-41-9203",
+    "description": "High-quality Pet Supplies Product 41 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 133
+  },
+  {
+    "id": 46,
+    "name": "Pet Supplies Product 46",
+    "category": "Pet Supplies",
+    "price": 72.93,
+    "sku": "SKU-46-6070",
+    "description": "High-quality Pet Supplies Product 46 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 30
+  },
+  {
+    "id": 48,
+    "name": "Pet Supplies Product 48",
+    "category": "Pet Supplies",
+    "price": 106.73,
+    "sku": "SKU-48-5480",
+    "description": "High-quality Pet Supplies Product 48 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 99
+  },
+  {
+    "id": 53,
+    "name": "Pet Supplies Product 53",
+    "category": "Pet Supplies",
+    "price": 69.47,
+    "sku": "SKU-53-4857",
+    "description": "High-quality Pet Supplies Product 53 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 148
+  },
+  {
+    "id": 54,
+    "name": "Pet Supplies Product 54",
+    "category": "Pet Supplies",
+    "price": 140.79,
+    "sku": "SKU-54-3911",
+    "description": "High-quality Pet Supplies Product 54 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 54
+  },
+  {
+    "id": 59,
+    "name": "Pet Supplies Product 59",
+    "category": "Pet Supplies",
+    "price": 189.14,
+    "sku": "SKU-59-8155",
+    "description": "High-quality Pet Supplies Product 59 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 128
+  },
+  {
+    "id": 71,
+    "name": "Pet Supplies Product 71",
+    "category": "Pet Supplies",
+    "price": 126.92,
+    "sku": "SKU-71-2500",
+    "description": "High-quality Pet Supplies Product 71 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 70
+  },
+  {
+    "id": 91,
+    "name": "Pet Supplies Product 91",
+    "category": "Pet Supplies",
+    "price": 58.96,
+    "sku": "SKU-91-5286",
+    "description": "High-quality Pet Supplies Product 91 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 105
+  },
+  {
+    "id": 92,
+    "name": "Pet Supplies Product 92",
+    "category": "Pet Supplies",
+    "price": 62.75,
+    "sku": "SKU-92-8437",
+    "description": "High-quality Pet Supplies Product 92 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 138
+  },
+  {
+    "id": 108,
+    "name": "Pet Supplies Product 108",
+    "category": "Pet Supplies",
+    "price": 150.04,
+    "sku": "SKU-108-9728",
+    "description": "High-quality Pet Supplies Product 108 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 54
+  },
+  {
+    "id": 125,
+    "name": "Pet Supplies Product 125",
+    "category": "Pet Supplies",
+    "price": 126.81,
+    "sku": "SKU-125-4199",
+    "description": "High-quality Pet Supplies Product 125 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 138
+  },
+  {
+    "id": 137,
+    "name": "Pet Supplies Product 137",
+    "category": "Pet Supplies",
+    "price": 182.29,
+    "sku": "SKU-137-7397",
+    "description": "High-quality Pet Supplies Product 137 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 143
+  },
+  {
+    "id": 170,
+    "name": "Pet Supplies Product 170",
+    "category": "Pet Supplies",
+    "price": 198.32,
+    "sku": "SKU-170-4076",
+    "description": "High-quality Pet Supplies Product 170 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 76
+  },
+  {
+    "id": 182,
+    "name": "Pet Supplies Product 182",
+    "category": "Pet Supplies",
+    "price": 12.03,
+    "sku": "SKU-182-4317",
+    "description": "High-quality Pet Supplies Product 182 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 57
+  },
+  {
+    "id": 192,
+    "name": "Pet Supplies Product 192",
+    "category": "Pet Supplies",
+    "price": 79.33,
+    "sku": "SKU-192-9030",
+    "description": "High-quality Pet Supplies Product 192 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 25
+  },
+  {
+    "id": 204,
+    "name": "Pet Supplies Product 204",
+    "category": "Pet Supplies",
+    "price": 122,
+    "sku": "SKU-204-9591",
+    "description": "High-quality Pet Supplies Product 204 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 1
+  },
+  {
+    "id": 225,
+    "name": "Pet Supplies Product 225",
+    "category": "Pet Supplies",
+    "price": 148.45,
+    "sku": "SKU-225-5592",
+    "description": "High-quality Pet Supplies Product 225 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 81
+  },
+  {
+    "id": 226,
+    "name": "Pet Supplies Product 226",
+    "category": "Pet Supplies",
+    "price": 183.64,
+    "sku": "SKU-226-5378",
+    "description": "High-quality Pet Supplies Product 226 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 65
+  },
+  {
+    "id": 231,
+    "name": "Pet Supplies Product 231",
+    "category": "Pet Supplies",
+    "price": 22,
+    "sku": "SKU-231-6805",
+    "description": "High-quality Pet Supplies Product 231 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 112
+  },
+  {
+    "id": 240,
+    "name": "Pet Supplies Product 240",
+    "category": "Pet Supplies",
+    "price": 27.33,
+    "sku": "SKU-240-1267",
+    "description": "High-quality Pet Supplies Product 240 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 41
+  },
+  {
+    "id": 242,
+    "name": "Pet Supplies Product 242",
+    "category": "Pet Supplies",
+    "price": 108.19,
+    "sku": "SKU-242-9359",
+    "description": "High-quality Pet Supplies Product 242 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 96
+  },
+  {
+    "id": 265,
+    "name": "Pet Supplies Product 265",
+    "category": "Pet Supplies",
+    "price": 139.59,
+    "sku": "SKU-265-6239",
+    "description": "High-quality Pet Supplies Product 265 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 110
+  },
+  {
+    "id": 275,
+    "name": "Pet Supplies Product 275",
+    "category": "Pet Supplies",
+    "price": 138.15,
+    "sku": "SKU-275-1306",
+    "description": "High-quality Pet Supplies Product 275 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 43
+  },
+  {
+    "id": 286,
+    "name": "Pet Supplies Product 286",
+    "category": "Pet Supplies",
+    "price": 72.16,
+    "sku": "SKU-286-1187",
+    "description": "High-quality Pet Supplies Product 286 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 27
+  },
+  {
+    "id": 289,
+    "name": "Pet Supplies Product 289",
+    "category": "Pet Supplies",
+    "price": 96.62,
+    "sku": "SKU-289-8724",
+    "description": "High-quality Pet Supplies Product 289 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 83
+  },
+  {
+    "id": 314,
+    "name": "Pet Supplies Product 314",
+    "category": "Pet Supplies",
+    "price": 26.58,
+    "sku": "SKU-314-1174",
+    "description": "High-quality Pet Supplies Product 314 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 23
+  },
+  {
+    "id": 320,
+    "name": "Pet Supplies Product 320",
+    "category": "Pet Supplies",
+    "price": 8.78,
+    "sku": "SKU-320-9524",
+    "description": "High-quality Pet Supplies Product 320 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 146
+  },
+  {
+    "id": 321,
+    "name": "Pet Supplies Product 321",
+    "category": "Pet Supplies",
+    "price": 121.8,
+    "sku": "SKU-321-8323",
+    "description": "High-quality Pet Supplies Product 321 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 137
+  },
+  {
+    "id": 332,
+    "name": "Pet Supplies Product 332",
+    "category": "Pet Supplies",
+    "price": 180.61,
+    "sku": "SKU-332-2383",
+    "description": "High-quality Pet Supplies Product 332 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 81
+  },
+  {
+    "id": 334,
+    "name": "Pet Supplies Product 334",
+    "category": "Pet Supplies",
+    "price": 158.68,
+    "sku": "SKU-334-3678",
+    "description": "High-quality Pet Supplies Product 334 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 11
+  },
+  {
+    "id": 340,
+    "name": "Pet Supplies Product 340",
+    "category": "Pet Supplies",
+    "price": 37.92,
+    "sku": "SKU-340-4510",
+    "description": "High-quality Pet Supplies Product 340 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 26
+  },
+  {
+    "id": 341,
+    "name": "Pet Supplies Product 341",
+    "category": "Pet Supplies",
+    "price": 109.22,
+    "sku": "SKU-341-6444",
+    "description": "High-quality Pet Supplies Product 341 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 95
+  },
+  {
+    "id": 355,
+    "name": "Pet Supplies Product 355",
+    "category": "Pet Supplies",
+    "price": 151.94,
+    "sku": "SKU-355-9304",
+    "description": "High-quality Pet Supplies Product 355 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 75
+  },
+  {
+    "id": 357,
+    "name": "Pet Supplies Product 357",
+    "category": "Pet Supplies",
+    "price": 87.85,
+    "sku": "SKU-357-1226",
+    "description": "High-quality Pet Supplies Product 357 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 129
+  },
+  {
+    "id": 363,
+    "name": "Pet Supplies Product 363",
+    "category": "Pet Supplies",
+    "price": 187.18,
+    "sku": "SKU-363-7388",
+    "description": "High-quality Pet Supplies Product 363 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 46
+  },
+  {
+    "id": 369,
+    "name": "Pet Supplies Product 369",
+    "category": "Pet Supplies",
+    "price": 87.8,
+    "sku": "SKU-369-8342",
+    "description": "High-quality Pet Supplies Product 369 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 96
+  },
+  {
+    "id": 385,
+    "name": "Pet Supplies Product 385",
+    "category": "Pet Supplies",
+    "price": 146.8,
+    "sku": "SKU-385-9376",
+    "description": "High-quality Pet Supplies Product 385 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 9
+  },
+  {
+    "id": 419,
+    "name": "Pet Supplies Product 419",
+    "category": "Pet Supplies",
+    "price": 21.66,
+    "sku": "SKU-419-5890",
+    "description": "High-quality Pet Supplies Product 419 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 37
+  },
+  {
+    "id": 436,
+    "name": "Pet Supplies Product 436",
+    "category": "Pet Supplies",
+    "price": 203.57,
+    "sku": "SKU-436-6395",
+    "description": "High-quality Pet Supplies Product 436 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 482,
+    "name": "Pet Supplies Product 482",
+    "category": "Pet Supplies",
+    "price": 157.65,
+    "sku": "SKU-482-2939",
+    "description": "High-quality Pet Supplies Product 482 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 35
+  },
+  {
+    "id": 492,
+    "name": "Pet Supplies Product 492",
+    "category": "Pet Supplies",
+    "price": 164.98,
+    "sku": "SKU-492-7274",
+    "description": "High-quality Pet Supplies Product 492 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 146
+  },
+  {
+    "id": 501,
+    "name": "Pet Supplies Product 501",
+    "category": "Pet Supplies",
+    "price": 147.02,
+    "sku": "SKU-501-3382",
+    "description": "High-quality Pet Supplies Product 501 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 33
+  },
+  {
+    "id": 517,
+    "name": "Pet Supplies Product 517",
+    "category": "Pet Supplies",
+    "price": 192.1,
+    "sku": "SKU-517-4049",
+    "description": "High-quality Pet Supplies Product 517 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 64
+  },
+  {
+    "id": 519,
+    "name": "Pet Supplies Product 519",
+    "category": "Pet Supplies",
+    "price": 29.82,
+    "sku": "SKU-519-6464",
+    "description": "High-quality Pet Supplies Product 519 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 78
+  },
+  {
+    "id": 549,
+    "name": "Pet Supplies Product 549",
+    "category": "Pet Supplies",
+    "price": 106.11,
+    "sku": "SKU-549-5536",
+    "description": "High-quality Pet Supplies Product 549 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 150
+  },
+  {
+    "id": 572,
+    "name": "Pet Supplies Product 572",
+    "category": "Pet Supplies",
+    "price": 195.48,
+    "sku": "SKU-572-1538",
+    "description": "High-quality Pet Supplies Product 572 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 66
+  },
+  {
+    "id": 574,
+    "name": "Pet Supplies Product 574",
+    "category": "Pet Supplies",
+    "price": 10.52,
+    "sku": "SKU-574-2096",
+    "description": "High-quality Pet Supplies Product 574 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 61
+  },
+  {
+    "id": 591,
+    "name": "Pet Supplies Product 591",
+    "category": "Pet Supplies",
+    "price": 94.37,
+    "sku": "SKU-591-9797",
+    "description": "High-quality Pet Supplies Product 591 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 4
+  },
+  {
+    "id": 595,
+    "name": "Pet Supplies Product 595",
+    "category": "Pet Supplies",
+    "price": 40.07,
+    "sku": "SKU-595-2505",
+    "description": "High-quality Pet Supplies Product 595 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 80
+  },
+  {
+    "id": 603,
+    "name": "Pet Supplies Product 603",
+    "category": "Pet Supplies",
+    "price": 192.43,
+    "sku": "SKU-603-3995",
+    "description": "High-quality Pet Supplies Product 603 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  },
+  {
+    "id": 604,
+    "name": "Pet Supplies Product 604",
+    "category": "Pet Supplies",
+    "price": 131.62,
+    "sku": "SKU-604-8804",
+    "description": "High-quality Pet Supplies Product 604 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 79
+  },
+  {
+    "id": 607,
+    "name": "Pet Supplies Product 607",
+    "category": "Pet Supplies",
+    "price": 103.62,
+    "sku": "SKU-607-8668",
+    "description": "High-quality Pet Supplies Product 607 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 49
+  },
+  {
+    "id": 632,
+    "name": "Pet Supplies Product 632",
+    "category": "Pet Supplies",
+    "price": 134.27,
+    "sku": "SKU-632-3682",
+    "description": "High-quality Pet Supplies Product 632 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 104
+  },
+  {
+    "id": 633,
+    "name": "Pet Supplies Product 633",
+    "category": "Pet Supplies",
+    "price": 45.65,
+    "sku": "SKU-633-4053",
+    "description": "High-quality Pet Supplies Product 633 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 127
+  },
+  {
+    "id": 652,
+    "name": "Pet Supplies Product 652",
+    "category": "Pet Supplies",
+    "price": 27.55,
+    "sku": "SKU-652-9904",
+    "description": "High-quality Pet Supplies Product 652 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 131
+  },
+  {
+    "id": 654,
+    "name": "Pet Supplies Product 654",
+    "category": "Pet Supplies",
+    "price": 114.47,
+    "sku": "SKU-654-1616",
+    "description": "High-quality Pet Supplies Product 654 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 84
+  },
+  {
+    "id": 656,
+    "name": "Pet Supplies Product 656",
+    "category": "Pet Supplies",
+    "price": 112.07,
+    "sku": "SKU-656-6757",
+    "description": "High-quality Pet Supplies Product 656 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 22
+  },
+  {
+    "id": 659,
+    "name": "Pet Supplies Product 659",
+    "category": "Pet Supplies",
+    "price": 60.83,
+    "sku": "SKU-659-2763",
+    "description": "High-quality Pet Supplies Product 659 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 136
+  },
+  {
+    "id": 670,
+    "name": "Pet Supplies Product 670",
+    "category": "Pet Supplies",
+    "price": 92.58,
+    "sku": "SKU-670-3986",
+    "description": "High-quality Pet Supplies Product 670 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 69
+  },
+  {
+    "id": 671,
+    "name": "Pet Supplies Product 671",
+    "category": "Pet Supplies",
+    "price": 89.3,
+    "sku": "SKU-671-6114",
+    "description": "High-quality Pet Supplies Product 671 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 95
+  },
+  {
+    "id": 695,
+    "name": "Pet Supplies Product 695",
+    "category": "Pet Supplies",
+    "price": 99.23,
+    "sku": "SKU-695-9314",
+    "description": "High-quality Pet Supplies Product 695 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 70
+  },
+  {
+    "id": 706,
+    "name": "Pet Supplies Product 706",
+    "category": "Pet Supplies",
+    "price": 105.7,
+    "sku": "SKU-706-1102",
+    "description": "High-quality Pet Supplies Product 706 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 717,
+    "name": "Pet Supplies Product 717",
+    "category": "Pet Supplies",
+    "price": 141.89,
+    "sku": "SKU-717-8464",
+    "description": "High-quality Pet Supplies Product 717 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 31
+  },
+  {
+    "id": 721,
+    "name": "Pet Supplies Product 721",
+    "category": "Pet Supplies",
+    "price": 63.79,
+    "sku": "SKU-721-3309",
+    "description": "High-quality Pet Supplies Product 721 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 104
+  },
+  {
+    "id": 733,
+    "name": "Pet Supplies Product 733",
+    "category": "Pet Supplies",
+    "price": 192.26,
+    "sku": "SKU-733-7136",
+    "description": "High-quality Pet Supplies Product 733 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 54
+  },
+  {
+    "id": 735,
+    "name": "Pet Supplies Product 735",
+    "category": "Pet Supplies",
+    "price": 160.25,
+    "sku": "SKU-735-6474",
+    "description": "High-quality Pet Supplies Product 735 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 148
+  },
+  {
+    "id": 748,
+    "name": "Pet Supplies Product 748",
+    "category": "Pet Supplies",
+    "price": 5.01,
+    "sku": "SKU-748-2512",
+    "description": "High-quality Pet Supplies Product 748 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 1
+  },
+  {
+    "id": 752,
+    "name": "Pet Supplies Product 752",
+    "category": "Pet Supplies",
+    "price": 170.86,
+    "sku": "SKU-752-8828",
+    "description": "High-quality Pet Supplies Product 752 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 134
+  },
+  {
+    "id": 753,
+    "name": "Pet Supplies Product 753",
+    "category": "Pet Supplies",
+    "price": 128.48,
+    "sku": "SKU-753-6650",
+    "description": "High-quality Pet Supplies Product 753 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 121
+  },
+  {
+    "id": 778,
+    "name": "Pet Supplies Product 778",
+    "category": "Pet Supplies",
+    "price": 54.84,
+    "sku": "SKU-778-8835",
+    "description": "High-quality Pet Supplies Product 778 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 133
+  },
+  {
+    "id": 781,
+    "name": "Pet Supplies Product 781",
+    "category": "Pet Supplies",
+    "price": 88.99,
+    "sku": "SKU-781-3762",
+    "description": "High-quality Pet Supplies Product 781 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 792,
+    "name": "Pet Supplies Product 792",
+    "category": "Pet Supplies",
+    "price": 37.58,
+    "sku": "SKU-792-6986",
+    "description": "High-quality Pet Supplies Product 792 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 101
+  },
+  {
+    "id": 797,
+    "name": "Pet Supplies Product 797",
+    "category": "Pet Supplies",
+    "price": 139.16,
+    "sku": "SKU-797-1195",
+    "description": "High-quality Pet Supplies Product 797 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 11
+  },
+  {
+    "id": 823,
+    "name": "Pet Supplies Product 823",
+    "category": "Pet Supplies",
+    "price": 27.11,
+    "sku": "SKU-823-6124",
+    "description": "High-quality Pet Supplies Product 823 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 827,
+    "name": "Pet Supplies Product 827",
+    "category": "Pet Supplies",
+    "price": 106.66,
+    "sku": "SKU-827-2473",
+    "description": "High-quality Pet Supplies Product 827 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 832,
+    "name": "Pet Supplies Product 832",
+    "category": "Pet Supplies",
+    "price": 16.38,
+    "sku": "SKU-832-2089",
+    "description": "High-quality Pet Supplies Product 832 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 44
+  },
+  {
+    "id": 878,
+    "name": "Pet Supplies Product 878",
+    "category": "Pet Supplies",
+    "price": 33.21,
+    "sku": "SKU-878-9958",
+    "description": "High-quality Pet Supplies Product 878 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 1
+  },
+  {
+    "id": 894,
+    "name": "Pet Supplies Product 894",
+    "category": "Pet Supplies",
+    "price": 159.23,
+    "sku": "SKU-894-5387",
+    "description": "High-quality Pet Supplies Product 894 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 32
+  },
+  {
+    "id": 895,
+    "name": "Pet Supplies Product 895",
+    "category": "Pet Supplies",
+    "price": 82.27,
+    "sku": "SKU-895-3756",
+    "description": "High-quality Pet Supplies Product 895 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 95
+  },
+  {
+    "id": 906,
+    "name": "Pet Supplies Product 906",
+    "category": "Pet Supplies",
+    "price": 28.94,
+    "sku": "SKU-906-9638",
+    "description": "High-quality Pet Supplies Product 906 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 0
+  },
+  {
+    "id": 943,
+    "name": "Pet Supplies Product 943",
+    "category": "Pet Supplies",
+    "price": 79.16,
+    "sku": "SKU-943-9139",
+    "description": "High-quality Pet Supplies Product 943 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 71
+  },
+  {
+    "id": 948,
+    "name": "Pet Supplies Product 948",
+    "category": "Pet Supplies",
+    "price": 202.11,
+    "sku": "SKU-948-5816",
+    "description": "High-quality Pet Supplies Product 948 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 62
+  },
+  {
+    "id": 964,
+    "name": "Pet Supplies Product 964",
+    "category": "Pet Supplies",
+    "price": 137.44,
+    "sku": "SKU-964-5795",
+    "description": "High-quality Pet Supplies Product 964 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 129
+  },
+  {
+    "id": 982,
+    "name": "Pet Supplies Product 982",
+    "category": "Pet Supplies",
+    "price": 188.07,
+    "sku": "SKU-982-5717",
+    "description": "High-quality Pet Supplies Product 982 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 110
+  },
+  {
+    "id": 984,
+    "name": "Pet Supplies Product 984",
+    "category": "Pet Supplies",
+    "price": 97.64,
+    "sku": "SKU-984-5075",
+    "description": "High-quality Pet Supplies Product 984 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 73
+  },
+  {
+    "id": 991,
+    "name": "Pet Supplies Product 991",
+    "category": "Pet Supplies",
+    "price": 111.32,
+    "sku": "SKU-991-4555",
+    "description": "High-quality Pet Supplies Product 991 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 8
+  },
+  {
+    "id": 1004,
+    "name": "Pet Supplies Product 1004",
+    "category": "Pet Supplies",
+    "price": 96.05,
+    "sku": "SKU-1004-1007",
+    "description": "High-quality Pet Supplies Product 1004 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 33
+  },
+  {
+    "id": 1017,
+    "name": "Pet Supplies Product 1017",
+    "category": "Pet Supplies",
+    "price": 135.77,
+    "sku": "SKU-1017-9116",
+    "description": "High-quality Pet Supplies Product 1017 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 86
+  },
+  {
+    "id": 1018,
+    "name": "Pet Supplies Product 1018",
+    "category": "Pet Supplies",
+    "price": 199.54,
+    "sku": "SKU-1018-8846",
+    "description": "High-quality Pet Supplies Product 1018 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 132
+  },
+  {
+    "id": 1020,
+    "name": "Pet Supplies Product 1020",
+    "category": "Pet Supplies",
+    "price": 128.49,
+    "sku": "SKU-1020-6538",
+    "description": "High-quality Pet Supplies Product 1020 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 73
+  },
+  {
+    "id": 1026,
+    "name": "Pet Supplies Product 1026",
+    "category": "Pet Supplies",
+    "price": 14.13,
+    "sku": "SKU-1026-1977",
+    "description": "High-quality Pet Supplies Product 1026 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 79
+  },
+  {
+    "id": 1030,
+    "name": "Pet Supplies Product 1030",
+    "category": "Pet Supplies",
+    "price": 199.58,
+    "sku": "SKU-1030-2873",
+    "description": "High-quality Pet Supplies Product 1030 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 19
+  },
+  {
+    "id": 1036,
+    "name": "Pet Supplies Product 1036",
+    "category": "Pet Supplies",
+    "price": 106.47,
+    "sku": "SKU-1036-1761",
+    "description": "High-quality Pet Supplies Product 1036 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 106
+  },
+  {
+    "id": 1037,
+    "name": "Pet Supplies Product 1037",
+    "category": "Pet Supplies",
+    "price": 197.02,
+    "sku": "SKU-1037-2382",
+    "description": "High-quality Pet Supplies Product 1037 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 144
+  },
+  {
+    "id": 1082,
+    "name": "Pet Supplies Product 1082",
+    "category": "Pet Supplies",
+    "price": 45.12,
+    "sku": "SKU-1082-2098",
+    "description": "High-quality Pet Supplies Product 1082 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 88
+  },
+  {
+    "id": 1085,
+    "name": "Pet Supplies Product 1085",
+    "category": "Pet Supplies",
+    "price": 148.94,
+    "sku": "SKU-1085-2464",
+    "description": "High-quality Pet Supplies Product 1085 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 67
+  },
+  {
+    "id": 1086,
+    "name": "Pet Supplies Product 1086",
+    "category": "Pet Supplies",
+    "price": 138.81,
+    "sku": "SKU-1086-7410",
+    "description": "High-quality Pet Supplies Product 1086 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 150
+  },
+  {
+    "id": 1090,
+    "name": "Pet Supplies Product 1090",
+    "category": "Pet Supplies",
+    "price": 18.95,
+    "sku": "SKU-1090-9969",
+    "description": "High-quality Pet Supplies Product 1090 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 90
+  },
+  {
+    "id": 1114,
+    "name": "Pet Supplies Product 1114",
+    "category": "Pet Supplies",
+    "price": 45.5,
+    "sku": "SKU-1114-2229",
+    "description": "High-quality Pet Supplies Product 1114 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 72
+  },
+  {
+    "id": 1115,
+    "name": "Pet Supplies Product 1115",
+    "category": "Pet Supplies",
+    "price": 25.6,
+    "sku": "SKU-1115-4547",
+    "description": "High-quality Pet Supplies Product 1115 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 12
+  },
+  {
+    "id": 1119,
+    "name": "Pet Supplies Product 1119",
+    "category": "Pet Supplies",
+    "price": 51.03,
+    "sku": "SKU-1119-2045",
+    "description": "High-quality Pet Supplies Product 1119 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 135
+  },
+  {
+    "id": 1126,
+    "name": "Pet Supplies Product 1126",
+    "category": "Pet Supplies",
+    "price": 63.23,
+    "sku": "SKU-1126-9108",
+    "description": "High-quality Pet Supplies Product 1126 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 7
+  },
+  {
+    "id": 1134,
+    "name": "Pet Supplies Product 1134",
+    "category": "Pet Supplies",
+    "price": 111.61,
+    "sku": "SKU-1134-4457",
+    "description": "High-quality Pet Supplies Product 1134 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 59
+  },
+  {
+    "id": 1165,
+    "name": "Pet Supplies Product 1165",
+    "category": "Pet Supplies",
+    "price": 127.24,
+    "sku": "SKU-1165-9315",
+    "description": "High-quality Pet Supplies Product 1165 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 106
+  },
+  {
+    "id": 1167,
+    "name": "Pet Supplies Product 1167",
+    "category": "Pet Supplies",
+    "price": 78.05,
+    "sku": "SKU-1167-9718",
+    "description": "High-quality Pet Supplies Product 1167 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 74
+  },
+  {
+    "id": 1195,
+    "name": "Pet Supplies Product 1195",
+    "category": "Pet Supplies",
+    "price": 177.29,
+    "sku": "SKU-1195-7724",
+    "description": "High-quality Pet Supplies Product 1195 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 81
+  },
+  {
+    "id": 1208,
+    "name": "Pet Supplies Product 1208",
+    "category": "Pet Supplies",
+    "price": 201.86,
+    "sku": "SKU-1208-9439",
+    "description": "High-quality Pet Supplies Product 1208 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 112
+  },
+  {
+    "id": 1217,
+    "name": "Pet Supplies Product 1217",
+    "category": "Pet Supplies",
+    "price": 119.32,
+    "sku": "SKU-1217-1081",
+    "description": "High-quality Pet Supplies Product 1217 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 20
+  },
+  {
+    "id": 1221,
+    "name": "Pet Supplies Product 1221",
+    "category": "Pet Supplies",
+    "price": 197.06,
+    "sku": "SKU-1221-9865",
+    "description": "High-quality Pet Supplies Product 1221 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 109
+  },
+  {
+    "id": 1243,
+    "name": "Pet Supplies Product 1243",
+    "category": "Pet Supplies",
+    "price": 144.84,
+    "sku": "SKU-1243-6444",
+    "description": "High-quality Pet Supplies Product 1243 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 1245,
+    "name": "Pet Supplies Product 1245",
+    "category": "Pet Supplies",
+    "price": 35.91,
+    "sku": "SKU-1245-7218",
+    "description": "High-quality Pet Supplies Product 1245 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 105
+  },
+  {
+    "id": 1249,
+    "name": "Pet Supplies Product 1249",
+    "category": "Pet Supplies",
+    "price": 99.26,
+    "sku": "SKU-1249-9457",
+    "description": "High-quality Pet Supplies Product 1249 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 115
+  },
+  {
+    "id": 1254,
+    "name": "Pet Supplies Product 1254",
+    "category": "Pet Supplies",
+    "price": 29.46,
+    "sku": "SKU-1254-9862",
+    "description": "High-quality Pet Supplies Product 1254 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 26
+  },
+  {
+    "id": 1266,
+    "name": "Pet Supplies Product 1266",
+    "category": "Pet Supplies",
+    "price": 140.08,
+    "sku": "SKU-1266-7114",
+    "description": "High-quality Pet Supplies Product 1266 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 110
+  },
+  {
+    "id": 1277,
+    "name": "Pet Supplies Product 1277",
+    "category": "Pet Supplies",
+    "price": 121.33,
+    "sku": "SKU-1277-4481",
+    "description": "High-quality Pet Supplies Product 1277 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 65
+  },
+  {
+    "id": 1300,
+    "name": "Pet Supplies Product 1300",
+    "category": "Pet Supplies",
+    "price": 204.9,
+    "sku": "SKU-1300-5469",
+    "description": "High-quality Pet Supplies Product 1300 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 128
+  },
+  {
+    "id": 1302,
+    "name": "Pet Supplies Product 1302",
+    "category": "Pet Supplies",
+    "price": 88.51,
+    "sku": "SKU-1302-2868",
+    "description": "High-quality Pet Supplies Product 1302 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 45
+  },
+  {
+    "id": 1304,
+    "name": "Pet Supplies Product 1304",
+    "category": "Pet Supplies",
+    "price": 135.69,
+    "sku": "SKU-1304-4848",
+    "description": "High-quality Pet Supplies Product 1304 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 115
+  },
+  {
+    "id": 1311,
+    "name": "Pet Supplies Product 1311",
+    "category": "Pet Supplies",
+    "price": 103.89,
+    "sku": "SKU-1311-9974",
+    "description": "High-quality Pet Supplies Product 1311 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 21
+  },
+  {
+    "id": 1314,
+    "name": "Pet Supplies Product 1314",
+    "category": "Pet Supplies",
+    "price": 45.55,
+    "sku": "SKU-1314-8650",
+    "description": "High-quality Pet Supplies Product 1314 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 1347,
+    "name": "Pet Supplies Product 1347",
+    "category": "Pet Supplies",
+    "price": 119.75,
+    "sku": "SKU-1347-4476",
+    "description": "High-quality Pet Supplies Product 1347 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 18
+  },
+  {
+    "id": 1349,
+    "name": "Pet Supplies Product 1349",
+    "category": "Pet Supplies",
+    "price": 144.7,
+    "sku": "SKU-1349-5330",
+    "description": "High-quality Pet Supplies Product 1349 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 109
+  },
+  {
+    "id": 1357,
+    "name": "Pet Supplies Product 1357",
+    "category": "Pet Supplies",
+    "price": 56.58,
+    "sku": "SKU-1357-4725",
+    "description": "High-quality Pet Supplies Product 1357 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 122
+  },
+  {
+    "id": 1366,
+    "name": "Pet Supplies Product 1366",
+    "category": "Pet Supplies",
+    "price": 68.34,
+    "sku": "SKU-1366-9356",
+    "description": "High-quality Pet Supplies Product 1366 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 36
+  },
+  {
+    "id": 1367,
+    "name": "Pet Supplies Product 1367",
+    "category": "Pet Supplies",
+    "price": 152.97,
+    "sku": "SKU-1367-3618",
+    "description": "High-quality Pet Supplies Product 1367 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 20
+  },
+  {
+    "id": 1389,
+    "name": "Pet Supplies Product 1389",
+    "category": "Pet Supplies",
+    "price": 90.27,
+    "sku": "SKU-1389-1539",
+    "description": "High-quality Pet Supplies Product 1389 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  },
+  {
+    "id": 1397,
+    "name": "Pet Supplies Product 1397",
+    "category": "Pet Supplies",
+    "price": 177.08,
+    "sku": "SKU-1397-1907",
+    "description": "High-quality Pet Supplies Product 1397 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 117
+  },
+  {
+    "id": 1404,
+    "name": "Pet Supplies Product 1404",
+    "category": "Pet Supplies",
+    "price": 88.48,
+    "sku": "SKU-1404-7982",
+    "description": "High-quality Pet Supplies Product 1404 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 49
+  },
+  {
+    "id": 1409,
+    "name": "Pet Supplies Product 1409",
+    "category": "Pet Supplies",
+    "price": 70.5,
+    "sku": "SKU-1409-7998",
+    "description": "High-quality Pet Supplies Product 1409 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 108
+  },
+  {
+    "id": 1410,
+    "name": "Pet Supplies Product 1410",
+    "category": "Pet Supplies",
+    "price": 25.42,
+    "sku": "SKU-1410-5473",
+    "description": "High-quality Pet Supplies Product 1410 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 1432,
+    "name": "Pet Supplies Product 1432",
+    "category": "Pet Supplies",
+    "price": 203.55,
+    "sku": "SKU-1432-1141",
+    "description": "High-quality Pet Supplies Product 1432 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 86
+  },
+  {
+    "id": 1439,
+    "name": "Pet Supplies Product 1439",
+    "category": "Pet Supplies",
+    "price": 77.61,
+    "sku": "SKU-1439-6493",
+    "description": "High-quality Pet Supplies Product 1439 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 132
+  },
+  {
+    "id": 1451,
+    "name": "Pet Supplies Product 1451",
+    "category": "Pet Supplies",
+    "price": 149.82,
+    "sku": "SKU-1451-9203",
+    "description": "High-quality Pet Supplies Product 1451 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 39
+  },
+  {
+    "id": 1460,
+    "name": "Pet Supplies Product 1460",
+    "category": "Pet Supplies",
+    "price": 159.96,
+    "sku": "SKU-1460-8829",
+    "description": "High-quality Pet Supplies Product 1460 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 62
+  },
+  {
+    "id": 1474,
+    "name": "Pet Supplies Product 1474",
+    "category": "Pet Supplies",
+    "price": 107.05,
+    "sku": "SKU-1474-5562",
+    "description": "High-quality Pet Supplies Product 1474 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 17
+  },
+  {
+    "id": 1475,
+    "name": "Pet Supplies Product 1475",
+    "category": "Pet Supplies",
+    "price": 131.84,
+    "sku": "SKU-1475-3483",
+    "description": "High-quality Pet Supplies Product 1475 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 124
+  },
+  {
+    "id": 1479,
+    "name": "Pet Supplies Product 1479",
+    "category": "Pet Supplies",
+    "price": 10.25,
+    "sku": "SKU-1479-5439",
+    "description": "High-quality Pet Supplies Product 1479 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 141
+  },
+  {
+    "id": 1492,
+    "name": "Pet Supplies Product 1492",
+    "category": "Pet Supplies",
+    "price": 30.45,
+    "sku": "SKU-1492-1449",
+    "description": "High-quality Pet Supplies Product 1492 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 142
+  },
+  {
+    "id": 1497,
+    "name": "Pet Supplies Product 1497",
+    "category": "Pet Supplies",
+    "price": 70.24,
+    "sku": "SKU-1497-5338",
+    "description": "High-quality Pet Supplies Product 1497 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 26
+  }
+]

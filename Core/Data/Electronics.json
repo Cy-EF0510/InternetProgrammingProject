@@ -1,0 +1,1412 @@
+[
+  {
+    "id": 9,
+    "name": "Electronics Product 9",
+    "category": "Electronics",
+    "price": 46.71,
+    "sku": "SKU-9-8088",
+    "description": "High-quality Electronics Product 9 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 104
+  },
+  {
+    "id": 10,
+    "name": "Electronics Product 10",
+    "category": "Electronics",
+    "price": 173.1,
+    "sku": "SKU-10-3794",
+    "description": "High-quality Electronics Product 10 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 11,
+    "name": "Electronics Product 11",
+    "category": "Electronics",
+    "price": 27.56,
+    "sku": "SKU-11-1220",
+    "description": "High-quality Electronics Product 11 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 122
+  },
+  {
+    "id": 37,
+    "name": "Electronics Product 37",
+    "category": "Electronics",
+    "price": 49.78,
+    "sku": "SKU-37-9219",
+    "description": "High-quality Electronics Product 37 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 1
+  },
+  {
+    "id": 43,
+    "name": "Electronics Product 43",
+    "category": "Electronics",
+    "price": 97.73,
+    "sku": "SKU-43-4831",
+    "description": "High-quality Electronics Product 43 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 9
+  },
+  {
+    "id": 70,
+    "name": "Electronics Product 70",
+    "category": "Electronics",
+    "price": 38.74,
+    "sku": "SKU-70-3611",
+    "description": "High-quality Electronics Product 70 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 9
+  },
+  {
+    "id": 73,
+    "name": "Electronics Product 73",
+    "category": "Electronics",
+    "price": 50.12,
+    "sku": "SKU-73-8822",
+    "description": "High-quality Electronics Product 73 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 81,
+    "name": "Electronics Product 81",
+    "category": "Electronics",
+    "price": 200.47,
+    "sku": "SKU-81-3977",
+    "description": "High-quality Electronics Product 81 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 101,
+    "name": "Electronics Product 101",
+    "category": "Electronics",
+    "price": 112.94,
+    "sku": "SKU-101-7816",
+    "description": "High-quality Electronics Product 101 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 15
+  },
+  {
+    "id": 103,
+    "name": "Electronics Product 103",
+    "category": "Electronics",
+    "price": 59.48,
+    "sku": "SKU-103-3277",
+    "description": "High-quality Electronics Product 103 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 93
+  },
+  {
+    "id": 145,
+    "name": "Electronics Product 145",
+    "category": "Electronics",
+    "price": 118.13,
+    "sku": "SKU-145-7684",
+    "description": "High-quality Electronics Product 145 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 146,
+    "name": "Electronics Product 146",
+    "category": "Electronics",
+    "price": 138.35,
+    "sku": "SKU-146-3716",
+    "description": "High-quality Electronics Product 146 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 31
+  },
+  {
+    "id": 147,
+    "name": "Electronics Product 147",
+    "category": "Electronics",
+    "price": 73.54,
+    "sku": "SKU-147-7474",
+    "description": "High-quality Electronics Product 147 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 50
+  },
+  {
+    "id": 149,
+    "name": "Electronics Product 149",
+    "category": "Electronics",
+    "price": 92.22,
+    "sku": "SKU-149-6662",
+    "description": "High-quality Electronics Product 149 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 35
+  },
+  {
+    "id": 164,
+    "name": "Electronics Product 164",
+    "category": "Electronics",
+    "price": 87.6,
+    "sku": "SKU-164-8048",
+    "description": "High-quality Electronics Product 164 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 175,
+    "name": "Electronics Product 175",
+    "category": "Electronics",
+    "price": 52.89,
+    "sku": "SKU-175-3736",
+    "description": "High-quality Electronics Product 175 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 137
+  },
+  {
+    "id": 179,
+    "name": "Electronics Product 179",
+    "category": "Electronics",
+    "price": 74.6,
+    "sku": "SKU-179-7819",
+    "description": "High-quality Electronics Product 179 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 116
+  },
+  {
+    "id": 193,
+    "name": "Electronics Product 193",
+    "category": "Electronics",
+    "price": 178.9,
+    "sku": "SKU-193-2007",
+    "description": "High-quality Electronics Product 193 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 17
+  },
+  {
+    "id": 207,
+    "name": "Electronics Product 207",
+    "category": "Electronics",
+    "price": 107.84,
+    "sku": "SKU-207-7070",
+    "description": "High-quality Electronics Product 207 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 77
+  },
+  {
+    "id": 208,
+    "name": "Electronics Product 208",
+    "category": "Electronics",
+    "price": 149,
+    "sku": "SKU-208-5785",
+    "description": "High-quality Electronics Product 208 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 55
+  },
+  {
+    "id": 217,
+    "name": "Electronics Product 217",
+    "category": "Electronics",
+    "price": 145.89,
+    "sku": "SKU-217-8501",
+    "description": "High-quality Electronics Product 217 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 222,
+    "name": "Electronics Product 222",
+    "category": "Electronics",
+    "price": 92.97,
+    "sku": "SKU-222-3085",
+    "description": "High-quality Electronics Product 222 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 26
+  },
+  {
+    "id": 223,
+    "name": "Electronics Product 223",
+    "category": "Electronics",
+    "price": 93.91,
+    "sku": "SKU-223-7197",
+    "description": "High-quality Electronics Product 223 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 83
+  },
+  {
+    "id": 233,
+    "name": "Electronics Product 233",
+    "category": "Electronics",
+    "price": 104.37,
+    "sku": "SKU-233-5145",
+    "description": "High-quality Electronics Product 233 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 58
+  },
+  {
+    "id": 238,
+    "name": "Electronics Product 238",
+    "category": "Electronics",
+    "price": 58.25,
+    "sku": "SKU-238-3905",
+    "description": "High-quality Electronics Product 238 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 88
+  },
+  {
+    "id": 239,
+    "name": "Electronics Product 239",
+    "category": "Electronics",
+    "price": 119.29,
+    "sku": "SKU-239-6332",
+    "description": "High-quality Electronics Product 239 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 83
+  },
+  {
+    "id": 245,
+    "name": "Electronics Product 245",
+    "category": "Electronics",
+    "price": 13.54,
+    "sku": "SKU-245-1395",
+    "description": "High-quality Electronics Product 245 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 5
+  },
+  {
+    "id": 255,
+    "name": "Electronics Product 255",
+    "category": "Electronics",
+    "price": 148.72,
+    "sku": "SKU-255-7635",
+    "description": "High-quality Electronics Product 255 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 131
+  },
+  {
+    "id": 266,
+    "name": "Electronics Product 266",
+    "category": "Electronics",
+    "price": 96.46,
+    "sku": "SKU-266-4647",
+    "description": "High-quality Electronics Product 266 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 2
+  },
+  {
+    "id": 276,
+    "name": "Electronics Product 276",
+    "category": "Electronics",
+    "price": 70.28,
+    "sku": "SKU-276-3792",
+    "description": "High-quality Electronics Product 276 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 73
+  },
+  {
+    "id": 277,
+    "name": "Electronics Product 277",
+    "category": "Electronics",
+    "price": 177.07,
+    "sku": "SKU-277-8553",
+    "description": "High-quality Electronics Product 277 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 84
+  },
+  {
+    "id": 295,
+    "name": "Electronics Product 295",
+    "category": "Electronics",
+    "price": 41.72,
+    "sku": "SKU-295-9268",
+    "description": "High-quality Electronics Product 295 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 111
+  },
+  {
+    "id": 315,
+    "name": "Electronics Product 315",
+    "category": "Electronics",
+    "price": 202.85,
+    "sku": "SKU-315-5408",
+    "description": "High-quality Electronics Product 315 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 146
+  },
+  {
+    "id": 317,
+    "name": "Electronics Product 317",
+    "category": "Electronics",
+    "price": 102.45,
+    "sku": "SKU-317-5616",
+    "description": "High-quality Electronics Product 317 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 149
+  },
+  {
+    "id": 327,
+    "name": "Electronics Product 327",
+    "category": "Electronics",
+    "price": 140.77,
+    "sku": "SKU-327-4018",
+    "description": "High-quality Electronics Product 327 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 19
+  },
+  {
+    "id": 344,
+    "name": "Electronics Product 344",
+    "category": "Electronics",
+    "price": 36.34,
+    "sku": "SKU-344-9587",
+    "description": "High-quality Electronics Product 344 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 59
+  },
+  {
+    "id": 361,
+    "name": "Electronics Product 361",
+    "category": "Electronics",
+    "price": 70.22,
+    "sku": "SKU-361-1085",
+    "description": "High-quality Electronics Product 361 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 123
+  },
+  {
+    "id": 364,
+    "name": "Electronics Product 364",
+    "category": "Electronics",
+    "price": 18.82,
+    "sku": "SKU-364-7921",
+    "description": "High-quality Electronics Product 364 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 21
+  },
+  {
+    "id": 366,
+    "name": "Electronics Product 366",
+    "category": "Electronics",
+    "price": 66.68,
+    "sku": "SKU-366-1334",
+    "description": "High-quality Electronics Product 366 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 44
+  },
+  {
+    "id": 413,
+    "name": "Electronics Product 413",
+    "category": "Electronics",
+    "price": 113.21,
+    "sku": "SKU-413-5526",
+    "description": "High-quality Electronics Product 413 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 47
+  },
+  {
+    "id": 420,
+    "name": "Electronics Product 420",
+    "category": "Electronics",
+    "price": 12.17,
+    "sku": "SKU-420-7454",
+    "description": "High-quality Electronics Product 420 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 24
+  },
+  {
+    "id": 432,
+    "name": "Electronics Product 432",
+    "category": "Electronics",
+    "price": 145.93,
+    "sku": "SKU-432-5734",
+    "description": "High-quality Electronics Product 432 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 437,
+    "name": "Electronics Product 437",
+    "category": "Electronics",
+    "price": 30.64,
+    "sku": "SKU-437-2486",
+    "description": "High-quality Electronics Product 437 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 446,
+    "name": "Electronics Product 446",
+    "category": "Electronics",
+    "price": 141.09,
+    "sku": "SKU-446-2034",
+    "description": "High-quality Electronics Product 446 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 98
+  },
+  {
+    "id": 475,
+    "name": "Electronics Product 475",
+    "category": "Electronics",
+    "price": 145.7,
+    "sku": "SKU-475-4035",
+    "description": "High-quality Electronics Product 475 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 65
+  },
+  {
+    "id": 488,
+    "name": "Electronics Product 488",
+    "category": "Electronics",
+    "price": 99.9,
+    "sku": "SKU-488-8487",
+    "description": "High-quality Electronics Product 488 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 134
+  },
+  {
+    "id": 494,
+    "name": "Electronics Product 494",
+    "category": "Electronics",
+    "price": 59.26,
+    "sku": "SKU-494-6354",
+    "description": "High-quality Electronics Product 494 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 0
+  },
+  {
+    "id": 499,
+    "name": "Electronics Product 499",
+    "category": "Electronics",
+    "price": 27.08,
+    "sku": "SKU-499-9403",
+    "description": "High-quality Electronics Product 499 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 121
+  },
+  {
+    "id": 511,
+    "name": "Electronics Product 511",
+    "category": "Electronics",
+    "price": 132.85,
+    "sku": "SKU-511-4529",
+    "description": "High-quality Electronics Product 511 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 69
+  },
+  {
+    "id": 520,
+    "name": "Electronics Product 520",
+    "category": "Electronics",
+    "price": 164.77,
+    "sku": "SKU-520-6532",
+    "description": "High-quality Electronics Product 520 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 65
+  },
+  {
+    "id": 522,
+    "name": "Electronics Product 522",
+    "category": "Electronics",
+    "price": 90.12,
+    "sku": "SKU-522-3488",
+    "description": "High-quality Electronics Product 522 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 105
+  },
+  {
+    "id": 544,
+    "name": "Electronics Product 544",
+    "category": "Electronics",
+    "price": 165.95,
+    "sku": "SKU-544-4255",
+    "description": "High-quality Electronics Product 544 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 141
+  },
+  {
+    "id": 554,
+    "name": "Electronics Product 554",
+    "category": "Electronics",
+    "price": 15.8,
+    "sku": "SKU-554-6101",
+    "description": "High-quality Electronics Product 554 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 109
+  },
+  {
+    "id": 573,
+    "name": "Electronics Product 573",
+    "category": "Electronics",
+    "price": 133.13,
+    "sku": "SKU-573-4050",
+    "description": "High-quality Electronics Product 573 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 119
+  },
+  {
+    "id": 577,
+    "name": "Electronics Product 577",
+    "category": "Electronics",
+    "price": 176.75,
+    "sku": "SKU-577-7704",
+    "description": "High-quality Electronics Product 577 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 32
+  },
+  {
+    "id": 598,
+    "name": "Electronics Product 598",
+    "category": "Electronics",
+    "price": 96.73,
+    "sku": "SKU-598-7056",
+    "description": "High-quality Electronics Product 598 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 25
+  },
+  {
+    "id": 613,
+    "name": "Electronics Product 613",
+    "category": "Electronics",
+    "price": 60.74,
+    "sku": "SKU-613-1591",
+    "description": "High-quality Electronics Product 613 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 143
+  },
+  {
+    "id": 616,
+    "name": "Electronics Product 616",
+    "category": "Electronics",
+    "price": 201.64,
+    "sku": "SKU-616-8656",
+    "description": "High-quality Electronics Product 616 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 119
+  },
+  {
+    "id": 628,
+    "name": "Electronics Product 628",
+    "category": "Electronics",
+    "price": 100.22,
+    "sku": "SKU-628-8320",
+    "description": "High-quality Electronics Product 628 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 45
+  },
+  {
+    "id": 630,
+    "name": "Electronics Product 630",
+    "category": "Electronics",
+    "price": 195.04,
+    "sku": "SKU-630-7208",
+    "description": "High-quality Electronics Product 630 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 88
+  },
+  {
+    "id": 631,
+    "name": "Electronics Product 631",
+    "category": "Electronics",
+    "price": 172.84,
+    "sku": "SKU-631-9848",
+    "description": "High-quality Electronics Product 631 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 83
+  },
+  {
+    "id": 640,
+    "name": "Electronics Product 640",
+    "category": "Electronics",
+    "price": 183.31,
+    "sku": "SKU-640-8726",
+    "description": "High-quality Electronics Product 640 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 115
+  },
+  {
+    "id": 644,
+    "name": "Electronics Product 644",
+    "category": "Electronics",
+    "price": 66.12,
+    "sku": "SKU-644-2218",
+    "description": "High-quality Electronics Product 644 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 24
+  },
+  {
+    "id": 682,
+    "name": "Electronics Product 682",
+    "category": "Electronics",
+    "price": 94.8,
+    "sku": "SKU-682-5454",
+    "description": "High-quality Electronics Product 682 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 68
+  },
+  {
+    "id": 694,
+    "name": "Electronics Product 694",
+    "category": "Electronics",
+    "price": 13.08,
+    "sku": "SKU-694-4738",
+    "description": "High-quality Electronics Product 694 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 72
+  },
+  {
+    "id": 704,
+    "name": "Electronics Product 704",
+    "category": "Electronics",
+    "price": 177.35,
+    "sku": "SKU-704-7928",
+    "description": "High-quality Electronics Product 704 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 35
+  },
+  {
+    "id": 705,
+    "name": "Electronics Product 705",
+    "category": "Electronics",
+    "price": 177.12,
+    "sku": "SKU-705-9797",
+    "description": "High-quality Electronics Product 705 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 22
+  },
+  {
+    "id": 728,
+    "name": "Electronics Product 728",
+    "category": "Electronics",
+    "price": 142.98,
+    "sku": "SKU-728-7802",
+    "description": "High-quality Electronics Product 728 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 21
+  },
+  {
+    "id": 749,
+    "name": "Electronics Product 749",
+    "category": "Electronics",
+    "price": 172.35,
+    "sku": "SKU-749-4898",
+    "description": "High-quality Electronics Product 749 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 143
+  },
+  {
+    "id": 764,
+    "name": "Electronics Product 764",
+    "category": "Electronics",
+    "price": 75.58,
+    "sku": "SKU-764-2103",
+    "description": "High-quality Electronics Product 764 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 59
+  },
+  {
+    "id": 811,
+    "name": "Electronics Product 811",
+    "category": "Electronics",
+    "price": 55.04,
+    "sku": "SKU-811-3740",
+    "description": "High-quality Electronics Product 811 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 109
+  },
+  {
+    "id": 822,
+    "name": "Electronics Product 822",
+    "category": "Electronics",
+    "price": 36.73,
+    "sku": "SKU-822-7836",
+    "description": "High-quality Electronics Product 822 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 106
+  },
+  {
+    "id": 824,
+    "name": "Electronics Product 824",
+    "category": "Electronics",
+    "price": 67.95,
+    "sku": "SKU-824-7390",
+    "description": "High-quality Electronics Product 824 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 828,
+    "name": "Electronics Product 828",
+    "category": "Electronics",
+    "price": 120.99,
+    "sku": "SKU-828-4252",
+    "description": "High-quality Electronics Product 828 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 121
+  },
+  {
+    "id": 844,
+    "name": "Electronics Product 844",
+    "category": "Electronics",
+    "price": 99.79,
+    "sku": "SKU-844-8511",
+    "description": "High-quality Electronics Product 844 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 64
+  },
+  {
+    "id": 846,
+    "name": "Electronics Product 846",
+    "category": "Electronics",
+    "price": 159.4,
+    "sku": "SKU-846-9779",
+    "description": "High-quality Electronics Product 846 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 91
+  },
+  {
+    "id": 859,
+    "name": "Electronics Product 859",
+    "category": "Electronics",
+    "price": 89.36,
+    "sku": "SKU-859-8947",
+    "description": "High-quality Electronics Product 859 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 25
+  },
+  {
+    "id": 862,
+    "name": "Electronics Product 862",
+    "category": "Electronics",
+    "price": 39.08,
+    "sku": "SKU-862-4076",
+    "description": "High-quality Electronics Product 862 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 877,
+    "name": "Electronics Product 877",
+    "category": "Electronics",
+    "price": 126.97,
+    "sku": "SKU-877-8927",
+    "description": "High-quality Electronics Product 877 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 88
+  },
+  {
+    "id": 881,
+    "name": "Electronics Product 881",
+    "category": "Electronics",
+    "price": 110.61,
+    "sku": "SKU-881-7361",
+    "description": "High-quality Electronics Product 881 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  },
+  {
+    "id": 883,
+    "name": "Electronics Product 883",
+    "category": "Electronics",
+    "price": 9.95,
+    "sku": "SKU-883-7825",
+    "description": "High-quality Electronics Product 883 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 132
+  },
+  {
+    "id": 893,
+    "name": "Electronics Product 893",
+    "category": "Electronics",
+    "price": 72.79,
+    "sku": "SKU-893-9884",
+    "description": "High-quality Electronics Product 893 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 48
+  },
+  {
+    "id": 932,
+    "name": "Electronics Product 932",
+    "category": "Electronics",
+    "price": 106.1,
+    "sku": "SKU-932-8159",
+    "description": "High-quality Electronics Product 932 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 37
+  },
+  {
+    "id": 939,
+    "name": "Electronics Product 939",
+    "category": "Electronics",
+    "price": 94.94,
+    "sku": "SKU-939-5430",
+    "description": "High-quality Electronics Product 939 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 143
+  },
+  {
+    "id": 940,
+    "name": "Electronics Product 940",
+    "category": "Electronics",
+    "price": 151.54,
+    "sku": "SKU-940-5832",
+    "description": "High-quality Electronics Product 940 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 8
+  },
+  {
+    "id": 949,
+    "name": "Electronics Product 949",
+    "category": "Electronics",
+    "price": 101.2,
+    "sku": "SKU-949-6566",
+    "description": "High-quality Electronics Product 949 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 80
+  },
+  {
+    "id": 958,
+    "name": "Electronics Product 958",
+    "category": "Electronics",
+    "price": 100.21,
+    "sku": "SKU-958-1741",
+    "description": "High-quality Electronics Product 958 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 79
+  },
+  {
+    "id": 959,
+    "name": "Electronics Product 959",
+    "category": "Electronics",
+    "price": 20.44,
+    "sku": "SKU-959-4029",
+    "description": "High-quality Electronics Product 959 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 90
+  },
+  {
+    "id": 969,
+    "name": "Electronics Product 969",
+    "category": "Electronics",
+    "price": 177.57,
+    "sku": "SKU-969-1213",
+    "description": "High-quality Electronics Product 969 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 116
+  },
+  {
+    "id": 989,
+    "name": "Electronics Product 989",
+    "category": "Electronics",
+    "price": 8.73,
+    "sku": "SKU-989-3223",
+    "description": "High-quality Electronics Product 989 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 66
+  },
+  {
+    "id": 995,
+    "name": "Electronics Product 995",
+    "category": "Electronics",
+    "price": 176.66,
+    "sku": "SKU-995-6872",
+    "description": "High-quality Electronics Product 995 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 122
+  },
+  {
+    "id": 1023,
+    "name": "Electronics Product 1023",
+    "category": "Electronics",
+    "price": 186.42,
+    "sku": "SKU-1023-1032",
+    "description": "High-quality Electronics Product 1023 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 45
+  },
+  {
+    "id": 1032,
+    "name": "Electronics Product 1032",
+    "category": "Electronics",
+    "price": 13.73,
+    "sku": "SKU-1032-1192",
+    "description": "High-quality Electronics Product 1032 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 116
+  },
+  {
+    "id": 1046,
+    "name": "Electronics Product 1046",
+    "category": "Electronics",
+    "price": 75.33,
+    "sku": "SKU-1046-3103",
+    "description": "High-quality Electronics Product 1046 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 67
+  },
+  {
+    "id": 1052,
+    "name": "Electronics Product 1052",
+    "category": "Electronics",
+    "price": 14.73,
+    "sku": "SKU-1052-4649",
+    "description": "High-quality Electronics Product 1052 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 77
+  },
+  {
+    "id": 1053,
+    "name": "Electronics Product 1053",
+    "category": "Electronics",
+    "price": 105.72,
+    "sku": "SKU-1053-2591",
+    "description": "High-quality Electronics Product 1053 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 8
+  },
+  {
+    "id": 1067,
+    "name": "Electronics Product 1067",
+    "category": "Electronics",
+    "price": 37.03,
+    "sku": "SKU-1067-7033",
+    "description": "High-quality Electronics Product 1067 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 145
+  },
+  {
+    "id": 1069,
+    "name": "Electronics Product 1069",
+    "category": "Electronics",
+    "price": 73.48,
+    "sku": "SKU-1069-4022",
+    "description": "High-quality Electronics Product 1069 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 115
+  },
+  {
+    "id": 1080,
+    "name": "Electronics Product 1080",
+    "category": "Electronics",
+    "price": 37.39,
+    "sku": "SKU-1080-9262",
+    "description": "High-quality Electronics Product 1080 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 129
+  },
+  {
+    "id": 1101,
+    "name": "Electronics Product 1101",
+    "category": "Electronics",
+    "price": 23.79,
+    "sku": "SKU-1101-2244",
+    "description": "High-quality Electronics Product 1101 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 90
+  },
+  {
+    "id": 1102,
+    "name": "Electronics Product 1102",
+    "category": "Electronics",
+    "price": 42.13,
+    "sku": "SKU-1102-9451",
+    "description": "High-quality Electronics Product 1102 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 85
+  },
+  {
+    "id": 1105,
+    "name": "Electronics Product 1105",
+    "category": "Electronics",
+    "price": 105.09,
+    "sku": "SKU-1105-4834",
+    "description": "High-quality Electronics Product 1105 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 41
+  },
+  {
+    "id": 1122,
+    "name": "Electronics Product 1122",
+    "category": "Electronics",
+    "price": 63.65,
+    "sku": "SKU-1122-2847",
+    "description": "High-quality Electronics Product 1122 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 134
+  },
+  {
+    "id": 1123,
+    "name": "Electronics Product 1123",
+    "category": "Electronics",
+    "price": 137.64,
+    "sku": "SKU-1123-6672",
+    "description": "High-quality Electronics Product 1123 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 94
+  },
+  {
+    "id": 1127,
+    "name": "Electronics Product 1127",
+    "category": "Electronics",
+    "price": 71.02,
+    "sku": "SKU-1127-3183",
+    "description": "High-quality Electronics Product 1127 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 144
+  },
+  {
+    "id": 1146,
+    "name": "Electronics Product 1146",
+    "category": "Electronics",
+    "price": 200.9,
+    "sku": "SKU-1146-9084",
+    "description": "High-quality Electronics Product 1146 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 114
+  },
+  {
+    "id": 1152,
+    "name": "Electronics Product 1152",
+    "category": "Electronics",
+    "price": 39.05,
+    "sku": "SKU-1152-8867",
+    "description": "High-quality Electronics Product 1152 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 65
+  },
+  {
+    "id": 1158,
+    "name": "Electronics Product 1158",
+    "category": "Electronics",
+    "price": 108.6,
+    "sku": "SKU-1158-5510",
+    "description": "High-quality Electronics Product 1158 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 91
+  },
+  {
+    "id": 1160,
+    "name": "Electronics Product 1160",
+    "category": "Electronics",
+    "price": 26.36,
+    "sku": "SKU-1160-4217",
+    "description": "High-quality Electronics Product 1160 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 13
+  },
+  {
+    "id": 1193,
+    "name": "Electronics Product 1193",
+    "category": "Electronics",
+    "price": 31.63,
+    "sku": "SKU-1193-6570",
+    "description": "High-quality Electronics Product 1193 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 67
+  },
+  {
+    "id": 1205,
+    "name": "Electronics Product 1205",
+    "category": "Electronics",
+    "price": 67.36,
+    "sku": "SKU-1205-9199",
+    "description": "High-quality Electronics Product 1205 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 118
+  },
+  {
+    "id": 1229,
+    "name": "Electronics Product 1229",
+    "category": "Electronics",
+    "price": 112.92,
+    "sku": "SKU-1229-2492",
+    "description": "High-quality Electronics Product 1229 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 15
+  },
+  {
+    "id": 1251,
+    "name": "Electronics Product 1251",
+    "category": "Electronics",
+    "price": 70.89,
+    "sku": "SKU-1251-3255",
+    "description": "High-quality Electronics Product 1251 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 111
+  },
+  {
+    "id": 1268,
+    "name": "Electronics Product 1268",
+    "category": "Electronics",
+    "price": 94.73,
+    "sku": "SKU-1268-3986",
+    "description": "High-quality Electronics Product 1268 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 128
+  },
+  {
+    "id": 1290,
+    "name": "Electronics Product 1290",
+    "category": "Electronics",
+    "price": 133.06,
+    "sku": "SKU-1290-4651",
+    "description": "High-quality Electronics Product 1290 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 111
+  },
+  {
+    "id": 1291,
+    "name": "Electronics Product 1291",
+    "category": "Electronics",
+    "price": 143.48,
+    "sku": "SKU-1291-9027",
+    "description": "High-quality Electronics Product 1291 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 146
+  },
+  {
+    "id": 1293,
+    "name": "Electronics Product 1293",
+    "category": "Electronics",
+    "price": 75.11,
+    "sku": "SKU-1293-2536",
+    "description": "High-quality Electronics Product 1293 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 8
+  },
+  {
+    "id": 1312,
+    "name": "Electronics Product 1312",
+    "category": "Electronics",
+    "price": 24.38,
+    "sku": "SKU-1312-7905",
+    "description": "High-quality Electronics Product 1312 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 120
+  },
+  {
+    "id": 1327,
+    "name": "Electronics Product 1327",
+    "category": "Electronics",
+    "price": 150.07,
+    "sku": "SKU-1327-8380",
+    "description": "High-quality Electronics Product 1327 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  },
+  {
+    "id": 1336,
+    "name": "Electronics Product 1336",
+    "category": "Electronics",
+    "price": 91.57,
+    "sku": "SKU-1336-2452",
+    "description": "High-quality Electronics Product 1336 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 1338,
+    "name": "Electronics Product 1338",
+    "category": "Electronics",
+    "price": 166.43,
+    "sku": "SKU-1338-8109",
+    "description": "High-quality Electronics Product 1338 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 117
+  },
+  {
+    "id": 1344,
+    "name": "Electronics Product 1344",
+    "category": "Electronics",
+    "price": 118.25,
+    "sku": "SKU-1344-2358",
+    "description": "High-quality Electronics Product 1344 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 125
+  },
+  {
+    "id": 1350,
+    "name": "Electronics Product 1350",
+    "category": "Electronics",
+    "price": 13.22,
+    "sku": "SKU-1350-4938",
+    "description": "High-quality Electronics Product 1350 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 70
+  },
+  {
+    "id": 1354,
+    "name": "Electronics Product 1354",
+    "category": "Electronics",
+    "price": 86.69,
+    "sku": "SKU-1354-3687",
+    "description": "High-quality Electronics Product 1354 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 30
+  },
+  {
+    "id": 1361,
+    "name": "Electronics Product 1361",
+    "category": "Electronics",
+    "price": 12.45,
+    "sku": "SKU-1361-6054",
+    "description": "High-quality Electronics Product 1361 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 16
+  },
+  {
+    "id": 1363,
+    "name": "Electronics Product 1363",
+    "category": "Electronics",
+    "price": 37.85,
+    "sku": "SKU-1363-9952",
+    "description": "High-quality Electronics Product 1363 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 86
+  },
+  {
+    "id": 1364,
+    "name": "Electronics Product 1364",
+    "category": "Electronics",
+    "price": 35.21,
+    "sku": "SKU-1364-7805",
+    "description": "High-quality Electronics Product 1364 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 110
+  },
+  {
+    "id": 1377,
+    "name": "Electronics Product 1377",
+    "category": "Electronics",
+    "price": 102.17,
+    "sku": "SKU-1377-6968",
+    "description": "High-quality Electronics Product 1377 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 79
+  },
+  {
+    "id": 1391,
+    "name": "Electronics Product 1391",
+    "category": "Electronics",
+    "price": 160.46,
+    "sku": "SKU-1391-2510",
+    "description": "High-quality Electronics Product 1391 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 112
+  },
+  {
+    "id": 1398,
+    "name": "Electronics Product 1398",
+    "category": "Electronics",
+    "price": 100.77,
+    "sku": "SKU-1398-7273",
+    "description": "High-quality Electronics Product 1398 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 62
+  },
+  {
+    "id": 1411,
+    "name": "Electronics Product 1411",
+    "category": "Electronics",
+    "price": 8.5,
+    "sku": "SKU-1411-9209",
+    "description": "High-quality Electronics Product 1411 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 19
+  },
+  {
+    "id": 1425,
+    "name": "Electronics Product 1425",
+    "category": "Electronics",
+    "price": 147.61,
+    "sku": "SKU-1425-6853",
+    "description": "High-quality Electronics Product 1425 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 77
+  },
+  {
+    "id": 1430,
+    "name": "Electronics Product 1430",
+    "category": "Electronics",
+    "price": 143.37,
+    "sku": "SKU-1430-4371",
+    "description": "High-quality Electronics Product 1430 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 150
+  },
+  {
+    "id": 1431,
+    "name": "Electronics Product 1431",
+    "category": "Electronics",
+    "price": 125.2,
+    "sku": "SKU-1431-4459",
+    "description": "High-quality Electronics Product 1431 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 30
+  },
+  {
+    "id": 1470,
+    "name": "Electronics Product 1470",
+    "category": "Electronics",
+    "price": 68.87,
+    "sku": "SKU-1470-3531",
+    "description": "High-quality Electronics Product 1470 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 134
+  },
+  {
+    "id": 1471,
+    "name": "Electronics Product 1471",
+    "category": "Electronics",
+    "price": 12.04,
+    "sku": "SKU-1471-6360",
+    "description": "High-quality Electronics Product 1471 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 24
+  },
+  {
+    "id": 1481,
+    "name": "Electronics Product 1481",
+    "category": "Electronics",
+    "price": 159.45,
+    "sku": "SKU-1481-4673",
+    "description": "High-quality Electronics Product 1481 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 6
+  },
+  {
+    "id": 1484,
+    "name": "Electronics Product 1484",
+    "category": "Electronics",
+    "price": 29.27,
+    "sku": "SKU-1484-9316",
+    "description": "High-quality Electronics Product 1484 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 139
+  },
+  {
+    "id": 1494,
+    "name": "Electronics Product 1494",
+    "category": "Electronics",
+    "price": 7.27,
+    "sku": "SKU-1494-8509",
+    "description": "High-quality Electronics Product 1494 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 64
+  },
+  {
+    "id": 1499,
+    "name": "Electronics Product 1499",
+    "category": "Electronics",
+    "price": 187.89,
+    "sku": "SKU-1499-5419",
+    "description": "High-quality Electronics Product 1499 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 150
+  },
+  {
+    "id": 1500,
+    "name": "Electronics Product 1500",
+    "category": "Electronics",
+    "price": 14.26,
+    "sku": "SKU-1500-8293",
+    "description": "High-quality Electronics Product 1500 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 84
+  }
+]

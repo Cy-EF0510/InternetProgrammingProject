@@ -1,0 +1,1212 @@
+[
+  {
+    "id": 13,
+    "name": "Clothing Product 13",
+    "category": "Clothing",
+    "price": 152.49,
+    "sku": "SKU-13-2501",
+    "description": "High-quality Clothing Product 13 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 135
+  },
+  {
+    "id": 30,
+    "name": "Clothing Product 30",
+    "category": "Clothing",
+    "price": 167.54,
+    "sku": "SKU-30-2854",
+    "description": "High-quality Clothing Product 30 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 13
+  },
+  {
+    "id": 32,
+    "name": "Clothing Product 32",
+    "category": "Clothing",
+    "price": 26.91,
+    "sku": "SKU-32-8689",
+    "description": "High-quality Clothing Product 32 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 95
+  },
+  {
+    "id": 45,
+    "name": "Clothing Product 45",
+    "category": "Clothing",
+    "price": 174.74,
+    "sku": "SKU-45-6848",
+    "description": "High-quality Clothing Product 45 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 76
+  },
+  {
+    "id": 61,
+    "name": "Clothing Product 61",
+    "category": "Clothing",
+    "price": 47.43,
+    "sku": "SKU-61-3384",
+    "description": "High-quality Clothing Product 61 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 144
+  },
+  {
+    "id": 75,
+    "name": "Clothing Product 75",
+    "category": "Clothing",
+    "price": 196.46,
+    "sku": "SKU-75-4212",
+    "description": "High-quality Clothing Product 75 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 7
+  },
+  {
+    "id": 90,
+    "name": "Clothing Product 90",
+    "category": "Clothing",
+    "price": 8.38,
+    "sku": "SKU-90-5560",
+    "description": "High-quality Clothing Product 90 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 72
+  },
+  {
+    "id": 93,
+    "name": "Clothing Product 93",
+    "category": "Clothing",
+    "price": 7.81,
+    "sku": "SKU-93-9812",
+    "description": "High-quality Clothing Product 93 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  },
+  {
+    "id": 116,
+    "name": "Clothing Product 116",
+    "category": "Clothing",
+    "price": 101.49,
+    "sku": "SKU-116-4553",
+    "description": "High-quality Clothing Product 116 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 121
+  },
+  {
+    "id": 142,
+    "name": "Clothing Product 142",
+    "category": "Clothing",
+    "price": 67.77,
+    "sku": "SKU-142-7014",
+    "description": "High-quality Clothing Product 142 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 60
+  },
+  {
+    "id": 151,
+    "name": "Clothing Product 151",
+    "category": "Clothing",
+    "price": 51.74,
+    "sku": "SKU-151-5734",
+    "description": "High-quality Clothing Product 151 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 118
+  },
+  {
+    "id": 157,
+    "name": "Clothing Product 157",
+    "category": "Clothing",
+    "price": 8.27,
+    "sku": "SKU-157-6934",
+    "description": "High-quality Clothing Product 157 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 159,
+    "name": "Clothing Product 159",
+    "category": "Clothing",
+    "price": 24.15,
+    "sku": "SKU-159-3867",
+    "description": "High-quality Clothing Product 159 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 4
+  },
+  {
+    "id": 181,
+    "name": "Clothing Product 181",
+    "category": "Clothing",
+    "price": 179.57,
+    "sku": "SKU-181-8711",
+    "description": "High-quality Clothing Product 181 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 250,
+    "name": "Clothing Product 250",
+    "category": "Clothing",
+    "price": 40.66,
+    "sku": "SKU-250-2351",
+    "description": "High-quality Clothing Product 250 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 68
+  },
+  {
+    "id": 262,
+    "name": "Clothing Product 262",
+    "category": "Clothing",
+    "price": 93.1,
+    "sku": "SKU-262-4444",
+    "description": "High-quality Clothing Product 262 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 106
+  },
+  {
+    "id": 269,
+    "name": "Clothing Product 269",
+    "category": "Clothing",
+    "price": 87.08,
+    "sku": "SKU-269-5572",
+    "description": "High-quality Clothing Product 269 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 283,
+    "name": "Clothing Product 283",
+    "category": "Clothing",
+    "price": 196.32,
+    "sku": "SKU-283-3654",
+    "description": "High-quality Clothing Product 283 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 21
+  },
+  {
+    "id": 290,
+    "name": "Clothing Product 290",
+    "category": "Clothing",
+    "price": 185.23,
+    "sku": "SKU-290-7345",
+    "description": "High-quality Clothing Product 290 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 5
+  },
+  {
+    "id": 294,
+    "name": "Clothing Product 294",
+    "category": "Clothing",
+    "price": 196.66,
+    "sku": "SKU-294-9148",
+    "description": "High-quality Clothing Product 294 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 62
+  },
+  {
+    "id": 300,
+    "name": "Clothing Product 300",
+    "category": "Clothing",
+    "price": 82.42,
+    "sku": "SKU-300-1972",
+    "description": "High-quality Clothing Product 300 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 59
+  },
+  {
+    "id": 329,
+    "name": "Clothing Product 329",
+    "category": "Clothing",
+    "price": 112.5,
+    "sku": "SKU-329-4274",
+    "description": "High-quality Clothing Product 329 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 43
+  },
+  {
+    "id": 370,
+    "name": "Clothing Product 370",
+    "category": "Clothing",
+    "price": 22.65,
+    "sku": "SKU-370-7118",
+    "description": "High-quality Clothing Product 370 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 99
+  },
+  {
+    "id": 373,
+    "name": "Clothing Product 373",
+    "category": "Clothing",
+    "price": 179.14,
+    "sku": "SKU-373-9117",
+    "description": "High-quality Clothing Product 373 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 382,
+    "name": "Clothing Product 382",
+    "category": "Clothing",
+    "price": 189.1,
+    "sku": "SKU-382-5433",
+    "description": "High-quality Clothing Product 382 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 398,
+    "name": "Clothing Product 398",
+    "category": "Clothing",
+    "price": 118.3,
+    "sku": "SKU-398-5077",
+    "description": "High-quality Clothing Product 398 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 90
+  },
+  {
+    "id": 418,
+    "name": "Clothing Product 418",
+    "category": "Clothing",
+    "price": 73.81,
+    "sku": "SKU-418-5997",
+    "description": "High-quality Clothing Product 418 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 8
+  },
+  {
+    "id": 424,
+    "name": "Clothing Product 424",
+    "category": "Clothing",
+    "price": 113.2,
+    "sku": "SKU-424-6402",
+    "description": "High-quality Clothing Product 424 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 149
+  },
+  {
+    "id": 444,
+    "name": "Clothing Product 444",
+    "category": "Clothing",
+    "price": 34.94,
+    "sku": "SKU-444-1769",
+    "description": "High-quality Clothing Product 444 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 145
+  },
+  {
+    "id": 445,
+    "name": "Clothing Product 445",
+    "category": "Clothing",
+    "price": 88.83,
+    "sku": "SKU-445-8519",
+    "description": "High-quality Clothing Product 445 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 50
+  },
+  {
+    "id": 452,
+    "name": "Clothing Product 452",
+    "category": "Clothing",
+    "price": 135.39,
+    "sku": "SKU-452-8216",
+    "description": "High-quality Clothing Product 452 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 31
+  },
+  {
+    "id": 454,
+    "name": "Clothing Product 454",
+    "category": "Clothing",
+    "price": 114.5,
+    "sku": "SKU-454-8245",
+    "description": "High-quality Clothing Product 454 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 111
+  },
+  {
+    "id": 458,
+    "name": "Clothing Product 458",
+    "category": "Clothing",
+    "price": 16.42,
+    "sku": "SKU-458-9947",
+    "description": "High-quality Clothing Product 458 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 40
+  },
+  {
+    "id": 483,
+    "name": "Clothing Product 483",
+    "category": "Clothing",
+    "price": 112.52,
+    "sku": "SKU-483-3580",
+    "description": "High-quality Clothing Product 483 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 81
+  },
+  {
+    "id": 497,
+    "name": "Clothing Product 497",
+    "category": "Clothing",
+    "price": 131.59,
+    "sku": "SKU-497-7685",
+    "description": "High-quality Clothing Product 497 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 58
+  },
+  {
+    "id": 508,
+    "name": "Clothing Product 508",
+    "category": "Clothing",
+    "price": 51.48,
+    "sku": "SKU-508-2765",
+    "description": "High-quality Clothing Product 508 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 31
+  },
+  {
+    "id": 531,
+    "name": "Clothing Product 531",
+    "category": "Clothing",
+    "price": 109.94,
+    "sku": "SKU-531-6514",
+    "description": "High-quality Clothing Product 531 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 123
+  },
+  {
+    "id": 533,
+    "name": "Clothing Product 533",
+    "category": "Clothing",
+    "price": 74.56,
+    "sku": "SKU-533-8108",
+    "description": "High-quality Clothing Product 533 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 63
+  },
+  {
+    "id": 546,
+    "name": "Clothing Product 546",
+    "category": "Clothing",
+    "price": 158.29,
+    "sku": "SKU-546-1611",
+    "description": "High-quality Clothing Product 546 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 133
+  },
+  {
+    "id": 553,
+    "name": "Clothing Product 553",
+    "category": "Clothing",
+    "price": 160.36,
+    "sku": "SKU-553-7724",
+    "description": "High-quality Clothing Product 553 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 0
+  },
+  {
+    "id": 568,
+    "name": "Clothing Product 568",
+    "category": "Clothing",
+    "price": 61.48,
+    "sku": "SKU-568-6711",
+    "description": "High-quality Clothing Product 568 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 49
+  },
+  {
+    "id": 571,
+    "name": "Clothing Product 571",
+    "category": "Clothing",
+    "price": 87.45,
+    "sku": "SKU-571-5677",
+    "description": "High-quality Clothing Product 571 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 15
+  },
+  {
+    "id": 576,
+    "name": "Clothing Product 576",
+    "category": "Clothing",
+    "price": 171,
+    "sku": "SKU-576-7995",
+    "description": "High-quality Clothing Product 576 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 62
+  },
+  {
+    "id": 594,
+    "name": "Clothing Product 594",
+    "category": "Clothing",
+    "price": 41.03,
+    "sku": "SKU-594-8686",
+    "description": "High-quality Clothing Product 594 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 129
+  },
+  {
+    "id": 599,
+    "name": "Clothing Product 599",
+    "category": "Clothing",
+    "price": 135.24,
+    "sku": "SKU-599-4323",
+    "description": "High-quality Clothing Product 599 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 150
+  },
+  {
+    "id": 602,
+    "name": "Clothing Product 602",
+    "category": "Clothing",
+    "price": 19.12,
+    "sku": "SKU-602-8052",
+    "description": "High-quality Clothing Product 602 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  },
+  {
+    "id": 606,
+    "name": "Clothing Product 606",
+    "category": "Clothing",
+    "price": 162.81,
+    "sku": "SKU-606-5865",
+    "description": "High-quality Clothing Product 606 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 41
+  },
+  {
+    "id": 622,
+    "name": "Clothing Product 622",
+    "category": "Clothing",
+    "price": 60.18,
+    "sku": "SKU-622-5988",
+    "description": "High-quality Clothing Product 622 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 130
+  },
+  {
+    "id": 643,
+    "name": "Clothing Product 643",
+    "category": "Clothing",
+    "price": 145.55,
+    "sku": "SKU-643-6428",
+    "description": "High-quality Clothing Product 643 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 2
+  },
+  {
+    "id": 647,
+    "name": "Clothing Product 647",
+    "category": "Clothing",
+    "price": 128.79,
+    "sku": "SKU-647-3229",
+    "description": "High-quality Clothing Product 647 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 10
+  },
+  {
+    "id": 657,
+    "name": "Clothing Product 657",
+    "category": "Clothing",
+    "price": 12.79,
+    "sku": "SKU-657-7491",
+    "description": "High-quality Clothing Product 657 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 9
+  },
+  {
+    "id": 729,
+    "name": "Clothing Product 729",
+    "category": "Clothing",
+    "price": 85.99,
+    "sku": "SKU-729-8211",
+    "description": "High-quality Clothing Product 729 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 737,
+    "name": "Clothing Product 737",
+    "category": "Clothing",
+    "price": 48.68,
+    "sku": "SKU-737-3863",
+    "description": "High-quality Clothing Product 737 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 62
+  },
+  {
+    "id": 742,
+    "name": "Clothing Product 742",
+    "category": "Clothing",
+    "price": 126.54,
+    "sku": "SKU-742-6476",
+    "description": "High-quality Clothing Product 742 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 746,
+    "name": "Clothing Product 746",
+    "category": "Clothing",
+    "price": 181.24,
+    "sku": "SKU-746-5710",
+    "description": "High-quality Clothing Product 746 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 56
+  },
+  {
+    "id": 761,
+    "name": "Clothing Product 761",
+    "category": "Clothing",
+    "price": 69.82,
+    "sku": "SKU-761-1296",
+    "description": "High-quality Clothing Product 761 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 84
+  },
+  {
+    "id": 779,
+    "name": "Clothing Product 779",
+    "category": "Clothing",
+    "price": 40.86,
+    "sku": "SKU-779-1795",
+    "description": "High-quality Clothing Product 779 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 59
+  },
+  {
+    "id": 796,
+    "name": "Clothing Product 796",
+    "category": "Clothing",
+    "price": 111.45,
+    "sku": "SKU-796-2116",
+    "description": "High-quality Clothing Product 796 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 15
+  },
+  {
+    "id": 798,
+    "name": "Clothing Product 798",
+    "category": "Clothing",
+    "price": 93.99,
+    "sku": "SKU-798-4173",
+    "description": "High-quality Clothing Product 798 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 70
+  },
+  {
+    "id": 813,
+    "name": "Clothing Product 813",
+    "category": "Clothing",
+    "price": 126.24,
+    "sku": "SKU-813-6262",
+    "description": "High-quality Clothing Product 813 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 141
+  },
+  {
+    "id": 814,
+    "name": "Clothing Product 814",
+    "category": "Clothing",
+    "price": 35.05,
+    "sku": "SKU-814-7199",
+    "description": "High-quality Clothing Product 814 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 35
+  },
+  {
+    "id": 818,
+    "name": "Clothing Product 818",
+    "category": "Clothing",
+    "price": 18.17,
+    "sku": "SKU-818-9244",
+    "description": "High-quality Clothing Product 818 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 98
+  },
+  {
+    "id": 841,
+    "name": "Clothing Product 841",
+    "category": "Clothing",
+    "price": 30.9,
+    "sku": "SKU-841-3854",
+    "description": "High-quality Clothing Product 841 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 55
+  },
+  {
+    "id": 854,
+    "name": "Clothing Product 854",
+    "category": "Clothing",
+    "price": 155.98,
+    "sku": "SKU-854-2842",
+    "description": "High-quality Clothing Product 854 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 910,
+    "name": "Clothing Product 910",
+    "category": "Clothing",
+    "price": 23.66,
+    "sku": "SKU-910-1947",
+    "description": "High-quality Clothing Product 910 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 15
+  },
+  {
+    "id": 911,
+    "name": "Clothing Product 911",
+    "category": "Clothing",
+    "price": 106.88,
+    "sku": "SKU-911-4939",
+    "description": "High-quality Clothing Product 911 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 75
+  },
+  {
+    "id": 912,
+    "name": "Clothing Product 912",
+    "category": "Clothing",
+    "price": 185.53,
+    "sku": "SKU-912-1151",
+    "description": "High-quality Clothing Product 912 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 98
+  },
+  {
+    "id": 919,
+    "name": "Clothing Product 919",
+    "category": "Clothing",
+    "price": 156.3,
+    "sku": "SKU-919-3203",
+    "description": "High-quality Clothing Product 919 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 44
+  },
+  {
+    "id": 945,
+    "name": "Clothing Product 945",
+    "category": "Clothing",
+    "price": 56.34,
+    "sku": "SKU-945-6377",
+    "description": "High-quality Clothing Product 945 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 48
+  },
+  {
+    "id": 965,
+    "name": "Clothing Product 965",
+    "category": "Clothing",
+    "price": 70.3,
+    "sku": "SKU-965-4656",
+    "description": "High-quality Clothing Product 965 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 35
+  },
+  {
+    "id": 967,
+    "name": "Clothing Product 967",
+    "category": "Clothing",
+    "price": 23.07,
+    "sku": "SKU-967-2408",
+    "description": "High-quality Clothing Product 967 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 58
+  },
+  {
+    "id": 972,
+    "name": "Clothing Product 972",
+    "category": "Clothing",
+    "price": 31.57,
+    "sku": "SKU-972-2987",
+    "description": "High-quality Clothing Product 972 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 93
+  },
+  {
+    "id": 973,
+    "name": "Clothing Product 973",
+    "category": "Clothing",
+    "price": 43.14,
+    "sku": "SKU-973-8658",
+    "description": "High-quality Clothing Product 973 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 65
+  },
+  {
+    "id": 974,
+    "name": "Clothing Product 974",
+    "category": "Clothing",
+    "price": 57.45,
+    "sku": "SKU-974-6647",
+    "description": "High-quality Clothing Product 974 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 77
+  },
+  {
+    "id": 975,
+    "name": "Clothing Product 975",
+    "category": "Clothing",
+    "price": 168.92,
+    "sku": "SKU-975-4301",
+    "description": "High-quality Clothing Product 975 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 149
+  },
+  {
+    "id": 976,
+    "name": "Clothing Product 976",
+    "category": "Clothing",
+    "price": 172.04,
+    "sku": "SKU-976-9222",
+    "description": "High-quality Clothing Product 976 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 123
+  },
+  {
+    "id": 981,
+    "name": "Clothing Product 981",
+    "category": "Clothing",
+    "price": 45.02,
+    "sku": "SKU-981-3824",
+    "description": "High-quality Clothing Product 981 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 70
+  },
+  {
+    "id": 985,
+    "name": "Clothing Product 985",
+    "category": "Clothing",
+    "price": 184.53,
+    "sku": "SKU-985-1432",
+    "description": "High-quality Clothing Product 985 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 138
+  },
+  {
+    "id": 997,
+    "name": "Clothing Product 997",
+    "category": "Clothing",
+    "price": 170.44,
+    "sku": "SKU-997-3984",
+    "description": "High-quality Clothing Product 997 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 93
+  },
+  {
+    "id": 1010,
+    "name": "Clothing Product 1010",
+    "category": "Clothing",
+    "price": 68.69,
+    "sku": "SKU-1010-6325",
+    "description": "High-quality Clothing Product 1010 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 136
+  },
+  {
+    "id": 1015,
+    "name": "Clothing Product 1015",
+    "category": "Clothing",
+    "price": 109.17,
+    "sku": "SKU-1015-2101",
+    "description": "High-quality Clothing Product 1015 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 129
+  },
+  {
+    "id": 1033,
+    "name": "Clothing Product 1033",
+    "category": "Clothing",
+    "price": 129.83,
+    "sku": "SKU-1033-8367",
+    "description": "High-quality Clothing Product 1033 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 45
+  },
+  {
+    "id": 1056,
+    "name": "Clothing Product 1056",
+    "category": "Clothing",
+    "price": 109.99,
+    "sku": "SKU-1056-5256",
+    "description": "High-quality Clothing Product 1056 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 36
+  },
+  {
+    "id": 1064,
+    "name": "Clothing Product 1064",
+    "category": "Clothing",
+    "price": 116.21,
+    "sku": "SKU-1064-7639",
+    "description": "High-quality Clothing Product 1064 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 68
+  },
+  {
+    "id": 1075,
+    "name": "Clothing Product 1075",
+    "category": "Clothing",
+    "price": 147.2,
+    "sku": "SKU-1075-5716",
+    "description": "High-quality Clothing Product 1075 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 1076,
+    "name": "Clothing Product 1076",
+    "category": "Clothing",
+    "price": 165.77,
+    "sku": "SKU-1076-2104",
+    "description": "High-quality Clothing Product 1076 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 115
+  },
+  {
+    "id": 1095,
+    "name": "Clothing Product 1095",
+    "category": "Clothing",
+    "price": 174.92,
+    "sku": "SKU-1095-9461",
+    "description": "High-quality Clothing Product 1095 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 26
+  },
+  {
+    "id": 1107,
+    "name": "Clothing Product 1107",
+    "category": "Clothing",
+    "price": 78.79,
+    "sku": "SKU-1107-4107",
+    "description": "High-quality Clothing Product 1107 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 1132,
+    "name": "Clothing Product 1132",
+    "category": "Clothing",
+    "price": 51.32,
+    "sku": "SKU-1132-3985",
+    "description": "High-quality Clothing Product 1132 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 56
+  },
+  {
+    "id": 1133,
+    "name": "Clothing Product 1133",
+    "category": "Clothing",
+    "price": 118.79,
+    "sku": "SKU-1133-6507",
+    "description": "High-quality Clothing Product 1133 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 59
+  },
+  {
+    "id": 1140,
+    "name": "Clothing Product 1140",
+    "category": "Clothing",
+    "price": 112.62,
+    "sku": "SKU-1140-7977",
+    "description": "High-quality Clothing Product 1140 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 1144,
+    "name": "Clothing Product 1144",
+    "category": "Clothing",
+    "price": 83.64,
+    "sku": "SKU-1144-5945",
+    "description": "High-quality Clothing Product 1144 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 3
+  },
+  {
+    "id": 1145,
+    "name": "Clothing Product 1145",
+    "category": "Clothing",
+    "price": 163.98,
+    "sku": "SKU-1145-8204",
+    "description": "High-quality Clothing Product 1145 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 112
+  },
+  {
+    "id": 1161,
+    "name": "Clothing Product 1161",
+    "category": "Clothing",
+    "price": 31.62,
+    "sku": "SKU-1161-7868",
+    "description": "High-quality Clothing Product 1161 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 24
+  },
+  {
+    "id": 1168,
+    "name": "Clothing Product 1168",
+    "category": "Clothing",
+    "price": 72.2,
+    "sku": "SKU-1168-9384",
+    "description": "High-quality Clothing Product 1168 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 131
+  },
+  {
+    "id": 1180,
+    "name": "Clothing Product 1180",
+    "category": "Clothing",
+    "price": 23.88,
+    "sku": "SKU-1180-4573",
+    "description": "High-quality Clothing Product 1180 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 28
+  },
+  {
+    "id": 1188,
+    "name": "Clothing Product 1188",
+    "category": "Clothing",
+    "price": 129.41,
+    "sku": "SKU-1188-8225",
+    "description": "High-quality Clothing Product 1188 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 85
+  },
+  {
+    "id": 1192,
+    "name": "Clothing Product 1192",
+    "category": "Clothing",
+    "price": 85.1,
+    "sku": "SKU-1192-2811",
+    "description": "High-quality Clothing Product 1192 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 19
+  },
+  {
+    "id": 1197,
+    "name": "Clothing Product 1197",
+    "category": "Clothing",
+    "price": 59.31,
+    "sku": "SKU-1197-1843",
+    "description": "High-quality Clothing Product 1197 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 84
+  },
+  {
+    "id": 1198,
+    "name": "Clothing Product 1198",
+    "category": "Clothing",
+    "price": 144.22,
+    "sku": "SKU-1198-8842",
+    "description": "High-quality Clothing Product 1198 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 22
+  },
+  {
+    "id": 1215,
+    "name": "Clothing Product 1215",
+    "category": "Clothing",
+    "price": 83.67,
+    "sku": "SKU-1215-4642",
+    "description": "High-quality Clothing Product 1215 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 137
+  },
+  {
+    "id": 1253,
+    "name": "Clothing Product 1253",
+    "category": "Clothing",
+    "price": 121.36,
+    "sku": "SKU-1253-3657",
+    "description": "High-quality Clothing Product 1253 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 125
+  },
+  {
+    "id": 1285,
+    "name": "Clothing Product 1285",
+    "category": "Clothing",
+    "price": 172.65,
+    "sku": "SKU-1285-6895",
+    "description": "High-quality Clothing Product 1285 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 82
+  },
+  {
+    "id": 1294,
+    "name": "Clothing Product 1294",
+    "category": "Clothing",
+    "price": 5.61,
+    "sku": "SKU-1294-4354",
+    "description": "High-quality Clothing Product 1294 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 118
+  },
+  {
+    "id": 1297,
+    "name": "Clothing Product 1297",
+    "category": "Clothing",
+    "price": 50.65,
+    "sku": "SKU-1297-9310",
+    "description": "High-quality Clothing Product 1297 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 37
+  },
+  {
+    "id": 1318,
+    "name": "Clothing Product 1318",
+    "category": "Clothing",
+    "price": 47.86,
+    "sku": "SKU-1318-2159",
+    "description": "High-quality Clothing Product 1318 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 40
+  },
+  {
+    "id": 1320,
+    "name": "Clothing Product 1320",
+    "category": "Clothing",
+    "price": 17.47,
+    "sku": "SKU-1320-8071",
+    "description": "High-quality Clothing Product 1320 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 122
+  },
+  {
+    "id": 1321,
+    "name": "Clothing Product 1321",
+    "category": "Clothing",
+    "price": 71.4,
+    "sku": "SKU-1321-7868",
+    "description": "High-quality Clothing Product 1321 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 146
+  },
+  {
+    "id": 1323,
+    "name": "Clothing Product 1323",
+    "category": "Clothing",
+    "price": 110.24,
+    "sku": "SKU-1323-8625",
+    "description": "High-quality Clothing Product 1323 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 31
+  },
+  {
+    "id": 1331,
+    "name": "Clothing Product 1331",
+    "category": "Clothing",
+    "price": 158.62,
+    "sku": "SKU-1331-8821",
+    "description": "High-quality Clothing Product 1331 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  },
+  {
+    "id": 1369,
+    "name": "Clothing Product 1369",
+    "category": "Clothing",
+    "price": 140.52,
+    "sku": "SKU-1369-3692",
+    "description": "High-quality Clothing Product 1369 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 55
+  },
+  {
+    "id": 1376,
+    "name": "Clothing Product 1376",
+    "category": "Clothing",
+    "price": 134.41,
+    "sku": "SKU-1376-2775",
+    "description": "High-quality Clothing Product 1376 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 45
+  },
+  {
+    "id": 1378,
+    "name": "Clothing Product 1378",
+    "category": "Clothing",
+    "price": 93.68,
+    "sku": "SKU-1378-9132",
+    "description": "High-quality Clothing Product 1378 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 1383,
+    "name": "Clothing Product 1383",
+    "category": "Clothing",
+    "price": 37.76,
+    "sku": "SKU-1383-9359",
+    "description": "High-quality Clothing Product 1383 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 110
+  },
+  {
+    "id": 1393,
+    "name": "Clothing Product 1393",
+    "category": "Clothing",
+    "price": 95.86,
+    "sku": "SKU-1393-5569",
+    "description": "High-quality Clothing Product 1393 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 49
+  },
+  {
+    "id": 1418,
+    "name": "Clothing Product 1418",
+    "category": "Clothing",
+    "price": 132.3,
+    "sku": "SKU-1418-8480",
+    "description": "High-quality Clothing Product 1418 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 72
+  },
+  {
+    "id": 1422,
+    "name": "Clothing Product 1422",
+    "category": "Clothing",
+    "price": 179.67,
+    "sku": "SKU-1422-3432",
+    "description": "High-quality Clothing Product 1422 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 108
+  },
+  {
+    "id": 1466,
+    "name": "Clothing Product 1466",
+    "category": "Clothing",
+    "price": 70.61,
+    "sku": "SKU-1466-4288",
+    "description": "High-quality Clothing Product 1466 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 10
+  },
+  {
+    "id": 1469,
+    "name": "Clothing Product 1469",
+    "category": "Clothing",
+    "price": 16.64,
+    "sku": "SKU-1469-9589",
+    "description": "High-quality Clothing Product 1469 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 49
+  },
+  {
+    "id": 1486,
+    "name": "Clothing Product 1486",
+    "category": "Clothing",
+    "price": 35.36,
+    "sku": "SKU-1486-5660",
+    "description": "High-quality Clothing Product 1486 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 111
+  },
+  {
+    "id": 1493,
+    "name": "Clothing Product 1493",
+    "category": "Clothing",
+    "price": 15.34,
+    "sku": "SKU-1493-3180",
+    "description": "High-quality Clothing Product 1493 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  }
+]

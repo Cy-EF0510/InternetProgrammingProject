@@ -1,0 +1,1352 @@
+[
+  {
+    "id": 6,
+    "name": "Automotive Product 6",
+    "category": "Automotive",
+    "price": 127.63,
+    "sku": "SKU-6-4298",
+    "description": "High-quality Automotive Product 6 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 110
+  },
+  {
+    "id": 29,
+    "name": "Automotive Product 29",
+    "category": "Automotive",
+    "price": 126.95,
+    "sku": "SKU-29-2823",
+    "description": "High-quality Automotive Product 29 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 47
+  },
+  {
+    "id": 33,
+    "name": "Automotive Product 33",
+    "category": "Automotive",
+    "price": 48.38,
+    "sku": "SKU-33-3920",
+    "description": "High-quality Automotive Product 33 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 148
+  },
+  {
+    "id": 44,
+    "name": "Automotive Product 44",
+    "category": "Automotive",
+    "price": 66.72,
+    "sku": "SKU-44-7643",
+    "description": "High-quality Automotive Product 44 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 8
+  },
+  {
+    "id": 63,
+    "name": "Automotive Product 63",
+    "category": "Automotive",
+    "price": 56.78,
+    "sku": "SKU-63-6131",
+    "description": "High-quality Automotive Product 63 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 57
+  },
+  {
+    "id": 64,
+    "name": "Automotive Product 64",
+    "category": "Automotive",
+    "price": 46.35,
+    "sku": "SKU-64-9362",
+    "description": "High-quality Automotive Product 64 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 20
+  },
+  {
+    "id": 78,
+    "name": "Automotive Product 78",
+    "category": "Automotive",
+    "price": 10.43,
+    "sku": "SKU-78-3632",
+    "description": "High-quality Automotive Product 78 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 100,
+    "name": "Automotive Product 100",
+    "category": "Automotive",
+    "price": 104.69,
+    "sku": "SKU-100-1914",
+    "description": "High-quality Automotive Product 100 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 89
+  },
+  {
+    "id": 113,
+    "name": "Automotive Product 113",
+    "category": "Automotive",
+    "price": 33.38,
+    "sku": "SKU-113-2923",
+    "description": "High-quality Automotive Product 113 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 33
+  },
+  {
+    "id": 120,
+    "name": "Automotive Product 120",
+    "category": "Automotive",
+    "price": 21.4,
+    "sku": "SKU-120-8887",
+    "description": "High-quality Automotive Product 120 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 67
+  },
+  {
+    "id": 123,
+    "name": "Automotive Product 123",
+    "category": "Automotive",
+    "price": 86.56,
+    "sku": "SKU-123-6817",
+    "description": "High-quality Automotive Product 123 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 33
+  },
+  {
+    "id": 153,
+    "name": "Automotive Product 153",
+    "category": "Automotive",
+    "price": 92.46,
+    "sku": "SKU-153-9357",
+    "description": "High-quality Automotive Product 153 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 189,
+    "name": "Automotive Product 189",
+    "category": "Automotive",
+    "price": 161.77,
+    "sku": "SKU-189-2978",
+    "description": "High-quality Automotive Product 189 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 56
+  },
+  {
+    "id": 198,
+    "name": "Automotive Product 198",
+    "category": "Automotive",
+    "price": 47.38,
+    "sku": "SKU-198-1957",
+    "description": "High-quality Automotive Product 198 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 209,
+    "name": "Automotive Product 209",
+    "category": "Automotive",
+    "price": 50.95,
+    "sku": "SKU-209-8038",
+    "description": "High-quality Automotive Product 209 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 61
+  },
+  {
+    "id": 210,
+    "name": "Automotive Product 210",
+    "category": "Automotive",
+    "price": 156.93,
+    "sku": "SKU-210-7450",
+    "description": "High-quality Automotive Product 210 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 45
+  },
+  {
+    "id": 211,
+    "name": "Automotive Product 211",
+    "category": "Automotive",
+    "price": 165.84,
+    "sku": "SKU-211-1642",
+    "description": "High-quality Automotive Product 211 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 127
+  },
+  {
+    "id": 221,
+    "name": "Automotive Product 221",
+    "category": "Automotive",
+    "price": 78.51,
+    "sku": "SKU-221-4518",
+    "description": "High-quality Automotive Product 221 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 126
+  },
+  {
+    "id": 243,
+    "name": "Automotive Product 243",
+    "category": "Automotive",
+    "price": 56.41,
+    "sku": "SKU-243-9299",
+    "description": "High-quality Automotive Product 243 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 144
+  },
+  {
+    "id": 247,
+    "name": "Automotive Product 247",
+    "category": "Automotive",
+    "price": 8.38,
+    "sku": "SKU-247-6961",
+    "description": "High-quality Automotive Product 247 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 54
+  },
+  {
+    "id": 268,
+    "name": "Automotive Product 268",
+    "category": "Automotive",
+    "price": 99.11,
+    "sku": "SKU-268-1924",
+    "description": "High-quality Automotive Product 268 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 70
+  },
+  {
+    "id": 271,
+    "name": "Automotive Product 271",
+    "category": "Automotive",
+    "price": 145.98,
+    "sku": "SKU-271-1921",
+    "description": "High-quality Automotive Product 271 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 39
+  },
+  {
+    "id": 282,
+    "name": "Automotive Product 282",
+    "category": "Automotive",
+    "price": 23.01,
+    "sku": "SKU-282-6084",
+    "description": "High-quality Automotive Product 282 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 130
+  },
+  {
+    "id": 326,
+    "name": "Automotive Product 326",
+    "category": "Automotive",
+    "price": 171.43,
+    "sku": "SKU-326-9461",
+    "description": "High-quality Automotive Product 326 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 145
+  },
+  {
+    "id": 343,
+    "name": "Automotive Product 343",
+    "category": "Automotive",
+    "price": 112.54,
+    "sku": "SKU-343-6834",
+    "description": "High-quality Automotive Product 343 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 147
+  },
+  {
+    "id": 359,
+    "name": "Automotive Product 359",
+    "category": "Automotive",
+    "price": 184.86,
+    "sku": "SKU-359-2681",
+    "description": "High-quality Automotive Product 359 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 125
+  },
+  {
+    "id": 378,
+    "name": "Automotive Product 378",
+    "category": "Automotive",
+    "price": 123.87,
+    "sku": "SKU-378-3942",
+    "description": "High-quality Automotive Product 378 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 79
+  },
+  {
+    "id": 383,
+    "name": "Automotive Product 383",
+    "category": "Automotive",
+    "price": 116.02,
+    "sku": "SKU-383-3073",
+    "description": "High-quality Automotive Product 383 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 73
+  },
+  {
+    "id": 388,
+    "name": "Automotive Product 388",
+    "category": "Automotive",
+    "price": 153.73,
+    "sku": "SKU-388-5396",
+    "description": "High-quality Automotive Product 388 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 141
+  },
+  {
+    "id": 404,
+    "name": "Automotive Product 404",
+    "category": "Automotive",
+    "price": 69.49,
+    "sku": "SKU-404-2294",
+    "description": "High-quality Automotive Product 404 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 106
+  },
+  {
+    "id": 417,
+    "name": "Automotive Product 417",
+    "category": "Automotive",
+    "price": 46.85,
+    "sku": "SKU-417-1829",
+    "description": "High-quality Automotive Product 417 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 98
+  },
+  {
+    "id": 441,
+    "name": "Automotive Product 441",
+    "category": "Automotive",
+    "price": 28.86,
+    "sku": "SKU-441-9145",
+    "description": "High-quality Automotive Product 441 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 99
+  },
+  {
+    "id": 448,
+    "name": "Automotive Product 448",
+    "category": "Automotive",
+    "price": 138.01,
+    "sku": "SKU-448-5554",
+    "description": "High-quality Automotive Product 448 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 17
+  },
+  {
+    "id": 462,
+    "name": "Automotive Product 462",
+    "category": "Automotive",
+    "price": 85.06,
+    "sku": "SKU-462-4211",
+    "description": "High-quality Automotive Product 462 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 10
+  },
+  {
+    "id": 473,
+    "name": "Automotive Product 473",
+    "category": "Automotive",
+    "price": 144.78,
+    "sku": "SKU-473-8555",
+    "description": "High-quality Automotive Product 473 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 149
+  },
+  {
+    "id": 484,
+    "name": "Automotive Product 484",
+    "category": "Automotive",
+    "price": 204.06,
+    "sku": "SKU-484-1041",
+    "description": "High-quality Automotive Product 484 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 85
+  },
+  {
+    "id": 505,
+    "name": "Automotive Product 505",
+    "category": "Automotive",
+    "price": 170.6,
+    "sku": "SKU-505-7303",
+    "description": "High-quality Automotive Product 505 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 10
+  },
+  {
+    "id": 507,
+    "name": "Automotive Product 507",
+    "category": "Automotive",
+    "price": 26.26,
+    "sku": "SKU-507-7813",
+    "description": "High-quality Automotive Product 507 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 143
+  },
+  {
+    "id": 514,
+    "name": "Automotive Product 514",
+    "category": "Automotive",
+    "price": 109.36,
+    "sku": "SKU-514-4746",
+    "description": "High-quality Automotive Product 514 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 149
+  },
+  {
+    "id": 516,
+    "name": "Automotive Product 516",
+    "category": "Automotive",
+    "price": 60.08,
+    "sku": "SKU-516-7591",
+    "description": "High-quality Automotive Product 516 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 131
+  },
+  {
+    "id": 527,
+    "name": "Automotive Product 527",
+    "category": "Automotive",
+    "price": 62.32,
+    "sku": "SKU-527-4217",
+    "description": "High-quality Automotive Product 527 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 69
+  },
+  {
+    "id": 532,
+    "name": "Automotive Product 532",
+    "category": "Automotive",
+    "price": 109.6,
+    "sku": "SKU-532-5458",
+    "description": "High-quality Automotive Product 532 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 4
+  },
+  {
+    "id": 536,
+    "name": "Automotive Product 536",
+    "category": "Automotive",
+    "price": 37.44,
+    "sku": "SKU-536-1852",
+    "description": "High-quality Automotive Product 536 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 118
+  },
+  {
+    "id": 540,
+    "name": "Automotive Product 540",
+    "category": "Automotive",
+    "price": 140.79,
+    "sku": "SKU-540-6662",
+    "description": "High-quality Automotive Product 540 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 61
+  },
+  {
+    "id": 550,
+    "name": "Automotive Product 550",
+    "category": "Automotive",
+    "price": 115.91,
+    "sku": "SKU-550-7702",
+    "description": "High-quality Automotive Product 550 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 44
+  },
+  {
+    "id": 556,
+    "name": "Automotive Product 556",
+    "category": "Automotive",
+    "price": 191.05,
+    "sku": "SKU-556-8285",
+    "description": "High-quality Automotive Product 556 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 81
+  },
+  {
+    "id": 580,
+    "name": "Automotive Product 580",
+    "category": "Automotive",
+    "price": 95.53,
+    "sku": "SKU-580-1773",
+    "description": "High-quality Automotive Product 580 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 582,
+    "name": "Automotive Product 582",
+    "category": "Automotive",
+    "price": 135.03,
+    "sku": "SKU-582-9133",
+    "description": "High-quality Automotive Product 582 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 98
+  },
+  {
+    "id": 592,
+    "name": "Automotive Product 592",
+    "category": "Automotive",
+    "price": 55.58,
+    "sku": "SKU-592-7924",
+    "description": "High-quality Automotive Product 592 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 113
+  },
+  {
+    "id": 609,
+    "name": "Automotive Product 609",
+    "category": "Automotive",
+    "price": 143.02,
+    "sku": "SKU-609-8844",
+    "description": "High-quality Automotive Product 609 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 120
+  },
+  {
+    "id": 612,
+    "name": "Automotive Product 612",
+    "category": "Automotive",
+    "price": 40.55,
+    "sku": "SKU-612-1816",
+    "description": "High-quality Automotive Product 612 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 33
+  },
+  {
+    "id": 627,
+    "name": "Automotive Product 627",
+    "category": "Automotive",
+    "price": 148.96,
+    "sku": "SKU-627-6921",
+    "description": "High-quality Automotive Product 627 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 108
+  },
+  {
+    "id": 639,
+    "name": "Automotive Product 639",
+    "category": "Automotive",
+    "price": 151.36,
+    "sku": "SKU-639-5544",
+    "description": "High-quality Automotive Product 639 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 121
+  },
+  {
+    "id": 641,
+    "name": "Automotive Product 641",
+    "category": "Automotive",
+    "price": 49.76,
+    "sku": "SKU-641-7053",
+    "description": "High-quality Automotive Product 641 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 83
+  },
+  {
+    "id": 642,
+    "name": "Automotive Product 642",
+    "category": "Automotive",
+    "price": 51.16,
+    "sku": "SKU-642-5282",
+    "description": "High-quality Automotive Product 642 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 88
+  },
+  {
+    "id": 649,
+    "name": "Automotive Product 649",
+    "category": "Automotive",
+    "price": 189.62,
+    "sku": "SKU-649-9864",
+    "description": "High-quality Automotive Product 649 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 78
+  },
+  {
+    "id": 650,
+    "name": "Automotive Product 650",
+    "category": "Automotive",
+    "price": 81.34,
+    "sku": "SKU-650-3958",
+    "description": "High-quality Automotive Product 650 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 12
+  },
+  {
+    "id": 660,
+    "name": "Automotive Product 660",
+    "category": "Automotive",
+    "price": 155.74,
+    "sku": "SKU-660-3054",
+    "description": "High-quality Automotive Product 660 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 0
+  },
+  {
+    "id": 665,
+    "name": "Automotive Product 665",
+    "category": "Automotive",
+    "price": 54.42,
+    "sku": "SKU-665-7813",
+    "description": "High-quality Automotive Product 665 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 78
+  },
+  {
+    "id": 667,
+    "name": "Automotive Product 667",
+    "category": "Automotive",
+    "price": 136.79,
+    "sku": "SKU-667-2032",
+    "description": "High-quality Automotive Product 667 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 69
+  },
+  {
+    "id": 668,
+    "name": "Automotive Product 668",
+    "category": "Automotive",
+    "price": 20.17,
+    "sku": "SKU-668-2067",
+    "description": "High-quality Automotive Product 668 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 126
+  },
+  {
+    "id": 684,
+    "name": "Automotive Product 684",
+    "category": "Automotive",
+    "price": 22.91,
+    "sku": "SKU-684-6389",
+    "description": "High-quality Automotive Product 684 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 53
+  },
+  {
+    "id": 685,
+    "name": "Automotive Product 685",
+    "category": "Automotive",
+    "price": 173.66,
+    "sku": "SKU-685-3732",
+    "description": "High-quality Automotive Product 685 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 70
+  },
+  {
+    "id": 707,
+    "name": "Automotive Product 707",
+    "category": "Automotive",
+    "price": 111.31,
+    "sku": "SKU-707-9874",
+    "description": "High-quality Automotive Product 707 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 130
+  },
+  {
+    "id": 716,
+    "name": "Automotive Product 716",
+    "category": "Automotive",
+    "price": 111.58,
+    "sku": "SKU-716-7790",
+    "description": "High-quality Automotive Product 716 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 144
+  },
+  {
+    "id": 720,
+    "name": "Automotive Product 720",
+    "category": "Automotive",
+    "price": 42.22,
+    "sku": "SKU-720-2311",
+    "description": "High-quality Automotive Product 720 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 36
+  },
+  {
+    "id": 731,
+    "name": "Automotive Product 731",
+    "category": "Automotive",
+    "price": 164.29,
+    "sku": "SKU-731-6270",
+    "description": "High-quality Automotive Product 731 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  },
+  {
+    "id": 743,
+    "name": "Automotive Product 743",
+    "category": "Automotive",
+    "price": 192.68,
+    "sku": "SKU-743-1177",
+    "description": "High-quality Automotive Product 743 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 45
+  },
+  {
+    "id": 772,
+    "name": "Automotive Product 772",
+    "category": "Automotive",
+    "price": 68.45,
+    "sku": "SKU-772-4594",
+    "description": "High-quality Automotive Product 772 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 140
+  },
+  {
+    "id": 790,
+    "name": "Automotive Product 790",
+    "category": "Automotive",
+    "price": 8.08,
+    "sku": "SKU-790-5804",
+    "description": "High-quality Automotive Product 790 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 38
+  },
+  {
+    "id": 807,
+    "name": "Automotive Product 807",
+    "category": "Automotive",
+    "price": 68.15,
+    "sku": "SKU-807-8881",
+    "description": "High-quality Automotive Product 807 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 33
+  },
+  {
+    "id": 808,
+    "name": "Automotive Product 808",
+    "category": "Automotive",
+    "price": 163.04,
+    "sku": "SKU-808-8122",
+    "description": "High-quality Automotive Product 808 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 119
+  },
+  {
+    "id": 816,
+    "name": "Automotive Product 816",
+    "category": "Automotive",
+    "price": 186.14,
+    "sku": "SKU-816-7186",
+    "description": "High-quality Automotive Product 816 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 84
+  },
+  {
+    "id": 836,
+    "name": "Automotive Product 836",
+    "category": "Automotive",
+    "price": 110.66,
+    "sku": "SKU-836-1639",
+    "description": "High-quality Automotive Product 836 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 68
+  },
+  {
+    "id": 837,
+    "name": "Automotive Product 837",
+    "category": "Automotive",
+    "price": 113.57,
+    "sku": "SKU-837-1233",
+    "description": "High-quality Automotive Product 837 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 35
+  },
+  {
+    "id": 849,
+    "name": "Automotive Product 849",
+    "category": "Automotive",
+    "price": 95.24,
+    "sku": "SKU-849-7423",
+    "description": "High-quality Automotive Product 849 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 131
+  },
+  {
+    "id": 865,
+    "name": "Automotive Product 865",
+    "category": "Automotive",
+    "price": 171.32,
+    "sku": "SKU-865-5203",
+    "description": "High-quality Automotive Product 865 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 100
+  },
+  {
+    "id": 867,
+    "name": "Automotive Product 867",
+    "category": "Automotive",
+    "price": 25.31,
+    "sku": "SKU-867-5969",
+    "description": "High-quality Automotive Product 867 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 135
+  },
+  {
+    "id": 868,
+    "name": "Automotive Product 868",
+    "category": "Automotive",
+    "price": 148.71,
+    "sku": "SKU-868-3457",
+    "description": "High-quality Automotive Product 868 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 132
+  },
+  {
+    "id": 882,
+    "name": "Automotive Product 882",
+    "category": "Automotive",
+    "price": 118.29,
+    "sku": "SKU-882-9828",
+    "description": "High-quality Automotive Product 882 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 51
+  },
+  {
+    "id": 888,
+    "name": "Automotive Product 888",
+    "category": "Automotive",
+    "price": 185.05,
+    "sku": "SKU-888-2026",
+    "description": "High-quality Automotive Product 888 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 92
+  },
+  {
+    "id": 891,
+    "name": "Automotive Product 891",
+    "category": "Automotive",
+    "price": 33.47,
+    "sku": "SKU-891-3866",
+    "description": "High-quality Automotive Product 891 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 51
+  },
+  {
+    "id": 901,
+    "name": "Automotive Product 901",
+    "category": "Automotive",
+    "price": 161.9,
+    "sku": "SKU-901-5411",
+    "description": "High-quality Automotive Product 901 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 57
+  },
+  {
+    "id": 904,
+    "name": "Automotive Product 904",
+    "category": "Automotive",
+    "price": 168.46,
+    "sku": "SKU-904-2836",
+    "description": "High-quality Automotive Product 904 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 124
+  },
+  {
+    "id": 922,
+    "name": "Automotive Product 922",
+    "category": "Automotive",
+    "price": 46.55,
+    "sku": "SKU-922-7717",
+    "description": "High-quality Automotive Product 922 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 26
+  },
+  {
+    "id": 980,
+    "name": "Automotive Product 980",
+    "category": "Automotive",
+    "price": 120.64,
+    "sku": "SKU-980-2213",
+    "description": "High-quality Automotive Product 980 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 37
+  },
+  {
+    "id": 1011,
+    "name": "Automotive Product 1011",
+    "category": "Automotive",
+    "price": 116.5,
+    "sku": "SKU-1011-5900",
+    "description": "High-quality Automotive Product 1011 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 97
+  },
+  {
+    "id": 1025,
+    "name": "Automotive Product 1025",
+    "category": "Automotive",
+    "price": 142.2,
+    "sku": "SKU-1025-3687",
+    "description": "High-quality Automotive Product 1025 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 20
+  },
+  {
+    "id": 1028,
+    "name": "Automotive Product 1028",
+    "category": "Automotive",
+    "price": 137.17,
+    "sku": "SKU-1028-1833",
+    "description": "High-quality Automotive Product 1028 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 20
+  },
+  {
+    "id": 1058,
+    "name": "Automotive Product 1058",
+    "category": "Automotive",
+    "price": 89.93,
+    "sku": "SKU-1058-8166",
+    "description": "High-quality Automotive Product 1058 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 135
+  },
+  {
+    "id": 1065,
+    "name": "Automotive Product 1065",
+    "category": "Automotive",
+    "price": 7.07,
+    "sku": "SKU-1065-1327",
+    "description": "High-quality Automotive Product 1065 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 134
+  },
+  {
+    "id": 1079,
+    "name": "Automotive Product 1079",
+    "category": "Automotive",
+    "price": 120.96,
+    "sku": "SKU-1079-3281",
+    "description": "High-quality Automotive Product 1079 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 92
+  },
+  {
+    "id": 1087,
+    "name": "Automotive Product 1087",
+    "category": "Automotive",
+    "price": 9.86,
+    "sku": "SKU-1087-9160",
+    "description": "High-quality Automotive Product 1087 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 2
+  },
+  {
+    "id": 1094,
+    "name": "Automotive Product 1094",
+    "category": "Automotive",
+    "price": 169.78,
+    "sku": "SKU-1094-6497",
+    "description": "High-quality Automotive Product 1094 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 139
+  },
+  {
+    "id": 1098,
+    "name": "Automotive Product 1098",
+    "category": "Automotive",
+    "price": 11.21,
+    "sku": "SKU-1098-6686",
+    "description": "High-quality Automotive Product 1098 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 55
+  },
+  {
+    "id": 1103,
+    "name": "Automotive Product 1103",
+    "category": "Automotive",
+    "price": 203.39,
+    "sku": "SKU-1103-5089",
+    "description": "High-quality Automotive Product 1103 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 28
+  },
+  {
+    "id": 1111,
+    "name": "Automotive Product 1111",
+    "category": "Automotive",
+    "price": 160.15,
+    "sku": "SKU-1111-4796",
+    "description": "High-quality Automotive Product 1111 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 121
+  },
+  {
+    "id": 1118,
+    "name": "Automotive Product 1118",
+    "category": "Automotive",
+    "price": 33.53,
+    "sku": "SKU-1118-7812",
+    "description": "High-quality Automotive Product 1118 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 82
+  },
+  {
+    "id": 1128,
+    "name": "Automotive Product 1128",
+    "category": "Automotive",
+    "price": 91.16,
+    "sku": "SKU-1128-4062",
+    "description": "High-quality Automotive Product 1128 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 28
+  },
+  {
+    "id": 1157,
+    "name": "Automotive Product 1157",
+    "category": "Automotive",
+    "price": 164.59,
+    "sku": "SKU-1157-3275",
+    "description": "High-quality Automotive Product 1157 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 34
+  },
+  {
+    "id": 1185,
+    "name": "Automotive Product 1185",
+    "category": "Automotive",
+    "price": 113.1,
+    "sku": "SKU-1185-3481",
+    "description": "High-quality Automotive Product 1185 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 115
+  },
+  {
+    "id": 1186,
+    "name": "Automotive Product 1186",
+    "category": "Automotive",
+    "price": 32.94,
+    "sku": "SKU-1186-1806",
+    "description": "High-quality Automotive Product 1186 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 58
+  },
+  {
+    "id": 1189,
+    "name": "Automotive Product 1189",
+    "category": "Automotive",
+    "price": 29.55,
+    "sku": "SKU-1189-9362",
+    "description": "High-quality Automotive Product 1189 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 139
+  },
+  {
+    "id": 1191,
+    "name": "Automotive Product 1191",
+    "category": "Automotive",
+    "price": 69.78,
+    "sku": "SKU-1191-5721",
+    "description": "High-quality Automotive Product 1191 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 35
+  },
+  {
+    "id": 1211,
+    "name": "Automotive Product 1211",
+    "category": "Automotive",
+    "price": 135.96,
+    "sku": "SKU-1211-4358",
+    "description": "High-quality Automotive Product 1211 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 125
+  },
+  {
+    "id": 1218,
+    "name": "Automotive Product 1218",
+    "category": "Automotive",
+    "price": 115.95,
+    "sku": "SKU-1218-7623",
+    "description": "High-quality Automotive Product 1218 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 48
+  },
+  {
+    "id": 1228,
+    "name": "Automotive Product 1228",
+    "category": "Automotive",
+    "price": 112.35,
+    "sku": "SKU-1228-4815",
+    "description": "High-quality Automotive Product 1228 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 39
+  },
+  {
+    "id": 1237,
+    "name": "Automotive Product 1237",
+    "category": "Automotive",
+    "price": 97.11,
+    "sku": "SKU-1237-9213",
+    "description": "High-quality Automotive Product 1237 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 128
+  },
+  {
+    "id": 1261,
+    "name": "Automotive Product 1261",
+    "category": "Automotive",
+    "price": 21.08,
+    "sku": "SKU-1261-4379",
+    "description": "High-quality Automotive Product 1261 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 123
+  },
+  {
+    "id": 1278,
+    "name": "Automotive Product 1278",
+    "category": "Automotive",
+    "price": 88.29,
+    "sku": "SKU-1278-1228",
+    "description": "High-quality Automotive Product 1278 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 43
+  },
+  {
+    "id": 1280,
+    "name": "Automotive Product 1280",
+    "category": "Automotive",
+    "price": 11.74,
+    "sku": "SKU-1280-9162",
+    "description": "High-quality Automotive Product 1280 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 46
+  },
+  {
+    "id": 1284,
+    "name": "Automotive Product 1284",
+    "category": "Automotive",
+    "price": 131.08,
+    "sku": "SKU-1284-2293",
+    "description": "High-quality Automotive Product 1284 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 14
+  },
+  {
+    "id": 1307,
+    "name": "Automotive Product 1307",
+    "category": "Automotive",
+    "price": 65.51,
+    "sku": "SKU-1307-8741",
+    "description": "High-quality Automotive Product 1307 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 32
+  },
+  {
+    "id": 1335,
+    "name": "Automotive Product 1335",
+    "category": "Automotive",
+    "price": 87.45,
+    "sku": "SKU-1335-4155",
+    "description": "High-quality Automotive Product 1335 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 119
+  },
+  {
+    "id": 1341,
+    "name": "Automotive Product 1341",
+    "category": "Automotive",
+    "price": 161.96,
+    "sku": "SKU-1341-7009",
+    "description": "High-quality Automotive Product 1341 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 101
+  },
+  {
+    "id": 1342,
+    "name": "Automotive Product 1342",
+    "category": "Automotive",
+    "price": 117.82,
+    "sku": "SKU-1342-5423",
+    "description": "High-quality Automotive Product 1342 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 59
+  },
+  {
+    "id": 1352,
+    "name": "Automotive Product 1352",
+    "category": "Automotive",
+    "price": 63.57,
+    "sku": "SKU-1352-4654",
+    "description": "High-quality Automotive Product 1352 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 41
+  },
+  {
+    "id": 1359,
+    "name": "Automotive Product 1359",
+    "category": "Automotive",
+    "price": 136.08,
+    "sku": "SKU-1359-7426",
+    "description": "High-quality Automotive Product 1359 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 21
+  },
+  {
+    "id": 1365,
+    "name": "Automotive Product 1365",
+    "category": "Automotive",
+    "price": 201.67,
+    "sku": "SKU-1365-8718",
+    "description": "High-quality Automotive Product 1365 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 102
+  },
+  {
+    "id": 1370,
+    "name": "Automotive Product 1370",
+    "category": "Automotive",
+    "price": 156.36,
+    "sku": "SKU-1370-3244",
+    "description": "High-quality Automotive Product 1370 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 135
+  },
+  {
+    "id": 1380,
+    "name": "Automotive Product 1380",
+    "category": "Automotive",
+    "price": 5.53,
+    "sku": "SKU-1380-3116",
+    "description": "High-quality Automotive Product 1380 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 61
+  },
+  {
+    "id": 1385,
+    "name": "Automotive Product 1385",
+    "category": "Automotive",
+    "price": 83.38,
+    "sku": "SKU-1385-3210",
+    "description": "High-quality Automotive Product 1385 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 97
+  },
+  {
+    "id": 1400,
+    "name": "Automotive Product 1400",
+    "category": "Automotive",
+    "price": 131.19,
+    "sku": "SKU-1400-8280",
+    "description": "High-quality Automotive Product 1400 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 131
+  },
+  {
+    "id": 1405,
+    "name": "Automotive Product 1405",
+    "category": "Automotive",
+    "price": 48.23,
+    "sku": "SKU-1405-1311",
+    "description": "High-quality Automotive Product 1405 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 74
+  },
+  {
+    "id": 1406,
+    "name": "Automotive Product 1406",
+    "category": "Automotive",
+    "price": 182.02,
+    "sku": "SKU-1406-8842",
+    "description": "High-quality Automotive Product 1406 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 73
+  },
+  {
+    "id": 1427,
+    "name": "Automotive Product 1427",
+    "category": "Automotive",
+    "price": 171.27,
+    "sku": "SKU-1427-2307",
+    "description": "High-quality Automotive Product 1427 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 87
+  },
+  {
+    "id": 1429,
+    "name": "Automotive Product 1429",
+    "category": "Automotive",
+    "price": 66.52,
+    "sku": "SKU-1429-1710",
+    "description": "High-quality Automotive Product 1429 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 45
+  },
+  {
+    "id": 1436,
+    "name": "Automotive Product 1436",
+    "category": "Automotive",
+    "price": 145.74,
+    "sku": "SKU-1436-1751",
+    "description": "High-quality Automotive Product 1436 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 23
+  },
+  {
+    "id": 1437,
+    "name": "Automotive Product 1437",
+    "category": "Automotive",
+    "price": 42.04,
+    "sku": "SKU-1437-7385",
+    "description": "High-quality Automotive Product 1437 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 84
+  },
+  {
+    "id": 1443,
+    "name": "Automotive Product 1443",
+    "category": "Automotive",
+    "price": 152.1,
+    "sku": "SKU-1443-4712",
+    "description": "High-quality Automotive Product 1443 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 141
+  },
+  {
+    "id": 1445,
+    "name": "Automotive Product 1445",
+    "category": "Automotive",
+    "price": 154.02,
+    "sku": "SKU-1445-1939",
+    "description": "High-quality Automotive Product 1445 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 25
+  },
+  {
+    "id": 1461,
+    "name": "Automotive Product 1461",
+    "category": "Automotive",
+    "price": 157.35,
+    "sku": "SKU-1461-7057",
+    "description": "High-quality Automotive Product 1461 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 78
+  },
+  {
+    "id": 1465,
+    "name": "Automotive Product 1465",
+    "category": "Automotive",
+    "price": 9.84,
+    "sku": "SKU-1465-4218",
+    "description": "High-quality Automotive Product 1465 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 26
+  },
+  {
+    "id": 1482,
+    "name": "Automotive Product 1482",
+    "category": "Automotive",
+    "price": 72.1,
+    "sku": "SKU-1482-9764",
+    "description": "High-quality Automotive Product 1482 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 49
+  },
+  {
+    "id": 1496,
+    "name": "Automotive Product 1496",
+    "category": "Automotive",
+    "price": 71.85,
+    "sku": "SKU-1496-8692",
+    "description": "High-quality Automotive Product 1496 designed for performance and durability.",
+    "image": "https://picsum.photos/200/300",
+    "stock": 46
+  }
+]
