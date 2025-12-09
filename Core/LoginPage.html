@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Resources/JS/login.js"></script>
+    <link rel="stylesheet" href="Resources/CSS/login.css">
+    <title>Login</title>
 </head>
 <body>
-    
+    <form action ="" method="post">
+		<fieldset>
+			<legend>Login:</legend>
+		    <label for="email">Email:</label>
+		    <input type="text" id="email" name="email"><br><br>
+		    <label for="pass">Password:</label>
+		    <input type="password" id="pass" name="pass"><br><br>
+
+		    <input type="button" id="submitBtn" value="Submit">
+			<p>Do not have an account? <a href="RegisterPage.html">Register here</a>.</p>
+		</fieldset>
+	</form>
 </body>
 </html>
