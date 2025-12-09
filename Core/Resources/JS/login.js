@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $("#submitBtn").on("click", function () {
-    checkAll();
+        checkAll();
     });
 
     
@@ -12,8 +12,8 @@ function requestUsers(email, password){
     $.ajax({
         method: "POST",
         url: urlUsers,
-        contentType: "application/json",
-        dataType: "json",
+        accept: "application/json",
+        Contente: "json",
         data: JSON.stringify({
             email: email,
             password: password
@@ -31,10 +31,10 @@ function requestUsers(email, password){
             alert("Login successful. Token: " + o.token);
             window.location.href = "/Core/HomePage.html"; 
         })
-        .fail(function(jqXHR) {
+        .fail(function(o) {
             //*Testing purpose only
-            console.log("LOGIN ERROR:", jqXHR.status, jqXHR.responseText);
-            alert("Login failed: " + jqXHR.responseJSON.error);
+            console.log("LOGIN ERROR:", o.status, o.responseText);
+            alert("Login failed: " + o.responseJSON.error);
         });
     }
 
