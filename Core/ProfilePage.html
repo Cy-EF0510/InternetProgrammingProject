@@ -3,10 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Resources/CSS/profilePage.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1>My Account</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/">Shop</a>
+            <a href="/">Cart</a>
+            <a href="">Log out</a>
+        </nav>
+    </header>
+    <main>
+        <section id="profile-info">
+            <h2>Profile Details</h2>
+            <h3>Name: </h3>
+            <h3>Email: </h3>
+            <h3>Phone: </h3>
+            <h3>Member Since: </h3>
+            <a href="">Edit Profile</a>
+        </section>
+
+        <section id="addresses">
+            <h2>Default shipping address</h2>
+            <label class="addressName">
+                Name
+                <input class="addressInput" type="text">
+            </label><br>
+            <label class="address">
+                Address
+                <input class="addressInput" type="text">
+            </label><br>
+            <label class="appartment">
+                Apartment
+                <input class="addressInput" type="text">
+            </label><br>
+            <label class="region">
+                Province
+                <input class="addressInput" type="text">
+            </label><br>
+            <a href="">Edit shipping address</a>
+        </section>
+
+        <section id="orders">
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order #</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <!-- We might need to use jquery to add products into the orders -->
+                <tbody>
+                    <tr>
+                        <td>p1#</td>
+                        <td>p1Date</td>
+                        <td>p1Status</td>
+                        <td>p1Price</td>
+                        <td>p1Details</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="payment-methods">
+            <h2>Payment Methods</h2>
+            <p>Visa ending in fajfh (expires 08/27)</p>
+            <a href="">Manage payment methods</a>
+        </section>
+
+        <section id="preferences">
+            <h2>Account Preferences</h2>
+            <label class="notifications toggle">
+                Email Notifications
+                <input class="togge-input" type="checkbox">
+            </label>
+            <label class="smsAlerts toggle">
+                SMS Alerts
+                <input class="toggle-input" type="checkbox">
+            </label>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 The Rogue Market
+        <nav>
+            <a href="">Help</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Service</a>
+        </nav>
+
+    </footer>
 </body>
 </html>
 

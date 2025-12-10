@@ -9,44 +9,103 @@
     <link rel="stylesheet" href="Resources/CSS/homePage.css">
 
     <script src="Resources/JS/homePage.js"></script>
-    <title>Home Page</title>
+    <title>The Rogue Market</title>
 </head>
 
 
 <body>
     <header>
-        <div class="logo">
-            <a href="HomePage.html">MyShop</a> <!-- put a logo here after -->
-        </div>
+        <div class="header-container">
 
-        <nav>
-            <a href="HomePage.html">Home</a>
-            <a href="ProductListingPage.html">Products</a>
-            <a href="AboutPage.html">Contact</a>
-        </nav>
-
-        <div class="header-actions">
-            <div class="search-wrapper">
-                <input type="text" id="searchBar" placeholder="Search products..." autocomplete="off">
-                <div id="searchSuggestions" class="search-suggestions"></div>
+            <div class="logo">
+                <a href="HomePage.html">
+                    <img class="logo-img" src="Resources/IMG/notcircle.png" alt="">
+                </a> <!-- put a logo here after -->
             </div>
 
-        <!--With font-awesome-->    
-        <div class="cart-icon-container">
-            <i class="fas fa-shopping-cart cart-icon"></i>
-            <span class="item-count-badge">9</span> <!-- Initial count -->
+            <nav>
+                <a href="HomePage.html">Home</a>
+                <a href="ProductListingPage.html">Products</a>
+                <a href="AboutPage.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-wrapper">
+                    <input type="text" id="searchBar" placeholder="Search products..." autocomplete="off">
+                    <div id="searchSuggestions" class="search-suggestions"></div>
+                </div>
+
+                <!--With font-awesome-->    
+                
+            
+                <a href="ShoppingCartPage.html" class="icon-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="item-count-badge">9</span>
+                </a>
+
+                <!-- User Account Icon -->
+                <a href="LoginPage.html" class="icon-btn">
+                    <i class="fas fa-user"></i>
+                </a>    
+                
+            </div>
+
         </div>
         
-        <!--Without Font Awesome-->    
-        <a href="ShoppingCartPage.html" class="cart-link">🛒 <span id="cartCount">0</span></a>
-
-            <a href="LoginPage.html" class="account-link" id="accountLink">👤</a>
-        </div>
     </header>
 
     <main>
 
-        
+        <!-- ===================== HERO SECTION ===================== -->
+        <section class="hero">
+            <div class="header-container">
+
+                <div class="hero-text">
+                    <h1>Welcome to The Rogue Market</h1>
+                    <p>Your galaxy of exclusive Star Wars merch, collectibles, gear & more.</p>
+                    <a href="Products.html" class="shop-btn">Shop Now</a>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <!-- ===================== FEATURED SECTION ===================== -->
+        <section class="featured-section">
+            <h2 class="section-title">Featured Collections</h2>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <!-- <img src="Resources/IMG/lightsaber.jpg" alt=""> -->
+                    <h3>Lightsabers</h3>
+                    <p>Pick your destiny — Jedi or Sith.</p>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <div class="product-card">
+                    <!-- <img src="Resources/IMG/helmets.jpg" alt=""> -->
+                    <h3>Star Wars Helmets</h3>
+                    <p>Stormtrooper, Mandalorian & more.</p>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <div class="product-card">
+                    <!-- <img src="Resources/IMG/droids.jpg" alt=""> -->
+                    <h3>Droids</h3>
+                    <p>Find your loyal companion.</p>
+                    <button class="view-btn">View</button>
+                </div>
+
+                <div class="product-card">
+                    <!-- <img src="Resources/IMG/posters.jpg" alt=""> -->
+                    <h3>Posters</h3>
+                    <p>Bring the galaxy to your room.</p>
+                    <button class="view-btn">View</button>
+                </div>
+
+            </div>
+        </section>
 
     </main>
     

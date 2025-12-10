@@ -1,0 +1,28 @@
+body {
+      background-color: black;
+      color: yellow;
+      font-family: "Arial Black", sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 5rem;
+      margin: 0;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+    a {
+      color: yellow;
+      text-decoration: none;
+      border: 1px solid yellow;
+      padding: 10px 20px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    a:hover {
+      background-color: yellow;
+      color: black;
+    }

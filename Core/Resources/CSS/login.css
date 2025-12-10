@@ -1,10 +1,189 @@
-fieldset{
-	max-width: 255px;
-	margin-left: auto;
-	margin-right: auto;
+/* Global: black background + Star Wars font */
+body {
+    background: #000;
+    overflow-x: hidden;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #f5f5f5;
+    position: relative;
 }
 
-label{
-	display: block;
-	width:85px;
+/* Big moving starfield background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image:
+        radial-gradient(2px 2px at 50px 50px, white, transparent),
+        radial-gradient(2px 2px at 300px 120px, white, transparent),
+        radial-gradient(2px 2px at 600px 300px, white, transparent),
+        radial-gradient(2px 2px at 900px 800px, white, transparent);
+    background-size: 400px 400px;
+    animation: moveStars 40s linear infinite;
+    opacity: 0.9;
+    z-index: -1; /* keep it behind everything */
+}
+
+@keyframes moveStars {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-400px); }
+}
+
+/* Extra “depth” starfield layer from your <div class="stars"> */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow:
+        1000px 200px #fff,
+        600px 900px #fff,
+        300px 600px #fff,
+        1200px 700px #fff,
+        800px 300px #fff,
+        500px 1200px #fff,
+        200px 400px #fff;
+    animation: starAnim 50s linear infinite;
+    z-index: -1;
+}
+
+@keyframes starAnim {
+    from { transform: translateY(0px); }
+    to   { transform: translateY(-2000px); }
+}
+
+/* Center main vertically + horizontally */
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circular logo */
+.site-logo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 25px;
+    border: 3px solid #ffe81f;
+    box-shadow: 0 0 15px rgba(255, 232, 31, 0.5);
+}
+
+/* Form card */
+form {
+    background: rgba(10, 10, 10, 0.9);
+    width: 350px;
+    padding: 25px 30px 30px;
+    border: 1px solid #444;
+    border-radius: 12px;
+    box-shadow:
+        0 0 20px rgba(0, 0, 0, 0.9),
+        0 0 10px rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffe81f;
+    letter-spacing: 1px;
+}
+
+/* Labels + inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #e0e0e0;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    box-sizing: border-box;
+    background-color: #111;
+    color: #f5f5f5;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #777;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #ffe81f;
+    box-shadow: 0 0 6px rgba(255, 232, 31, 0.7);
+    outline: none;
+}
+
+/* Error messages + red border */
+.error-msg {
+    color: #ff4b4b;
+    font-size: 0.8rem;
+    height: 14px;
+    display: block;
+}
+
+input.input-error {
+    border-color: #ff4b4b;
+    box-shadow: 0 0 4px rgba(255, 75, 75, 0.8);
+}
+
+/* Submit button */
+#submitBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffe81f;
+    border: 1px solid #b89b16;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    box-shadow: 0 0 10px rgba(255, 232, 31, 0.6);
+}
+
+#submitBtn:hover {
+    background-color: #f2d73d;
+    box-shadow: 0 0 14px rgba(255, 232, 31, 0.9);
+}
+
+/* Text + links */
+p {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #d0d0d0;
+}
+
+a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 4px rgba(0, 229, 255, 0.8);
 }

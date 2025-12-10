@@ -1,10 +1,17 @@
 $(document).ready(function(){
-
     $("#submitBtn").on("click", function () {
         checkAll();
     });
 
-    
+    // live validation while typing 
+    $("#email").on("input", function () {
+        validateEmailField();
+    });
+
+    $("#pass").on("input", function () {
+        validatePasswordField();
+    });
+
 });
 
 function requestUsers(email, password){
@@ -12,8 +19,8 @@ function requestUsers(email, password){
     $.ajax({
         method: "POST",
         url: urlUsers,
-        accept: "application/json",
-        Contente: "json",
+        contentType: "application/json",
+        accept: 'application/json',
         data: JSON.stringify({
             email: email,
             password: password
@@ -25,10 +32,6 @@ function requestUsers(email, password){
         .done(function(o){
             // Save token (expires in 2 minutes)
             document.cookie = `token=${o.token}; path=/; max-age=120; Secure; SameSite=Lax`;
-
-            //*Testing purpose only
-            console.log("LOGIN OK:", o);      // o.token exists if success
-            alert("Login successful. Token: " + o.token);
             window.location.href = "/Core/HomePage.html"; 
         })
         .fail(function(o) {
@@ -39,21 +42,52 @@ function requestUsers(email, password){
     }
 
 
-function checkAll(){
-    const regEmail = /^[\w-]+@[a-z0-9]+\.(com|(co\.)?uk|(qc\.)?ca)$/i;
-    const regPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!$_-])[\w!$-]{8,24}$/;   
+const regEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const regPass = /^cityslicka$/i;
 
-    var email = document.getElementById("email").value
-    var pswd = document.getElementById("pass").value
-    
+function validateEmailField() {
+    const email = $("#email").val().trim();
+    const ok = regEmail.test(email);
 
-    var emailCheck = regEmail.test(email);
-	var pwsdCheck = regPass.test(pswd);
+    if (email === "") {
+        $("#emailError").text("Email is required.");
+        $("#email").addClass("input-error");
+        return false;
+    } else if (!ok) {
+        $("#emailError").text("Please enter a valid email.");
+        $("#email").addClass("input-error");
+        return false;
+    } else {
+        $("#emailError").text("");
+        $("#email").removeClass("input-error");
+        return true;
+    }
+}
 
-    requestUsers(email, pswd);
+function validatePasswordField() {
+    const pswd = $("#pass").val();
+    const ok = regPass.test(pswd); // "cityslicka"
 
-    //todo: fix validation 
-    if(emailCheck && pwsdCheck == true){
-        requestUsers(email, pswd);
+    if (pswd === "") {
+        $("#passError").text("Password is required.");
+        $("#pass").addClass("input-error");
+        return false;
+    } else if (!ok) {
+        $("#passError").text('Password must be "cityslicka".');
+        $("#pass").addClass("input-error");
+        return false;
+    } else {
+        $("#passError").text("");
+        $("#pass").removeClass("input-error");
+        return true;
+    }
+}
+
+function checkAll() {
+    const emailValid = validateEmailField();
+    const passValid  = validatePasswordField();
+
+    if (emailValid && passValid) {
+        requestUsers($("#email").val().trim(), $("#pass").val());
     }
 }

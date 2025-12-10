@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Your JS -->
     <script src="Resources/JS/registerPage.js"></script>
+
+    <!-- Your CSS -->
     <link rel="stylesheet" href="Resources/CSS/resgisterpage.css">
+
+    <!-- Star Wars-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
 
     <title>Register Page</title>
 </head>
 
 <body>
+	<main>
+		<div class="stars"></div>
+
+	<img src="Resources/IMG/circle.png" class="site-logo" alt="The Rogue Market Logo">
+
     <form action ="" method="POST">
 		<fieldset>
 			<legend>Create account:</legend>
@@ -19,17 +33,22 @@
 		    <input type="text" id="name" name="name"><br><br>
 
 		    <label for="email">Email:</label>
-		    <input type="text" id="email" name="email"><br><br>
+		    <input type="text" id="email" name="email">
+			<span id="emailError" class="error-msg"></span><br><br>
+
 		    <label for="pass">Password:</label>
-		    <input type="password" id="pass" name="pass"><br><br>
+		    <input type="password" id="pass" name="pass">
+			<span id="passError" class="error-msg"></span><br><br>
             
             <label for="repass">Re-enter Password:</label>
-            <input type="password" id="repass" name="repass"><br><br>
+            <input type="password" id="repass" name="repass">
+			<span id="repassError" class="error-msg"></span><br><br>
 
 		    <input type="button" id="submitBtn" value="Submit">
 			<p>Already have an account? <a href="LoginPage.html">Login here</a>.</p>
 		</fieldset>
 	</form>
+</main>
     
 </body>
 </html>

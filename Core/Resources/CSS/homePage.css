@@ -1,20 +1,278 @@
-.cart-icon-container {
-    position: relative;
-    display: inline-block; /* Adjust as needed for layout */
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.cart-icon {
-    font-size: 24px; /* Adjust size as needed */
-    color: #333; /* Icon color */
+main {
+    margin: 0;
+    padding: 0;
 }
+
+
+/* ========================================== */
+/*                 CART BADGE                 */
+/* ========================================== */
+
 .item-count-badge {
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: -5px;
+    right: -5px;
     background-color: red;
     color: white;
     border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
+    padding: 2px 5px;
+    font-size: 11px;
     font-weight: bold;
+}
+
+/* ========================================== */
+/*                   LOGO                     */
+/* ========================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;       /* Smaller logo */
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffe81f;
+    box-shadow: 0 0 10px rgba(255, 232, 31, 0.6);
+    transition: 0.2s ease;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.06);
+    box-shadow: 0 0 15px rgba(255, 232, 31, 1);
+}
+
+/* ========================================== */
+/*                   HEADER                   */
+/* ========================================== */
+
+header {
+    width: 100%;
+    padding: 4px 10px;       /* Smaller header height */
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid #444;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;   /* Centers content */
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ========================================== */
+/*                NAVIGATION                  */
+/* ========================================== */
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    color: #00e5ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-shadow: 0 0 8px rgba(0, 229, 255, 1);
+}
+
+/* ========================================== */
+/*              HEADER ACTIONS                */
+/* ========================================== */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ========================================== */
+/*               ICON BUTTONS                 */
+/* ========================================== */
+
+.icon-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    color: #00e5ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.icon-btn i {
+    font-size: 16px; /* Smaller icons */
+}
+
+.icon-btn:hover {
+    color: #13f2ff;
+}
+
+/* ========================================== */
+/*               SEARCH BAR                   */
+/* ========================================== */
+
+.search-wrapper {
+    position: relative;
+}
+
+#searchBar {
+    padding: 4px 10px;
+    height: 28px;              /* Smaller height */
+    width: 160px;              /* Compact width */
+
+    border-radius: 5px;
+    border: 1px solid #666;
+    background: #111;
+    color: #eee;
+    font-size: 0.9rem;
+}
+
+#searchBar:focus {
+    border-color: #ffe81f;
+    box-shadow: 0 0 6px rgba(255, 232, 31, 0.7);
+}
+
+/* ========================================== */
+/*                 HERO SECTION               */
+/* ========================================== */
+
+.hero {
+    width: 100%;
+    min-height: 250px;
+
+    background: url("https://placehold.co/1600x400?text=Hero+Coming+Soon") center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+
+    box-shadow: inset 0 0 120px #000;
+}
+
+
+/* Match hero content width EXACTLY with header */
+.hero .header-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero-text {
+    text-align: center;
+    margin-top: 0;
+}
+
+.hero-text h1 {
+    font-size: 1.9rem;
+    color: #ffe81f;
+    text-shadow: 0 0 18px rgba(255, 232, 31, 1);
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: #dcdcdc;
+}
+
+.shop-btn {
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: #ffe81f;
+    color: #111;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+
+/* ========================================== */
+/*           FEATURED PRODUCT GRID            */
+/* ========================================== */
+
+.featured-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.7rem;
+    color: #ffe81f;
+    text-shadow: 0 0 10px rgba(255, 232, 31, 1);
+    margin-bottom: 25px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: rgba(20, 20, 20, 0.95);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #444;
+
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 232, 31, 0.5);
+}
+
+.view-btn {
+    margin-top: 10px;
+    padding: 6px 18px;
+    background: #00e5ff;
+    color: #111;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background: #13f2ff;
+}
+
+/* ========================================== */
+/*                   FOOTER                   */
+/* ========================================== */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 35px;
+    background: rgba(10, 10, 10, 0.9);
+    border-top: 1px solid #333;
 }

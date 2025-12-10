@@ -1,0 +1,320 @@
+:root {
+  --imperial-black: #000000;
+  --rebel-yellow: #FFD700;
+  --holo-blue: #00BFFF;
+  --panel-gray: #2C2C2C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background: radial-gradient(circle at top, #000000 0%, var(--imperial-black) 70%);
+  color: var(--holo-blue);
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================== */
+/*                   HEADER                   */
+/* ========================================== */
+header {
+    width: 100%;
+    padding: 4px 10px;       /* Smaller header height */
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid #444;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;   /* Centers content */
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px var(--rebel-yellow);
+    text-align: center;
+    letter-spacing: 3px;
+    color: var(--rebel-yellow)
+}
+
+/* ========================================== */
+/*                NAVIGATION                  */
+/* ========================================== */
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+/* nav a {
+  color: var(--rebel-yellow);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: 1px solid var(--rebel-yellow);
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+} */
+nav a {
+    color: var(--rebel-yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: var(--holo-blue);
+    color: var(--imperial-black);
+    box-shadow: 0 0 15px var(--holo-blue);
+    transform: scale(1.05);
+}
+
+/* Main content - Holographic panels */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    background: rgba(44, 44, 44, 0.9);
+    border: 2px solid var(--holo-blue);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: 
+        0 0 20px rgba(0, 191, 255, 0.2),
+        inset 0 0 20px rgba(0, 191, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    animation: scanline 4s linear infinite;
+} */
+
+section h3{
+    color: var(--holo-blue);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 0 0 10px var(--holo-blue);
+    border-bottom: 2px solid var(--holo-blue);
+    padding-bottom: 0.5rem;
+}
+
+section h2 {
+    color: var(--rebel-yellow);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 0 0 10px var(--rebel-yellow);
+    border-bottom: 2px solid var(--holo-blue);
+    padding-bottom: 0.5rem;
+}
+
+/* Table - Datapad display */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--holo-blue);
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 191, 255, 0.3);
+}
+
+th {
+    background: var(--sith-red);
+    color: var(--rebel-yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr:hover {
+    background: rgba(255, 215, 0, 0.1);
+}
+
+/* Links - Force-sensitive buttons */
+a {
+    color: var(--rebel-yellow);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--rebel-yellow);
+    border-radius: 4px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+a:hover::before {
+    left: 100%;
+}
+
+a:hover {
+    background: var(--rebel-yellow);
+    color: var(--imperial-black);
+    box-shadow: 0 0 20px var(--rebel-yellow);
+    transform: translateY(-2px);
+}
+
+/* Lists - Mission logs */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+    border-left: 3px solid var(--rebel-yellow);
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    background: rgba(255, 215, 0, 0.05);
+}
+
+
+
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+label input.addressInput{
+    flex: 1;
+    min-width: 250px;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--holo-blue);
+    border-radius: 4px;
+}
+
+label input:focus.addressInput{
+    outline: none;
+    box-shadow: 0 0 10px var(--holo-blue);
+    border-color: var(--holo-blue)
+}
+
+/* ========================================== */
+/*                Toggle Switch               */
+/* ========================================== */
+
+#preferences .toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+/* Hide the default checkbox */
+/* #preferences .toggle-input {
+  display: none;
+} */
+
+/* Slider background */
+/* #preferences .toggle-slider {
+  position: relative;
+  width: 56px;
+  height: 28px;
+  background: #555;
+  border-radius: 999px;
+  transition: background 0.3s;
+} */
+
+/* Slider knob */
+#preferences .toggle-slider::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.3s;
+}
+
+/* When checked: change color + move knob */
+#preferences .toggle-input:checked + .toggle-slider {
+  background: #00bfff;
+}
+
+#preferences .toggle-input:checked + .toggle-slider::before {
+  transform: translateX(28px);
+}
+
+/* ========================================== */
+/*                   FOOTER                   */
+/* ========================================== */
+
+footer {
+    color: var(--rebel-yellow);
+    text-align: center;
+    padding: 15px;
+    margin-top: 35px;
+    background: rgba(10, 10, 10, 0.9);
+    border-top: 1px solid #333;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+footer nav a {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+}

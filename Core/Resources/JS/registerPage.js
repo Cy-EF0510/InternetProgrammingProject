@@ -2,8 +2,13 @@ $(document).ready(function(){
     $("#submitBtn").on("click", function () {
         checkAll();
     });
-    
+
+    // live validation while typing
+    $("#email").on("input", validateEmailField);
+    $("#pass").on("input", validatePasswordField);
+    $("#repass").on("input", validateRePasswordField);
 });
+
 
 function requestUsers( email, password){
     var urlUsers = "https://reqres.in/api/register";
@@ -34,52 +39,91 @@ function requestUsers( email, password){
     });
 }
 
+const regEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const regPass = /^cityslicka$/i;
 
-function checkAll(){
-    //*Old regex patterns for email and password validation
-    //const regEmail = /^[\w-]+@[a-z0-9]+\.(in|com|(co\.)?uk|(qc\.)?ca)$/i;
-    //const regPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!$_-])[\w!$-]{8,24}$/; 
-    
-    //*To work with reqres.in API 
+function validateEmailField() {
+    const email = $("#email").val().trim();
+    const ok = regEmail.test(email);
 
-    /*
-    Uses this 
-    "username": "eve.holt@reqres.in",
-    "email": "eve.holt@reqres.in",
-    "password": "cityslicka"
-    */ 
-    const regEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const regPass = /^cityslicka$/i;
- 
-
-    var name = document.getElementById("name").value
-    var email = document.getElementById("email").value
-    var pswd = document.getElementById("pass").value
-    var confirmPswd = document.getElementById("repass").value
-    
-
-    var emailCheck = regEmail.test(email);
-	var pwsdCheck = regPass.test(pswd);
-
-    //check if passwords match
-    if(pswd == confirmPswd){
-        console.log("Passwords match.");
-        //check if email and password are valid
-        if(emailCheck && pwsdCheck == true){
-            requestUsers(email, pswd);
-        }
-        else if(!emailCheck ){
-            alert("Invalid email format!");
-        }
-        else if(!pwsdCheck){
-            alert("Invalid password format!");
-        }
-    }
-    else{
-        alert("Passwords do not match!");
+    if (email === "") {
+        $("#emailError").text("Email is required.");
+        $("#email").addClass("input-error");
+        return false;
+    } else if (!ok) {
+        $("#emailError").text("Please enter a valid email.");
+        $("#email").addClass("input-error");
+        return false;
+    } else {
+        $("#emailError").text("");
+        $("#email").removeClass("input-error");
+        return true;
     }
 }
 
-function sendData() {
-	document.getElementsByTagName("form")[0].submit();
+function validatePasswordField() {
+    const pswd = $("#pass").val();
+    const ok = regPass.test(pswd);   // must be "cityslicka" for this API
+
+    if (pswd === "") {
+        $("#passError").text("Password is required.");
+        $("#pass").addClass("input-error");
+        return false;
+    } else if (!ok) {
+        $("#passError").text('For this demo, password must be "cityslicka".');
+        $("#pass").addClass("input-error");
+        return false;
+    } else {
+        $("#passError").text("");
+        $("#pass").removeClass("input-error");
+        return true;
+    }
+}
+
+function validateRePasswordField() {
+    const pswd = $("#pass").val();
+    const confirmPswd = $("#repass").val();
+
+    if (confirmPswd === "") {
+        $("#repassError").text("Re-Enter Password is required");
+        $("#repass").addClass("input-error");
+        return false;
+    } else if (pswd !== confirmPswd) {
+        $("#repassError").text("Passwords do not match.");
+        $("#repass").addClass("input-error");
+        return false;
+    } else {
+        $("#repassError").text("");
+        $("#repass").removeClass("input-error");
+        return true;
+    }
+}
+
+// ---------- FINAL CHECK ON SUBMIT (KEEPS YOUR LOGIC) ----------
+function checkAll() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const pswd = document.getElementById("pass").value;
+    const confirmPswd = document.getElementById("repass").value;
+
+    const emailCheck = regEmail.test(email);
+    const pwsdCheck = regPass.test(pswd);
+
+    // run live validators one more time to update messages
+    validateEmailField();
+    validatePasswordField();
+    validateRePasswordField();
+
+    // if (pswd === confirmPswd) {
+    //     console.log("Passwords match.");
+    //     if (emailCheck && pwsdCheck) {
+    //         requestUsers(email, pswd);
+    //     } else if (!emailCheck) {
+    //         alert("Invalid email format!");
+    //     } else if (!pwsdCheck) {
+    //         alert("Invalid password format!");
+    //     }
+    // } else {
+    //     alert("Passwords do not match!");
+    // }
 }
