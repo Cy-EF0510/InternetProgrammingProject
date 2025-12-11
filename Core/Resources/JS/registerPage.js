@@ -4,6 +4,7 @@ $(document).ready(function(){
     });
 
     // live validation while typing
+    $("#name").on("input", validateNameField);
     $("#email").on("input", validateEmailField);
     $("#pass").on("input", validatePasswordField);
     $("#repass").on("input", validateRePasswordField);
@@ -26,11 +27,16 @@ function requestUsers( email, password){
             "x-api-key": "reqres_0500eb5af06f494291043eca51a3dae2"
             },
         success: function(o) {
-            console.log("Success:", o.token);
-            // Save token to cookie
-            document.cookie = `token=${o.token}; path=/; max-age=120`;
-            alert("Registration successful. Token: " + o.token);
-            window.location.href = "/Core/LoginPage.html"; 
+
+            console.log("Registration response:", o);
+
+            const auth = { id: o.id, token: o.token };
+
+            document.cookie = "auth=" + JSON.stringify(auth) + "; path=/; max-age=120";
+
+            console.log(document.cookie);
+            
+            window.location.href = "/Core/HomePage.html"; 
         },
         error: function(o) {
             console.log("Error:", o.responseJSON.error);
@@ -41,6 +47,22 @@ function requestUsers( email, password){
 
 const regEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const regPass = /^cityslicka$/i;
+
+
+function validateNameField() {
+    const name = $("#name").val().trim();
+
+    if (name === "") {
+        $("#nameError").text("Name is required.");
+        $("#name").addClass("input-error");
+        return false;
+    }
+    else {
+        $("#nameError").text("");
+        $("#name").removeClass("input-error");
+        return true;
+    }
+}
 
 function validateEmailField() {
     const email = $("#email").val().trim();
@@ -99,7 +121,7 @@ function validateRePasswordField() {
     }
 }
 
-// ---------- FINAL CHECK ON SUBMIT (KEEPS YOUR LOGIC) ----------
+
 function checkAll() {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
@@ -110,20 +132,15 @@ function checkAll() {
     const pwsdCheck = regPass.test(pswd);
 
     // run live validators one more time to update messages
+    validateNameField();
     validateEmailField();
     validatePasswordField();
     validateRePasswordField();
 
-    // if (pswd === confirmPswd) {
-    //     console.log("Passwords match.");
-    //     if (emailCheck && pwsdCheck) {
-    //         requestUsers(email, pswd);
-    //     } else if (!emailCheck) {
-    //         alert("Invalid email format!");
-    //     } else if (!pwsdCheck) {
-    //         alert("Invalid password format!");
-    //     }
-    // } else {
-    //     alert("Passwords do not match!");
-    // }
+    if (pswd === confirmPswd) {
+        if (emailCheck && pwsdCheck) {
+            alert("All fields are valid. Proceeding to registration...");
+            requestUsers(email, pswd);
+        }
+    }
 }

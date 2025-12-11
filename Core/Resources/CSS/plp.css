@@ -1,0 +1,431 @@
+/* ==== GLOBAL PAGE STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #05060a;
+  color: #f5f5f5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Optional: make headings use your Star Wars font */
+h1, h2, h3, nav a {
+  font-family: "Pathway Gothic One", sans-serif;
+  letter-spacing: 0.08em;
+}
+
+/* Keep header full width at the top */
+header {
+  background: #090b12;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* If you already have header CSS elsewhere, this is safe and minimal */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+/* Basic nav look – adjust if you already styled it */
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: #ffcc33;
+}
+
+/* Header actions (search + icons) */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-btn {
+  color: #f5f5f5;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.icon-btn:hover {
+  color: #ffcc33;
+}
+
+.item-count-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: #ff4d4d;
+  color: #fff;
+  border-radius: 999px;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+}
+
+/* Search bar + suggestions */
+.search-wrapper {
+  position: relative;
+}
+
+#searchBar {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #333;
+  background: #12141e;
+  color: #f5f5f5;
+  min-width: 200px;
+}
+
+#searchBar:focus {
+  outline: none;
+  border-color: #ffcc33;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #10121b;
+  border: 1px solid #333;
+  border-radius: 6px;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 20;
+  display: none; /* show via JS */
+}
+
+.search-suggestions div {
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.search-suggestions div:hover {
+  background: #1c1f2b;
+}
+
+/* ==== LAYOUT: ASIDE + MAIN ==== */
+
+.plp-aside {
+  position: fixed;
+  top: 80px;              /* roughly header height; adjust if needed */
+  left: 0;
+  width: 260px;
+  bottom: 0;
+  overflow-y: auto;
+  background: #0b0d14;
+  border-right: 1px solid #222;
+  padding: 20px 16px;
+}
+
+.plp-aside h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  color: #ffcc33;
+}
+
+.filter-block {
+  margin-bottom: 18px;
+}
+
+.filter-block label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.filter-block select,
+.filter-block input[type="range"] {
+  width: 100%;
+  background: #12141e;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #f5f5f5;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 1200px;
+  margin: 90px auto 40px; /* leave room for sticky header */
+  padding: 0 20px 40px;
+  margin-left: 280px;     /* space for aside (260 + gap) */
+}
+
+main h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #ffcc33;
+}
+
+/* ==== PRODUCT GRID & CARDS ==== */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  background: #12141e;
+  border-radius: 10px;
+  border: 1px solid #25283a;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  border-color: #ffcc33;
+}
+
+.product-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card-body {
+  padding: 10px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.product-category {
+  font-size: 0.8rem;
+  color: #9aa0b5;
+}
+
+.product-description {
+  font-size: 0.8rem;
+  color: #c2c7dd;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-price {
+  margin-top: 6px;
+  font-weight: bold;
+  color: #ff8243;
+  font-size: 1rem;
+}
+
+/* ==== PAGINATION ==== */
+
+.pagination {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  background: #12141e;
+  color: #f5f5f5;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.pagination button:hover:not(:disabled) {
+  border-color: #ffcc33;
+  color: #ffcc33;
+}
+
+.pagination button.active {
+  background: #ffcc33;
+  border-color: #ffcc33;
+  color: #000;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* ==== FOOTER ==== */
+
+.footer {
+  background: #05060a;
+  color: #eee;
+  padding: 40px 20px 10px;
+  border-top: 1px solid #222;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.footer-section h3 {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #ffcc33;
+}
+
+.footer-section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+/* Newsletter */
+.newsletter-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter-box input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  background: #12141e;
+  color: #f5f5f5;
+}
+
+.newsletter-box button {
+  background: #ffcc33;
+  color: #000;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.newsletter-box button:hover {
+  filter: brightness(1.1);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #bbb;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #12141e;
+  border-radius: 50%;
+  padding: 6px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #ffcc33;
+  color: #000;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #222;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* ==== RESPONSIVE ==== */
+
+@media (max-width: 900px) {
+  .plp-aside {
+    position: static;
+    width: auto;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #222;
+    margin: 0 16px;
+  }
+
+  main {
+    margin: 20px auto 40px;
+    margin-left: 0;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #searchBar {
+    min-width: 0;
+    width: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 8px;
+  }
+}

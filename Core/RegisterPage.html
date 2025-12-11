@@ -21,7 +21,8 @@
 
 <body>
 	<main>
-		<div class="stars"></div>
+	
+	<div class="stars"></div>
 
 	<img src="Resources/IMG/circle.png" class="site-logo" alt="The Rogue Market Logo">
 
@@ -30,19 +31,20 @@
 			<legend>Create account:</legend>
 
 		    <label for="name">Name:</label>
-		    <input type="text" id="name" name="name"><br><br>
+		    <input type="text" id="name" name="name">
+			<span id="nameError" class="error-msg"></span><br>
 
 		    <label for="email">Email:</label>
 		    <input type="text" id="email" name="email">
-			<span id="emailError" class="error-msg"></span><br><br>
+			<span id="emailError" class="error-msg"></span><br>
 
 		    <label for="pass">Password:</label>
 		    <input type="password" id="pass" name="pass">
-			<span id="passError" class="error-msg"></span><br><br>
+			<span id="passError" class="error-msg"></span><br>
             
             <label for="repass">Re-enter Password:</label>
             <input type="password" id="repass" name="repass">
-			<span id="repassError" class="error-msg"></span><br><br>
+			<span id="repassError" class="error-msg"></span><br>
 
 		    <input type="button" id="submitBtn" value="Submit">
 			<p>Already have an account? <a href="LoginPage.html">Login here</a>.</p>

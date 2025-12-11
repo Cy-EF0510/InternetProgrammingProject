@@ -31,30 +31,6 @@ body::before {
     to   { transform: translateY(-400px); }
 }
 
-/* Extra “depth” starfield layer from your <div class="stars"> */
-.stars {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow:
-        1000px 200px #fff,
-        600px 900px #fff,
-        300px 600px #fff,
-        1200px 700px #fff,
-        800px 300px #fff,
-        500px 1200px #fff,
-        200px 400px #fff;
-    animation: starAnim 50s linear infinite;
-    z-index: -1;
-}
-
-@keyframes starAnim {
-    from { transform: translateY(0px); }
-    to   { transform: translateY(-2000px); }
-}
 
 /* Center main vertically + horizontally */
 main {

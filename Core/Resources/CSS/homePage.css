@@ -157,112 +157,143 @@ nav a:hover {
     box-shadow: 0 0 6px rgba(255, 232, 31, 0.7);
 }
 
-/* ========================================== */
-/*                 HERO SECTION               */
-/* ========================================== */
+/* ==========================================
+   HERO CAROUSEL
+========================================== */
 
-.hero {
+.hero-carousel {
+    position: relative;
     width: 100%;
-    min-height: 250px;
-
-    background: url("https://placehold.co/1600x400?text=Hero+Coming+Soon") center/cover no-repeat;
-
-    display: flex;
-    justify-content: center;
-
-    box-shadow: inset 0 0 120px #000;
+    height: 350px;
+    overflow: hidden;
 }
 
-
-/* Match hero content width EXACTLY with header */
-.hero .header-container {
-    max-width: 1200px;
+.hero-slide {
+    position: absolute;
     width: 100%;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-
-.hero-text {
-    text-align: center;
-    margin-top: 0;
+.hero-slide.active {
+    opacity: 1;
 }
 
-.hero-text h1 {
-    font-size: 1.9rem;
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: #ffe81f;
-    text-shadow: 0 0 18px rgba(255, 232, 31, 1);
+    text-shadow: 0 0 15px #ffe81f;
 }
 
-.hero-text p {
-    font-size: 1rem;
-    color: #dcdcdc;
+.hero-dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
 }
 
-.shop-btn {
-    margin-top: 12px;
-    padding: 10px 20px;
+.hero-dots .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #888;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hero-dots .dot.active {
     background: #ffe81f;
-    color: #111;
-    font-weight: bold;
-    border-radius: 4px;
+    box-shadow: 0 0 8px #ffe81f;
 }
 
 
-/* ========================================== */
-/*           FEATURED PRODUCT GRID            */
-/* ========================================== */
+/* ==========================================
+   FEATURED PRODUCTS CAROUSEL
+========================================== */
 
-.featured-section {
+.featured-products {
     padding: 40px;
     text-align: center;
 }
 
-.section-title {
-    font-size: 1.7rem;
-    color: #ffe81f;
-    text-shadow: 0 0 10px rgba(255, 232, 31, 1);
-    margin-bottom: 25px;
+.product-carousel {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease;
 }
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #ffe81f;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    z-index: 10;
+}
+
+.carousel-btn.left {
+    left: 0;
+}
+
+.carousel-btn.right {
+    right: 0;
+}
+
+
+/* ==========================================
+   PRODUCT CARD
+========================================== */
 
 .product-card {
+    min-width: 240px;
     background: rgba(20, 20, 20, 0.95);
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #444;
-
     text-align: center;
-    transition: 0.2s ease;
 }
 
-.product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 232, 31, 0.5);
+.product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.product-card h3 {
+    font-size: 1rem;
+    color: #ffe81f;
+}
+
+.product-card p {
+    color: #00e5ff;
 }
 
 .view-btn {
     margin-top: 10px;
     padding: 6px 18px;
     background: #00e5ff;
-    color: #111;
-    font-weight: bold;
-    border-radius: 4px;
     border: none;
+    font-weight: bold;
     cursor: pointer;
-}
-
-.view-btn:hover {
-    background: #13f2ff;
 }
 
 /* ========================================== */
