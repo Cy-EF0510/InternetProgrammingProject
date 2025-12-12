@@ -30,8 +30,9 @@ function requestUsers(email, password){
             }
         })
         .done(function(o){
+            console.log(o);
             // Save token (expires in 2 minutes)
-            document.cookie = `token=${o.token}; path=/; max-age=120; Secure; SameSite=Lax`;
+            document.cookie = `token=${o.token}; path=/; max-age=120; SameSite=Lax`;
             window.location.href = "/Core/HomePage.html"; 
         })
         .fail(function(o) {

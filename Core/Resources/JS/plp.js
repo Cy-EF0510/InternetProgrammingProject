@@ -1,79 +1,133 @@
-$(document).ready(function() {
-    renderFooter("#footer", "My Online Store");
-});
+let allProducts = [];
+let viewProducts = [];   // filtered + sorted + searched
+let page = 1;
+const pageSize = 8;
+let isLoading = false;
+let hasMore = true;
 
-function renderFooter(selector, storeName = "The ") {
+$(document).ready(function () {
+  getProducts();
+  updateCartBadge();
 
-  // Create the footer structure
-  const $footer = $(`
-    <footer>
-      <div class="footer-container"></div>
-      <div class="footer-bottom">© 2025 ${storeName}. All rights reserved.</div>
-    </footer>
-  `);
-
-  const $container = $footer.find(".footer-container");
-
-  // ============================
-  // CATEGORY SECTION
-  // ============================
-  const categories = ["Clothing", "Electronics", "Home", "Accessories"];
-
-  const $cat = $(`
-    <div class="footer-section">
-      <h3>Categories</h3>
-      <ul></ul>
-    </div>
-  `);
-
-  categories.forEach(cat => {
-    $cat.find("ul").append(`<li><a href="#">${cat}</a></li>`);
+  // Infinite scroll (vertical)
+  $(window).on("scroll", function () {
+    if (
+      !isLoading &&
+      hasMore &&
+      $(window).scrollTop() + $(window).height() >=
+        $(document).height() - 300
+    ) {
+      appendNextPage();
+    }
   });
 
-  // ============================
-  // CONTACT INFO
-  // ============================
-  const $contact = $(`
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p>Email: support@example.com</p>
-      <p>Phone: +1 (514) 555-1234</p>
-      <p>Address: 123 Main Street, Montreal</p>
-    </div>
-  `);
+});
 
-  // ============================
-  // NEWSLETTER SIGNUP
-  // ============================
-  const $newsletter = $(`
-    <div class="footer-section">
-      <h3>Newsletter</h3>
-      <p>Stay updated on deals and new products.</p>
-      <div class="newsletter-box">
-        <input type="email" id="newsletterEmail" placeholder="Enter your email">
-        <button id="newsletterBtn">Sign Up</button>
-      </div>
-      <p id="newsletterMsg"></p>
-    </div>
-  `);
+/* =======================
+   PRODUCTS
+======================= */
 
-  // ============================
-  // SOCIAL ICONS
-  // ============================
-  const $social = $(`
-    <div class="footer-section">
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-        <a href="#" aria-label="Instagram"><svg width="24" height="24"><circle cx="12" cy="12" r="10" fill="currentColor"/></svg></a>
-        <a href="#" aria-label="Facebook"><svg width="24" height="24"><rect x="4" y="4" width="16" height="16" fill="currentColor"/></svg></a>
-        <a href="#" aria-label="Twitter"><svg width="24" height="24"><polygon points="4,20 20,4 20,20" fill="currentColor"/></svg></a>
-      </div>
-    </div>
-  `);
+function getProducts() {
+  $.getJSON("Data/products.json")
+    .done(function (products) {
+      allProducts = products;
+      page = 1;
+      hasMore = true;
 
-  // Append sections into footer container
-  $container.append($cat, $contact, $newsletter, $social);
+      $("#dealsRow").empty();
+      appendNextPage();
+    })
+    .fail(function (xhr) {
+      console.error("Failed to load products:", xhr.status);
+    });
+}
 
-  // Render into the page
-  $(selector).html($footer);
+function appendNextPage() {
+  if (isLoading || !hasMore) return;
+  isLoading = true;
+
+  const start = (page - 1) * pageSize;
+  const end = start + pageSize;
+  const slice = allProducts.slice(start, end);
+
+  if (slice.length === 0) {
+    hasMore = false;
+    isLoading = false;
+    return;
+  }
+
+  for (let i = 0; i < slice.length; i++) {
+    $("#dealsRow").append(createProductBox(slice[i]));
+  }
+
+  page++;
+  if (slice.length < pageSize) hasMore = false;
+  isLoading = false;
+}
+
+/* =======================
+   PRODUCT CARD (jQuery)
+======================= */
+function createProductBox(product) {
+  const price = Number(product.price);
+
+  const card = $("<div/>")
+    .addClass("product-card")
+    .attr("data-id", product.id)
+    .css("cursor", "pointer");
+
+  card.on("click", function () {
+    window.location.href = `ProductDetailsPage.html?id=${product.id}`;
+  });
+
+  const imgWrap = $("<div/>").addClass("product-img-wrap");
+
+  const img = $("<img/>")
+    .addClass("product-img")
+    .attr("src", product.image + "?id=" + product.id)
+    .attr("alt", product.name);
+
+  imgWrap.append(img);
+
+  const priceRow = $("<div/>").addClass("price-row");
+  priceRow.append(
+    $("<div/>").addClass("price").text(`$${price.toFixed(2)}`),
+    $("<div/>").addClass("stock").text(`Stock: ${product.stock}`)
+  );
+
+  card.append(
+    imgWrap,
+    priceRow,
+    $("<div/>").addClass("title").text(product.name),
+    $("<div/>").addClass("cat").text(product.category)
+  );
+
+  return card;
+}
+
+/* =======================
+CART (localStorage)
+======================= */
+
+function getCart() {
+  return JSON.parse(localStorage.getItem("cart")) || [];
+}
+
+function saveCart(cart) {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+
+function updateCartBadge() {
+  const cart = getCart();
+  let count = 0;
+
+  for (let i = 0; i < cart.length; i++) {
+    const qty = Number(cart[i].qty);
+    if (!Number.isNaN(qty)) {
+      count += qty;
+    }
+  }
+
+  $(".item-count-badge").text(count);
 }

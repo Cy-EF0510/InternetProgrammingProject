@@ -1,23 +1,23 @@
 /* ==== GLOBAL PAGE STYLES ==== */
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
   background: #05060a;
   color: #f5f5f5;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
+  letter-spacing: 0.08em;
 }
 
-/* Optional: make headings use your Star Wars font */
+/* Headings + nav font */
 h1, h2, h3, nav a {
   font-family: "Pathway Gothic One", sans-serif;
   letter-spacing: 0.08em;
 }
 
-/* Keep header full width at the top */
+/* ==== HEADER ==== */
+
 header {
   background: #090b12;
   border-bottom: 1px solid #222;
@@ -26,49 +26,69 @@ header {
   z-index: 50;
 }
 
-/* If you already have header CSS elsewhere, this is safe and minimal */
+/* 3-column grid: logo | centered nav | actions */
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
-  display: flex;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
+  column-gap: 20px;
 }
+
+/* Logo */
+.logo { display: flex; align-items: center; }
 
 .logo-img {
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffe81f;
+  box-shadow: 0 0 10px rgba(255, 232, 31, 0.6);
+  transition: 0.2s ease;
 }
 
-/* Basic nav look – adjust if you already styled it */
+.logo:hover .logo-img {
+  transform: scale(1.06);
+  box-shadow: 0 0 15px rgba(255, 232, 31, 1);
+}
+
+/* Centered nav (always centered) */
+header nav {
+  justify-self: center;
+  display: flex;
+  gap: 22px;
+  white-space: nowrap;
+}
+
 nav a {
   color: #f5f5f5;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0;              /* IMPORTANT: remove your old margins */
   font-size: 0.95rem;
 }
 
-nav a:hover {
-  color: #ffcc33;
-}
+nav a:hover { color: #ffcc33; }
 
-/* Header actions (search + icons) */
+/* Right side actions */
 .header-actions {
+  justify-self: end;
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
+/* Icons */
 .icon-btn {
   color: #f5f5f5;
   text-decoration: none;
   position: relative;
   font-size: 1.1rem;
 }
-
-.icon-btn:hover {
-  color: #ffcc33;
-}
+.icon-btn:hover { color: #ffcc33; }
 
 .item-count-badge {
   position: absolute;
@@ -81,10 +101,8 @@ nav a:hover {
   font-size: 0.75rem;
 }
 
-/* Search bar + suggestions */
-.search-wrapper {
-  position: relative;
-}
+/* Search */
+.search-wrapper { position: relative; }
 
 #searchBar {
   padding: 6px 10px;
@@ -120,15 +138,13 @@ nav a:hover {
   cursor: pointer;
 }
 
-.search-suggestions div:hover {
-  background: #1c1f2b;
-}
+.search-suggestions div:hover { background: #1c1f2b; }
 
 /* ==== LAYOUT: ASIDE + MAIN ==== */
 
 .plp-aside {
   position: fixed;
-  top: 80px;              /* roughly header height; adjust if needed */
+  top: 80px;              /* adjust if header height changes */
   left: 0;
   width: 260px;
   bottom: 0;
@@ -145,9 +161,7 @@ nav a:hover {
   color: #ffcc33;
 }
 
-.filter-block {
-  margin-bottom: 18px;
-}
+.filter-block { margin-bottom: 18px; }
 
 .filter-block label {
   display: block;
@@ -170,117 +184,102 @@ nav a:hover {
 /* MAIN CONTENT */
 main {
   max-width: 1200px;
-  margin: 90px auto 40px; /* leave room for sticky header */
+  margin: 90px auto 40px;
   padding: 0 20px 40px;
-  margin-left: 280px;     /* space for aside (260 + gap) */
+  margin-left: 280px; /* aside width + gap */
 }
 
-main h1 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-  color: #ffcc33;
-}
-
-/* ==== PRODUCT GRID & CARDS ==== */
-
-.product-grid {
+/* ==== PRODUCT GRID (row-by-row) ==== */
+/* NOTE: Only defined once (no duplicates) */
+.product-row{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  padding: 12px 0;
+  background: transparent;
 }
 
-.product-card {
-  background: #12141e;
-  border-radius: 10px;
-  border: 1px solid #25283a;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+.product-card{
+  background: #0b0d14;
+  border: 1px solid #1f2230;
+  border-radius: 14px;
+  padding: 14px;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.product-card:hover {
+.product-card:hover{
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
-  border-color: #ffcc33;
+  box-shadow: 0 10px 24px rgba(0,0,0,.5);
 }
 
-.product-card img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  display: block;
-}
-
-.product-card-body {
-  padding: 10px 12px 12px;
+.product-img-wrap{
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: #f6f6f6;
+  border-radius: 12px;
+  padding: 14px;
   display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.product-name {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.product-category {
-  font-size: 0.8rem;
-  color: #9aa0b5;
-}
-
-.product-description {
-  font-size: 0.8rem;
-  color: #c2c7dd;
-  max-height: 40px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.product-price {
-  margin-top: 6px;
-  font-weight: bold;
-  color: #ff8243;
-  font-size: 1rem;
-}
-
-/* ==== PAGINATION ==== */
-
-.pagination {
-  margin-top: 24px;
-  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
 }
 
-.pagination button {
-  padding: 6px 10px;
-  border-radius: 4px;
-  border: 1px solid #333;
-  background: #12141e;
-  color: #f5f5f5;
+.product-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.add-btn{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #f2c200;
+  font-size: 24px;
   cursor: pointer;
-  font-size: 0.85rem;
 }
 
-.pagination button:hover:not(:disabled) {
-  border-color: #ffcc33;
+.price-row{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.price{
+  font-weight: 800;
+  font-size: 22px;
   color: #ffcc33;
 }
 
-.pagination button.active {
-  background: #ffcc33;
-  border-color: #ffcc33;
-  color: #000;
+.stock{
+  color: #888;
+  font-size: 12px;
 }
 
-.pagination button:disabled {
-  opacity: 0.4;
-  cursor: default;
+.title{
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.cat{
+  color: #777;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* responsive grid columns */
+@media (max-width: 1100px){
+  .product-row{ grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 800px){
+  .product-row{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px){
+  .product-row{ grid-template-columns: 1fr; }
 }
 
 /* ==== FOOTER ==== */
@@ -311,9 +310,7 @@ main h1 {
   list-style: none;
 }
 
-.footer-section ul li {
-  margin-bottom: 8px;
-}
+.footer-section ul li { margin-bottom: 8px; }
 
 .footer-section a {
   color: #bbb;
@@ -321,15 +318,10 @@ main h1 {
   font-size: 0.9rem;
 }
 
-.footer-section a:hover {
-  color: #fff;
-}
+.footer-section a:hover { color: #fff; }
 
 /* Newsletter */
-.newsletter-box {
-  display: flex;
-  margin-top: 10px;
-}
+.newsletter-box { display: flex; margin-top: 10px; }
 
 .newsletter-box input {
   flex: 1;
@@ -350,9 +342,7 @@ main h1 {
   font-weight: 600;
 }
 
-.newsletter-box button:hover {
-  filter: brightness(1.1);
-}
+.newsletter-box button:hover { filter: brightness(1.1); }
 
 /* Social Icons */
 .social-icons {
@@ -387,7 +377,7 @@ main h1 {
   color: #777;
 }
 
-/* ==== RESPONSIVE ==== */
+/* ==== RESPONSIVE (aside + header stacking) ==== */
 
 @media (max-width: 900px) {
   .plp-aside {
@@ -404,9 +394,15 @@ main h1 {
     margin-left: 0;
   }
 
-  .header-container {
-    flex-wrap: wrap;
-    gap: 10px;
+  /* header: nav drops to second line but stays centered */
+  .header-container{
+    row-gap: 10px;
+  }
+
+  header nav{
+    grid-column: 1 / -1;
+    justify-self: center;
+    justify-content: center;
   }
 
   #searchBar {
@@ -415,17 +411,7 @@ main h1 {
   }
 }
 
-@media (max-width: 600px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    margin-top: 8px;
-  }
+@media (max-width: 520px){
+  #searchBar { width: 140px; }
+  header nav { gap: 14px; }
 }

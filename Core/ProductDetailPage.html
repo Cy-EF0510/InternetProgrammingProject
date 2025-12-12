@@ -7,7 +7,33 @@
 </head>
 <body>
 
-    
+    <main class="pdp">
+  <div class="pdp-left">
+    <img id="pdpImage" alt="">
+  </div>
+
+  <div class="pdp-right">
+    <h1 id="pdpTitle"></h1>
+    <p id="pdpDesc"></p>
+
+    <div class="pdp-price">$<span id="pdpPrice"></span></div>
+    <div class="pdp-meta">
+      <div>SKU: <span id="pdpSku"></span></div>
+      <div>Availability: <span id="pdpStock"></span></div>
+    </div>
+
+    <div class="qty-row">
+      <label>Qty</label>
+      <input type="number" id="qtyInput" min="1" value="1">
+    </div>
+
+    <button id="addToCartBtn">Add to Cart</button>
+  </div>
+</main>
+
+<section id="relatedProducts"></section>
+<section id="reviews"></section>
+
     
 </body>
 </html>

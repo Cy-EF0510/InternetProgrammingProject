@@ -17,46 +17,46 @@
 
     <!-- Star Wars-style font -->
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+    
+    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
+
     <title>Product Listing Page</title>
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
+  <header>
+      <div class="header-container">
+          <div class="logo">
+              <a href="HomePage.html">
+                  <img class="logo-img" src="Resources/IMG/notcircle.png" alt="">
+              </a>
+          </div>
 
-            <div class="logo">
-                <a href="HomePage.html">
-                    <img class="logo-img" src="Resources/IMG/notcircle.png" alt="">
-                </a>
-            </div>
+          <nav>
+              <a href="HomePage.html">Home</a>
+              <a href="ProductListingPage.html">Products</a>
+              <a href="AboutPage.html">Contact</a>
+          </nav>
 
-            <nav>
-                <a href="HomePage.html">Home</a>
-                <a href="ProductListingPage.html">Products</a>
-                <a href="AboutPage.html">Contact</a>
-            </nav>
+          <div class="header-actions">
+              <div class="search-wrapper">
+                  <input type="text" id="searchBar" placeholder="Search products..." autocomplete="off">
+                  <div id="searchSuggestions" class="search-suggestions"></div>
+              </div>
+              
+              <a href="ShoppingCartPage.html" class="icon-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="item-count-badge">0</span>
+              </a>
 
-            <div class="header-actions">
-                <div class="search-wrapper">
-                    <input type="text" id="searchBar" placeholder="Search products..." autocomplete="off">
-                    <div id="searchSuggestions" class="search-suggestions"></div>
-                </div>
-
-                <!--With font-awesome-->    
-                
-            
-                <a href="ShoppingCartPage.html" class="icon-btn">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="item-count-badge">0</span>
-                </a>
-
-                <!-- User Account Icon -->
-                <a href="LoginPage.html" class="icon-btn">
-                    <i class="fas fa-user"></i>
-                </a>    
-            </div>
-        </div>
-    </header>
+              <!-- User Account Icon -->
+              <a href="LoginPage.html" class="icon-btn">
+                  <i class="fas fa-user"></i>
+              </a>    
+          </div>
+      </div>
+  </header>
 
         <!-- ASIDE: FILTERS + SORT -->
     <aside class="plp-aside">
@@ -67,7 +67,7 @@
         <label for="categoryFilter">Category</label>
         <select id="categoryFilter">
             <option value="">All</option>
-            <!-- categories injected by JS -->
+            
         </select>
       </div>
 
@@ -89,9 +89,7 @@
     </aside>
 
     <main>
-        
-        <h1>Product Listing Page</h1>
-        <div id="productList" class="product-grid"></div>
+        <div class="product-row" id="dealsRow"></div>
 
         <div id="pagination" class="pagination"></div>
     </main>
