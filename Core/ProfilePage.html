@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Resources/CSS/profilePage.css">
-    <title>Document</title>
+    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
+    <title>Profile Page</title>
 </head>
 <body>
-    <header>
-        <h1>My Account</h1>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/">Shop</a>
-            <a href="/">Cart</a>
-            <a href="">Log out</a>
-        </nav>
-    </header>
+    <div id="header-container"></div>
+    <script>
+    $(document).ready(function() {
+        HeaderModel.createHeader();
+    });
+    </script>
+
     <main>
         <section id="profile-info">
+            <img src="" width="200" height="200"></img>
             <h2>Profile Details</h2>
             <h3>Name: </h3>
             <h3>Email: </h3>
             <h3>Phone: </h3>
-            <h3>Member Since: </h3>
             <a href="">Edit Profile</a>
         </section>
 

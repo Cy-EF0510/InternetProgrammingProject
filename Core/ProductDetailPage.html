@@ -3,36 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--Awesome UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Star Wars-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+    <!--Css Sheet-->
+    <link rel="stylesheet" href="Resources/CSS/pdp.css">
+
+    <!--Models for header and footer-->
+    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
+    <script src="Resources/JS/Modularity/FooterModel.js"></script>
+
+    <!--Js script-->
+    <script src="Resources/JS/pdp.js"></script>
+
+
+    <title>Product Detail Page</title>
+    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
 </head>
 <body>
+  <!-- HEADER -->
+    <div id="header-container"></div>
+    <script>
+    $(document).ready(function() {
+        HeaderModel.createHeader();
+    });
+    </script>
 
     <main class="pdp">
-  <div class="pdp-left">
-    <img id="pdpImage" alt="">
-  </div>
+      <div class="pdp-left">
+        <img id="pdpImage" alt="">
+      </div>
 
-  <div class="pdp-right">
-    <h1 id="pdpTitle"></h1>
-    <p id="pdpDesc"></p>
+      <div class="pdp-right">
+        <h1 id="pdpTitle"></h1>
+        <p id="pdpDesc"></p>
 
-    <div class="pdp-price">$<span id="pdpPrice"></span></div>
-    <div class="pdp-meta">
-      <div>SKU: <span id="pdpSku"></span></div>
-      <div>Availability: <span id="pdpStock"></span></div>
-    </div>
+        <div class="pdp-price">$<span id="pdpPrice"></span></div>
+        <div class="pdp-meta">
+          <div>SKU: <span id="pdpSku"></span></div>
+          <div>Availability: <span id="pdpStock"></span></div>
+        </div>
 
-    <div class="qty-row">
-      <label>Qty</label>
-      <input type="number" id="qtyInput" min="1" value="1">
-    </div>
+        <div class="qty-row">
+          <label>Qty</label>
+          <input type="number" id="qtyInput" min="1" value="1">
+        </div>
 
-    <button id="addToCartBtn">Add to Cart</button>
-  </div>
-</main>
+        <button id="addToCartBtn">Add to Cart</button>
+      </div>
+    </main>
 
-<section id="relatedProducts"></section>
-<section id="reviews"></section>
+  <section id="relatedProducts"></section>
+  <section id="reviews"></section>
+
+  <!--Using jquery to make footer-->
+    <div id="footer-slot"></div>
+
 
     
 </body>

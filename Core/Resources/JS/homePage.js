@@ -1,27 +1,41 @@
-/************************************************
- * HERO CAROUSEL (top banner)
- ************************************************/
-let currentHero = 0;
-const heroSlides = document.querySelectorAll(".hero-slide");
-const heroDots = document.querySelectorAll(".dot");
-
-function switchHero(index) {
-    heroSlides.forEach(s => s.classList.remove("active"));
-    heroDots.forEach(d => d.classList.remove("active"));
-
-    heroSlides[index].classList.add("active");
-    heroDots[index].classList.add("active");
-    currentHero = index;
-}
-
-heroDots.forEach((dot, idx) => {
-    dot.addEventListener("click", () => switchHero(idx));
+$(document).ready(function () {
+    $("#footer-slot").append(FooterModel.createFooter());
 });
 
-setInterval(() => {
-    currentHero = (currentHero + 1) % heroSlides.length;
-    switchHero(currentHero);
-}, 4000);
+
+/************************************************
+ * HERO CAROUSEL (W3Schools-style)
+ ************************************************/
+
+let slideIndex = 1;
+
+$(document).ready(function () {
+  showSlides(slideIndex);
+});
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let slides = $(".mySlides");
+  let dots = $(".dot");
+
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+
+  slides.hide();
+  dots.removeClass("active");
+
+  slides.eq(slideIndex - 1).css("display", "flex");
+  dots.eq(slideIndex - 1).addClass("active");
+}
+
+
 
 
 /************************************************
@@ -30,13 +44,27 @@ setInterval(() => {
 const FEATURED_COUNT = 6;
 let carouselIndex = 0;
 
-fetch("Data/products.json")
-    .then(res => res.json())
-    .then(products => {
-        const randomProducts = getRandomProducts(products, FEATURED_COUNT);
-        renderFeaturedProducts(randomProducts);
-    })
-    .catch(err => console.error("Error loading products:", err));
+//testings for product model / it workings
+
+// $(document).ready(function () {
+
+//     ProductModel.getAllProducts().done(function (products) {
+
+//         console.log("Model WOrks - prodcuts loaded: ", products);
+
+//         console.log("num of products: ", products.length);
+
+//     }).fail(function () {
+        
+//         console.error("Model failed!!!");
+
+//     })
+
+// })
+
+
+
+
 
 
 function getRandomProducts(products, count) {

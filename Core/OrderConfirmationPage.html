@@ -3,9 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--Awesome UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Star Wars-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+    <!--Css Sheet-->
+    <link rel="stylesheet" href="Resources/CSS/orderConfirmationPage.css">
+
+    <!--Models for header and footer-->
+    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
+    <script src="Resources/JS/Modularity/FooterModel.js"></script>
+
+    <!--Js script-->
+    <script src="Resources/JS/orderConfirmationPage.js"></script>
+
+<title>Order Confirmation</title>
 </head>
 <body>
+    </head>
+<body>
+    <!-- HEADER -->
+    <div id="header-container"></div>
+    <script>
+    $(document).ready(function() {
+        HeaderModel.createHeader();
+    });
+    </script>
     
+    <main>
+        <section class="order-summary">
+            <h2>Order</h2>
+            <div class="items">
+                <div class="item">
+                    <span>product1</span>
+                    <span>price</span>
+                </div>
+                <div class="item subtotal">
+                    <span>Subtotal</span>
+                    <span>price</span>
+                </div>
+                <div class="item">
+                    <span>Shipping</span>
+                    <span>price</span>
+                </div>
+                <div class="item total">
+                    <span>Total</span>
+                    <strong>price</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="shipping-info">
+            <h3>Shipping To:</h3>
+            <p>123 Main St<br>Apt 4B<br>Anytown, CA 90210</p>
+            <p><strong>Estimated Delivery:</strong> December 15-17, 2025</p>
+        </section>
+
+        <section class="next-steps">
+            <h3>What Happens Next?</h3>
+            <ul>
+                <li>Order processing within 24 hours</li>
+                <li>Shipping notification with tracking number</li>
+                <li>Delivery in 3-5 business days</li>
+            </ul>
+        </section>
+
+        <div class="actions">
+            <a href="#" class="btn btn-track">Track Order</a>
+            <a href="#" class="btn btn-shop">Continue Shopping</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- CATEGORY LINKS -->
+            <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: support@example.com</p>
+            <p>Phone: +1 (514) 555-1234</p>
+            <p>Address: 123 Main Street, Montreal</p>
+            </div>
+
+            <!-- NEWSLETTER SIGNUP -->
+            <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Stay updated on deals and new products.</p>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Enter your email">
+                <button>Sign Up</button>
+            </div>
+            </div>
+
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="footer-section">
+            <h3>Follow Us</h3>
+                <div class="social-icons">
+
+                    <!-- Instagram -->
+                    <a href="#" aria-label="Instagram">
+                    <svg width="24" height="24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="#" aria-label="Facebook">
+                    <svg width="24" height="24" fill="currentColor">
+                        <rect x="4" y="4" width="16" height="16"></rect>
+                    </svg>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="#" aria-label="Twitter">
+                    <svg width="24" height="24" fill="currentColor">
+                        <polygon points="4,20 20,4 20,20"></polygon>
+                    </svg>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Your Store Name. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>

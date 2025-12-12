@@ -3,9 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
+    <link rel="stylesheet" href="Resources/CSS/checkoutPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Star Wars-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    
+    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
+    <title>Checkout</title>
 </head>
 <body>
+    <!-- HEADER -->
+    <div id="header-container"></div>
+    <script>
+    $(document).ready(function() {
+        HeaderModel.createHeader();
+    });
+    </script>
+
+    <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Full Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Email">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Montreal">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Province</label>
+                <input type="text" id="province" name="Province" placeholder="Quebec">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="H2S 1Z3">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+        <div class="container">
+        <h4>Cart
+            <span class="price" style="color:black">
+            <i class="fa fa-shopping-cart"></i>
+            <!-- This is where you put the number of products inside the cart -->
+            <b></b>
+            </span>
+        </h4>
+        <!-- This is how you put the products -->
+
+        <!-- <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+        <p><a href="#">Product 4</a> <span class="price">$2</span></p> -->
+        <hr>
+        <!-- This is how you put the Total Price -->
+        <!-- <p>Total <span class="price" style="color:black"><b>$30</b></span></p> -->
+        </div>
+    </div>
+</div>
     
+<footer class="footer">
+        <div class="footer-container">
+
+            <!-- CATEGORY LINKS -->
+            <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: support@example.com</p>
+            <p>Phone: +1 (514) 555-1234</p>
+            <p>Address: 123 Main Street, Montreal</p>
+            </div>
+
+            <!-- NEWSLETTER SIGNUP -->
+            <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Stay updated on deals and new products.</p>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Enter your email">
+                <button>Sign Up</button>
+            </div>
+            </div>
+
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="footer-section">
+            <h3>Follow Us</h3>
+                <div class="social-icons">
+
+                    <!-- Instagram -->
+                    <a href="#" aria-label="Instagram">
+                    <svg width="24" height="24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="#" aria-label="Facebook">
+                    <svg width="24" height="24" fill="currentColor">
+                        <rect x="4" y="4" width="16" height="16"></rect>
+                    </svg>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="#" aria-label="Twitter">
+                    <svg width="24" height="24" fill="currentColor">
+                        <polygon points="4,20 20,4 20,20"></polygon>
+                    </svg>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Your Store Name. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>

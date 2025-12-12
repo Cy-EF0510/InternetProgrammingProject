@@ -1,6 +1,9 @@
-/* ==== GLOBAL PAGE STYLES ==== */
-
-* { box-sizing: border-box; }
+:root {
+  --imperial-black: #000000;
+  --rebel-yellow: #FFD700;
+  --holo-blue: #00BFFF;
+  --panel-gray: #2C2C2C;
+}
 
 body {
   margin: 0;
@@ -10,10 +13,48 @@ body {
   letter-spacing: 0.08em;
 }
 
-/* Headings + nav font */
-h1, h2, h3, nav a {
-  font-family: "Pathway Gothic One", sans-serif;
-  letter-spacing: 0.08em;
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================== */
+/*                 CART BADGE                 */
+/* ========================================== */
+
+.item-count-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 11px;
+    font-weight: bold;
+}
+/* ========================================== */
+/*                   LOGO                     */
+/* ========================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;       /* Smaller logo */
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffe81f;
+    box-shadow: 0 0 10px rgba(255, 232, 31, 0.6);
+    transition: 0.2s ease;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.06);
+    box-shadow: 0 0 15px rgba(255, 232, 31, 1);
 }
 
 /* ==== HEADER ==== */
@@ -67,7 +108,7 @@ header nav {
 nav a {
   color: #f5f5f5;
   text-decoration: none;
-  margin: 0;              
+  margin: 0;              /* IMPORTANT: remove your old margins */
   font-size: 0.95rem;
 }
 
@@ -144,7 +185,7 @@ nav a:hover { color: #ffcc33; }
 
 .plp-aside {
   position: fixed;
-  top: 80px;              
+  top: 80px;              /* adjust if header height changes */
   left: 0;
   width: 260px;
   bottom: 0;
@@ -252,117 +293,106 @@ nav a:hover { color: #ffcc33; }
   letter-spacing: 0.3px;
 }
 
+/* ========================================== */
+/*                     Main                   */
+/* ========================================== */
 
-/* MAIN CONTENT */
-main {
-  max-width: 1200px;
-  margin: 90px auto 40px;
-  padding: 0 20px 40px;
-  margin-left: 280px; /* aside width + gap */
-}
-
-/* ==== PRODUCT GRID (row-by-row) ==== */
-.product-row{
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-  padding: 12px 0;
-  background: transparent;
-}
-
-.product-card{
-  background: #0b0d14;
-  border: 1px solid #1f2230;
-  border-radius: 14px;
-  padding: 14px;
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.product-card:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0,0,0,.5);
-}
-
-.product-img-wrap{
-  position: relative;
-  aspect-ratio: 1 / 1;
-  background: #f6f6f6;
-  border-radius: 12px;
-  padding: 14px;
+.row {
+  display: -ms-flexbox; /* IE10 */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
 }
 
-.product-img{
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: var(--panel-gray);
+  padding: 5px 20px 15px 20px;
+  border: 1px solid var(--rebel-yellow);
+  border-radius: 3px;
+}
+
+input[type=text] {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
-.add-btn{
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background: #f2c200;
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
   font-size: 24px;
+}
+
+.btn {
+  background-color: var(--rebel-yellow);
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
   cursor: pointer;
+  font-size: 17px;
 }
 
-.price-row{
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+.btn:hover {
+  background-color: #ffcc33;
 }
 
-.price{
-  font-weight: 800;
-  font-size: 22px;
-  color: #ffcc33;
+span.price {
+  float: right;
+  color: grey;
 }
 
-.stock{
-  color: #888;
-  font-size: 12px;
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
 }
 
-.title{
-  margin-top: 8px;
-  font-size: 14px;
-}
-
-.cat{
-  color: #777;
-  font-size: 12px;
-  margin-top: 4px;
-}
-
-/* responsive grid columns */
-@media (max-width: 1100px){
-  .product-row{ grid-template-columns: repeat(3, 1fr); }
-}
-@media (max-width: 800px){
-  .product-row{ grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 520px){
-  .product-row{ grid-template-columns: 1fr; }
-}
+/* ========================================== */
+/*                   FOOTER                   */
+/* ========================================== */
 
 /* ==== FOOTER ==== */
-footer {
+.footer {
   background: #05060a;
   color: #eee;
   padding: 40px 20px 10px;
   border-top: 1px solid #222;
-
-  
-  margin-left: 280px;              
-  width: calc(100% - 280px);
 }
 
 
@@ -420,7 +450,11 @@ footer {
 .newsletter-box button:hover { filter: brightness(1.1); }
 
 /* Social Icons */
-.social a { font-size: 28px; margin-right: 12px; text-decoration: none; }
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
 
 .social-icons a {
   color: #bbb;
@@ -446,47 +480,4 @@ footer {
   border-top: 1px solid #222;
   font-size: 0.8rem;
   color: #777;
-}
-
-/* ==== RESPONSIVE (aside + header stacking) ==== */
-
-@media (max-width: 900px) {
-  footer{
-    margin-left: 0;
-    width: 100%;
-  }
-  .plp-aside {
-    position: static;
-    width: auto;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid #222;
-    margin: 0 16px;
-  }
-
-  main {
-    margin: 20px auto 40px;
-    margin-left: 0;
-  }
-
-  /* header: nav drops to second line but stays centered */
-  .header-container{
-    row-gap: 10px;
-  }
-
-  header nav{
-    grid-column: 1 / -1;
-    justify-self: center;
-    justify-content: center;
-  }
-
-  #searchBar {
-    min-width: 0;
-    width: 180px;
-  }
-}
-
-@media (max-width: 520px){
-  #searchBar { width: 140px; }
-  header nav { gap: 14px; }
 }

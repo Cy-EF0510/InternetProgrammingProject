@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
+    <link rel="stylesheet" href="Resources/CSS/shoppingCartPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Star Wars-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
+    <title>Shopping Cart</title>
 </head>
 <body>
+    <div id="header-container"></div>
+    <script>
+    $(document).ready(function() {
+        HeaderModel.createHeader();
+    });
+    </script>
+
+    <div class="Main-Body">
+        <h2>Shopping Cart</h2>
+    </div>
+  
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- CATEGORY LINKS -->
+            <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: support@example.com</p>
+            <p>Phone: +1 (514) 555-1234</p>
+            <p>Address: 123 Main Street, Montreal</p>
+            </div>
+
+            <!-- NEWSLETTER SIGNUP -->
+            <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Stay updated on deals and new products.</p>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Enter your email">
+                <button>Sign Up</button>
+            </div>
+            </div>
+
+            <!-- SOCIAL MEDIA ICONS -->
+            <div class="footer-section">
+            <h3>Follow Us</h3>
+                <div class="social-icons">
+
+                    <!-- Instagram -->
+                    <a href="#" aria-label="Instagram">
+                    <svg width="24" height="24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="#" aria-label="Facebook">
+                    <svg width="24" height="24" fill="currentColor">
+                        <rect x="4" y="4" width="16" height="16"></rect>
+                    </svg>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="#" aria-label="Twitter">
+                    <svg width="24" height="24" fill="currentColor">
+                        <polygon points="4,20 20,4 20,20"></polygon>
+                    </svg>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Your Store Name. All rights reserved.
+        </div>
+    </footer>
     
 </body>
 </html>

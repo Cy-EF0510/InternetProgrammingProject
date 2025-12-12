@@ -157,6 +157,49 @@ nav a:hover {
     box-shadow: 0 0 6px rgba(255, 232, 31, 0.7);
 }
 
+
+/* ===================== CATEGORY BAR ===================== */
+
+.category-bar {
+  width: 100%;
+  background: rgba(10, 10, 10, 0.98);
+  border-bottom: 1px solid #333;
+}
+
+.category-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 6px 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  overflow-x: auto; /* if too many categories on small screens */
+  scrollbar-width: none; /* Firefox */
+}
+
+.category-container::-webkit-scrollbar {
+  display: none; /* Chrome/Edge */
+}
+
+.category-container a {
+  color: #00e5ff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.category-container a:hover {
+  color: #ffe81f;
+  text-shadow: 0 0 6px rgba(255, 232, 31, 0.8);
+}
+
+
+
+
 /* ==========================================
    HERO CAROUSEL
 ========================================== */
@@ -164,54 +207,122 @@ nav a:hover {
 .hero-carousel {
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 380px;
     overflow: hidden;
+    background: #000;
 }
 
-.hero-slide {
-    position: absolute;
+.mySlides {
+    display: none;
     width: 100%;
     height: 100%;
+    
     background-size: cover;
     background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero-slide.active {
-    opacity: 1;
+.fade {
+    animation-name: fade;
+    animation-duration: 0.8s;
 }
 
-.hero-overlay {
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 30px 40px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    color: #ffe81f;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 26px;
+    background: #ffe81f;
+    color: #111;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.hero-btn:hover {
+    background: #f5d84a;
+}
+
+
+.prev, .next {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffe81f;
-    text-shadow: 0 0 15px #ffe81f;
+    transform: translateY(-50%);
+
+    padding: 16px;
+    color: white;
+    font-size: 30px;
+
+    border-radius: 50%;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
 }
 
-.hero-dots {
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+
+.hero-dots{
+
     position: absolute;
     bottom: 15px;
     width: 100%;
     text-align: center;
+
 }
 
-.hero-dots .dot {
-    width: 10px;
-    height: 10px;
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
     margin: 0 5px;
-    background: #888;
+    background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.hero-dots .dot.active {
-    background: #ffe81f;
-    box-shadow: 0 0 8px #ffe81f;
+.dot.active {
+    background-color: #ffe81f;
 }
 
 
@@ -300,10 +411,92 @@ nav a:hover {
 /*                   FOOTER                   */
 /* ========================================== */
 
+/* ==== FOOTER ==== */
 footer {
-    text-align: center;
-    padding: 15px;
-    margin-top: 35px;
-    background: rgba(10, 10, 10, 0.9);
-    border-top: 1px solid #333;
+  background: #05060a;
+  color: #eee;
+  padding: 40px 20px 10px;
+  border-top: 1px solid #222;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.footer-section h3 {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #ffcc33;
+}
+
+.footer-section ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li { margin-bottom: 8px; }
+
+.footer-section a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-section a:hover { color: #fff; }
+
+/* Newsletter */
+.newsletter-box { display: flex; margin-top: 10px; }
+
+.newsletter-box input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  background: #12141e;
+  color: #f5f5f5;
+}
+
+.newsletter-box button {
+  background: #ffcc33;
+  color: #000;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.newsletter-box button:hover { filter: brightness(1.1); }
+
+/* Social Icons */
+.social a { font-size: 28px; margin-right: 12px; text-decoration: none; }
+
+.social-icons a {
+  color: #bbb;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #12141e;
+  border-radius: 50%;
+  padding: 6px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #ffcc33;
+  color: #000;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #222;
+  font-size: 0.8rem;
+  color: #777;
 }

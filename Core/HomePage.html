@@ -4,80 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <link rel="stylesheet" href="Resources/CSS/homePage.css">
 
+    <script src="Resources/JS/Modularity/ProductModel.js"></script>
+    <script src="Resources/JS/Modularity/FooterModel.js"></script>
     <script src="Resources/JS/homePage.js"></script>
     <title>The Rogue Market</title>
+    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
 </head>
 
 
 <body>
-    <header>
-        <div class="header-container">
+    <!-- HEADER -->
+    <div id="header-container"></div>
+    <script>
+    $(document).ready(function() {
+        HeaderModel.createHeader();
+    });
+    </script>
 
-            <div class="logo">
-                <a href="HomePage.html">
-                    <img class="logo-img" src="Resources/IMG/notcircle.png" alt="">
-                </a>
-            </div>
+    <!--Catergory nav bar-->
+    <section class="category-bar">
 
-            <nav>
-                <a href="HomePage.html">Home</a>
-                <a href="ProductListingPage.html">Products</a>
-                <a href="AboutPage.html">Contact</a>
-            </nav>
+        <div class="category-container">
 
-            <div class="header-actions">
-                <div class="search-wrapper">
-                    <input type="text" id="searchBar" placeholder="Search products..." autocomplete="off">
-                    <div id="searchSuggestions" class="search-suggestions"></div>
-                </div>
-
-                <!--With font-awesome-->    
-                
-            
-                <a href="ShoppingCartPage.html" class="icon-btn">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="item-count-badge">9</span>
-                </a>
-
-                <!-- User Account Icon -->
-                <a href="LoginPage.html" class="icon-btn">
-                    <i class="fas fa-user"></i>
-                </a>    
-                
-            </div>
+            <!--hardcoded the & ampersand so that it is "encoded"-->
+            <a href="ProductListingPage.html">All</a>
+            <a href="ProductListingPage.html?category=Electronics">Electronics</a>
+            <a href="ProductListingPage.html?category=Home %26 Kitchen">Home & Kitchen</a>
+            <a href="ProductListingPage.html?category=Sports %26 Outdoors">Sports & Outdoors</a>
+            <a href="ProductListingPage.html?category=Beauty %26 Personal%20Care">Beauty & Personal Care</a>
+            <a href="ProductListingPage.html?category=Toys %26 Games">Toys & Games</a>
+            <a href="ProductListingPage.html?category=Clothing">Clothing</a>
+            <a href="ProductListingPage.html?category=Automotive">Automotive</a>
+            <a href="ProductListingPage.html?category=Office Supplies">Office Supplies</a>
+            <a href="ProductListingPage.html?category=Garden %26 Outdoors">Garden & Outdoors</a>
+            <a href="ProductListingPage.html?category=Pet Supplies">Pet Supplies</a>
 
         </div>
-        
-    </header>
+
+    </section>
+
 
     <main>
 
-        <!-- ===================== HERO SECTION ===================== -->
+        <!-- ===================== HERO CAROUSEL ===================== -->
         <section class="hero-carousel">
 
-            <div class="hero-slide active" style="background-image: url('Resources/IMG/hero1.jpg');"></div>
-            <div class="hero-slide" style="background-image: url('Resources/IMG/hero2.jpg');"></div>
-            <div class="hero-slide" style="background-image: url('Resources/IMG/hero3.jpg');"></div>
-
-            <!-- Overlay text (CENTERED ALWAYS) -->
-            <div class="hero-overlay">
+            <!-- Slide 1 : Welcome -->
+            <div class="mySlides">
+                <div class="hero-content">
                 <h1>Welcome to The Rogue Market</h1>
-                <p>The galaxy’s best Star Wars merch.</p>
-                <a href="ProductListingPage.html" class="shop-btn">Shop Now</a>
+                <p>Your galaxy of exclusive merch, collectibles & gear</p>
+                <a href="ProductListingPage.html" class="hero-btn">Shop All</a>
+                </div>
             </div>
+
+            <!-- Slide 2 : Electronics -->
+            <div class="mySlides">
+                <div class="hero-content">
+                <h1>Galactic Electronics</h1>
+                <p>Futuristic tech, gadgets & gear</p>
+                <a href="ProductListingPage.html?category=Electronics" class="hero-btn">
+                    Shop Electronics
+                </a>
+                </div>
+            </div>
+
+            <!-- Slide 3 : Toys & Games -->
+            <div class="mySlides">
+                <div class="hero-content">
+                <h1>Toys & Games</h1>
+                <p>Collectibles, figures & fun for all ages</p>
+                <a href="ProductListingPage.html?category=Toys%20%26%20Games" class="hero-btn">
+                    Shop Toys & Games
+                </a>
+                </div>
+            </div>
+
+            <!-- Slide 4 : Deals -->
+            <div class="mySlides">
+                <div class="hero-content">
+                <h1>Galactic Deals</h1>
+                <p>Limited-time offers you don’t want to miss</p>
+                <a href="ProductListingPage.html" class="hero-btn">
+                    View Deals
+                </a>
+                </div>
+            </div>
+
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
 
             <!-- Dots -->
             <div class="hero-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
 
         </section>
+
 
 
         
@@ -98,31 +132,8 @@
 
     </main>
     
-
-
-    <!-- <footer>
-        <div class="footer-section">
-            <h4>Categories</h4>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </div>
-
-        <div class="footer-section">
-            <h4>Contact</h4>
-            <p>Email: support@myshop.com</p>
-            <p>Phone: +1 555-123-4567</p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Follow us</h4>
-            <div class="socials">
-                <a href="#">FB</a>
-                <a href="#">IG</a>
-                <a href="#">X</a>
-            </div>
-        </div>
-    </footer> -->
+    <!--Using jquery to make footer-->
+    <div id="footer-slot"></div>
 
 
     

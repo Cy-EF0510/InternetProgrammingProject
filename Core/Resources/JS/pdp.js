@@ -1,3 +1,7 @@
+$(document).ready(function () {
+    $("#footer-slot").append(FooterModel.createFooter());
+});
+
 function getProductIdFromUrl() {
   const params = new URLSearchParams(window.location.search);
   return Number(params.get("id"));

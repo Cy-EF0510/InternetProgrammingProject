@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+
+
+    <!--Footer model-->
+    <script src="Resources/JS/Modularity/FooterModel.js"></script>
+
+    <!-- Filter and Sorting model -->
+    <script src="Resources/JS/Modularity/Filter-Sorting.js"></script>
+
+    <!--product model-->
+    <script src="Resources/JS/Modularity/ProductModel.js"></script>
 
     <!-- Your JS -->
     <script src="Resources/JS/plp.js"></script>
@@ -12,7 +30,7 @@
     <!-- Your CSS -->
     <link rel="stylesheet" href="Resources/CSS/plp.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     
 
     <!-- Star Wars-style font -->
@@ -25,40 +43,11 @@
 </head>
 <body>
 
-  <header>
-      <div class="header-container">
-          <div class="logo">
-              <a href="HomePage.html">
-                  <img class="logo-img" src="Resources/IMG/notcircle.png" alt="">
-              </a>
-          </div>
+  <!-- HEADER -->
+    <div id="header-container"></div>
+   
 
-          <nav>
-              <a href="HomePage.html">Home</a>
-              <a href="ProductListingPage.html">Products</a>
-              <a href="AboutPage.html">Contact</a>
-          </nav>
-
-          <div class="header-actions">
-              <div class="search-wrapper">
-                  <input type="text" id="searchBar" placeholder="Search products..." autocomplete="off">
-                  <div id="searchSuggestions" class="search-suggestions"></div>
-              </div>
-              
-              <a href="ShoppingCartPage.html" class="icon-btn">
-                  <i class="fas fa-shopping-cart"></i>
-                  <span class="item-count-badge">0</span>
-              </a>
-
-              <!-- User Account Icon -->
-              <a href="LoginPage.html" class="icon-btn">
-                  <i class="fas fa-user"></i>
-              </a>    
-          </div>
-      </div>
-  </header>
-
-        <!-- ASIDE: FILTERS + SORT -->
+    <!-- ASIDE: FILTERS + SORT -->
     <aside class="plp-aside">
         <h2>Filter & Sort</h2>
 
@@ -73,8 +62,9 @@
 
       <!-- Price range -->
     <div class="filter-block">
-        <label for="priceMax">Max price: $<span id="priceMaxLabel">0.00</span></label>
-        <input type="range" id="priceMax" min="0" max="100" value="100">
+      <label>Price</label>
+      <div id="priceRangeLabel">$0 – $0</div>
+      <div id="priceRangeSlider"></div>
     </div>
 
       <!-- Sort -->
@@ -91,76 +81,11 @@
     <main>
         <div class="product-row" id="dealsRow"></div>
 
-        <div id="pagination" class="pagination"></div>
+        
     </main>
     
-    <footer class="footer">
-  <div class="footer-container">
-
-    <!-- CATEGORY LINKS -->
-    <div class="footer-section">
-      <h3>Categories</h3>
-      <ul>
-        <li><a href="#">Clothing</a></li>
-        <li><a href="#">Electronics</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Accessories</a></li>
-      </ul>
-    </div>
-
-    <!-- CONTACT INFO -->
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p>Email: support@example.com</p>
-      <p>Phone: +1 (514) 555-1234</p>
-      <p>Address: 123 Main Street, Montreal</p>
-    </div>
-
-    <!-- NEWSLETTER SIGNUP -->
-    <div class="footer-section">
-      <h3>Newsletter</h3>
-      <p>Stay updated on deals and new products.</p>
-      <div class="newsletter-box">
-        <input type="email" placeholder="Enter your email">
-        <button>Sign Up</button>
-      </div>
-    </div>
-
-    <!-- SOCIAL MEDIA ICONS -->
-    <div class="footer-section">
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-
-        <!-- Instagram -->
-        <a href="#" aria-label="Instagram">
-          <svg width="24" height="24" fill="currentColor">
-            <circle cx="12" cy="12" r="10"></circle>
-          </svg>
-        </a>
-
-        <!-- Facebook -->
-        <a href="#" aria-label="Facebook">
-          <svg width="24" height="24" fill="currentColor">
-            <rect x="4" y="4" width="16" height="16"></rect>
-          </svg>
-        </a>
-
-        <!-- Twitter -->
-        <a href="#" aria-label="Twitter">
-          <svg width="24" height="24" fill="currentColor">
-            <polygon points="4,20 20,4 20,20"></polygon>
-          </svg>
-        </a>
-
-      </div>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    © 2025 Your Store Name. All rights reserved.
-  </div>
-</footer>
+  <!--Using jquery to make footer-->
+    <div id="footer-slot"></div>
 
 
 </body>

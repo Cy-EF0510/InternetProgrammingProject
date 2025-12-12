@@ -5,7 +5,7 @@
   --panel-gray: #2C2C2C;
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,6 +20,13 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+} */
+body {
+  margin: 0;
+  background: #05060a;
+  color: #f5f5f5;
+  font-family: "Pathway Gothic One", sans-serif;
+  letter-spacing: 0.08em;
 }
 
 main {
@@ -28,69 +35,177 @@ main {
 }
 
 /* ========================================== */
-/*                   HEADER                   */
+/*                 CART BADGE                 */
 /* ========================================== */
-header {
-    width: 100%;
-    padding: 4px 10px;       /* Smaller header height */
-    background: rgba(10, 10, 10, 0.95);
-    border-bottom: 1px solid #444;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+
+.item-count-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 11px;
+    font-weight: bold;
 }
+/* ========================================== */
+/*                   LOGO                     */
+/* ========================================== */
 
-.header-container {
-    width: 100%;
-    max-width: 1200px;   /* Centers content */
-    margin: 0 auto;
-
+.logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    text-shadow: 0 0 10px var(--rebel-yellow);
-    text-align: center;
-    letter-spacing: 3px;
-    color: var(--rebel-yellow)
+.logo-img {
+    width: 40px;       /* Smaller logo */
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffe81f;
+    box-shadow: 0 0 10px rgba(255, 232, 31, 0.6);
+    transition: 0.2s ease;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.06);
+    box-shadow: 0 0 15px rgba(255, 232, 31, 1);
 }
 
 /* ========================================== */
-/*                NAVIGATION                  */
+/*                   HEADER                   */
 /* ========================================== */
 
-nav {
-    display: flex;
-    gap: 16px;
+/* Headings + nav font */
+h1, h2, h3, nav a {
+  font-family: "Pathway Gothic One", sans-serif;
+  letter-spacing: 0.08em;
 }
 
-/* nav a {
-  color: var(--rebel-yellow);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
-  border: 1px solid var(--rebel-yellow);
-  transition: all 0.3s ease;
-  display: inline-block;
-  margin-top: 1rem;
-} */
+/* ==== HEADER ==== */
+
+header {
+  background: #090b12;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* 3-column grid: logo | centered nav | actions */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 20px;
+}
+
+/* Logo */
+.logo { display: flex; align-items: center; }
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffe81f;
+  box-shadow: 0 0 10px rgba(255, 232, 31, 0.6);
+  transition: 0.2s ease;
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.06);
+  box-shadow: 0 0 15px rgba(255, 232, 31, 1);
+}
+
+/* Centered nav (always centered) */
+header nav {
+  justify-self: center;
+  display: flex;
+  gap: 22px;
+  white-space: nowrap;
+}
+
 nav a {
-    color: var(--rebel-yellow);
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    text-decoration: none;
+  color: #f5f5f5;
+  text-decoration: none;
+  margin: 0;              /* IMPORTANT: remove your old margins */
+  font-size: 0.95rem;
 }
 
-nav a:hover {
-    background: var(--holo-blue);
-    color: var(--imperial-black);
-    box-shadow: 0 0 15px var(--holo-blue);
-    transform: scale(1.05);
+nav a:hover { color: #ffcc33; }
+
+/* Right side actions */
+.header-actions {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
+
+/* Icons */
+.icon-btn {
+  color: #f5f5f5;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.1rem;
+}
+.icon-btn:hover { color: #ffcc33; }
+
+.item-count-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: #ff4d4d;
+  color: #fff;
+  border-radius: 999px;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+}
+
+/* Search */
+.search-wrapper { position: relative; }
+
+#searchBar {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #333;
+  background: #12141e;
+  color: #f5f5f5;
+  min-width: 200px;
+}
+
+#searchBar:focus {
+  outline: none;
+  border-color: #ffcc33;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #10121b;
+  border: 1px solid #333;
+  border-radius: 6px;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 20;
+  display: none; /* show via JS */
+}
+
+.search-suggestions div {
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.search-suggestions div:hover { background: #1c1f2b; }
 
 /* Main content - Holographic panels */
 main {
@@ -170,7 +285,7 @@ tr:hover {
     background: rgba(255, 215, 0, 0.1);
 }
 
-/* Links - Force-sensitive buttons */
+/* Links - Force-sensitive buttons
 a {
     color: var(--rebel-yellow);
     text-decoration: none;
@@ -203,7 +318,7 @@ a:hover {
     color: var(--imperial-black);
     box-shadow: 0 0 20px var(--rebel-yellow);
     transform: translateY(-2px);
-}
+} */
 
 /* Lists - Mission logs */
 ul {
