@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--Awesome UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Star Wars-style font -->
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="Resources/CSS/profilePage.css">
-    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
+  
+    <!--Models for header and footer-->
+    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
+    <script src="Resources/JS/Modularity/FooterModel.js"></script>
+
+    <!--Js script-->
+    <script src="Resources/JS/profilePage.js"></script>
+
+
     <title>Profile Page</title>
+     <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
 </head>
 <body>
     <div id="header-container"></div>
-    <script>
-    $(document).ready(function() {
-        HeaderModel.createHeader();
-    });
-    </script>
 
     <main>
         <section id="profile-info">
@@ -94,15 +104,8 @@
         </section>
     </main>
 
-    <footer>
-        &copy; 2025 The Rogue Market
-        <nav>
-            <a href="">Help</a>
-            <a href="">Privacy Policy</a>
-            <a href="">Terms of Service</a>
-        </nav>
-
-    </footer>
+    <!--Using jquery to make footer-->
+    <div id="footer-slot"></div>
 </body>
 </html>
 

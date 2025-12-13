@@ -21,12 +21,7 @@
 <body>
     <!-- HEADER -->
     <div id="header-container"></div>
-    <script>
-    $(document).ready(function() {
-        HeaderModel.createHeader();
-    });
-    </script>
-
+    
     <!--Catergory nav bar-->
     <section class="category-bar">
 
@@ -55,47 +50,104 @@
         <!-- ===================== HERO CAROUSEL ===================== -->
         <section class="hero-carousel">
 
-            <!-- Slide 1 : Welcome -->
-            <div class="mySlides">
-                <div class="hero-content">
-                <h1>Welcome to The Rogue Market</h1>
-                <p>Your galaxy of exclusive merch, collectibles & gear</p>
-                <a href="ProductListingPage.html" class="hero-btn">Shop All</a>
+            <div class="hero-track">
+                <!-- Slide 1 : Welcome -->
+                <div class="mySlides welcome-slide">
+                    <div class="hero-content">
+                        <h1>Welcome to The Rogue Market</h1>
+                        <p>Your galaxy of exclusive merch, collectibles & gear</p>
+                        <a href="ProductListingPage.html" class="hero-btn">Shop All</a>
+                    </div>
                 </div>
+    
+                <!-- Slide 2 : Electronics -->
+                <div class="mySlides electronics-slide">
+                    <div class="electronics-products">
+                        <a href="ProductListingPage.html?category=Electronics" class="electronic-link ">
+                            <img src="Resources/IMG/macbook2.webp" alt="" class="electronic-item laptop">
+                        </a>
+                        <a href="ProductListingPage.html?category=Electronics" class="electronic-link ">
+                            <img src="Resources/IMG/headphone-removebg-preview.png" alt="" class="electronic-item headphones">
+                        </a>
+                        <a href="ProductListingPage.html?category=Electronics" class="electronic-link ">
+                            <img src="Resources/IMG/phone-removebg-preview.png" alt="" class="electronic-item phone">
+                        </a>
+                        <a href="ProductListingPage.html?category=Electronics" class="electronic-link ">
+                            <img src="Resources/IMG/keyboard-removebg-preview.png" alt="" class="electronic-item keyboard">
+                        </a>
+    
+                    </div>
+    
+                    <div class="hero-content">
+                        <h1>Galactic Electronics</h1>
+                        <p>Futuristic tech, gadgets & gear</p>
+                        <a href="ProductListingPage.html?category=Electronics" class="hero-btn">
+                            Shop Electronics
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Slide 3 : Toys & Games -->
+                <div class="mySlides toys-slide">
+                    <div class="toys-products">
+    
+                        <a href="ProductListingPage.html?category=Toys %26 Games" class="toy-link">
+                            <img src="Resources/IMG/lego-removebg-preview.png" alt="" class="toy-item lego">
+                        </a>
+                        <a href="ProductListingPage.html?category=Toys %26 Games" class="toy-link">
+                            <img src="Resources/IMG/r2d2-removebg-preview.png" alt="" class="toy-item r2d2">
+                        </a>
+                        <a href="ProductListingPage.html?category=Toys %26 Games" class="toy-link">
+                            <img src="Resources/IMG/basketball-removebg-preview.png" alt="" class="toy-item basketball">
+                        </a>
+    
+                        <a href="ProductListingPage.html?category=Toys %26 Games" class="toy-link">
+                            <img src="Resources/IMG/ps5.webp" alt="" class="toy-item ps5">
+                        </a>
+                    </div>
+    
+                    <div class="hero-content">
+                        <h1>Toys & Games</h1>
+                        <p>Collectibles, figures & fun for all ages</p>
+                        <a href="ProductListingPage.html?category=Toys %26 Games" class="hero-btn">
+                            Shop Toys & Games
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Slide 4 : Deals -->
+                <div class="mySlides deals-slide">
+                    <div class="hero-content">
+                        <h1>Galactic Holiday Deals</h1>
+                        <p>Limited-time Christmas offers across the galaxy</p>
+                        <a href="ProductListingPage.html" class="hero-btn">
+                        View All Deals
+                        </a>
+                    </div>
+    
+                     <!-- Deal highlights -->
+                    <div class="deals-highlights">
+                        <a href="ProductListingPage.html" class="deal-card float-1">
+                            🎁 Buy 2 Get 1 Free
+                        </a>
+    
+                        <a href="ProductListingPage.html" class="deal-card float-2">
+                            🔥 Up to 50% Off
+                        </a>
+    
+                        <a href="ProductListingPage.html" class="deal-card float-3">
+                            🚚 Free Shipping
+                        </a>
+    
+                        <a href="ProductListingPage.html" class="deal-card float-4">
+                            🎫 Holiday Coupons
+                        </a>
+                    </div>
+    
+                </div>
+
             </div>
 
-            <!-- Slide 2 : Electronics -->
-            <div class="mySlides">
-                <div class="hero-content">
-                <h1>Galactic Electronics</h1>
-                <p>Futuristic tech, gadgets & gear</p>
-                <a href="ProductListingPage.html?category=Electronics" class="hero-btn">
-                    Shop Electronics
-                </a>
-                </div>
-            </div>
-
-            <!-- Slide 3 : Toys & Games -->
-            <div class="mySlides">
-                <div class="hero-content">
-                <h1>Toys & Games</h1>
-                <p>Collectibles, figures & fun for all ages</p>
-                <a href="ProductListingPage.html?category=Toys%20%26%20Games" class="hero-btn">
-                    Shop Toys & Games
-                </a>
-                </div>
-            </div>
-
-            <!-- Slide 4 : Deals -->
-            <div class="mySlides">
-                <div class="hero-content">
-                <h1>Galactic Deals</h1>
-                <p>Limited-time offers you don’t want to miss</p>
-                <a href="ProductListingPage.html" class="hero-btn">
-                    View Deals
-                </a>
-                </div>
-            </div>
 
             <!-- Navigation arrows -->
             <a class="prev" onclick="plusSlides(-1)">❮</a>

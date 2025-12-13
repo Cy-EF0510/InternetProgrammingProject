@@ -22,18 +22,14 @@
     <!--Js script-->
     <script src="Resources/JS/orderConfirmationPage.js"></script>
 
-<title>Order Confirmation</title>
+    <title>Order Confirmation</title>
+    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
 </head>
-<body>
-    </head>
+    
 <body>
     <!-- HEADER -->
     <div id="header-container"></div>
-    <script>
-    $(document).ready(function() {
-        HeaderModel.createHeader();
-    });
-    </script>
+    
     
     <main>
         <section class="order-summary">
@@ -79,72 +75,9 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="footer-container">
 
-            <!-- CATEGORY LINKS -->
-            <div class="footer-section">
-            <h3>Categories</h3>
-            <ul>
-                <li><a href="#">Clothing</a></li>
-                <li><a href="#">Electronics</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Accessories</a></li>
-            </ul>
-            </div>
+    <!--Using jquery to make footer-->
+    <div id="footer-slot"></div>
 
-            <!-- CONTACT INFO -->
-            <div class="footer-section">
-            <h3>Contact</h3>
-            <p>Email: support@example.com</p>
-            <p>Phone: +1 (514) 555-1234</p>
-            <p>Address: 123 Main Street, Montreal</p>
-            </div>
-
-            <!-- NEWSLETTER SIGNUP -->
-            <div class="footer-section">
-            <h3>Newsletter</h3>
-            <p>Stay updated on deals and new products.</p>
-            <div class="newsletter-box">
-                <input type="email" placeholder="Enter your email">
-                <button>Sign Up</button>
-            </div>
-            </div>
-
-            <!-- SOCIAL MEDIA ICONS -->
-            <div class="footer-section">
-            <h3>Follow Us</h3>
-                <div class="social-icons">
-
-                    <!-- Instagram -->
-                    <a href="#" aria-label="Instagram">
-                    <svg width="24" height="24" fill="currentColor">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                    </a>
-
-                    <!-- Facebook -->
-                    <a href="#" aria-label="Facebook">
-                    <svg width="24" height="24" fill="currentColor">
-                        <rect x="4" y="4" width="16" height="16"></rect>
-                    </svg>
-                    </a>
-
-                    <!-- Twitter -->
-                    <a href="#" aria-label="Twitter">
-                    <svg width="24" height="24" fill="currentColor">
-                        <polygon points="4,20 20,4 20,20"></polygon>
-                    </svg>
-                    </a>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            © 2025 Your Store Name. All rights reserved.
-        </div>
-    </footer>
 </body>
 </html>

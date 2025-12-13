@@ -1,5 +1,21 @@
+
+let totalSlides = 0;
+
 $(document).ready(function () {
+    HeaderModel.createHeader();
     $("#footer-slot").append(FooterModel.createFooter());
+    
+    totalSlides = $(".mySlides").length;
+
+    updateCarousel();
+    startAutoSlide();
+
+    $(".hero-carousel").hover(
+        () => stopAutoSlide(),
+        () => startAutoSlide()
+    );
+    
+
 });
 
 
@@ -9,30 +25,54 @@ $(document).ready(function () {
 
 let slideIndex = 1;
 
-$(document).ready(function () {
-  showSlides(slideIndex);
-});
-
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  stopAutoSlide();
+  slideIndex += n;
+  wrapIndex();
+  updateCarousel();
+  startAutoSlide();
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  stopAutoSlide();
+  slideIndex = n;
+  wrapIndex();
+  updateCarousel();
+  startAutoSlide();
 }
 
-function showSlides(n) {
-  let slides = $(".mySlides");
-  let dots = $(".dot");
+let autoSlideInterval = null;
 
-  if (n > slides.length) slideIndex = 1;
-  if (n < 1) slideIndex = slides.length;
+function startAutoSlide() {
+  stopAutoSlide(); // prevent duplicates
+  autoSlideInterval = setInterval(() => {
+    plusSlides(1);
+  }, 5000); // 5 seconds
+}
 
-  slides.hide();
-  dots.removeClass("active");
+function stopAutoSlide() {
+  if (autoSlideInterval) {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = null;
+  }
+}
 
-  slides.eq(slideIndex - 1).css("display", "flex");
-  dots.eq(slideIndex - 1).addClass("active");
+function wrapIndex() {
+  if (slideIndex > totalSlides) slideIndex = 1;
+  if (slideIndex < 1) slideIndex = totalSlides;
+}
+
+
+function updateCarousel() {
+  const offset = -(slideIndex - 1) * 100;
+
+  $(".hero-track").css(
+    "transform",
+    `translateX(${offset}%)`
+  );
+
+  $(".dot").removeClass("active");
+  $(".dot").eq(slideIndex - 1).addClass("active");
 }
 
 
