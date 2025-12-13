@@ -9,6 +9,9 @@
     <!--Awesome UI -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!--Star War font-->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
     <!-- Star Wars-style font -->
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
 
@@ -30,55 +33,49 @@
     <!-- HEADER -->
     <div id="header-container"></div>
 
-    <div class="about-section">
-        <h1>About Us Page</h1>
-        <p>Some text about who we are and what we do.</p>
-        <p>Resize the browser window to see that this page is responsive byt the way</p>
-    </div>
-    <h2 style="text-align:center">Our Team</h2>
-    <div class="row">
-        <!-- George -->
-        <div class="column">
-            <div class="card">
-            <img src="" alt="George" style="width:100%">
-            <div class="container">
-                <h2>George Vogas</h2>
-                <p class="title">Title</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>jane@example.com</p>
-                <p><button class="button">Contact</button></p>
-            </div>
-            </div>
+    <main>
+        <div class="about-section">
+            <h1>About Us Page</h1>
+            <p>Some text about who we are and what we do.</p>
+            <p>Resize the browser window to see that this page is responsive byt the way</p>
         </div>
 
-        <!-- Deven -->
-        <div class="column">
-            <div class="card">
-            <img src="" alt="Deven" style="width:100%">
-            <div class="container">
-                <h2>Deven Shah-Phan</h2>
-                <p class="title">Title</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>mike@example.com</p>
-                <p><button class="button">Contact</button></p>
-            </div>
-            </div>
-        </div>
+        <section class="team">
+            <h2>Our Team</h2>
 
-        <!-- Cyril -->
-        <div class="column">
-            <div class="card">
-            <img src="" alt="Cyril" style="width:100%">
-            <div class="container">
-                <h2>Cyril Efren Fabro</h2>
-                <p class="title">Title</p>
+            <div class="team-grid"><article class="team-card">
+                <span class="hud-corners"></span>
+                <img src="Resources/IMG/george.jpg" alt="George Vogas" class="team-avatar">
+                <h3>George Vogas</h3>
+                <p class="team-title">Title</p>
                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p>john@example.com</p>
-                <p><button class="button">Contact</button></p>
+                <p class="team-email">george@vogas.net</p>
+                <a class="team-btn" href="mailto:george@vogas.net">Contact</a>
+                </article>
+
+                <article class="team-card">
+                <span class="hud-corners"></span>
+                <img src="Resources/IMG/deven.jpg" alt="Deven Shah-Phan" class="team-avatar">
+                <h3>Deven Shah-Phan</h3>
+                <p class="team-title">Title</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p class="team-email">mike@example.com</p>
+                <a class="team-btn" href="mailto:mike@example.com">Contact</a>
+                </article>
+
+                <article class="team-card">
+                    <span class="hud-corners"></span>
+                    <img src="Resources/IMG/cyril.jpg" alt="Cyril Efren Fabro" class="team-avatar">
+                    <h3>Cyril Efren Fabro</h3>
+                    <p class="team-title">Title</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p class="team-email">john@example.com</p>
+                    <a class="team-btn" href="mailto:john@example.com">Contact</a>
+                </article>
+
             </div>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main> 
     
     <!--Using jquery to make footer-->
     <div id="footer-slot"></div>

@@ -1,185 +1,204 @@
-:root {
-  --imperial-black: #000000;
-  --rebel-yellow: #FFD700;
-  --holo-blue: #00BFFF;
-  --panel-gray: #2C2C2C;
-}
+:root{
+    --bg: #05060a;
+    --text: rgba(245,245,245,0.92);
 
-body {
-  margin: 0;
-  background: #05060a;
-  color: #f5f5f5;
-  font-family: "Pathway Gothic One", sans-serif;
-  letter-spacing: 0.08em;
-}
+    --kyber: #00b4ff;
+    --panel: rgba(0,0,0,0.72);
+    --line: rgba(0,180,255,0.35);
 
-main {
+    --rebelYellow: #ffe81f;
+    --danger: #ff4d4d;
+
+    --headerBg: #090b12;
+    --borderDark: #222;
+    --fieldBg: #12141e;
+  }
+
+  /* ---------------- BASE ---------------- */
+  body{
     margin: 0;
-    padding: 0;
-}
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pathway Gothic One", sans-serif;
+    letter-spacing: .08em;
+  }
 
-/* ========================================== */
-/*                 CART BADGE                 */
-/* ========================================== */
+  main{ margin: 0; padding: 0; }
 
-.item-count-badge {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 5px;
-    font-size: 11px;
-    font-weight: bold;
-}
-/* ========================================== */
-/*                   LOGO                     */
-/* ========================================== */
+  h1, h2, h3, nav a{
+    font-family: "Pathway Gothic One", sans-serif;
+  }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    width: 40px;       /* Smaller logo */
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ffe81f;
-    box-shadow: 0 0 10px rgba(255, 232, 31, 0.6);
-    transition: 0.2s ease;
-}
-
-.logo:hover .logo-img {
-    transform: scale(1.06);
-    box-shadow: 0 0 15px rgba(255, 232, 31, 1);
-}
-
-/* ==== HEADER ==== */
-
-header {
-  background: #090b12;
-  border-bottom: 1px solid #222;
+  /* =====================================================
+    HEADER (TRUE CENTERED NAV)
+  ===================================================== */
+header{
+  background: var(--headerBg);
+  border-bottom: 1px solid var(--borderDark);
   position: sticky;
   top: 0;
   z-index: 50;
 }
 
-/* 3-column grid: logo | centered nav | actions */
-.header-container {
+.header-container{
+  min-height: 76px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 16px 24px;
 
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  position: relative;
+  display: flex;
   align-items: center;
-  column-gap: 20px;
 }
 
 /* Logo */
-.logo { display: flex; align-items: center; }
+.logo{ z-index: 2; }
 
-.logo-img {
-  width: 40px;
-  height: 40px;
+.logo-img{
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ffe81f;
-  box-shadow: 0 0 10px rgba(255, 232, 31, 0.6);
-  transition: 0.2s ease;
+  border: 2px solid var(--rebelYellow);
+  box-shadow: 0 0 10px rgba(255,232,31,.6);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.logo:hover .logo-img {
-  transform: scale(1.06);
-  box-shadow: 0 0 15px rgba(255, 232, 31, 1);
+.logo:hover .logo-img{
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(255,232,31,1);
 }
 
-/* Centered nav (always centered) */
-header nav {
-  justify-self: center;
+/* Centered nav */
+.main-nav{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
   display: flex;
-  gap: 22px;
+  gap: 24px;
   white-space: nowrap;
 }
 
-nav a {
+.main-nav a{
+  position: relative;
+
   color: #f5f5f5;
   text-decoration: none;
-  margin: 0;              /* IMPORTANT: remove your old margins */
-  font-size: 0.95rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+
+  text-shadow: 0 0 14px rgba(0,180,255,.35);
+  transition: color .15s ease, text-shadow .15s ease;
 }
 
-nav a:hover { color: #ffcc33; }
+/* hover = yellow */
+.main-nav a:hover{
+  color: var(--rebelYellow);
+  text-shadow:
+    0 0 6px rgba(255,232,31,0.95),
+    0 0 18px rgba(255,232,31,0.65);
+}
 
-/* Right side actions */
-.header-actions {
-  justify-self: end;
+/* active page = blue glow */
+.main-nav a.active{
+  color: #bfefff;
+  text-shadow:
+    0 0 8px rgba(0,180,255,0.9),
+    0 0 24px rgba(0,180,255,0.6);
+}
+
+/* active + hover override */
+.main-nav a.active:hover{
+  color: var(--rebelYellow);
+  text-shadow:
+    0 0 6px rgba(255,232,31,1),
+    0 0 18px rgba(255,232,31,0.8);
+}
+
+/* ===== LIGHTSABER UNDERLINE ===== */
+.main-nav a::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--rebelYellow);
+  box-shadow: 0 0 12px rgba(255,232,31,1);
+
+  transform: translateX(-50%);
+  transition: width .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+/* hover underline */
+.main-nav a:hover::after{
+  width: 70%;
+}
+
+/* active underline */
+.main-nav a.active::after{
+  width: 70%;
+  background: var(--kyber);
+  box-shadow: 0 0 14px rgba(0,180,255,0.9);
+}
+
+/* active + hover underline */
+.main-nav a.active:hover::after{
+  background: var(--rebelYellow);
+  box-shadow: 0 0 14px rgba(255,232,31,1);
+}
+
+/* Right actions */
+.header-actions{
+  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 12px;
+  z-index: 2;
 }
 
 /* Icons */
-.icon-btn {
+.icon-btn{
   color: #f5f5f5;
-  text-decoration: none;
+  font-size: 1.35rem;
   position: relative;
-  font-size: 1.1rem;
+  transition: color .15s ease;
 }
-.icon-btn:hover { color: #ffcc33; }
+.icon-btn:hover{ color: var(--rebelYellow); }
 
-.item-count-badge {
+/* Cart badge */
+.item-count-badge{
   position: absolute;
   top: -6px;
   right: -8px;
-  background: #ff4d4d;
+  background: var(--danger);
   color: #fff;
   border-radius: 999px;
-  padding: 2px 6px;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  padding: 3px 7px;
 }
 
 /* Search */
-.search-wrapper { position: relative; }
+.search-wrapper{ position: relative; }
 
-#searchBar {
-  padding: 6px 10px;
+#searchBar{
+  padding: 9px 14px;
+  min-width: 240px;
+  font-size: 1rem;
+
   border-radius: 999px;
   border: 1px solid #333;
-  background: #12141e;
+  background: var(--fieldBg);
   color: #f5f5f5;
-  min-width: 200px;
 }
 
-#searchBar:focus {
+#searchBar:focus{
   outline: none;
-  border-color: #ffcc33;
+  border-color: var(--rebelYellow);
 }
-
-.search-suggestions {
-  position: absolute;
-  top: 110%;
-  left: 0;
-  right: 0;
-  background: #10121b;
-  border: 1px solid #333;
-  border-radius: 6px;
-  max-height: 250px;
-  overflow-y: auto;
-  z-index: 20;
-  display: none; /* show via JS */
-}
-
-.search-suggestions div {
-  padding: 8px 10px;
-  font-size: 0.9rem;
-  cursor: pointer;
-}
-
-.search-suggestions div:hover { background: #1c1f2b; }
 
 /* ==== LAYOUT: ASIDE + MAIN ==== */
 

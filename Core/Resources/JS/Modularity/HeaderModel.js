@@ -14,15 +14,16 @@ var HeaderModel = {
                             src: "Resources/IMG/notcircle.png",
                             alt: ""
                         })
-                )
+                )   
         );
 
         /* ===== Navigation ===== */
-        const nav = $("<nav/>").append(
-            $("<a/>").attr("href", "HomePage.html").text("Home"),
-            $("<a/>").attr("href", "ProductListingPage.html").text("Products"),
-            $("<a/>").attr("href", "AboutPage.html").text("Contact")
+       const nav = $("<nav/>").addClass("main-nav").append(
+        $("<a/>").attr("href", "HomePage.html").text("Home"),
+        $("<a/>").attr("href", "ProductListingPage.html").text("Products"),
+        $("<a/>").attr("href", "AboutPage.html").text("Contact")
         );
+
 
         /* ===== Search Wrapper ===== */
         const searchWrapper = $("<div/>").addClass("search-wrapper").append(
