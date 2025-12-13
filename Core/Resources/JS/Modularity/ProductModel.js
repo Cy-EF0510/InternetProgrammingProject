@@ -1,17 +1,20 @@
+
+
 var ProductModel = {
 
   // "" or null => Data/products.json
   // "Home & Kitchen" => Data/Home%20%26%20Kitchen.json
   getProducts: function (category) {
     const url = category
-      ? ("Data/" + encodeURIComponent(category) + ".json")
-      : "Data/products.json";
+      ? ("./Data/" + encodeURIComponent(category) + ".json")
+      : "./Data/products.json";
 
     return $.getJSON(url);
   },
 
   // backward compatible
   getAllProducts: function () {
+    
     return this.getProducts("");
   },
 
@@ -24,15 +27,16 @@ var ProductModel = {
       .css("cursor", "pointer");
 
     card.on("click", function () {
-      window.location.href = `ProductDetailsPage.html?id=${product.id}`;
+      window.location.href = `ProductDetailPage.html?id=${product.id}`;
     });
 
     const imgWrap = $("<div/>").addClass("product-img-wrap");
 
-    const img = $("<img/>")
+  const img = $("<img/>")
       .addClass("product-img")
       .attr("src", product.image + "?id=" + product.id)
       .attr("alt", product.name);
+
 
     imgWrap.append(img);
 

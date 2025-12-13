@@ -201,6 +201,124 @@ header{
 }
 
 
+/* ===================== CART PAGE ===================== */
+
+.cart-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.cart-title {
+  margin-bottom: 30px;
+  color: var(--rebelYellow);
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Empty */
+.cart-empty {
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 60px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* CART ITEM */
+.cart-item {
+  display: grid;
+  grid-template-columns: 90px 1fr auto auto auto;
+  gap: 16px;
+  align-items: center;
+
+  background: rgba(0,0,0,0.7);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-name {
+  font-size: 1.1rem;
+}
+
+.cart-price,
+.cart-subtotal {
+  color: var(--rebelYellow);
+}
+
+/* QTY */
+.qty-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.qty-controls button {
+  background: none;
+  border: 1px solid var(--line);
+  color: #fff;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* REMOVE */
+.remove-btn {
+  color: var(--danger);
+  cursor: pointer;
+}
+
+/* SUMMARY */
+.cart-summary {
+  background: rgba(0,0,0,0.8);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.summary-row.total {
+  font-size: 1.2rem;
+  color: var(--rebelYellow);
+}
+
+.checkout-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: var(--rebelYellow);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
 
 
 

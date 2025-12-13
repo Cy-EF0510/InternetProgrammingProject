@@ -18,49 +18,93 @@
     <!--Css Sheet-->
     <link rel="stylesheet" href="Resources/CSS/pdp.css">
 
+    <script src="./Resources/JS/Modularity/ProductModel.js"></script>
+
+    <!--Cart management-->
+    <script src="Resources/JS/Modularity/CartManagement.js"></script>
+
     <!--Models for header and footer-->
-    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
-    <script src="Resources/JS/Modularity/FooterModel.js"></script>
+    <script src="./Resources/JS/Modularity/HeaderModel.js"></script>
+    <script src="./Resources/JS/Modularity/FooterModel.js"></script>
 
     <!--Js script-->
-    <script src="Resources/JS/pdp.js"></script>
+    <script src="./Resources/JS/pdp.js"></script>
 
 
     <title>Product Detail Page</title>
-    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
+    <link rel="website icon" type="image/png" href="./Resources/IMG/circle.png"/>
 </head>
 
 <body>
   <!-- HEADER -->
     <div id="header-container"></div>
     
-    <main class="pdp">
-      <div class="pdp-left">
-        <img id="pdpImage" alt="">
-      </div>
+     <main class="pdp-page">
 
-      <div class="pdp-right">
-        <h1 id="pdpTitle"></h1>
-        <p id="pdpDesc"></p>
+    <!-- Loading / errors -->
+    <section id="pdp-status" class="pdp-status">
+      Loading product...
+    </section>
 
-        <div class="pdp-price">$<span id="pdpPrice"></span></div>
-        <div class="pdp-meta">
-          <div>SKU: <span id="pdpSku"></span></div>
-          <div>Availability: <span id="pdpStock"></span></div>
+    <!-- PDP content -->
+    <section id="pdp" class="pdp hidden">
+      <div class="pdp-grid">
+
+        <!-- Image -->
+        <div class="pdp-media">
+          <div class="pdp-img-wrap">
+            <img id="pdp-img" alt="" />
+          </div>
         </div>
 
-        <div class="qty-row">
-          <label>Qty</label>
-          <input type="number" id="qtyInput" min="1" value="1">
+        <!-- Info -->
+        <div class="pdp-info">
+          <div class="pdp-badges">
+            <span id="pdp-availability" class="badge"></span>
+            <span id="pdp-sku" class="badge badge-muted"></span>
+          </div>
+
+          <h1 id="pdp-title" class="pdp-title"></h1>
+          <p id="pdp-desc" class="pdp-desc"></p>
+
+          <div class="pdp-price-row">
+            <div class="pdp-price" id="pdp-price"></div>
+          </div>
+
+          <div class="pdp-actions">
+            <div class="qty">
+              <label for="qty-input">Qty</label>
+              <div class="qty-controls">
+                <button type="button" id="qty-minus" class="qty-btn">−</button>
+                <input id="qty-input" type="number" min="1" value="1" />
+                <button type="button" id="qty-plus" class="qty-btn">+</button>
+              </div>
+            </div>
+
+            <button id="add-to-cart" class="btn-primary">
+              Add to Cart
+            </button>
+          </div>
+
+          <div id="cart-msg" class="cart-msg" aria-live="polite"></div>
         </div>
 
-        <button id="addToCartBtn">Add to Cart</button>
       </div>
-    </main>
 
-  <section id="relatedProducts"></section>
-  <section id="reviews"></section>
+      <!-- Related products -->
+      <section class="section">
+        <h2 class="section-title">Recommended</h2>
+        <div id="related-grid" class="related-grid"></div>
+      </section>
 
+      <!-- Reviews -->
+      <section class="section">
+        <h2 class="section-title">Reviews</h2>
+        <div id="reviews-wrap" class="reviews-wrap"></div>
+      </section>
+    </section>
+
+  </main>
   <!--Using jquery to make footer-->
     <div id="footer-slot"></div>
 

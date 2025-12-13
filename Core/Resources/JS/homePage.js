@@ -14,6 +14,42 @@ $(document).ready(function () {
         () => stopAutoSlide(),
         () => startAutoSlide()
     );
+
+    
+    CartManagement.updateCartBadge();
+
+
+    // Load products and render featured products
+
+  ProductModel.getAllProducts()
+    .done(function (products) {
+
+      const homeKitchen = products
+        .filter(p => p.category === "Home & Kitchen")
+        .slice(0, 12);
+      renderRow(homeKitchen, "homeRow");
+
+      const electronics = products
+        .filter(p => p.category === "Electronics")
+        .slice(0, 12);
+      renderRow(electronics, "electronicsRow");
+
+      const toys = products
+        .filter(p => p.category === "Toys & Games")
+        .slice(0, 12);
+      renderRow(toys, "toysRow");
+
+      initRowArrows();
+
+    })
+    .fail(function (err) {
+      console.error("Failed to load homepage products", err);
+    });
+
+
+
+
+
     
 
 });
@@ -81,31 +117,6 @@ function updateCarousel() {
 /************************************************
  * FEATURED PRODUCTS (JSON + RANDOM)
  ************************************************/
-const FEATURED_COUNT = 6;
-let carouselIndex = 0;
-
-//testings for product model / it workings
-
-// $(document).ready(function () {
-
-//     ProductModel.getAllProducts().done(function (products) {
-
-//         console.log("Model WOrks - prodcuts loaded: ", products);
-
-//         console.log("num of products: ", products.length);
-
-//     }).fail(function () {
-        
-//         console.error("Model failed!!!");
-
-//     })
-
-// })
-
-
-
-
-
 
 function getRandomProducts(products, count) {
     const shuffled = [...products];
@@ -119,36 +130,31 @@ function getRandomProducts(products, count) {
 }
 
 
-function renderFeaturedProducts(products) {
-    const track = document.getElementById("featuredTrack");
-    track.innerHTML = "";
+function renderRow(products, containerId) {
+  const track = $("#" + containerId);
+  track.empty();
 
-    products.forEach(p => {
-        track.innerHTML += `
-            <div class="product-card">
-                <img src="${p.image}" alt="${p.name}">
-                <h3>${p.name}</h3>
-                <p>$${p.price.toFixed(2)}</p>
-                <button class="view-btn">View</button>
-            </div>
-        `;
-    });
+  products.forEach(product => {
+    track.append(ProductModel.createProductBox(product));
+  });
 }
 
 
-/************************************************
- * FEATURED PRODUCTS CAROUSEL CONTROLS
- ************************************************/
-const btnLeft = document.querySelector(".carousel-btn.left");
-const btnRight = document.querySelector(".carousel-btn.right");
-const track = document.getElementById("featuredTrack");
+function initRowArrows() {
+  $(".product-row").each(function () {
+    const $row = $(this);
+    const $track = $row.find(".row-track");
 
-btnRight.addEventListener("click", () => {
-    carouselIndex++;
-    track.style.transform = `translateX(-${carouselIndex * 260}px)`;
-});
+    $row.find(".row-btn.left").off("click").on("click", function () {
+      const cardW = $track.find(".product-card").first().outerWidth(true) || 240;
+      $track[0].scrollBy({ left: -(cardW * 3), behavior: "smooth" });
+    });
 
-btnLeft.addEventListener("click", () => {
-    if (carouselIndex > 0) carouselIndex--;
-    track.style.transform = `translateX(-${carouselIndex * 260}px)`;
-});
+    $row.find(".row-btn.right").off("click").on("click", function () {
+      const cardW = $track.find(".product-card").first().outerWidth(true) || 240;
+      $track[0].scrollBy({ left: (cardW * 3), behavior: "smooth" });
+    });
+  });
+}
+
+

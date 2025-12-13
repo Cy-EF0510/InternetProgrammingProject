@@ -18,6 +18,9 @@
     <!--Css Sheet-->
     <link rel="stylesheet" href="Resources/CSS/shoppingCartPage.css">
 
+    <!--Cart management-->
+    <script src="Resources/JS/Modularity/CartManagement.js"></script>
+
     <!--Models for header and footer-->
     <script src="Resources/JS/Modularity/HeaderModel.js"></script>
     <script src="Resources/JS/Modularity/FooterModel.js"></script>
@@ -33,9 +36,40 @@
 
     <div id="header-container"></div>
     
-    <main>
-        <h2>Shopping Cart</h2>
+    <main class="cart-page">
+
+        <h2 class="cart-title">Shopping Cart</h2>
+
+        <div id="cart-empty" class="cart-empty hidden">
+            Your cart is empty.
+        </div>
+
+        <div class="cart-layout">
+
+            <!-- LEFT: ITEMS -->
+            <section class="cart-items" id="cart-items"></section>
+
+            <!-- RIGHT: SUMMARY -->
+            <aside class="cart-summary">
+            <h3>Order Summary</h3>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">$0.00</span>
+            </div>
+
+            <div class="summary-row total">
+                <span>Total</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+
+            <button class="checkout-btn">Proceed to Checkout</button>
+            </aside>
+
+        </div>
+
     </main>
+
 
     
     <!--Using jquery to make footer-->

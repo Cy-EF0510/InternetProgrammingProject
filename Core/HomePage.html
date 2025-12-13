@@ -11,6 +11,9 @@
     
     <link rel="stylesheet" href="Resources/CSS/homePage.css">
 
+    <!--Cart management-->
+    <script src="Resources/JS/Modularity/CartManagement.js"></script>
+
     <script src="Resources/JS/Modularity/ProductModel.js"></script>
     <script src="Resources/JS/Modularity/FooterModel.js"></script>
     <script src="Resources/JS/homePage.js"></script>
@@ -126,7 +129,7 @@
                         </a>
                     </div>
     
-                     <!-- Deal highlights -->
+                    <!-- Deal highlights -->
                     <div class="deals-highlights">
                         <a href="ProductListingPage.html" class="deal-card float-1">
                             🎁 Buy 2 Get 1 Free
@@ -168,19 +171,48 @@
 
 
         
-        <!-- ===================== FEATURED PRODUCTS ===================== -->
-        <section class="featured-products">
-            <h2 class="section-title">Featured Products</h2>
+        <!-- ===================== PRODUCT ROWS ===================== -->
 
-            <div class="product-carousel">
-                <button class="carousel-btn left">&#10094;</button>
+        <section class="product-rows">
 
-                <!-- JS will inject RANDOM products here -->
-                <div class="carousel-track" id="featuredTrack"></div>
+            <div class="product-row">
+                <h2>Best Sellers in Home & Kitchen</h2>
 
-                <button class="carousel-btn right">&#10095;</button>
+                <div class="row-carousel">
+                <button class="row-btn left">❮</button>
+
+                <div class="row-track" id="homeRow"></div>
+
+                <button class="row-btn right">❯</button>
+                </div>
             </div>
+
+            <div class="product-row">
+                <h2>Top Picks in Electronics</h2>
+
+                <div class="row-carousel">
+                <button class="row-btn left">❮</button>
+
+                <div class="row-track" id="electronicsRow"></div>
+
+                <button class="row-btn right">❯</button>
+                </div>
+            </div>
+
+            <div class="product-row">
+                <h2>Popular in Toys & Games</h2>
+
+                <div class="row-carousel">
+                <button class="row-btn left">❮</button>
+
+                <div class="row-track" id="toysRow"></div>
+
+                <button class="row-btn right">❯</button>
+                </div>
+            </div>
+
         </section>
+
 
 
     </main>

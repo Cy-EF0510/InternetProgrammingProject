@@ -17,9 +17,9 @@ let activeMaxPrice = 0;
 
 $(document).ready(function () {
   // FOOTER
-  $("#footer-slot").append(FooterModel.createFooter());
+  $("#footer-slot").html(FooterModel.createFooter());
   HeaderModel.createHeader();
-  updateCartBadge();
+  CartManagement.updateCartBadge();
 
   // 1) Read category from URL first
   activeCategory = getCategoryFromURL() || "";
