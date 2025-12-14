@@ -6,6 +6,9 @@ $(document).ready(function () {
     
     $("#footer-slot").append(FooterModel.createFooter());
     FooterModel.loadCategories();
+    loadCategoryNav();
+
+    
     totalSlides = $(".mySlides").length;
 
     updateCarousel();
@@ -150,5 +153,39 @@ function initRowArrows() {
     });
   });
 }
+
+
+function loadCategoryNav() {
+  $.ajax({
+    url: "Data/categories.xml",
+    dataType: "xml"
+  })
+  .done(function (xml) {
+    const nav = $("#categoryNav");
+    nav.empty();
+
+    // All link
+    const all = $("<a/>")
+      .attr("href", "ProductListingPage.html")
+      .text("All");
+
+    nav.append(all);
+
+    $(xml).find("category > name").each(function () {
+      const name = $(this).text().trim();
+      const encoded = encodeURIComponent(name);
+
+      const link = $("<a/>")
+        .attr("href", "ProductListingPage.html?category=" + encoded)
+        .text(name);
+
+      nav.append(link);
+    });
+  })
+  .fail(function () {
+    console.error("Failed to load categories");
+  });
+}
+
 
 
