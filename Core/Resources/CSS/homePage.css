@@ -1,38 +1,71 @@
 /* ===================== CATEGORY BAR ===================== */
-.category-bar {
+.category-bar{
+      margin-top: 25px;
+
   width: 100%;
-  border-bottom: 1px solid #333;
+  background: #05060a;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  position: relative;
+  z-index: 2000;
 }
 
-.category-container {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 6px 12px;
+.category-container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px 14px;
 
-  display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+
+    gap: 12px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.category-container::-webkit-scrollbar{ display:none; }
+
+.category-container a{
+  display: inline-flex;
   align-items: center;
-  gap: 18px;
+  justify-content: center;
 
-  overflow-x: auto; 
-  scrollbar-width: none; 
-}
+  padding: 10px 14px;
+  border-radius: 999px;
 
-.category-container::-webkit-scrollbar {
-  display: none; 
-}
-
-.category-container a {
-  color: var(--text);
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  text-decoration: none;
   white-space: nowrap;
+  text-decoration: none;
+
+  color: #f2f2f2;
+  background: rgba(15, 18, 28, 0.95);
+  border: 1px solid rgba(0, 180, 255, 0.45);
+
+  box-shadow: 0 0 10px rgba(0,180,255,0.10);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
-.category-container a:hover {
+.category-container a:hover{
   color: #ffe81f;
-  text-shadow: 0 0 6px rgba(255, 232, 31, 0.8);
+  border-color: rgba(255,232,31,0.65);
+  box-shadow: 0 0 18px rgba(255,232,31,0.18);
+  transform: translateY(-1px);
+}
+
+.category-container a:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255,232,31,0.45), 0 0 18px rgba(255,232,31,0.18);
+}
+
+.category-container a.active{
+  color: #111;
+  background: #ffe81f;
+  border-color: rgba(255,232,31,0.85);
+  box-shadow: 0 0 18px rgba(255,232,31,0.22);
 }
 
 .hero-carousel {

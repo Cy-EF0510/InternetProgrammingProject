@@ -98,21 +98,30 @@ function loadCategoriesIntoSelect() {
     url: "Data/categories.xml",
     dataType: "xml"
   })
-    .then(function (xml) {
-      const select = $("#categoryFilter");
+  .then(function (xml) {
+    const $select = $("#categoryFilter");
 
-      select.empty();
-      select.append(`<option value="">All</option>`);
+    $select.empty();
 
-      $(xml).find("category > name").each(function () {
-        const name = $(this).text().trim();
-        $select.append(`<option value="${name}">${name}</option>`);
-      });
-    })
-    .catch(function (xhr) {
-      console.error("Failed to load categories:", xhr.status);
+    // All
+    $select.append(
+      $("<option/>").val("").text("All")
+    );
+
+    // Categories
+    $(xml).find("category > name").each(function () {
+      const name = $(this).text().trim();
+
+      $select.append(
+        $("<option/>").val(name).text(name)
+      );
     });
+  })
+  .catch(function (xhr) {
+    console.error("Failed to load categories:", xhr.status);
+  });
 }
+
 
 /* ========================== RENDER + INFINITE SCROLL ========================== */
 
