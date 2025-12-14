@@ -498,6 +498,27 @@
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+i.fa.fa-gift {
+    font-size:22px;
+    color:red
+}
+
+i.fa.fa-fire {
+    font-size:22px;
+    color:orange
+}
+
+i.fa.fa-truck {
+    font-size:22px;
+    color:green
+}
+
+i.fas.fa-star {
+    font-size:22px;
+    color:blue
+}
+
+
 .deal-card:hover {
     transform: scale(1.08);
     box-shadow:
@@ -632,21 +653,89 @@
 .row-btn.right { right: 0; }
 
 
-.product-card {
-    min-width: 240px;
-    background: rgba(20, 20, 20, 0.95);
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #444;
-    text-align: center;
+/* =========================
+   HOME PRODUCT CARD (PLP STYLE)
+========================= */
+
+.product-card{
+  position:relative;
+  min-width:240px;
+  background:var(--cardBg);
+  border:1px solid rgba(0,180,255,.14);
+  border-radius:16px;
+  padding:14px;
+  box-shadow:0 14px 34px rgba(0,0,0,.55);
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
 
-.product-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 6px;
+.product-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:16px;
+  pointer-events:none;
+  box-shadow: 0 0 0 rgba(0,180,255,0);
+  transition: box-shadow .2s ease;
 }
+
+.product-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(0,180,255,.35);
+  box-shadow:0 22px 46px rgba(0,0,0,.65);
+}
+
+.product-card:hover::after{
+  box-shadow: 0 0 22px rgba(0,180,255,.22);
+}
+
+.product-img-wrap{
+  position:relative;
+  aspect-ratio:1/1;
+  border-radius:14px;
+  padding:14px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.10);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.product-img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.price-row{
+  margin-top:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+}
+
+.price{
+  font-weight:900;
+  font-size:22px;
+  color:var(--rebelYellow);
+}
+
+.stock{
+  font-size:11px;
+  color:rgba(255,255,255,.55);
+}
+
+.title{
+  margin-top:6px;
+  font-size:15px;
+  line-height:1.3;
+}
+
+.cat{
+  font-size:11px;
+  color:rgba(255,255,255,.55);
+  margin-top:4px;
+}
+
 
 .product-card h3 {
     font-size: 1rem;

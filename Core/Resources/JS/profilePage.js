@@ -48,6 +48,10 @@ $(document).ready(function () {
     loadProfile();
     $("#profileMsg").text("Reset");
   });
+
+  $("#logoutBtn").on("click", function () {
+      AuthModel.logout();
+    });
 });
 
 

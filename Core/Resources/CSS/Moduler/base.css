@@ -375,6 +375,7 @@ footer::before{
   border:1px solid rgba(0,180,255,.35);
   color:#bfefff;
   transition:.2s ease;
+  text-decoration: none;
 }
 
 .social-icons a:hover{

@@ -1,5 +1,3 @@
-
-
 var ProductModel = {
 
   // "" or null => Data/products.json

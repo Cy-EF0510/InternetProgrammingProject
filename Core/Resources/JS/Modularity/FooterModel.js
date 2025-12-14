@@ -21,7 +21,7 @@ var FooterModel = {
     /* ===== Contact ===== */
     const contactSection = $("<div/>").addClass("footer-section").append(
       $("<h3/>").text("Contact"),
-      $("<p/>").text("Email: support@example.com"),
+      $("<p/>").text("Email: RogueCompany@gmail.com"),
       $("<p/>").text("Phone: +1 (514) 555-1234"),
       $("<p/>").text("Address: 123 Main Street, Montreal")
     );

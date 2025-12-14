@@ -2,22 +2,25 @@ var ValidatorModel = {
 
   /* ===== Rules ===== */
   regEmail: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+  redEmail2:  /^[\w-]+@[a-z0-9]+\.(com|(co\.)?uk|(qc\.)?ca|net)$/i,
+
   regPass: /^cityslicka$/i, // reqres demo password
+  redPass2: /^(?=\S{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).*$/,
 
   /* ===== Utils ===== */
   exists: function (selector) {
     return $(selector).length > 0;
   },
 
-  setError: function ($input, $error, msg) {
-    $error.text(msg);
-    $input.addClass("input-error");
+  setError: function (input, error, msg) {
+    error.text(msg);
+    input.addClass("input-error");
     return false;
   },
 
-  clearError: function ($input, $error) {
-    $error.text("");
-    $input.removeClass("input-error");
+  clearError: function (input, error) {
+    error.text("");
+    input.removeClass("input-error");
     return true;
   },
 
@@ -25,92 +28,92 @@ var ValidatorModel = {
   validateName: function () {
     if (!this.exists("#name")) return true;
 
-    const $input = $("#name");
-    const $error = $("#nameError");
-    const value = $input.val().trim();
+    const input = $("#name");
+    const error = $("#nameError");
+    const value = input.val().trim();
 
     if (value === "") {
-      return this.setError($input, $error, "Name is required.");
+      return this.setError(input, error, "Name is required.");
     }
-    return this.clearError($input, $error);
+    return this.clearError(input, error);
   },
 
   validateEmail: function () {
     if (!this.exists("#email")) return true;
 
-    const $input = $("#email");
-    const $error = $("#emailError");
-    const value = $input.val().trim();
+    const input = $("#email");
+    const error = $("#emailError");
+    const value = input.val().trim();
 
     if (value === "") {
-      return this.setError($input, $error, "Email is required.");
+      return this.setError(input, error, "Email is required.");
     }
     if (!this.regEmail.test(value)) {
-      return this.setError($input, $error, "Please enter a valid email.");
+      return this.setError(input, error, "Please enter a valid email.");
     }
-    return this.clearError($input, $error);
+    return this.clearError(input, error);
   },
 
   validatePassword: function () {
     if (!this.exists("#pass")) return true;
 
-    const $input = $("#pass");
-    const $error = $("#passError");
-    const value = $input.val();
+    const input = $("#pass");
+    const error = $("#passError");
+    const value = input.val();
 
     if (value === "") {
-        return this.setError($input, $error, "Password is required.");
+        return this.setError(input, error, "Password is required.");
     }
     if (!this.regPass.test(value)) {
-      return this.setError($input, $error, 'Password must be "cityslicka".');
+      return this.setError(input, error, 'Password must be At least 8 chars, 1 uppercase, 1 lowercase, 1 number, 1 special (cityslicka).');
     }
-    return this.clearError($input, $error);
+    return this.clearError(input, error);
   },
 
   validateRePassword: function () {
     if (!this.exists("#repass")) return true;
 
     const pass = $("#pass").val();
-    const $input = $("#repass");
-    const $error = $("#repassError");
-    const value = $input.val();
+    const input = $("#repass");
+    const error = $("#repassError");
+    const value = input.val();
 
     if (value === "") {
-      return this.setError($input, $error, "Re-enter password is required.");
+      return this.setError(input, error, "Re-enter password is required.");
     }
     if (value !== pass) {
-      return this.setError($input, $error, "Passwords do not match.");
+      return this.setError(input, error, "Passwords do not match.");
     }
-    return this.clearError($input, $error);
+    return this.clearError(input, error);
   },
 
 
   validatePhone: function () {
   if (!this.exists("#phone")) return true;
 
-  const $input = $("#phone");
-  const $error = $("#phoneError");
-  const value = $input.val().trim();
+  const input = $("#phone");
+  const error = $("#phoneError");
+  const value = input.val().trim();
 
   if (value === "") {
-    return this.setError($input, $error, "Phone number is required.");
+    return this.setError(input, error, "Phone number is required.");
   }
 
-  return this.clearError($input, $error);
+  return this.clearError(input, error);
 },
 
 validateAddress: function () {
   if (!this.exists("#address")) return true;
 
-  const $input = $("#address");
-  const $error = $("#addressError");
-  const value = $input.val().trim();
+  const input = $("#address");
+  const error = $("#addressError");
+  const value = input.val().trim();
 
   if (value === "") {
-    return this.setError($input, $error, "Shipping address is required.");
+    return this.setError(input, error, "Shipping address is required.");
   }
 
-  return this.clearError($input, $error);
+  return this.clearError(input, error);
 },
 
 
@@ -124,46 +127,43 @@ validateAddress: function () {
     let valid = true;
 
     // Card Number
-    const $card = $("#cardNumber");
-    const $cardError = $("#cardNumberError");
-    const cardVal = $card.val().replace(/\s+/g, "");
+    const card = $("#cardNumber");
+    const cardError = $("#cardNumberError");
+    const cardVal = card.val().replace(/\s+/g, "");
 
     if (!/^\d{16}$/.test(cardVal)) {
-      this.setError($card, $cardError, "Card number must be 16 digits.");
+      this.setError(card, cardError, "Card number must be 16 digits.");
       valid = false;
     } else {
-      this.clearError($card, $cardError);
+      this.clearError(card, cardError);
     }
 
     // Expiry
-    const $expiry = $("#cardExpiry");
-    const $expiryError = $("#cardExpiryError");
-    const expiryVal = $expiry.val();
+    const expiry = $("#cardExpiry");
+    const expiryError = $("#cardExpiryError");
+    const expiryVal = expiry.val();
 
     if (!/^\d{2}\/\d{2}$/.test(expiryVal)) {
-      this.setError($expiry, $expiryError, "Expiry must be MM/YY.");
+      this.setError(expiry, expiryError, "Expiry must be MM/YY.");
       valid = false;
     } else {
-      this.clearError($expiry, $expiryError);
+      this.clearError(expiry, expiryError);
     }
 
     // CVV
-    const $cvv = $("#cardCvv");
-    const $cvvError = $("#cardCvvError");
-    const cvvVal = $cvv.val();
+    const cvv = $("#cardCvv");
+    const cvvError = $("#cardCvvError");
+    const cvvVal = cvv.val();
 
     if (!/^\d{3}$/.test(cvvVal)) {
-      this.setError($cvv, $cvvError, "CVV must be 3 digits.");
+      this.setError(cvv, cvvError, "CVV must be 3 digits.");
       valid = false;
     } else {
-      this.clearError($cvv, $cvvError);
+      this.clearError(cvv, cvvError);
     }
 
     return valid;
   },
-
-
-
 
 
   /* ===== Page-Level Checks ===== */

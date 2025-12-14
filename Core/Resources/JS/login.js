@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    // If already logged in, don’t show login page
+
+  AuthModel.forwardNextParam("#registerLink", "RegisterPage.html");
+  
   if (AuthModel.isLoggedIn()) {
     AuthModel.redirectAfterLogin();   // goes to ?next=... or HomePage
     return;

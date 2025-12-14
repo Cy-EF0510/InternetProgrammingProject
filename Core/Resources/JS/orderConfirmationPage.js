@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
         AuthModel.requireLogin();
 
         HeaderModel.createHeader();
@@ -27,15 +28,24 @@ function loadOrderConfirmation() {
 
     var row = $("<div/>").addClass("item");
 
-    var name = $("<span/>")
-      .text(item.name + " × " + item.qty);
+    var img = $("<img/>")
+      .addClass("item-image")
+      .attr("src", item.image)
+      .attr("alt", item.name);
+
+    var details = $("<div/>").addClass("item-details");
+    details.append(
+      $("<div/>").addClass("item-name").text(item.name + " × " + item.qty)
+    );
 
     var total = Number(item.price) * Number(item.qty);
-    var price = $("<span/>")
+    var price = $("<div/>")
+      .addClass("item-price")
       .text("$" + total.toFixed(2));
 
-    row.append(name, price);
-    items.append(row); 
+    row.append(img, details, price);
+    items.append(row);
+    
   }
 
   $("#order-subtotal").text("$" + order.subtotal.toFixed(2));

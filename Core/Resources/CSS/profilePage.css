@@ -1,7 +1,3 @@
-/* ============================
-   profilePage.css (matches your team-card style)
-   ============================ */
-
 main{
   max-width: 1200px;
   margin: 0 auto;
@@ -16,7 +12,6 @@ main h2{
   text-shadow: 0 0 18px rgba(0,180,255,.35);
 }
 
-/* Center the card like a single "team-card" */
 .profile-card{
   position: relative;
   max-width: 720px;
@@ -42,7 +37,6 @@ main h2{
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
-/* put content above overlays */
 .profile-card > *{
   position: relative;
   z-index: 3;
@@ -55,7 +49,6 @@ main h2{
     inset 0 0 80px rgba(0,180,255,.14);
 }
 
-/* Glow overlay like your team-card */
 .profile-card::before{
   content:"";
   position:absolute;
@@ -69,7 +62,7 @@ main h2{
   pointer-events:none;
 }
 
-/* Optional scanlines (very subtle) */
+
 .profile-card::after{
   content:"";
   position:absolute;
@@ -86,7 +79,7 @@ main h2{
   pointer-events:none;
 }
 
-/* Avatar (same as team-avatar but centered) */
+/* Avatar */
 #avatarImg{
   width: 112px;
   height: 112px;
@@ -116,7 +109,6 @@ main h2{
   text-shadow: 0 0 12px rgba(0,180,255,.25);
 }
 
-/* Inputs: match the holo panel vibe */
 .field input{
   width: 100%;
   padding: 12px 12px;
@@ -144,14 +136,14 @@ main h2{
   box-shadow: 0 0 0 3px rgba(0,180,255,.18);
 }
 
-/* Actions row */
+
 .actions{
   display: flex;
   gap: 12px;
   margin-top: 18px;
 }
 
-/* Buttons similar to team-btn */
+
 .actions button{
   flex: 1;
   padding: 14px;
@@ -176,7 +168,6 @@ main h2{
   box-shadow: 0 0 18px rgba(0,180,255,.22);
 }
 
-/* Slightly different accent for reset */
 #resetProfile{
   border-color: rgba(255,77,77,.45);
   background: rgba(255,77,77,.10);
@@ -197,9 +188,46 @@ main h2{
   letter-spacing: .06em;
 }
 
-/* Mobile */
-@media(max-width:600px){
-  .profile-page{ padding: 44px 14px; }
-  .profile-card{ padding: 22px; }
-  .actions{ flex-direction: column; }
+/* ==== LOGOUT BUTTON ==== */
+.logout-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px 14px;
+
+  font-family: "Pathway Gothic One", sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  background: rgba(0, 0, 0, 0.65);
+  color: var(--kyber, #00b4ff);
+
+  border: 1px solid rgba(0, 180, 255, 0.45);
+  border-radius: 12px;
+
+  box-shadow:
+    0 0 10px rgba(0, 180, 255, 0.25),
+    inset 0 0 6px rgba(0, 180, 255, 0.15);
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.logout-btn i {
+  margin-right: 8px;
+}
+
+.logout-btn:hover {
+  background: rgba(0, 180, 255, 0.12);
+  box-shadow:
+    0 0 18px rgba(0, 180, 255, 0.45),
+    inset 0 0 10px rgba(0, 180, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+
+.logout-btn:active {
+  transform: translateY(0);
+  box-shadow:
+    0 0 10px rgba(0, 180, 255, 0.35),
+    inset 0 0 14px rgba(0, 180, 255, 0.35);
 }

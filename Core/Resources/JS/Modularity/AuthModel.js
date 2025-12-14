@@ -55,6 +55,8 @@ var AuthModel = {
 
   logout: function () {
     this.deleteCookie(this.TOKEN_KEY);
+    window.location.href = "HomePage.html";
+
   },
 
   getAuth: function () {
@@ -83,7 +85,9 @@ var AuthModel = {
   /* ===================== ROUTE GUARDS  ===================== */
   requireLogin: function (redirectUrl = "LoginPage.html") {
     if (!this.isLoggedIn()) {
-      const next = encodeURIComponent(window.location.href);
+      const next = encodeURIComponent(
+        window.location.pathname + window.location.search
+      );
       window.location.replace(`${redirectUrl}?next=${next}`);
       return false;
     }
@@ -93,6 +97,21 @@ var AuthModel = {
   redirectAfterLogin: function (defaultUrl = "HomePage.html") {
     const params = new URLSearchParams(window.location.search);
     const next = params.get("next");
-    window.location.href = next ? decodeURIComponent(next) : defaultUrl;
+
+    // Allow only internal relative paths
+    if (next && next.startsWith("/")) {
+      window.location.replace(next);
+    } else {
+      window.location.replace(defaultUrl);
+    }
+  },
+
+  forwardNextParam: function (linkSelector, targetPage){
+    const params = new URLSearchParams(window.location.search);
+    const next = params.get("next");
+
+    if (next) {
+      $(linkSelector).attr("href",`${targetPage}?next=${encodeURIComponent(next)}`);
+    }
   }
 };
