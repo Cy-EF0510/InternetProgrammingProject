@@ -1,200 +1,205 @@
+/* ============================
+   profilePage.css (matches your team-card style)
+   ============================ */
 
-/* Main content - Holographic panels */
-main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 24px;
+  font-family: "Orbitron", system-ui, sans-serif;
 }
 
-section {
-    background: rgba(44, 44, 44, 0.9);
-    border: 2px solid var(--holo-blue);
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    box-shadow: 
-        0 0 20px rgba(0, 191, 255, 0.2),
-        inset 0 0 20px rgba(0, 191, 255, 0.1);
-    position: relative;
-    overflow: hidden;
+main h2{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-shadow: 0 0 18px rgba(0,180,255,.35);
 }
 
-/* section::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
-    animation: scanline 4s linear infinite;
-} */
-
-section h3{
-    color: var(--holo-blue);
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    text-shadow: 0 0 10px var(--holo-blue);
-    border-bottom: 2px solid var(--holo-blue);
-    padding-bottom: 0.5rem;
-}
-
-section h2 {
-    color: var(--rebel-yellow);
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    text-shadow: 0 0 10px var(--rebel-yellow);
-    border-bottom: 2px solid var(--holo-blue);
-    padding-bottom: 0.5rem;
-}
-
-/* Table - Datapad display */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid var(--holo-blue);
-}
-
-th, td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid rgba(0, 191, 255, 0.3);
-}
-
-th {
-    background: var(--sith-red);
-    color: var(--rebel-yellow);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-tr:hover {
-    background: rgba(255, 215, 0, 0.1);
-}
-
-/* Links - Force-sensitive buttons
-a {
-    color: var(--rebel-yellow);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 2px solid var(--rebel-yellow);
-    border-radius: 4px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.5s;
-}
-
-a:hover::before {
-    left: 100%;
-}
-
-a:hover {
-    background: var(--rebel-yellow);
-    color: var(--imperial-black);
-    box-shadow: 0 0 20px var(--rebel-yellow);
-    transform: translateY(-2px);
-} */
-
-/* Lists - Mission logs */
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
-    padding: 0.5rem 0;
-    border-left: 3px solid var(--rebel-yellow);
-    padding-left: 1rem;
-    margin-bottom: 0.5rem;
-    background: rgba(255, 215, 0, 0.05);
-}
-
-
-label{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    gap: 1rem;
-}
-
-label input.addressInput{
-    flex: 1;
-    min-width: 250px;
-    padding: 0.5rem;
-    background: rgba(0, 0, 0, 0.8);
-    color: var(--holo-blue);
-    border-radius: 4px;
-}
-
-label input:focus.addressInput{
-    outline: none;
-    box-shadow: 0 0 10px var(--holo-blue);
-    border-color: var(--holo-blue)
-}
-
-/* ========================================== */
-/*                Toggle Switch               */
-/* ========================================== */
-
-#preferences .toggle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  gap: 1rem;
-  cursor: pointer;
-}
-
-/* Hide the default checkbox */
-/* #preferences .toggle-input {
-  display: none;
-} */
-
-/* Slider background */
-/* #preferences .toggle-slider {
+/* Center the card like a single "team-card" */
+.profile-card{
   position: relative;
-  width: 56px;
-  height: 28px;
-  background: #555;
-  border-radius: 999px;
-  transition: background 0.3s;
-} */
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 18px;
+  overflow: hidden;
 
-/* Slider knob */
-#preferences .toggle-slider::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 22px;
-  height: 22px;
+  display: flex;
+  flex-direction: column;
+
+  background:
+    radial-gradient(900px 420px at 18% 0%, rgba(0,180,255,.22), transparent 55%),
+    linear-gradient(180deg, rgba(0,180,255,.14), rgba(0,0,0,.86) 45%),
+    var(--panel);
+
+  border: 1px solid var(--line);
+
+  box-shadow:
+    0 20px 55px rgba(0,0,0,.6),
+    inset 0 0 55px rgba(0,180,255,.08);
+
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+/* put content above overlays */
+.profile-card > *{
+  position: relative;
+  z-index: 3;
+}
+
+.profile-card:hover{
+  transform: translateY(-8px);
+  box-shadow:
+    0 26px 80px rgba(0,0,0,.7),
+    inset 0 0 80px rgba(0,180,255,.14);
+}
+
+/* Glow overlay like your team-card */
+.profile-card::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 30% 10%, rgba(0,180,255,.26), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(0,180,255,.12), transparent 55%);
+  filter: blur(2px);
+  opacity: .9;
+  pointer-events:none;
+}
+
+/* Optional scanlines (very subtle) */
+.profile-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index: 2;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,180,255,.06),
+    rgba(0,180,255,.06) 2px,
+    rgba(0,0,0,0) 6px,
+    rgba(0,0,0,0) 10px
+  );
+  opacity: .35;
+  pointer-events:none;
+}
+
+/* Avatar (same as team-avatar but centered) */
+#avatarImg{
+  width: 112px;
+  height: 112px;
   border-radius: 50%;
-  background: #fff;
-  transition: transform 0.3s;
+  object-fit: cover;
+  margin: 0 auto 18px;
+
+  border: 2px solid rgba(0,180,255,.65);
+  box-shadow:
+    0 0 20px rgba(0,180,255,.45),
+    0 0 45px rgba(0,180,255,.25);
 }
 
-/* When checked: change color + move knob */
-#preferences .toggle-input:checked + .toggle-slider {
-  background: #00bfff;
+/* Fields */
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
 }
 
-#preferences .toggle-input:checked + .toggle-slider::before {
-  transform: translateX(28px);
+.field label{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: .9;
+  text-shadow: 0 0 12px rgba(0,180,255,.25);
+}
+
+/* Inputs: match the holo panel vibe */
+.field input{
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+
+  background: rgba(0,180,255,.06);
+  border: 1px solid rgba(0,180,255,.28);
+  color: rgba(245,245,245,.92);
+
+  font-family: "Pathway Gothic One", system-ui, sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: .06em;
+
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.field input::placeholder{
+  color: rgba(245,245,245,.45);
+}
+
+.field input:focus{
+  background: rgba(0,180,255,.10);
+  border-color: rgba(0,180,255,.65);
+  box-shadow: 0 0 0 3px rgba(0,180,255,.18);
+}
+
+/* Actions row */
+.actions{
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+/* Buttons similar to team-btn */
+.actions button{
+  flex: 1;
+  padding: 14px;
+  text-align: center;
+
+  color: #bfefff;
+  border: 1px solid rgba(0,180,255,.55);
+  border-radius: 10px;
+  background: rgba(0,180,255,.14);
+
+  font-family: "Orbitron", system-ui, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+
+.actions button:hover{
+  background: rgba(0,180,255,.28);
+  transform: translateY(-1px);
+  box-shadow: 0 0 18px rgba(0,180,255,.22);
+}
+
+/* Slightly different accent for reset */
+#resetProfile{
+  border-color: rgba(255,77,77,.45);
+  background: rgba(255,77,77,.10);
+  color: rgba(255,230,230,.92);
+}
+
+#resetProfile:hover{
+  background: rgba(255,77,77,.20);
+  box-shadow: 0 0 18px rgba(255,77,77,.18);
+}
+
+/* Message */
+#profileMsg{
+  margin-top: 14px;
+  min-height: 18px;
+  opacity: .9;
+  font-family: "Pathway Gothic One", system-ui, sans-serif;
+  letter-spacing: .06em;
+}
+
+/* Mobile */
+@media(max-width:600px){
+  .profile-page{ padding: 44px 14px; }
+  .profile-card{ padding: 22px; }
+  .actions{ flex-direction: column; }
 }

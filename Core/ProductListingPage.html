@@ -3,62 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
-    
-    <!--Star War font-->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
-    <!--Star War font-->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+    <!--Awesome UI -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- Star Wars-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    
+    <!--JQ UI-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+    <!--Css Sheet-->
+    <link rel="stylesheet" href="./Resources/CSS/Moduler/base.css">
+    <link rel="stylesheet" href="./Resources/CSS/plp.css">
+    
+    <!--Models-->
+    <script src="./Resources/JS/Modularity/AuthModel.js"></script>
 
+    <!--header and footer-->
+    <script src="./Resources/JS/Modularity/HeaderModel.js"></script>
+    <script src="./Resources/JS/Modularity/FooterModel.js"></script>
 
-    <!--Footer model-->
-    <script src="Resources/JS/Modularity/FooterModel.js"></script>
-
+    <!--Cart management Models-->
+    <script src="./Resources/JS/Modularity/CartManagement.js"></script>
+    
     <!-- Filter and Sorting model -->
-    <script src="Resources/JS/Modularity/Filter-Sorting.js"></script>
+    <script src="./Resources/JS/Modularity/Filter-Sorting.js"></script>
 
     <!--product model-->
     <script src="./Resources/JS/Modularity/ProductModel.js"></script>
 
-    <!--Cart management-->
-    <script src="Resources/JS/Modularity/CartManagement.js"></script>
-
-    <!-- Your JS -->
-    <script src="Resources/JS/plp.js"></script>
-
-    <!-- Your CSS -->
-    
-    <link rel="stylesheet" href="Resources/CSS/plp.css">
-
-    <!-- Star Wars-style font -->
-    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
-
-    
-    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
+    <!--Js script-->
+    <script src="./Resources/JS/plp.js"></script>
 
     <title>Product Listing Page</title>
+    <link rel="website icon" type="image/png" href="./Resources/IMG/circle.png"/>
 </head>
 <body>
 
   <!-- HEADER -->
     <div id="header-container"></div>
-   
 
   <!-- ASIDE: FILTERS + SORT -->
     <aside class="plp-aside">
-        <h2>Filter & Sort</h2>
+      <h2>Filter & Sort</h2>
 
     <!-- Category filter -->
-    <div class="filter-block">
+      <div class="filter-block">
         <label for="categoryFilter">Category</label>
         <select id="categoryFilter">
             <option value="">All</option>
@@ -66,33 +62,30 @@
         </select>
       </div>
 
-      <!-- Price range -->
-    <div class="filter-block">
-      <label>Price</label>
-      <div id="priceRangeLabel">$0 – $0</div>
-      <div id="priceRangeSlider"></div>
-    </div>
+        <!-- Price range -->
+      <div class="filter-block">
+        <label>Price</label>
+        <div id="priceRangeLabel">$0 – $0</div>
+        <div id="priceRangeSlider"></div>
+      </div>
 
-      <!-- Sort -->
-    <div class="filter-block">
-        <label for="sortSelect">Sort by price</label>
-        <select id="sortSelect">
-            <option value="">None</option>
-            <option value="price-asc">Low → High</option>
-            <option value="price-desc">High → Low</option>
-        </select>
-    </div>
+        <!-- Sort -->
+      <div class="filter-block">
+          <label for="sortSelect">Sort by price</label>
+          <select id="sortSelect">
+              <option value="">None</option>
+              <option value="price-asc">Low → High</option>
+              <option value="price-desc">High → Low</option>
+          </select>
+      </div>
     </aside>
 
   <main class="plp-main">
     <div class="product-row" id="dealsRow"></div>
   </main>
-
-
     
   <!--Using jquery to make footer-->
     <div id="footer-slot"></div>
-
 
 </body>
 </html>

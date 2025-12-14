@@ -47,7 +47,12 @@ var HeaderModel = {
             );
 
         /* ===== User Icon ===== */
-        const userIcon = $("<a/>")
+        const userIcon = AuthModel.isLoggedIn()
+        ? $("<a/>")
+            .attr("href", "ProfilePage.html")
+            .addClass("icon-btn")
+            .append($("<i/>").addClass("fas fa-user"))
+        : $("<a/>")
             .attr("href", "LoginPage.html")
             .addClass("icon-btn")
             .append($("<i/>").addClass("fas fa-user"));

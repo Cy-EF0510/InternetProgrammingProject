@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./Resources/CSS/orderConfirmationPage.css">
     
     <!--Models-->
-    <!--!NEED TO DO THIS -->
+    
     <!--Authentication -->
     <script src="./Resources/JS/Modularity/AuthModel.js"></script>
 
@@ -42,46 +42,47 @@
     
     
     <main>
-        <section class="order-summary">
-            <h2>Order</h2>
-            <div class="items">
-                <div class="item">
-                    <span>product1</span>
-                    <span>price</span>
-                </div>
-                <div class="item subtotal">
-                    <span>Subtotal</span>
-                    <span>price</span>
-                </div>
-                <div class="item">
-                    <span>Shipping</span>
-                    <span>price</span>
-                </div>
-                <div class="item total">
-                    <span>Total</span>
-                    <strong>price</strong>
-                </div>
+       <section class="order-summary">
+            <h2>Order Confirmation</h2>
+
+            <p class="order-number">
+                Order #: <strong id="order-number"></strong>
+            </p>
+
+            <div class="items" id="order-items"></div>
+
+            <div class="item subtotal">
+                <span>Subtotal</span>
+                <span id="order-subtotal">$0.00</span>
+            </div>
+
+            <div class="item">
+                <span>Shipping</span>
+                <span id="order-shipping">$0.00</span>
+            </div>
+
+            <div class="item">
+                <span>Tax (15%)</span>
+                <span id="order-tax">$0.00</span>
+            </div>
+
+            <div class="item total">
+                <span>Total</span>
+                <strong id="order-total">$0.00</strong>
             </div>
         </section>
 
-        <section class="shipping-info">
-            <h3>Shipping To:</h3>
-            <p>123 Main St<br>Apt 4B<br>Anytown, CA 90210</p>
-            <p><strong>Estimated Delivery:</strong> December 15-17, 2025</p>
+
+
+        <section class="order-info">
+            <h3>Order Status</h3>
+            <p>Your order has been successfully placed and is now being processed.</p>
+            <p>You will receive an email confirmation shortly.</p>
         </section>
 
-        <section class="next-steps">
-            <h3>What Happens Next?</h3>
-            <ul>
-                <li>Order processing within 24 hours</li>
-                <li>Shipping notification with tracking number</li>
-                <li>Delivery in 3-5 business days</li>
-            </ul>
-        </section>
 
         <div class="actions">
-            <a href="#" class="btn btn-track">Track Order</a>
-            <a href="#" class="btn btn-shop">Continue Shopping</a>
+            <a href="HomePage.html" class="btn btn-shop">Return to Home</a>
         </div>
     </main>
 

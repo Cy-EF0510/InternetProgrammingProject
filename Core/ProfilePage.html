@@ -18,7 +18,6 @@
         <link rel="stylesheet" href="./Resources/CSS/profilePage.css">
         
         <!--Models-->
-        <!--!NEED TO DO THIS -->
         <!--Authentication -->
         <script src="./Resources/JS/Modularity/AuthModel.js"></script>
 
@@ -41,78 +40,37 @@
     <div id="header-container"></div>
 
     <main>
-        <section id="profile-info">
-            <img src="" width="200" height="200"></img>
-            <h2>Profile Details</h2>
-            <h3>Name: </h3>
-            <h3>Email: </h3>
-            <h3>Phone: </h3>
-            <a href="">Edit Profile</a>
-        </section>
+        <div class="profile-card">
+            <img id="avatarImg" src="" alt="Avatar" style="width:120px;height:120px;border-radius:50%;object-fit:cover;">
 
-        <section id="addresses">
-            <h2>Default shipping address</h2>
-            <label class="addressName">
-                Name
-                <input class="addressInput" type="text">
-            </label><br>
-            <label class="address">
-                Address
-                <input class="addressInput" type="text">
-            </label><br>
-            <label class="appartment">
-                Apartment
-                <input class="addressInput" type="text">
-            </label><br>
-            <label class="region">
-                Province
-                <input class="addressInput" type="text">
-            </label><br>
-            <a href="">Edit shipping address</a>
-        </section>
+            <div class="field">
+                <label>First name</label>
+                <input id="firstName" type="text">
+            </div>
 
-        <section id="orders">
-            <h2>Recent Orders</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Order #</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                        <th>Total</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <!-- We might need to use jquery to add products into the orders -->
-                <tbody>
-                    <tr>
-                        <td>p1#</td>
-                        <td>p1Date</td>
-                        <td>p1Status</td>
-                        <td>p1Price</td>
-                        <td>p1Details</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <div class="field">
+                <label>Last name</label>
+                <input id="lastName" type="text">
+            </div>
 
-        <section id="payment-methods">
-            <h2>Payment Methods</h2>
-            <p>Visa ending in fajfh (expires 08/27)</p>
-            <a href="">Manage payment methods</a>
-        </section>
+            <div class="field">
+                <label>Email</label>
+                <input id="email" type="email">
+            </div>
 
-        <section id="preferences">
-            <h2>Account Preferences</h2>
-            <label class="notifications toggle">
-                Email Notifications
-                <input class="togge-input" type="checkbox">
-            </label>
-            <label class="smsAlerts toggle">
-                SMS Alerts
-                <input class="toggle-input" type="checkbox">
-            </label>
-        </section>
+            <div class="field">
+                <label>Avatar URL</label>
+                <input id="avatar" type="text" placeholder="https://...">
+            </div>
+
+            <div class="actions">
+                <button id="saveProfile">Save (cookie only)</button>
+                <button id="resetProfile" type="button">Reset to API</button>
+            </div>
+
+            <p id="profileMsg"></p>
+        </div>
+
     </main>
 
     <!--Using jquery to make footer-->

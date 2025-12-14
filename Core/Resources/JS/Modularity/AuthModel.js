@@ -1,33 +1,55 @@
 var AuthModel = {
-
-  // single source of truth for the cookie name
   TOKEN_KEY: "authToken",
 
-  /* ===== Cookie helpers ===== */
+  /* ===================== COOKIE HELPERS  ===================== */
   getCookie: function (name) {
     const cookies = document.cookie.split("; ");
     for (let i = 0; i < cookies.length; i++) {
-      const [key, value] = cookies[i].split("=");
-      if (key === name) {
-        return decodeURIComponent(value || "");
+      const parts = cookies[i].split("=");
+      if (parts[0] === name) {
+        return decodeURIComponent(parts[1] || "");
       }
     }
     return null;
   },
 
-  setCookie: function (name, value) {
-    // SESSION cookie → removed when browser closes
-    document.cookie = `${name}=${encodeURIComponent(value)}; path=/; SameSite=Lax`;
+  setCookie: function (name, value, seconds) {
+    seconds = Number(seconds);
+    if (!Number.isFinite(seconds) || seconds <= 0) return;
+
+    document.cookie =
+      `${name}=${encodeURIComponent(value)}; path=/; max-age=${seconds}; SameSite=Lax`;
   },
 
   deleteCookie: function (name) {
-    document.cookie = `${name}=; path=/; max-age=0; SameSite=Lax`;
+    const exp = "Thu, 01 Jan 1970 00:00:00 GMT";
+    document.cookie = `${name}=; path=/; expires=${exp}; SameSite=Lax`;
+    document.cookie = `${name}=; path=/; expires=${exp}`;
+    document.cookie = `${name}=; path=/; expires=${exp}; SameSite=Lax; Secure`;
   },
 
-  /* ===== Auth logic ===== */
-  login: function (token) {
+  /* ===================== AUTH LOGIC ===================== */
+  login: function (token, email, seconds) {
     if (!token) return false;
-    this.setCookie(this.TOKEN_KEY, token);
+
+    seconds = Number(seconds);
+    if (!Number.isFinite(seconds) || seconds <= 0) seconds = 3600;
+
+    const payload = {
+      token: token,
+      email: (email || "").trim(),
+      exp: Date.now() + seconds * 1000
+    };
+
+    // clear any old cookie first
+    this.deleteCookie(this.TOKEN_KEY);
+
+    this.setCookie(
+      this.TOKEN_KEY,
+      JSON.stringify(payload),
+      seconds
+    );
+
     return true;
   },
 
@@ -35,11 +57,30 @@ var AuthModel = {
     this.deleteCookie(this.TOKEN_KEY);
   },
 
-  isLoggedIn: function () {
-    return !!this.getCookie(this.TOKEN_KEY);
+  getAuth: function () {
+    const raw = this.getCookie(this.TOKEN_KEY);
+    if (!raw) return null;
+
+    try {
+      const data = JSON.parse(raw);
+
+      // expired
+      if (data.exp && Date.now() > data.exp) {
+        this.logout();
+        return null;
+      }
+
+      return data.token ? data : null;
+    } catch {
+      return null;
+    }
   },
 
-  /* ===== Guards ===== */
+  isLoggedIn: function () {
+    return this.getAuth() !== null;
+  },
+
+  /* ===================== ROUTE GUARDS  ===================== */
   requireLogin: function (redirectUrl = "LoginPage.html") {
     if (!this.isLoggedIn()) {
       const next = encodeURIComponent(window.location.href);

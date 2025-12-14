@@ -1,4 +1,8 @@
+const TaxRate = 0.15;
+
 $(document).ready(function () {
+    AuthModel.requireLogin();
+    
     HeaderModel.createHeader();
     $("#footer-slot").append(FooterModel.createFooter());
     FooterModel.loadCategories();
@@ -12,10 +16,6 @@ $(document).ready(function () {
     });
 
 });
-
-
-const TaxRate = 0.15;
-
 
 /* ===================== RENDER CART ===================== */
 
@@ -40,22 +40,55 @@ function renderCart() {
     const itemSubtotal = item.price * item.qty;
     subtotal += itemSubtotal;
 
-    const $row = $(`
-      <div class="cart-item">
-        <img src="${item.image}" alt="${item.name}">
-        <div class="cart-name">${item.name}</div>
-        <div class="cart-price">$${item.price.toFixed(2)}</div>
+    
+    const $row = $("<div/>").addClass("cart-item");
 
-        <div class="qty-controls">
-          <button class="qty-minus">−</button>
-          <span>${item.qty}</span>
-          <button class="qty-plus">+</button>
-        </div>
+    const $img = $("<img/>").attr({
+      src: item.image,
+      alt: item.name
+    });
 
-        <div class="cart-subtotal">$${itemSubtotal.toFixed(2)}</div>
-        <div class="remove-btn">✕</div>
-      </div>
-    `);
+    const $name = $("<div/>").addClass("cart-name").text(item.name);
+
+    const $price = $("<div/>")
+      .addClass("cart-price")
+      .text("$" + Number(item.price).toFixed(2));
+
+    const $qtyControls = $("<div/>").addClass("qty-controls");
+
+    const $minus = $("<button/>")
+      .addClass("qty-minus")
+      .attr("type", "button")
+      .text("−");
+
+    const $qty = $("<span/>").text(item.qty);
+
+    const $plus = $("<button/>")
+      .addClass("qty-plus")
+      .attr("type", "button")
+      .text("+");
+
+    $qtyControls.append($minus, $qty, $plus);
+
+    const $subtotal = $("<div/>")
+      .addClass("cart-subtotal")
+      .text("$" + Number(itemSubtotal).toFixed(2));
+
+    const $remove = $("<div/>")
+      .addClass("remove-btn")
+      .text("✕");
+
+    // assemble row
+    $row.append(
+      $img,
+      $name,
+      $price,
+      $qtyControls,
+      $subtotal,
+      $remove
+    );
+
+    
 
     // qty -
     $row.find(".qty-minus").on("click", () => {

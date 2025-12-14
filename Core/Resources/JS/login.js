@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    // If already logged in, don’t show login page
+  if (AuthModel.isLoggedIn()) {
+    AuthModel.redirectAfterLogin();   // goes to ?next=... or HomePage
+    return;
+  }
   // call the live validation binder
   ValidatorModel.bindLive();
 
@@ -28,10 +33,12 @@ function requestUsers(email, password){
             }
         })
         .done(function(o){
-            console.log(o);
-            // Save token (expires in 2 minutes)
-            document.cookie = `token=${o.token}; path=/; SameSite=Lax`;
-            window.location.href = "/Core/HomePage.html"; 
+          // Use AuthModel (sets authToken as a session cookie)
+          AuthModel.login(o.token,email,3600);
+
+          // Go back to the page they tried to access, or default
+          AuthModel.redirectAfterLogin();
+        
         })
         .fail(function (o) {
             ValidatorModel.showAlert(

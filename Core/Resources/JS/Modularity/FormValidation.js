@@ -114,6 +114,55 @@ validateAddress: function () {
 },
 
 
+  validateCard: function () {
+
+    // If PayPal is selected → skip card validation
+    if ($("input[name='payment']:checked").val() === "paypal") {
+      return true;
+    }
+
+    let valid = true;
+
+    // Card Number
+    const $card = $("#cardNumber");
+    const $cardError = $("#cardNumberError");
+    const cardVal = $card.val().replace(/\s+/g, "");
+
+    if (!/^\d{16}$/.test(cardVal)) {
+      this.setError($card, $cardError, "Card number must be 16 digits.");
+      valid = false;
+    } else {
+      this.clearError($card, $cardError);
+    }
+
+    // Expiry
+    const $expiry = $("#cardExpiry");
+    const $expiryError = $("#cardExpiryError");
+    const expiryVal = $expiry.val();
+
+    if (!/^\d{2}\/\d{2}$/.test(expiryVal)) {
+      this.setError($expiry, $expiryError, "Expiry must be MM/YY.");
+      valid = false;
+    } else {
+      this.clearError($expiry, $expiryError);
+    }
+
+    // CVV
+    const $cvv = $("#cardCvv");
+    const $cvvError = $("#cardCvvError");
+    const cvvVal = $cvv.val();
+
+    if (!/^\d{3}$/.test(cvvVal)) {
+      this.setError($cvv, $cvvError, "CVV must be 3 digits.");
+      valid = false;
+    } else {
+      this.clearError($cvv, $cvvError);
+    }
+
+    return valid;
+  },
+
+
 
 
 
@@ -185,6 +234,16 @@ validateAddress: function () {
     if ($("#address").length) {
       $("#address").on("input", function () { self.validateAddress(); });
     }
+    if ($("#cardNumber").length) {
+      $("#cardNumber").on("input", () => this.validateCard());
+    }
+    if ($("#cardExpiry").length) {
+      $("#cardExpiry").on("input", () => this.validateCard());
+    }
+    if ($("#cardCvv").length) {
+      $("#cardCvv").on("input", () => this.validateCard());
+    }
+
 
   }
 

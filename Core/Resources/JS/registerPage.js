@@ -1,9 +1,18 @@
 $(document).ready(function(){
+    // If already logged in, don’t show register page
+    if (AuthModel.isLoggedIn()) {
+        AuthModel.redirectAfterLogin();
+        return;
+    }
+
     ValidatorModel.bindLive();
 
     $("#submitBtn").on("click", function () {
         if (ValidatorModel.checkRegister()) {
-            requestUsers($("#email").val().trim(), $("#pass").val());
+        requestUsers(
+            $("#email").val().trim(),
+            $("#pass").val()
+        );
         }
     });
 });
@@ -25,21 +34,11 @@ function requestUsers( email, password){
             "x-api-key": "reqres_0500eb5af06f494291043eca51a3dae2"
             },
         success: function(o) {
-
-            console.log("Registration response:", o);
-
-            const auth = { id: o.id, token: o.token };
-
-            document.cookie = "auth=" + JSON.stringify(auth) + "; path=/; max-age=120";
-
-            console.log(document.cookie);
-            
-            window.location.href = "/Core/HomePage.html"; 
+            AuthModel.login(o.token,email,3600);
+            AuthModel.redirectAfterLogin();
         },
         error: function(o) {
-            ValidatorModel.showAlert();
-            console.log("Error:", o.responseJSON.error);
-            alert("Registration failed: " + o.responseJSON.error);
+            ValidatorModel.showAlert("Registration failed: " + (o.responseJSON?.error || "Unknown error"));
         }
     });
 }

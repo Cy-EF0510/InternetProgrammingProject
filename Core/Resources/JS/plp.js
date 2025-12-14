@@ -2,7 +2,7 @@ let allProducts = [];
 let filteredProducts = [];
 
 let page = 1;
-const pageSize = 8;
+const pageSize = 15;
 
 let isLoading = false;
 let hasMore = true;
@@ -14,33 +14,31 @@ let filtersActive = false;
 let activeMinPrice = 0;
 let activeMaxPrice = 0;
 
-
 $(document).ready(function () {
-  // FOOTER
+  // header/footer
   $("#footer-slot").html(FooterModel.createFooter());
+  FooterModel.loadCategories();
   HeaderModel.createHeader();
   CartManagement.updateCartBadge();
 
-  // 1) Read category from URL first
+  // read category from url first
   activeCategory = getCategoryFromURL() || "";
 
-  // 2) Load XML categories, THEN set dropdown value, THEN load products
+  // load categories dropdown then load products
   loadCategoriesIntoSelect().then(function () {
     $("#categoryFilter").val(activeCategory);
-    getProducts(); // will load products for activeCategory
+    loadProducts();
   });
 
   bindEvents();
 });
 
-
 function bindEvents() {
   $("#categoryFilter").on("change", function () {
-  activeCategory = $(this).val();
-  updateCategoryInURL(activeCategory);
-  getProducts(); // reload correct category JSON
-});
-
+    activeCategory = $(this).val();
+    updateCategoryInURL(activeCategory);
+    loadProducts();
+  });
 
   $("#sortSelect").on("change", function () {
     activeSort = $(this).val();
@@ -48,18 +46,16 @@ function bindEvents() {
   });
 
   $(window).on("scroll", function () {
-    if (
-      !isLoading &&
-      hasMore &&
-      $(window).scrollTop() + $(window).height() >= $(document).height() - 300
-    ) {
+    const nearBottom = $(window).scrollTop() + $(window).height() >= $(document).height() - 300;
+
+    if (!isLoading && hasMore && nearBottom) {
       appendNextPage();
     }
   });
 }
 
-// getting products using the model
-function getProducts() {
+// load products (by category)
+function loadProducts() {
   ProductModel.getProducts(activeCategory)
     .done(function (products) {
       allProducts = products;
@@ -78,134 +74,102 @@ function getProducts() {
     });
 }
 
-
-
-//reads the category form url, for when we go form home page to plp page we need to know which category they selectedand to load the plp page with only that catergoy
+// url helpers
 function getCategoryFromURL() {
   const params = new URLSearchParams(window.location.search);
-  return params.get("category"); // returns null if not present
+  return params.get("category");
 }
 
 function updateCategoryInURL(category) {
   const params = new URLSearchParams(window.location.search);
 
-  if (!category) {
-    params.delete("category"); // All categories
-  } else {
-    params.set("category",category);
-  }
+  if (!category) params.delete("category");
+  else params.set("category", category);
 
   const newUrl =
-    window.location.pathname +
-    (params.toString() ? "?" + params.toString() : "");
+    window.location.pathname + (params.toString() ? "?" + params.toString() : "");
 
   history.pushState({}, "", newUrl);
 }
 
-
-
-
+// categories dropdown
 function loadCategoriesIntoSelect() {
   return $.ajax({
-    url: "Data/categories.xml",   // <-- change if needed
+    url: "Data/categories.xml",
     dataType: "xml"
   })
-  .then(function (xml) {
-    const $select = $("#categoryFilter");
+    .then(function (xml) {
+      const select = $("#categoryFilter");
 
-    // keep the "All" option
-    $select.empty().append(`<option value="">All</option>`);
+      select.empty();
+      select.append(`<option value="">All</option>`);
 
-    $(xml).find("category > name").each(function () {
-      const name = $(this).text().trim();
-      $select.append(`<option value="${name}">${name}</option>`);
+      $(xml).find("category > name").each(function () {
+        const name = $(this).text().trim();
+        $select.append(`<option value="${name}">${name}</option>`);
+      });
+    })
+    .catch(function (xhr) {
+      console.error("Failed to load categories:", xhr.status);
     });
-  })
-  .catch(function (xhr) {
-    console.error("Failed to load categories:", xhr.status);
-  });
 }
 
-
-//RENDERING + INFINITE SCROLL
+/* ========================== RENDER + INFINITE SCROLL ========================== */
 
 function appendNextPage() {
   if (isLoading || !hasMore) return;
   isLoading = true;
 
-  const source = filtersActive ? filteredProducts : allProducts;
-
+  const list = filtersActive ? filteredProducts : allProducts;
 
   const start = (page - 1) * pageSize;
   const end = start + pageSize;
-  const slice = source.slice(start, end);
+  const batch = list.slice(start, end);
 
-  if (slice.length === 0) {
+  if (batch.length === 0) {
     hasMore = false;
     isLoading = false;
     return;
   }
 
-  for (let i = 0; i < slice.length; i++) {
-    $("#dealsRow").append(ProductModel.createProductBox(slice[i]));
-  }
+  batch.forEach(function (p) {
+    $("#dealsRow").append(ProductModel.createProductBox(p));
+  });
 
   page++;
-  if (slice.length < pageSize) hasMore = false;
+  if (batch.length < pageSize) hasMore = false;
+
   isLoading = false;
 }
 
-/* =======================
-CART (localStorage)
-======================= */
+/* ========================== FILTERS + SLIDER ========================== */
 
-function getCart() {
-  return JSON.parse(localStorage.getItem("cart")) || [];
-}
-
-function saveCart(cart) {
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-function updateCartBadge() {
-  const cart = getCart();
-  let count = 0;
-
-  for (let i = 0; i < cart.length; i++) {
-    const qty = Number(cart[i].qty);
-    if (!Number.isNaN(qty)) {
-      count += qty;
-    }
-  }
-
-  $(".item-count-badge").text(count);
-}
-
-
-
-/*
-  slider 
-*/
 function recomputeFilteredProducts() {
   const sliderMax = $("#priceRangeSlider").length
     ? $("#priceRangeSlider").slider("option", "max")
     : activeMaxPrice;
 
   filtersActive =
-    !!activeSort ||
+    activeSort !== "" ||
     activeMinPrice > 0 ||
     activeMaxPrice < sliderMax;
 
-  filteredProducts = allProducts.filter(p => {
+  filteredProducts = allProducts.filter(function (p) {
     const price = Number(p.price);
     if (Number.isNaN(price)) return false;
     return price >= activeMinPrice && price <= activeMaxPrice;
   });
 
   if (activeSort === "price-asc") {
-    filteredProducts.sort((a, b) => Number(a.price) - Number(b.price));
-  } else if (activeSort === "price-desc") {
-    filteredProducts.sort((a, b) => Number(b.price) - Number(a.price));
+    filteredProducts.sort(function (a, b) {
+      return Number(a.price) - Number(b.price);
+    });
+  }
+
+  if (activeSort === "price-desc") {
+    filteredProducts.sort(function (a, b) {
+      return Number(b.price) - Number(a.price);
+    });
   }
 }
 
@@ -220,32 +184,34 @@ function applyFiltersAndReset() {
   appendNextPage();
 }
 
-
-
 function initPriceRangeSlider() {
-  // set slider max to your real max product price
-  const maxProductPrice = Math.ceil(Math.max(...allProducts.map(p => Number(p.price) || 0)));
-  const minProductPrice = 0;
+  const maxPrice = Math.ceil(
+    Math.max.apply(
+      null,
+      allProducts.map(function (p) {
+        return Number(p.price) || 0;
+      })
+    )
+  );
 
-  activeMinPrice = minProductPrice;
-  activeMaxPrice = maxProductPrice;
+  activeMinPrice = 0;
+  activeMaxPrice = maxPrice;
 
   if ($("#priceRangeSlider").hasClass("ui-slider")) {
-  $("#priceRangeSlider").slider("destroy");
-}
+    $("#priceRangeSlider").slider("destroy");
+  }
 
   $("#priceRangeSlider").slider({
     range: true,
-    min: minProductPrice,
-    max: maxProductPrice,
+    min: 0,
+    max: maxPrice,
     values: [activeMinPrice, activeMaxPrice],
     slide: function (event, ui) {
       activeMinPrice = ui.values[0];
       activeMaxPrice = ui.values[1];
       $("#priceRangeLabel").text(`$${activeMinPrice} – $${activeMaxPrice}`);
     },
-    change: function (event, ui) {
-      // when user releases handle, apply filter
+    change: function () {
       applyFiltersAndReset();
     }
   });
@@ -253,14 +219,9 @@ function initPriceRangeSlider() {
   $("#priceRangeLabel").text(`$${activeMinPrice} – $${activeMaxPrice}`);
 }
 
-
-
-//adding a listener for when the user navigates back and forth using the browser buttons
+// back/forward buttons
 window.addEventListener("popstate", function () {
-  const categoryFromURL = getCategoryFromURL(); // reads from URL
-
-  activeCategory = categoryFromURL || "";       // "" means All
-  $("#categoryFilter").val(activeCategory);     // update dropdown UI
-
-  getProducts();                    // re-filter + re-render
+  activeCategory = getCategoryFromURL() || "";
+  $("#categoryFilter").val(activeCategory);
+  loadProducts();
 });
