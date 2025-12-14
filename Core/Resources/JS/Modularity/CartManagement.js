@@ -1,6 +1,25 @@
 
 var CartManagement = {
 
+  /* =============================
+    COOKIE HELPERS
+  ============================= */
+  setCookie: function (name, value, days = 7) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
+  },
+
+  getCookie: function (name) {
+    const match = document.cookie.match(
+      new RegExp("(^| )" + name + "=([^;]+)")
+    );
+    return match ? decodeURIComponent(match[2]) : null;
+  },
+
+  deleteCookie: function (name) {
+    document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/`;
+  },
+
   
   /* =============================
      INTERNAL KEY
@@ -10,20 +29,28 @@ var CartManagement = {
   },
 
   /* =============================
-     BASIC STORAGE
+     BASIC STORAGE (COOKIE)
   ============================= */
   getCart: function () {
-    return JSON.parse(localStorage.getItem(this.getCartKey())) || [];
+    const raw = this.getCookie(this.getCartKey());
+    if (!raw) return [];
+
+    try {
+      return JSON.parse(raw);
+    } catch (e) {
+      return [];
+    }
   },
 
   saveCart: function (cart) {
-    localStorage.setItem(this.getCartKey(), JSON.stringify(cart));
+    this.setCookie(this.getCartKey(), JSON.stringify(cart), 7);
   },
 
   clearCart: function () {
-    localStorage.removeItem(this.getCartKey());
+    this.deleteCookie(this.getCartKey());
     this.updateCartBadge();
   },
+
 
   /* =============================
      CART ACTIONS
@@ -50,31 +77,8 @@ var CartManagement = {
     this.updateCartBadge();
   },
 
-  /* =============================
-     UI HELPERS
-  ============================= */
-  getItemCount: function () {
+  updateQty: function (id, qty) {
     const cart = this.getCart();
-    let count = 0;
-
-    cart.forEach(item => {
-      const qty = Number(item.qty);
-      if (!Number.isNaN(qty)) {
-        count += qty;
-      }
-    });
-
-    return count;
-  },
-
-  updateCartBadge: function () {
-    const count = this.getItemCount();
-    $(".item-count-badge").text(count);
-  },
-
-  updateQty(id, qty) {
-    const cart = this.getCart();
-
     const item = cart.find(i => Number(i.id) === Number(id));
     if (!item) return;
 
@@ -93,9 +97,28 @@ var CartManagement = {
     cart = cart.filter(i => Number(i.id) !== Number(id));
     this.saveCart(cart);
     this.updateCartBadge();
+  },
+
+
+  /* =============================
+     UI HELPERS
+  ============================= */
+  getItemCount: function () {
+    const cart = this.getCart();
+    let count = 0;
+
+    cart.forEach(item => {
+      const qty = Number(item.qty);
+      if (!Number.isNaN(qty)) count += qty;
+    });
+
+    return count;
+  },
+
+  updateCartBadge: function () {
+    const count = this.getItemCount();
+    $(".item-count-badge").text(count);
   }
 
+};
 
-
-
-}

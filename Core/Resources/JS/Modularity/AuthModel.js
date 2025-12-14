@@ -1,35 +1,57 @@
 var AuthModel = {
 
-  token: "auth_user", // change name if you want (token, session, etc.)
+  // single source of truth for the cookie name
+  TOKEN_KEY: "authToken",
 
-  login: function (user) {
-    // user example: { id, name, email }
-    localStorage.setItem(this.token, JSON.stringify(user || {}));
-    window.dispatchEvent(new Event("auth:changed"));
+  /* ===== Cookie helpers ===== */
+  getCookie: function (name) {
+    const cookies = document.cookie.split("; ");
+    for (let i = 0; i < cookies.length; i++) {
+      const [key, value] = cookies[i].split("=");
+      if (key === name) {
+        return decodeURIComponent(value || "");
+      }
+    }
+    return null;
+  },
+
+  setCookie: function (name, value) {
+    // SESSION cookie → removed when browser closes
+    document.cookie = `${name}=${encodeURIComponent(value)}; path=/; SameSite=Lax`;
+  },
+
+  deleteCookie: function (name) {
+    document.cookie = `${name}=; path=/; max-age=0; SameSite=Lax`;
+  },
+
+  /* ===== Auth logic ===== */
+  login: function (token) {
+    if (!token) return false;
+    this.setCookie(this.TOKEN_KEY, token);
+    return true;
   },
 
   logout: function () {
-    localStorage.removeItem(this.token);
-    window.dispatchEvent(new Event("auth:changed"));
+    this.deleteCookie(this.TOKEN_KEY);
   },
-
-  getUser: function () {
-  return localStorage.getItem(this.token);
-}
-,
 
   isLoggedIn: function () {
-    return !!this.getUser();
+    return !!this.getCookie(this.TOKEN_KEY);
   },
 
-  // use this on protected pages
-  requireLogin: function (redirectTo) {
-    redirectTo = redirectTo || "LoginPage.html";
-
+  /* ===== Guards ===== */
+  requireLogin: function (redirectUrl = "LoginPage.html") {
     if (!this.isLoggedIn()) {
-      window.location.href = redirectTo;
+      const next = encodeURIComponent(window.location.href);
+      window.location.replace(`${redirectUrl}?next=${next}`);
       return false;
     }
     return true;
+  },
+
+  redirectAfterLogin: function (defaultUrl = "HomePage.html") {
+    const params = new URLSearchParams(window.location.search);
+    const next = params.get("next");
+    window.location.href = next ? decodeURIComponent(next) : defaultUrl;
   }
 };

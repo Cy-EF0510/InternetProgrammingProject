@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $("#footer-slot").html(FooterModel.createFooter());
+  FooterModel.loadCategories();
   HeaderModel.createHeader();
   CartManagement.updateCartBadge();
   const id = getParam("id");

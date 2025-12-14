@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!--Awesome UI -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!--Awesome UI -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!--Star War font-->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+        <!-- Star Wars-style font -->
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
 
-    <!-- Star Wars-style font -->
-    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+        <!--Css Sheet-->
+        <link rel="stylesheet" href="./Resources/CSS/Moduler/base.css">
+        <link rel="stylesheet" href="./Resources/CSS/aboutPage.css">
 
-    <!-- About Page CSS -->
-    <link rel="stylesheet" href="Resources/CSS/aboutPage.css">
+        <!--Models-->
+        <script src="./Resources/JS/Modularity/AuthModel.js"></script>
 
-    <!--TESTING -->
-    <script scr="./Resources/JS/Modularity/AuthModel.js"></script>
+        <!--header and footer-->
+        <script src="./Resources/JS/Modularity/HeaderModel.js"></script>
+        <script src="./Resources/JS/Modularity/FooterModel.js"></script>
 
-    <!--Cart management-->
-    <script src="Resources/JS/Modularity/CartManagement.js"></script>
 
-    <!--Models for header and footer-->
-    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
-    <script src="Resources/JS/Modularity/FooterModel.js"></script>
+        <!--Cart management Models-->
+        <script src="./Resources/JS/Modularity/CartManagement.js"></script>
 
-    <!--Js script-->
-    <script src="Resources/JS/about.js"></script>
+        <!--Js script-->
+        <script src="./Resources/JS/about.js"></script>
 
-    
-    <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>
-    <title>About Us</title>
-</head>
+        <title>About Us</title>
+        <link rel="website icon" type="image/png" href="Resources/IMG/circle.png"/>    
+    </head>
 <body>
     <!-- HEADER -->
     <div id="header-container"></div>
@@ -49,36 +48,36 @@
         <section class="team">
             <h2>Our Team</h2>
 
-            <div class="team-grid"><article class="team-card">
-                <span class="hud-corners"></span>
-                <img src="Resources/IMG/george.jpg" alt="George Vogas" class="team-avatar">
-                <h3>George Vogas</h3>
-                <p class="team-title">Title</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p class="team-email">george@vogas.net</p>
-                <a class="team-btn" href="mailto:george@vogas.net">Contact</a>
-                </article>
-
+            <div class="team-grid">
                 <article class="team-card">
-                <span class="hud-corners"></span>
-                <img src="Resources/IMG/deven.jpg" alt="Deven Shah-Phan" class="team-avatar">
-                <h3>Deven Shah-Phan</h3>
-                <p class="team-title">Title</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                <p class="team-email">mike@example.com</p>
-                <a class="team-btn" href="mailto:mike@example.com">Contact</a>
+                    <span class="hud-corners"></span>
+                    <img src="Resources/IMG/george.jpg" alt="George Vogas" class="team-avatar">
+                    <h3>George Vogas</h3>
+                    <p class="team-title">Title</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p class="team-email">george@vogas.net</p>
+                    <a class="team-btn" href="mailto:george@vogas.net">Contact</a>
                 </article>
 
                 <article class="team-card">
                     <span class="hud-corners"></span>
-                    <img src="Resources/IMG/cyril.jpg" alt="Cyril Efren Fabro" class="team-avatar">
+                    <img src="Resources/IMG/deven.jpg" alt="Deven Shah-Phan" class="team-avatar">
+                    <h3>Deven Shah-Phan</h3>
+                    <p class="team-title">Title</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p class="team-email">mike@example.com</p>
+                    <a class="team-btn" href="mailto:mike@example.com">Contact</a>
+                </article>
+
+                <article class="team-card">
+                    <span class="hud-corners"></span>
+                    <img src="Resources/IMG/cyril.png" alt="Cyril Efren Fabro" class="team-avatar">
                     <h3>Cyril Efren Fabro</h3>
                     <p class="team-title">Title</p>
                     <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                     <p class="team-email">john@example.com</p>
-                    <a class="team-btn" href="mailto:john@example.com">Contact</a>
+                    <a class="team-btn" href="mailto:cyril@fabro.net">Contact</a>
                 </article>
-
             </div>
         </section>
     </main> 

@@ -59,7 +59,7 @@ var ValidatorModel = {
     const value = $input.val();
 
     if (value === "") {
-      return this.setError($input, $error, "Password is required.");
+        return this.setError($input, $error, "Password is required.");
     }
     if (!this.regPass.test(value)) {
       return this.setError($input, $error, 'Password must be "cityslicka".');
@@ -84,19 +84,67 @@ var ValidatorModel = {
     return this.clearError($input, $error);
   },
 
+
+  validatePhone: function () {
+  if (!this.exists("#phone")) return true;
+
+  const $input = $("#phone");
+  const $error = $("#phoneError");
+  const value = $input.val().trim();
+
+  if (value === "") {
+    return this.setError($input, $error, "Phone number is required.");
+  }
+
+  return this.clearError($input, $error);
+},
+
+validateAddress: function () {
+  if (!this.exists("#address")) return true;
+
+  const $input = $("#address");
+  const $error = $("#addressError");
+  const value = $input.val().trim();
+
+  if (value === "") {
+    return this.setError($input, $error, "Shipping address is required.");
+  }
+
+  return this.clearError($input, $error);
+},
+
+
+
+
+
   /* ===== Page-Level Checks ===== */
   checkLogin: function () {
-    return this.validateEmail() && this.validatePassword();
+    const emailValid = this.validateEmail();
+    const passValid = this.validatePassword();
+
+    return emailValid && passValid;
   },
 
+
   checkRegister: function () {
-    return (
-      this.validateName() &&
-      this.validateEmail() &&
-      this.validatePassword() &&
-      this.validateRePassword()
-    );
+    const nameValid = this.validateName();
+    const emailValid = this.validateEmail();
+    const passValid = this.validatePassword(); 
+    const rePassValid = this.validateRePassword();
+
+    return nameValid && emailValid && passValid && rePassValid;
   },
+
+
+  checkCheckout: function () {
+    const nameValid = this.validateName();
+    const emailValid = this.validateEmail();
+    const phoneValid = this.validatePhone();
+    const addressValid = this.validateAddress();
+
+    return nameValid && emailValid && phoneValid && addressValid;
+  },
+
 
   /* ===== Alerts ===== */
   showAlert: function (msg, type = "error") {
@@ -117,20 +165,27 @@ var ValidatorModel = {
 
   /* ===== Live Binding ===== */
   bindLive: function () {
-  const self = this;
+    const self = this;
 
-  if ($("#name").length) {
-    $("#name").on("input", function () { self.validateName(); });
+    if ($("#name").length) {
+      $("#name").on("input", function () { self.validateName(); });
+    }
+    if ($("#email").length) {
+      $("#email").on("input", function () { self.validateEmail(); });
+    }
+    if ($("#pass").length) {
+      $("#pass").on("input", function () { self.validatePassword(); });
+    }
+    if ($("#repass").length) {
+      $("#repass").on("input", function () { self.validateRePassword(); });
+    }
+    if ($("#phone").length) {
+      $("#phone").on("input", function () { self.validatePhone(); });
+    }
+    if ($("#address").length) {
+      $("#address").on("input", function () { self.validateAddress(); });
+    }
+
   }
-  if ($("#email").length) {
-    $("#email").on("input", function () { self.validateEmail(); });
-  }
-  if ($("#pass").length) {
-    $("#pass").on("input", function () { self.validatePassword(); });
-  }
-  if ($("#repass").length) {
-    $("#repass").on("input", function () { self.validateRePassword(); });
-  }
-}
 
 };

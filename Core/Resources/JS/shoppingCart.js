@@ -1,11 +1,20 @@
 $(document).ready(function () {
     HeaderModel.createHeader();
     $("#footer-slot").append(FooterModel.createFooter());
+    FooterModel.loadCategories();
+
 
     CartManagement.updateCartBadge();
     renderCart();
+
+    $(".checkout-btn").on("click", function () {
+        window.location.href = "CheckoutPage.html";
+    });
+
 });
 
+
+const TaxRate = 0.15;
 
 
 /* ===================== RENDER CART ===================== */
@@ -75,6 +84,10 @@ function renderCart() {
 /* ===================== SUMMARY ===================== */
 
 function updateSummary(subtotal) {
+  const tax = subtotal * TaxRate;
+  const total = subtotal + tax;
+
   $("#cart-subtotal").text(`$${subtotal.toFixed(2)}`);
-  $("#cart-total").text(`$${subtotal.toFixed(2)}`);
+  $("#cart-tax").text(`$${tax.toFixed(2)}`);
+  $("#cart-total").text(`$${total.toFixed(2)}`);
 }

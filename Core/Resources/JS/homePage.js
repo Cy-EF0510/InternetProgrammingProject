@@ -4,6 +4,7 @@ let totalSlides = 0;
 $(document).ready(function () {
     HeaderModel.createHeader();
     $("#footer-slot").append(FooterModel.createFooter());
+    FooterModel.loadCategories();
     
     totalSlides = $(".mySlides").length;
 
@@ -45,12 +46,6 @@ $(document).ready(function () {
     .fail(function (err) {
       console.error("Failed to load homepage products", err);
     });
-
-
-
-
-
-    
 
 });
 

@@ -1,208 +1,4 @@
-:root{
-    --bg: #05060a;
-    --text: rgba(245,245,245,0.92);
-
-    --kyber: #00b4ff;
-    --panel: rgba(0,0,0,0.72);
-    --line: rgba(0,180,255,0.35);
-
-    --rebelYellow: #ffe81f;
-    --danger: #ff4d4d;
-
-    --headerBg: #090b12;
-    --borderDark: #222;
-    --fieldBg: #12141e;
-  }
-
-  /* ---------------- BASE ---------------- */
-  body{
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Pathway Gothic One", sans-serif;
-    letter-spacing: .08em;
-  }
-
-  main{ margin: 0; padding: 0; }
-
-  h1, h2, h3, nav a{
-    font-family: "Pathway Gothic One", sans-serif;
-  }
-
-  /* =====================================================
-    HEADER (TRUE CENTERED NAV)
-  ===================================================== */
-header{
-  background: var(--headerBg);
-  border-bottom: 1px solid var(--borderDark);
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-
-.header-container{
-  min-height: 76px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px 24px;
-
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-/* Logo */
-.logo{ z-index: 2; }
-
-.logo-img{
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--rebelYellow);
-  box-shadow: 0 0 10px rgba(255,232,31,.6);
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.logo:hover .logo-img{
-  transform: scale(1.08);
-  box-shadow: 0 0 15px rgba(255,232,31,1);
-}
-
-/* Centered nav */
-.main-nav{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-
-  display: flex;
-  gap: 24px;
-  white-space: nowrap;
-}
-
-.main-nav a{
-  position: relative;
-
-  color: #f5f5f5;
-  text-decoration: none;
-  font-size: 1.1rem;
-  letter-spacing: 0.12em;
-
-  text-shadow: 0 0 14px rgba(0,180,255,.35);
-  transition: color .15s ease, text-shadow .15s ease;
-}
-
-/* hover = yellow */
-.main-nav a:hover{
-  color: var(--rebelYellow);
-  text-shadow:
-    0 0 6px rgba(255,232,31,0.95),
-    0 0 18px rgba(255,232,31,0.65);
-}
-
-/* active page = blue glow */
-.main-nav a.active{
-  color: #bfefff;
-  text-shadow:
-    0 0 8px rgba(0,180,255,0.9),
-    0 0 24px rgba(0,180,255,0.6);
-}
-
-/* active + hover override */
-.main-nav a.active:hover{
-  color: var(--rebelYellow);
-  text-shadow:
-    0 0 6px rgba(255,232,31,1),
-    0 0 18px rgba(255,232,31,0.8);
-}
-
-/* ===== LIGHTSABER UNDERLINE ===== */
-.main-nav a::after{
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -8px;
-
-  width: 0;
-  height: 2px;
-
-  background: var(--rebelYellow);
-  box-shadow: 0 0 12px rgba(255,232,31,1);
-
-  transform: translateX(-50%);
-  transition: width .2s ease, background .2s ease, box-shadow .2s ease;
-}
-
-/* hover underline */
-.main-nav a:hover::after{
-  width: 70%;
-}
-
-/* active underline */
-.main-nav a.active::after{
-  width: 70%;
-  background: var(--kyber);
-  box-shadow: 0 0 14px rgba(0,180,255,0.9);
-}
-
-/* active + hover underline */
-.main-nav a.active:hover::after{
-  background: var(--rebelYellow);
-  box-shadow: 0 0 14px rgba(255,232,31,1);
-}
-
-/* Right actions */
-.header-actions{
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  z-index: 2;
-}
-
-/* Icons */
-.icon-btn{
-  color: #f5f5f5;
-  font-size: 1.35rem;
-  position: relative;
-  transition: color .15s ease;
-}
-.icon-btn:hover{ color: var(--rebelYellow); }
-
-/* Cart badge */
-.item-count-badge{
-  position: absolute;
-  top: -6px;
-  right: -8px;
-  background: var(--danger);
-  color: #fff;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  padding: 3px 7px;
-}
-
-/* Search */
-.search-wrapper{ position: relative; }
-
-#searchBar{
-  padding: 9px 14px;
-  min-width: 240px;
-  font-size: 1rem;
-
-  border-radius: 999px;
-  border: 1px solid #333;
-  background: var(--fieldBg);
-  color: #f5f5f5;
-}
-
-#searchBar:focus{
-  outline: none;
-  border-color: var(--rebelYellow);
-}
-
-
 /* ===================== CATEGORY BAR ===================== */
-
 .category-bar {
   width: 100%;
   border-bottom: 1px solid #333;
@@ -217,12 +13,12 @@ header{
   align-items: center;
   gap: 18px;
 
-  overflow-x: auto; /* if too many categories on small screens */
-  scrollbar-width: none; /* Firefox */
+  overflow-x: auto; 
+  scrollbar-width: none; 
 }
 
 .category-container::-webkit-scrollbar {
-  display: none; /* Chrome/Edge */
+  display: none; 
 }
 
 .category-container a {
@@ -239,13 +35,9 @@ header{
   text-shadow: 0 0 6px rgba(255, 232, 31, 0.8);
 }
 
-
-
-
 /* ==========================================
    HERO CAROUSEL
 ========================================== */
-
 .hero-carousel {
     position: relative;
     width: 100%;
@@ -254,14 +46,12 @@ header{
     background: #000;
 }
 
-/* wrapper for sliding */
 .hero-track {
     display: flex;
     height: 100%;
     width: 100%;
     transition: transform 0.8s ease-in-out;
 }
-
 
 /* each slide */
 .mySlides {
@@ -272,11 +62,6 @@ header{
     justify-content: center;
     position: relative;
 }
-
-
-
-
-
 
 .hero-content {
     background: rgba(0, 0, 0, 0.55);
@@ -313,7 +98,6 @@ header{
     background: #f5d84a;
 }
 
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -344,7 +128,6 @@ header{
     right: 20px;
 }
 
-
 .hero-dots{
 
     position: absolute;
@@ -353,7 +136,6 @@ header{
     text-align: center;
 
 }
-
 
 .dot {
     cursor: pointer;
@@ -370,8 +152,7 @@ header{
     background-color: #ffe81f;
 }
 
-/*welcom slide*/
-
+/*welcome slide*/
 .welcome-slide {
     position: relative;
     overflow: hidden;
@@ -413,9 +194,6 @@ header{
     z-index: 0;
 }
 
-
-
-/* Make sure content stays on top */
 .welcome-slide .hero-content {
     position: relative;
     z-index: 2;
@@ -427,11 +205,7 @@ header{
     to   { transform: translateY(-400px); }
 }
 
-
-
 /*electionic slide*/
-
-/* ensure the slide has a nice spacey tech dark background */
 .electronics-slide {
     position: relative;
     background: radial-gradient(circle at top, #0b1c2d, #020409 75%);
@@ -441,16 +215,16 @@ header{
 /* container for product images */
 .electronics-products {
     position: absolute;
-    inset: 0;              /* cover entire slide */
+    inset: 0;              
     pointer-events: none;  
-    z-index: 2;            /* above background but below text */
+    z-index: 2;            
 }
 
 /* shared style for each product image */
 .electronic-item {
     position: absolute;
-    max-width: 220px;                     /* adjust as needed */
-    filter: drop-shadow(0 0 25px rgba(0, 229, 255, 0.6)); /* subtle glow */
+    max-width: 220px;                   
+    filter: drop-shadow(0 0 25px rgba(0, 229, 255, 0.6));
     animation: floatItem 6s ease-in-out infinite;
 }
 
@@ -478,7 +252,6 @@ header{
 .electronic-item.keyboard {
     right: 20%;
     top: 20%;
-    /* max-width: 200px; */
     animation-delay: 2s;
 }
 
@@ -489,7 +262,6 @@ header{
     100% { transform: translateY(0); }
 }
 
-/* keep the hero text on top */
 .electronics-slide .hero-content {
     position: relative;
     z-index: 5;
@@ -498,7 +270,6 @@ header{
 }
 
 /* subtle grid overlay for tech effect */
-
 .electronics-slide::after {
     content: "";
     position: absolute;
@@ -512,9 +283,8 @@ header{
 
 .electronics-products a,
 .electronics-products img {
-    pointer-events: auto; /* only images clickable */
+    pointer-events: auto; 
 }
-
 
 .electronic-link img {
     transition: transform 0.25s ease, filter 0.25s ease;
@@ -527,9 +297,7 @@ header{
 }
 
 
-
 /*toys slide banner */
-
 .toys-slide {
     position: relative;
     background:
@@ -559,26 +327,23 @@ header{
 /* container for product images */
 .toys-products {
     position: absolute;
-    inset: 0;              /* cover entire slide */
-    pointer-events: none;  /* so clicks go to buttons etc. */
-    z-index: 3;            /* above background but below text */
+    inset: 0;              
+    pointer-events: none; 
+    z-index: 3;            
 }
 
 /* shared style for each product image */
 .toy-item {
     position: absolute;
-    max-width: 220px;                     /* adjust as needed */
-    filter: drop-shadow(0 0 20px rgba(255, 100, 255, 0.7)); /* subtle glow */
+    max-width: 220px;                     
+    filter: drop-shadow(0 0 20px rgba(255, 100, 255, 0.7)); 
     animation: floatItem 6s ease-in-out infinite;
 }
 
 
-
-/* example placements */
 .toy-item.lego {
     right: 20%;
     bottom: 25%;
-    /* max-width: 190px; */
     animation-delay: 1.5s;
 }
 
@@ -599,11 +364,9 @@ header{
 .toy-item.ps5 {
     left: 22%;
     top: 40%;
-    /* max-width: 200px; */
     animation-delay: 2s;
 }
 
-/* keep the hero text on top */
 .toys-slide .hero-content {
     position: relative;
     z-index: 5;
@@ -613,7 +376,7 @@ header{
 
 .toys-products a,
 .toys-products img {
-    pointer-events: auto; /* only images clickable */
+    pointer-events: auto; 
 }
 
 .toy-link img {
@@ -627,11 +390,7 @@ header{
 }
 
 
-
-
-
 /*deals banner*/
-
 .deals-slide {
     position: relative;
     background:
@@ -640,7 +399,6 @@ header{
         linear-gradient(135deg, #070707, #120a0a, #000);
     overflow: hidden;
 }
-
 
 .deals-slide::before {
     content: "";
@@ -662,9 +420,6 @@ header{
 }
 
 
-
-
-
 .deals-btn {
     background: #ff2d2d;
     color: white;
@@ -673,8 +428,6 @@ header{
 .deals-btn:hover {
     background: #ff4d4d;
 }
-
-
 
 .deals-highlights {
   position: absolute;
@@ -686,8 +439,6 @@ header{
   z-index: 3;
   flex-wrap: wrap;
 }
-
-
 
 .deals-cards {
     display: flex;
@@ -724,15 +475,12 @@ header{
         inset 0 0 15px rgba(255, 232, 31, 0.25);
 }
 
-
-
 .deals-slide {
   background:
     radial-gradient(circle at 30% 40%, rgba(255, 0, 0, 0.25), transparent 45%),
     radial-gradient(circle at 70% 60%, rgba(0, 180, 0, 0.25), transparent 50%),
     linear-gradient(135deg, #120000, #000);
 }
-
 
 @keyframes float {
     0%   { transform: translateY(0); }
@@ -758,12 +506,6 @@ header{
     animation: float 6s ease-in-out infinite;
     animation-delay: 1.5s;
 }
-
-
-
-
-
-
 
 /* ==========================================
    PRODUCTS CAROUSEL
@@ -808,12 +550,6 @@ header{
 }
 
 
-/* ==========================================
-   PRODUCT CARD
-========================================== */
-
-/* ===================== PRODUCT ROWS ===================== */
-
 .product-rows {
   padding: 40px 20px;
 }
@@ -837,14 +573,14 @@ header{
   display: flex;
   gap: 18px;
 
-  overflow-x: auto;              /* ✅ allow horizontal scroll */
-  scroll-behavior: smooth;       /* ✅ smooth */
-  padding: 0 44px;               /* ✅ space so arrows don’t cover cards */
+  overflow-x: auto;           
+  scroll-behavior: smooth;    
+  padding: 0 44px;            
 
-  scrollbar-width: none;         /* Firefox hide scrollbar */
+  scrollbar-width: none;      
 }
 .row-track::-webkit-scrollbar{
-  display: none;                 /* Chrome/Edge hide scrollbar */
+  display: none;               
 }
 
 
@@ -864,10 +600,6 @@ header{
 
 .row-btn.left { left: 0; }
 .row-btn.right { right: 0; }
-
-
-
-
 
 
 .product-card {
@@ -903,101 +635,3 @@ header{
     font-weight: bold;
     cursor: pointer;
 }
-
-/* ========================================== */
-/*                   FOOTER                   */
-/* ========================================== */
-
-/* ==== FOOTER ==== */
-footer {
-  background: #05060a;
-  color: #eee;
-  padding: 40px 20px 10px;
-  border-top: 1px solid #222;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-}
-
-.footer-section h3 {
-  margin-bottom: 12px;
-  font-size: 1rem;
-  color: #ffcc33;
-}
-
-.footer-section ul {
-  padding: 0;
-  list-style: none;
-}
-
-.footer-section ul li { margin-bottom: 8px; }
-
-.footer-section a {
-  color: #bbb;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.footer-section a:hover { color: #fff; }
-
-/* Newsletter */
-.newsletter-box { display: flex; margin-top: 10px; }
-
-.newsletter-box input {
-  flex: 1;
-  padding: 8px;
-  border-radius: 4px 0 0 4px;
-  border: none;
-  background: #12141e;
-  color: #f5f5f5;
-}
-
-.newsletter-box button {
-  background: #ffcc33;
-  color: #000;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.newsletter-box button:hover { filter: brightness(1.1); }
-
-/* Social Icons */
-.social a { font-size: 28px; margin-right: 12px; text-decoration: none; }
-
-.social-icons a {
-  color: #bbb;
-  width: 32px;
-  height: 32px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background: #12141e;
-  border-radius: 50%;
-  padding: 6px;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  background: #ffcc33;
-  color: #000;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 10px;
-  border-top: 1px solid #222;
-  font-size: 0.8rem;
-  color: #777;
-}
-
-
-
-
