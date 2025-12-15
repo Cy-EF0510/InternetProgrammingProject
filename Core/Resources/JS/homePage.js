@@ -4,8 +4,9 @@ $(document).ready(function () {
 
   // header + footer
   HeaderModel.createHeader();
-  $("#footer-slot").append(FooterModel.createFooter());
-  FooterModel.loadCategories();
+//  SearchUI.init();          // ← THIS LINE
+
+  FooterModel.buildFooter();
 
   // category nav
   loadCategoryNav();
@@ -35,9 +36,7 @@ $(document).ready(function () {
 });
 
 
-/* =========================
-   HOMEPAGE ROWS
-========================= */
+/* =========================  HOMEPAGE ROWS  ========================= */
 
 function loadHomeRows() {
   ProductModel.getAllProducts()
@@ -81,9 +80,7 @@ function getCategoryProducts(products, categoryName, limit) {
 }
 
 
-/* =========================
-   HERO CAROUSEL
-========================= */
+/* ========================= HERO CAROUSEL  ========================= */
 
 var slideIndex = 1;
 var autoSlideInterval = null;
@@ -145,9 +142,7 @@ function updateCarousel() {
 }
 
 
-/* =========================
-   PRODUCT ROWS
-========================= */
+/* =========================  PRODUCT ROWS  ========================= */
 
 function renderRow(products, containerId) {
   var track = $("#" + containerId);
@@ -201,18 +196,12 @@ function initRowArrows() {
 
 function loadCategoryNav() {
   $.ajax({
-    url: "Data/categories.xml",
+    url: "./Data/categories.xml",
     dataType: "xml"
   })
     .done(function (xml) {
       var nav = $("#categoryNav");
       nav.empty();
-
-      // All link
-      var all = $("<a/>");
-      all.attr("href", "ProductListingPage.html");
-      all.text("All");
-      nav.append(all);
 
       // category links
       $(xml).find("category > name").each(function () {

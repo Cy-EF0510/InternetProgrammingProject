@@ -1,41 +1,106 @@
-// // im trying to get the "get all products" method and call it here
-// const SearchLogic = {
-//     showSuggestions: function(searchStr, containerId = "productList"){
-//         if(!this.products || this.products.length === 0){
-//             return Promise.rehect("Products not loaded. Call loadAllProducts first.")
-//         }
+var SearchModel = {
 
-//         const container = $("#" + containerId);
-//         container.empty();
-        
-//         const filtered = this.products.filter(product =>
-//             product.name.toLowerCase().includes(searchStr.toLowerCase())
-//         );
+  // cached products (so we don't fetch every keypress)
+  products: null,
 
-//         filtered.forEach(product => {
-//         const suggestion = $("<div/>")
-//             .addClass("search-suggestion")
-//             .attr("data-id", product.id)
-//             .css("cursor", "pointer")
-//             .html(product.name);
+  /* ===================== HELPERS ===================== */
 
-//         suggestion.on("click", function() {
-//             window.location.href = `ProductDetailPage.html?id=${product.id}`;
-//         });
+  normalize: function (text) {
+    return String(text || "").toLowerCase().trim();
+  },
 
-//         container.append(suggestion);
-//         });
+  /* ===================== LOAD PRODUCTS ===================== */
 
-//         return Promise.resolve(filtered);
-//     },
+  loadAllProducts: function () {
 
-//     // Clear suggestions
-//     clearSuggestions: function(containerId = "productList") {
-//         $("#" + containerId).empty();
-//     },
+    var self = this;
 
-//     // Get suggestion count
-//     getSuggestionCount: function() {
-//         return this.products.length;
-//     }
-// };
+    // already loaded
+    if (self.products !== null) {
+      return $.Deferred().resolve(self.products).promise();
+    }
+
+    // load once
+    return $.getJSON("./Data/products.json")
+      .done(function (data) {
+
+        var list = [];
+
+        // supports: [] OR { products: [] }
+        if (Array.isArray(data)) {
+          list = data;
+        } else if (data && Array.isArray(data.products)) {
+          list = data.products;
+        }
+
+        self.products = list;
+      })
+      .fail(function () {
+        self.products = [];
+      })
+      .then(function () {
+        return self.products;
+      });
+  },
+
+  /* ===================== SEARCH ===================== */
+
+  productMatches: function (product, query) {
+
+    var q = this.normalize(query);
+    if (q === "") {
+      return false;
+    }
+
+    var name = this.normalize(product.name);
+    var desc = this.normalize(product.description);
+    var cat  = this.normalize(product.category);
+
+    // match if query appears anywhere
+    if (name.indexOf(q) !== -1) return true;
+    if (desc.indexOf(q) !== -1) return true;
+    if (cat.indexOf(q) !== -1) return true;
+
+    return false;
+  },
+
+  findMatches: function (query) {
+
+    var self = this;
+
+    return self.loadAllProducts().then(function (list) {
+
+      var matches = [];
+
+      for (var i = 0; i < list.length; i++) {
+        var p = list[i];
+
+        if (self.productMatches(p, query)) {
+          matches.push(p);
+        }
+      }
+
+      return matches;
+    });
+  },
+
+  getSuggestions: function (query, limit) {
+
+    var self = this;
+
+    limit = Number(limit);
+    if (!Number.isFinite(limit) || limit <= 0) {
+      limit = 6;
+    }
+
+    return self.findMatches(query).then(function (matches) {
+      return matches.slice(0, limit);
+    });
+  },
+
+  /* ===================== OPTIONAL ===================== */
+
+  clearCache: function () {
+    this.products = null;
+  }
+};

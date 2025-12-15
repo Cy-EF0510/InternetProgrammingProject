@@ -14,14 +14,14 @@ var ShippingPrices = {
 };
 
 $(document).ready(function () {
-
-  // must be logged in
-  AuthModel.requireLogin();
-
+  // ===== MUST BE LOGGED IN =====
+  if (!AuthModel.requireLogin("LoginPage.html")) {
+    return;
+  }
+  
   // header + footer
   HeaderModel.createHeader();
-  $("#footer-slot").append(FooterModel.createFooter());
-  FooterModel.loadCategories();
+  FooterModel.buildFooter();
 
   // cart badge
   CartManagement.updateCartBadge();
@@ -98,7 +98,7 @@ function makeOrderNumber() {
 function saveLastOrderCookie(orderData) {
   document.cookie =
     "lastOrder=" + encodeURIComponent(JSON.stringify(orderData)) +
-    "; path=/; max-age=300"; // 5 minutes
+    "; path=/;"; 
 }
 
 function togglePaymentUI() {

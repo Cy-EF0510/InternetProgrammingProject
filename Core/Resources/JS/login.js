@@ -3,7 +3,7 @@ $(document).ready(function () {
   AuthModel.forwardNextParam("#registerLink", "RegisterPage.html");
   
   if (AuthModel.isLoggedIn()) {
-    AuthModel.redirectAfterLogin();   // goes to ?next=... or HomePage
+    AuthModel.redirectAfterLogin();  
     return;
   }
   // call the live validation binder

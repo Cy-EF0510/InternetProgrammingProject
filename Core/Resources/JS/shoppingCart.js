@@ -1,12 +1,13 @@
 const TaxRate = 0.15;
 
 $(document).ready(function () {
-    AuthModel.requireLogin();
+  // ===== MUST BE LOGGED IN =====
+  if (!AuthModel.requireLogin("LoginPage.html")) {
+    return;
+  }
     
     HeaderModel.createHeader();
-    $("#footer-slot").append(FooterModel.createFooter());
-    FooterModel.loadCategories();
-
+    FooterModel.buildFooter();
 
     CartManagement.updateCartBadge();
     renderCart();

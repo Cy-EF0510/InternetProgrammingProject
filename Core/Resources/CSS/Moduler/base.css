@@ -205,29 +205,110 @@ header{
   border-color: var(--rebelYellow);
 }
 
-/* ==== STAR WARS FOOTER ==== */
-footer{
-  background:
-    radial-gradient(1200px 200px at 50% -40%, rgba(0,180,255,.15), transparent 60%),
-    linear-gradient(180deg, #05060a, #02030a 70%);
-  color: rgba(245,245,245,.9);
-  padding: 50px 24px 14px;
-  border-top: 1px solid rgba(0,180,255,.25);
-  position: relative;
-  overflow: hidden;
+.search-suggestions{
+  position:absolute;
+  top:calc(100% + 8px);
+  left:0;
+  width:100%;
+  background:#05060a;
+  border:1px solid rgba(0,180,255,.35);
+  border-radius:12px;
+  display:none;
+  z-index:99999;
 }
 
-/* subtle star noise */
+.s-item{
+  padding:10px 12px;
+  cursor:pointer;
+}
+.s-item:hover{
+  background:rgba(0,180,255,.15);
+}
+
+.search-hl{
+  background:rgba(255,232,31,.25);
+  border-radius:4px;
+  padding:0 2px;
+}
+
+.search-card{
+  border:1px solid rgba(0,180,255,.25);
+  padding:14px;
+  border-radius:12px;
+  margin-bottom:12px;
+  cursor:pointer;
+}
+
+
+footer{
+  position: relative;
+  overflow: hidden;
+
+  padding: 20px 24px 14px;
+  color: rgba(245,245,245,.9);
+
+  background:
+    radial-gradient(1400px 260px at 50% -60px, rgba(0,180,255,.20), transparent 60%),
+    radial-gradient(900px 240px at 85% 10%, rgba(255,232,31,.09), transparent 65%),
+    radial-gradient(600px 220px at 10% 110%, rgba(0,180,255,.10), transparent 60%),
+    linear-gradient(180deg, #070816 0%, #040510 40%, #02030a 75%, #01020a 100%);
+
+  border-top: 1px solid rgba(0,180,255,.25);
+}
+
+
 footer::before{
   content:"";
   position:absolute;
-  inset:0;
-  background:
-    radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,.4), transparent),
-    radial-gradient(1px 1px at 70% 60%, rgba(255,255,255,.3), transparent),
-    radial-gradient(1px 1px at 40% 80%, rgba(255,255,255,.25), transparent);
-  opacity:.25;
+  inset:-220px;              
   pointer-events:none;
+  opacity:.75;               
+
+  background:
+    /* repeated tiny stars */
+    radial-gradient(1px 1px at 20px 30px, rgba(255,255,255,.55), transparent 60%),
+    radial-gradient(1px 1px at 120px 80px, rgba(255,255,255,.40), transparent 60%),
+    radial-gradient(1px 1px at 260px 140px, rgba(255,255,255,.35), transparent 60%),
+    radial-gradient(1px 1px at 360px 220px, rgba(255,255,255,.30), transparent 60%),
+
+    /* a few bigger stars */
+    radial-gradient(2px 2px at 70% 25%, rgba(255,255,255,.55), transparent 65%),
+    radial-gradient(2px 2px at 35% 70%, rgba(255,255,255,.40), transparent 65%),
+
+    /* holo scan lines */
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0,180,255,.05),
+      rgba(0,180,255,.05) 1px,
+      rgba(0,0,0,0) 7px,
+      rgba(0,0,0,0) 12px
+    );
+
+  background-size:
+    420px 320px,
+    420px 320px,
+    420px 320px,
+    420px 320px,
+    auto,
+    auto,
+    auto;
+
+  animation: footerStarDrift 110s linear infinite;
+  will-change: transform;
+}
+
+footer::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background: radial-gradient(closest-side at 50% 40%, transparent 55%, rgba(0,0,0,.55));
+  opacity:.55;
+}
+
+@keyframes footerStarDrift{
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-180px, 120px, 0); }
 }
 
 /* ==== GRID ==== */
@@ -260,7 +341,6 @@ footer::before{
     0 0 18px rgba(255,232,31,.5);
 }
 
-/* ==== CATEGORIES (HOLO STYLE) ==== */
 .footer-section.categories{
   align-items:center;
 }
@@ -270,7 +350,6 @@ footer::before{
   text-align:center;
 }
 
-/* two tight columns */
 .footer-categories-wrap #footerCategoryLinks{
   display:grid;
   grid-template-columns: repeat(2, max-content);
@@ -292,7 +371,7 @@ footer::before{
   transition:.15s ease;
 }
 
-/* lightsaber underline */
+
 #footerCategoryLinks a::after{
   content:"";
   position:absolute;
@@ -383,7 +462,6 @@ footer::before{
   color:#000;
   box-shadow:0 0 18px rgba(0,180,255,.8);
 }
-
 
 
 /* ==== FOOTER BOTTOM ==== */

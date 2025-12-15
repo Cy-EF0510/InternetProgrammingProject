@@ -1,14 +1,14 @@
 $(document).ready(function () {
-
-  // Force login first
-  AuthModel.requireLogin();
-
+  // ===== MUST BE LOGGED IN =====
+  if (!AuthModel.requireLogin("LoginPage.html")) {
+    return;
+  }
   // Build header
   HeaderModel.createHeader();
 
   // Build footer
-  var footer = FooterModel.createFooter();
-  $("#footer-slot").append(footer);
+  FooterModel.buildFooter();
+
 
   // Load footer categories
   FooterModel.loadCategories();

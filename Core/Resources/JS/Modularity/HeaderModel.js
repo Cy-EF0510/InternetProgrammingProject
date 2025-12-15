@@ -1,81 +1,121 @@
 var HeaderModel = {
-    createHeader: function () {
-        const header = $("<header/>");
-        const container = $("<div/>").addClass("header-container");
 
-        /* ===== Logo ===== */
-        const logo = $("<div/>").addClass("logo").append(
-            $("<a/>")
-                .attr("href", "HomePage.html")
-                .append(
-                    $("<img/>")
-                        .addClass("logo-img")
-                        .attr({
-                            src: "Resources/IMG/notcircle.png",
-                            alt: ""
-                        })
-                )   
-        );
+  createHeader: function () {
 
-        /* ===== Navigation ===== */
-       const nav = $("<nav/>").addClass("main-nav").append(
-        $("<a/>").attr("href", "HomePage.html").text("Home"),
-        $("<a/>").attr("href", "ProductListingPage.html").text("Products"),
-        $("<a/>").attr("href", "AboutPage.html").text("Contact")
-        );
+    // Create main header
+    var header = $("<header>");
+    var container = $("<div>");
+    container.addClass("header-container");
 
+    /* ===== LOGO ===== */
 
-        /* ===== Search Wrapper ===== */
-        const searchWrapper = $("<div/>").addClass("search-wrapper").append(
-            $("<input/>")
-                .attr({
-                    type: "text",
-                    id: "searchBar",
-                    placeholder: "Search products...",
-                    autocomplete: "off"
-                }),
-            $("<div/>").attr("id", "searchSuggestions").addClass("search-suggestions")
-        );
+    var logo = $("<div>");
+    logo.addClass("logo");
 
-        /* ===== Cart Icon ===== */
-        const cartIcon = $("<a/>")
-            .attr("href", "ShoppingCartPage.html")
-            .addClass("icon-btn")
-            .append(
-                $("<i/>").addClass("fas fa-shopping-cart"),
-                $("<span/>").addClass("item-count-badge").text("0")
-            );
+    var logoLink = $("<a>");
+    logoLink.attr("href", "HomePage.html");
 
-        /* ===== User Icon ===== */
-        const userIcon = AuthModel.isLoggedIn()
-        ? $("<a/>")
-            .attr("href", "ProfilePage.html")
-            .addClass("icon-btn")
-            .append($("<i/>").addClass("fas fa-user"))
-        : $("<a/>")
-            .attr("href", "LoginPage.html")
-            .addClass("icon-btn")
-            .append($("<i/>").addClass("fas fa-user"));
+    var logoImg = $("<img>");
+    logoImg.addClass("logo-img");
+    logoImg.attr("src", "Resources/IMG/notcircle.png");
+    logoImg.attr("alt", "");
 
-        /* ===== Header Actions ===== */
-        const headerActions = $("<div/>").addClass("header-actions").append(
-            searchWrapper,
-            cartIcon,
-            userIcon
-        );
+    logoLink.append(logoImg);
+    logo.append(logoLink);
 
-        /* ===== Assemble container ===== */
-        container.append(
-            logo,
-            nav,
-            headerActions
-        );
+    /* ===== NAVIGATION ===== */
 
-        header.append(container);
+    var nav = $("<nav>");
+    nav.addClass("main-nav");
 
-        /* ===== Insert into DOM ===== */
-        $("#header-container").html(header);
+    var homeLink = $("<a>");
+    homeLink.attr("href", "HomePage.html");
+    homeLink.text("Home");
 
-        return header;
+    var productsLink = $("<a>");
+    productsLink.attr("href", "ProductListingPage.html");
+    productsLink.text("Products");
+
+    var contactLink = $("<a>");
+    contactLink.attr("href", "AboutPage.html");
+    contactLink.text("Contact");
+
+    nav.append(homeLink);
+    nav.append(productsLink);
+    nav.append(contactLink);
+
+    /* ===== SEARCH ===== */
+
+    var searchWrapper = $("<div>");
+    searchWrapper.addClass("search-wrapper");
+
+    var searchInput = $("<input>");
+    searchInput.attr("type", "text");
+    searchInput.attr("id", "searchBar");
+    searchInput.attr("placeholder", "Search products...");
+    searchInput.attr("autocomplete", "off");
+
+    var searchSuggestions = $("<div>");
+    searchSuggestions.attr("id", "searchSuggestions");
+    searchSuggestions.addClass("search-suggestions");
+
+    searchWrapper.append(searchInput);
+    searchWrapper.append(searchSuggestions);
+
+    /* ===== CART ICON ===== */
+
+    var cartIcon = $("<a>");
+    cartIcon.attr("href", "ShoppingCartPage.html");
+    cartIcon.addClass("icon-btn");
+
+    var cartI = $("<i>");
+    cartI.addClass("fas fa-shopping-cart");
+
+    var cartBadge = $("<span>");
+    cartBadge.addClass("item-count-badge");
+    cartBadge.text("0");
+
+    cartIcon.append(cartI);
+    cartIcon.append(cartBadge);
+
+    /* ===== USER ICON ===== */
+
+    var userIcon = $("<a>");
+    userIcon.addClass("icon-btn");
+
+    if (AuthModel.isLoggedIn()) {
+      userIcon.attr("href", "ProfilePage.html");
+    } else {
+      userIcon.attr("href", "LoginPage.html");
     }
+
+    var userI = $("<i>");
+    userI.addClass("fas fa-user");
+    userIcon.append(userI);
+
+    /* ===== HEADER ACTIONS ===== */
+
+    var headerActions = $("<div>");
+    headerActions.addClass("header-actions");
+
+    headerActions.append(searchWrapper);
+    headerActions.append(cartIcon);
+    headerActions.append(userIcon);
+
+    /* ===== BUILD HEADER ===== */
+
+    container.append(logo);
+    container.append(nav);
+    container.append(headerActions);
+
+    header.append(container);
+
+    /* ===== INSERT INTO PAGE ===== */
+
+    $("#header-container").html(header);
+
+    return header;
+
+
+  }
 };

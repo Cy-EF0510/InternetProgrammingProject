@@ -2,11 +2,8 @@ $(document).ready(function () {
 
   // Header / footer / cart badge
   HeaderModel.createHeader();
+  FooterModel.buildFooter();
 
-  var footerHtml = FooterModel.createFooter();
-  $("#footer-slot").html(footerHtml);
-
-  FooterModel.loadCategories();
   CartManagement.updateCartBadge();
 
   // Get id from URL
