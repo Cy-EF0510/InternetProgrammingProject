@@ -14,6 +14,7 @@ var HeaderModel = {
 
     var logoLink = $("<a>");
     logoLink.attr("href", "HomePage.html");
+    logoLink.attr("accesskey", "1");
 
     var logoImg = $("<img>");
     logoImg.addClass("logo-img");
@@ -31,14 +32,17 @@ var HeaderModel = {
     var homeLink = $("<a>");
     homeLink.attr("href", "HomePage.html");
     homeLink.text("Home");
+    homeLink.attr("accesskey", "2");
 
     var productsLink = $("<a>");
     productsLink.attr("href", "ProductListingPage.html");
     productsLink.text("Products");
+    productsLink.attr("accesskey", "3");
 
     var contactLink = $("<a>");
     contactLink.attr("href", "AboutPage.html");
     contactLink.text("Contact");
+    contactLink.attr("accesskey", "4");
 
     nav.append(homeLink);
     nav.append(productsLink);
@@ -54,6 +58,7 @@ var HeaderModel = {
     searchInput.attr("id", "searchBar");
     searchInput.attr("placeholder", "Search products...");
     searchInput.attr("autocomplete", "off");
+    searchInput.attr("accesskey", "5");
 
     var searchSuggestions = $("<div>");
     searchSuggestions.attr("id", "searchSuggestions");
@@ -67,6 +72,7 @@ var HeaderModel = {
     var cartIcon = $("<a>");
     cartIcon.attr("href", "ShoppingCartPage.html");
     cartIcon.addClass("icon-btn");
+    cartIcon.attr("accesskey", "6");
 
     var cartI = $("<i>");
     cartI.addClass("fas fa-shopping-cart");
@@ -82,6 +88,7 @@ var HeaderModel = {
 
     var userIcon = $("<a>");
     userIcon.addClass("icon-btn");
+    userIcon.attr("accesskey", "7");
 
     if (AuthModel.isLoggedIn()) {
       userIcon.attr("href", "ProfilePage.html");
@@ -113,6 +120,11 @@ var HeaderModel = {
     /* ===== INSERT INTO PAGE ===== */
 
     $("#header-container").html(header);
+
+    /* ===== INIT LIVE SEARCH ===== */
+    if (typeof SearchUI !== "undefined" && typeof SearchUI.init === "function") {
+    SearchUI.init();
+    }
 
     return header;
 

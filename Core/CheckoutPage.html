@@ -21,6 +21,10 @@
     <!--Authentication -->
     <script src="./Resources/JS/Modularity/AuthModel.js"></script>
 
+    <!--Live search-->
+    <script src="./Resources/JS/Modularity/SearchModel.js"></script> 
+    <script src="./Resources/JS/Modularity/SearchUI.js"></script>
+    
     <!--header and footer-->
     <script src="./Resources/JS/Modularity/HeaderModel.js"></script>
     <script src="./Resources/JS/Modularity/FooterModel.js"></script>
@@ -50,16 +54,10 @@
 
 
         <!-- LEFT: FORM -->
-
         <section class="checkout-form">
-
-          
           <form id="checkoutForm" novalidate>
-            
             <h3>Payment Method</h3>
-
             <div class="payment-options">
-
               <label class="payment-option">
                 <input type="radio" name="payment" value="card" checked>
                 <i class='far fa-credit-card'></i> Credit / Debit Card
@@ -69,11 +67,9 @@
                 <input type="radio" name="payment" value="paypal">
                 <i class='fab fa-paypal'></i> PayPal
               </label>
-
             </div>
 
             <div class="card-fields">
-
               <label>
                 Card Number
                 <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
@@ -97,15 +93,13 @@
                   </label>
                 </div>
               </div>
-
             </div>
 
             <!-- PAYPAL MESSAGE -->
             <div class="paypal-message hidden">
               <p>You will be redirected to PayPal to complete your purchase.</p>
             </div>
-            
-            
+
             <h3>Shipping Information</h3>
 
             <label>
@@ -132,11 +126,9 @@
               <span id="addressError" class="error"></span>
             </label>
 
-
             <h4>Delivery Options</h4>
 
             <div class="delivery-options">
-
               <label class="delivery-option">
                 <input type="radio" name="delivery" value="standard" checked>
                 Standard (Free)
@@ -146,10 +138,7 @@
                 <input type="radio" name="delivery" value="express">
                 Express ($9.99)
               </label>
-
-
             </div>
-
 
             <div id="form-error" class="error hidden">
               Please fill all required fields correctly.
@@ -158,16 +147,12 @@
             <button type="submit" class="place-order-btn">
               Place Order
             </button>
-
           </form>
-
         </section>
 
         <!-- RIGHT: SUMMARY -->
         <aside class="checkout-summary">
-
           <h3>Order Summary</h3>
-
           <div id="checkout-items"></div>
 
           <div class="summary-row">
@@ -185,21 +170,14 @@
             <span id="co-shipping">$0.00</span>
           </div>
 
-
           <div class="summary-row total">
             <span>Total</span>
             <span id="co-total">$0.00</span>
           </div>
-
         </aside>
-
       </div>
-
     </main>
 
-    
-
-    <!--Using jquery to make footer-->
     <div id="footer-container"></div>
 
 

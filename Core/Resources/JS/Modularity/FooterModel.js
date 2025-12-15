@@ -13,7 +13,7 @@ var FooterModel = {
     var container = $("#footer-container");
     if (container.length) return container;
 
-    // fallback: last resort
+    // default to body
     return $("body");
   },
 
@@ -23,7 +23,7 @@ var FooterModel = {
     var container = $("<div>");
     container.addClass("footer-container");
 
-    // ===== CATEGORIES =====
+    //categories section
     var categoriesSection = $("<div>");
     categoriesSection.addClass("footer-section categories");
 
@@ -40,7 +40,7 @@ var FooterModel = {
     categoriesWrap.append(categoriesList);
     categoriesSection.append(categoriesWrap);
 
-    // ===== CONTACT =====
+    //contact section
     var contactSection = $("<div>");
     contactSection.addClass("footer-section");
 
@@ -53,7 +53,7 @@ var FooterModel = {
 
     contactSection.append(contactTitle, contactEmail, contactPhone, contactAddress);
 
-    // ===== NEWSLETTER =====
+    //newsletter section
     var newsletterSection = $("<div>");
     newsletterSection.addClass("footer-section");
 
@@ -61,13 +61,13 @@ var FooterModel = {
     var newsletterText = $("<p>").text("Stay updated on deals and new products.");
 
     var newsletterBox = $("<div>").addClass("newsletter-box");
-    var newsletterInput = $("<input>").attr("type", "email").attr("placeholder", "Enter your email");
+    var newsletterInput = $("<input>").attr("type", "email").attr("placeholder", "Enter your email").attr("accesskey", "f");
     var newsletterBtn = $("<button>").text("Sign Up");
 
     newsletterBox.append(newsletterInput, newsletterBtn);
     newsletterSection.append(newsletterTitle, newsletterText, newsletterBox);
 
-    // ===== SOCIAL =====
+    //social media section
     var socialSection = $("<div>");
     socialSection.addClass("footer-section footer-social");
 
@@ -78,24 +78,27 @@ var FooterModel = {
       .attr("href", "https://instagram.com/")
       .attr("target", "_blank")
       .attr("aria-label", "Instagram")
+      .attr("accesskey", "a")
       .append($("<i>").addClass("fa-brands fa-instagram"));
 
     var fbLink = $("<a>")
       .attr("href", "https://facebook.com/")
       .attr("target", "_blank")
       .attr("aria-label", "Facebook")
+      .attr("accesskey", "s")
       .append($("<i>").addClass("fa-brands fa-facebook"));
 
     var xLink = $("<a>")
       .attr("href", "https://twitter.com/")
       .attr("target", "_blank")
       .attr("aria-label", "Twitter / X")
+      .attr("accesskey", "d")
       .append($("<i>").addClass("fa-brands fa-x-twitter"));
 
     socialIcons.append(instaLink, fbLink, xLink);
     socialSection.append(socialTitle, socialIcons);
 
-    // ===== ASSEMBLE =====
+    //assemble footer
     container.append(categoriesSection, contactSection, newsletterSection, socialSection);
 
     var footerBottom = $("<div>");
@@ -104,7 +107,7 @@ var FooterModel = {
 
     footer.append(container, footerBottom);
 
-    // inject into the right place
+    //inject into the right place
     var $mount = this.getMountPoint();
     $mount.html(footer);
 
@@ -124,12 +127,22 @@ var FooterModel = {
 
       list.empty();
 
+      // First row keyboard letters for accesskeys
+        var accessKeys = ['q','w','e','r','t','y','u','i','o','p'];
+        var keyIndex = 0;
+
       $(xml).find("category > name").each(function () {
         var name = $(this).text().trim();
 
         var link = $("<a>");
         link.attr("href", "ProductListingPage.html?category=" + encodeURIComponent(name));
         link.text(name);
+
+        // Assign accesskey from first row letters
+            if (keyIndex < accessKeys.length) {
+                link.attr("accesskey", accessKeys[keyIndex]);
+                keyIndex++;
+            }
 
         var li = $("<li>").append(link);
         list.append(li);

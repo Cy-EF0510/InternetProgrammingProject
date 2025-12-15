@@ -1,6 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<main>
-  <h1>Search Results</h1>
-  <div id="searchStatus"></div>
-  <div id="searchResults"></div>
-</main>
+    <!--Awesome UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Star Wars-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+    <!--Css Sheet-->
+    <link rel="stylesheet" href="./Resources/CSS/Moduler/base.css">
+    <link rel="stylesheet" href="./Resources/CSS/searchResultsPage.css">
+
+    <!--Models-->
+    <!--Authentication -->
+    <script src="./Resources/JS/Modularity/AuthModel.js"></script>
+
+    <!--Live search-->
+    <script src="./Resources/JS/Modularity/SearchModel.js"></script> 
+    <script src="./Resources/JS/Modularity/SearchUI.js"></script>
+    
+    <!--header and footer-->
+    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
+    <script src="Resources/JS/Modularity/FooterModel.js"></script>
+
+    <script src="./Resources/JS/Modularity/ProductModel.js"></script>
+
+    <!--Cart management Models-->
+    <script src="Resources/JS/Modularity/CartManagement.js"></script>
+
+    <!-- Page Script -->
+    <script src="./Resources/JS/SearchResultsPage.js"></script>
+
+    <title>Search Results | The Rogue Market</title>
+    <link rel="website icon" type="image/png" href="./Resources/IMG/circle.png"/>
+</head>
+
+<body>
+
+  <!-- header -->
+  <div id="header-container"></div>
+
+  <!-- main -->
+  <main class="search-page">
+
+    <h1 class="search-title">Search Results</h1>
+
+    <!-- status -->
+    <div id="searchStatus" class="search-status"></div>
+
+    <!-- results -->
+    <div id="searchResults" class="search-results"></div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+</body>
+</html>

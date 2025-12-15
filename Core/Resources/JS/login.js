@@ -35,7 +35,7 @@ function requestUsers(email, password){
             }
         })
         .done(function(o){
-          // Use AuthModel (sets authToken as a session cookie)
+          //uses auth model to login
           AuthModel.login(o.token,email,3600);
 
           // Go back to the page they tried to access, or default

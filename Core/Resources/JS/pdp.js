@@ -23,14 +23,14 @@ $(document).ready(function () {
   loadProductById(productId);
 });
 
-
+// Get URL parameter by name
 function getParam(name) {
   var params = new URLSearchParams(window.location.search);
   var value = params.get(name);
   return value;
 }
 
-
+// Load product data from products.json by id
 function loadProductById(id) {
 
   $("#pdp-status").removeClass("hidden");
@@ -40,7 +40,7 @@ function loadProductById(id) {
   $.getJSON("./Data/products.json")
     .done(function (data) {
 
-      // products can be an array OR { products: [] }
+      //get products array
       var products = [];
 
       if (Array.isArray(data)) {
@@ -86,7 +86,7 @@ function loadProductById(id) {
     });
 }
 
-
+// Render main PDP UI
 function renderPdp(product) {
 
   var rawPrice = product.price;
@@ -139,6 +139,8 @@ function renderPdp(product) {
 }
 
 
+//setup quantity controls
+//plus, minus, input
 function setupQtyControls() {
 
   $("#qty-minus").on("click", function () {
@@ -162,7 +164,7 @@ function setupQtyControls() {
   });
 }
 
-
+// Ensure quantity is a positive numkber
 function clampQty(n) {
   if (!Number.isFinite(n)) {
     return 1;
@@ -195,10 +197,11 @@ function setupAddToCart(product) {
 }
 
 
-/* ---------------- RELATED PRODUCTS ---------------- */
+//get related products and render them
 
 var PDP_PAGE = "ProductDetailPage.html";
 
+//related products based on category
 function renderRelatedProducts(current, allProducts) {
 
   var currentId = String(current.id);
@@ -270,8 +273,13 @@ function renderRelatedProducts(current, allProducts) {
 
     var img = $("<img>");
     img.addClass("rel-img");
-    img.attr("src", item.image || "");
+    img.attr(
+      "src",
+      (item.image || "") + "?id=" + item.id
+    );
     img.attr("alt", item.name || item.title || "");
+
+        
 
     var nameDiv = $("<div>");
     nameDiv.addClass("rel-name");
@@ -294,7 +302,7 @@ function renderRelatedProducts(current, allProducts) {
   }
 }
 
-
+//shuffle array
 function shuffle(arr) {
   var copy = arr.slice();
 
@@ -309,7 +317,7 @@ function shuffle(arr) {
 }
 
 
-/* ---------------- REVIEWS (mock) ---------------- */
+//get reviews for product
 
 function renderReviews(product) {
 
@@ -340,7 +348,7 @@ function renderReviews(product) {
     });
 }
 
-
+//paint reviews
 function paintReviews(reviews) {
 
   var wrap = $("#reviews-wrap");
@@ -398,7 +406,7 @@ function paintReviews(reviews) {
   }
 }
 
-
+//clamp star rating between 0 and 5
 function clampStars(n) {
   if (!Number.isFinite(n)) return 0;
   if (n < 0) return 0;

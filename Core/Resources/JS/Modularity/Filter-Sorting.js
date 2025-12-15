@@ -1,6 +1,6 @@
 var ProductFilterModule = {
 
-  // defaults (can be overwritten in init)
+  // defaults for settings
   settings: {
     allUrl: "./Data/products.json",
     categoryUrl: null,
@@ -22,6 +22,8 @@ var ProductFilterModule = {
     }
   },
 
+  // initialize with user settings
+
   init: function (userSettings) {
 
     // safe default
@@ -29,12 +31,12 @@ var ProductFilterModule = {
       userSettings = {};
     }
 
-    // copy user settings onto settings (simple and obvious)
+    // copy user settings onto settings
     for (var key in userSettings) {
       this.settings[key] = userSettings[key];
     }
 
-    // ===== set defaults if missing =====
+    //set defaults if missing 
     if (typeof this.settings.categoryUrl !== "function") {
       this.settings.categoryUrl = function (cat) {
         return "./Data/" + encodeURIComponent(cat) + ".json";
@@ -64,6 +66,8 @@ var ProductFilterModule = {
     }
   },
 
+  // load data for a category
+
   loadForCategory: function (category) {
 
     var url = "";
@@ -77,6 +81,8 @@ var ProductFilterModule = {
     return $.getJSON(url);
   },
 
+
+  //refresh data and re-apply filters
   refresh: function () {
 
     var self = this;
@@ -98,6 +104,8 @@ var ProductFilterModule = {
       });
   },
 
+
+  // apply filters
   applyFiltersOnly: function () {
 
     var min = this.state.filters.minPrice;
@@ -134,6 +142,7 @@ var ProductFilterModule = {
     this.settings.render(this.state.filtered);
   },
 
+  // sort
   applySort: function () {
 
     var sort = this.state.filters.sort;
@@ -164,6 +173,8 @@ var ProductFilterModule = {
     }
   },
 
+
+  //
   setCategory: function (cat) {
 
     if (!cat) {
@@ -174,6 +185,7 @@ var ProductFilterModule = {
     return this.refresh();
   },
 
+  //set price range
   setPriceRange: function (min, max) {
 
     var minNum = Number(min);
@@ -198,6 +210,7 @@ var ProductFilterModule = {
     this.applyFiltersOnly();
   },
 
+  //set sort
   setSort: function (sort) {
 
     if (!sort) {
@@ -208,6 +221,7 @@ var ProductFilterModule = {
     this.applyFiltersOnly();
   },
 
+  // get current filters
   getFilters: function () {
     var copy = {};
     copy.category = this.state.filters.category;
@@ -217,6 +231,7 @@ var ProductFilterModule = {
     return copy;
   },
 
+  // get filtered list
   getFiltered: function () {
     return this.state.filtered.slice();
   }

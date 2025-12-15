@@ -2,74 +2,93 @@ var SearchUI = {
 
   init: function () {
 
+    if (typeof SearchModel === "undefined") {
+      console.error("SearchModel.js is not loaded");
+      return;
+    }
+
     var input = $("#searchBar");
     var box = $("#searchSuggestions");
 
-    // header not on this page
-    if (!input.length || !box.length) {
-      return;
-    }
+    if (!input.length || !box.length) return;
+
+    // prevent double bind
+    input.off(".searchui");
+    $(document).off(".searchui");
 
     // preload products once
     SearchModel.loadAllProducts();
 
-    // live typing
-    input.on("input", function () {
-      var q = input.val().trim();
+    //debounce timer
+    var debounceTimer = null;
 
-      if (q.length < 2) {
-        box.hide().empty();
-        return;
-      }
+    input.on("input.searchui", function () {
 
-      SearchModel.getSuggestions(q, 6).then(function (items) {
+      var query = input.val().trim();
 
-        box.empty();
+      // cancel previous timer
+      clearTimeout(debounceTimer);
 
-        if (items.length === 0) {
-          box.append(
-            $("<div>").addClass("s-item").text("No matches")
-          );
-          box.show();
+      debounceTimer = setTimeout(function () {
+
+        if (query.length < 2) {
+          box.empty().hide();
           return;
         }
 
-        for (var i = 0; i < items.length; i++) {
-          (function (product) {
+        SearchModel.getSuggestions(query, 6)
+          .done(function (items) {
 
-            var row = $("<div>")
-              .addClass("s-item")
-              .text(product.name);
+            box.empty();
 
-            row.on("click", function () {
-              window.location.href =
-                "SearchResultsPage.html?q=" +
-                encodeURIComponent(q);
-            });
+            if (!items || items.length === 0) {
+              box.append(
+                $("<div>").addClass("s-item").text("No matches")
+              );
+              box.show();
+              return;
+            }
 
-            box.append(row);
+            for (var i = 0; i < items.length; i++) {
+              (function (p) {
 
-          })(items[i]);
-        }
+                var row = $("<div>")
+                  .addClass("s-item")
+                  .text(p.name || "Unnamed");
 
-        box.show();
-      });
+                row.on("click", function () {
+                  window.location.href =
+                    "SearchResultsPage.html?q=" +
+                    encodeURIComponent(query);
+                });
+
+                box.append(row);
+
+              })(items[i]);
+            }
+
+            box.show();
+          })
+          .fail(function () {
+            box.empty().hide();
+          });
+
+      }, 250); // this is the debounce delay
     });
 
-    // Enter key → results page
-    input.on("keydown", function (e) {
+    //enter key
+    input.on("keydown.searchui", function (e) {
       if (e.key === "Enter") {
         var q = input.val().trim();
         if (q !== "") {
           window.location.href =
-            "SearchResultsPage.html?q=" +
-            encodeURIComponent(q);
+            "SearchResultsPage.html?q=" + encodeURIComponent(q);
         }
       }
     });
 
-    // click outside closes suggestions
-    $(document).on("click", function (e) {
+    //click outside to close
+    $(document).on("click.searchui", function (e) {
       if ($(e.target).closest(".search-wrapper").length === 0) {
         box.hide();
       }

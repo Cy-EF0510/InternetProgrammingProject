@@ -1,16 +1,17 @@
 var SearchModel = {
 
-  // cached products (so we don't fetch every keypress)
+//settings
+  PRODUCTS_URL: "./Data/products.json",
+
+  //cached products
   products: null,
 
-  /* ===================== HELPERS ===================== */
-
+  //helpers
   normalize: function (text) {
     return String(text || "").toLowerCase().trim();
   },
 
-  /* ===================== LOAD PRODUCTS ===================== */
-
+  //load all products from json
   loadAllProducts: function () {
 
     var self = this;
@@ -20,8 +21,8 @@ var SearchModel = {
       return $.Deferred().resolve(self.products).promise();
     }
 
-    // load once
-    return $.getJSON("./Data/products.json")
+    // load from json
+    return $.getJSON(self.PRODUCTS_URL)
       .done(function (data) {
 
         var list = [];
@@ -43,20 +44,17 @@ var SearchModel = {
       });
   },
 
-  /* ===================== SEARCH ===================== */
-
+   //match single product
   productMatches: function (product, query) {
 
     var q = this.normalize(query);
-    if (q === "") {
-      return false;
-    }
+    if (q === "") return false;
 
-    var name = this.normalize(product.name);
-    var desc = this.normalize(product.description);
-    var cat  = this.normalize(product.category);
+    // safe strings (no crashes if missing)
+    var name = this.normalize(product && product.name);
+    var desc = this.normalize(product && product.description);
+    var cat  = this.normalize(product && product.category);
 
-    // match if query appears anywhere
     if (name.indexOf(q) !== -1) return true;
     if (desc.indexOf(q) !== -1) return true;
     if (cat.indexOf(q) !== -1) return true;
@@ -64,6 +62,7 @@ var SearchModel = {
     return false;
   },
 
+   //find all matching products
   findMatches: function (query) {
 
     var self = this;
@@ -84,22 +83,20 @@ var SearchModel = {
     });
   },
 
+  //get limited number of suggestions
   getSuggestions: function (query, limit) {
-
-    var self = this;
 
     limit = Number(limit);
     if (!Number.isFinite(limit) || limit <= 0) {
       limit = 6;
     }
 
-    return self.findMatches(query).then(function (matches) {
+    return this.findMatches(query).then(function (matches) {
       return matches.slice(0, limit);
     });
   },
 
-  /* ===================== OPTIONAL ===================== */
-
+   //clear cached products
   clearCache: function () {
     this.products = null;
   }

@@ -1,4 +1,4 @@
-// ===== GLOBAL STATE (junior style) =====
+//globals
 
 var allProducts = [];
 var filteredProducts = [];
@@ -17,7 +17,7 @@ var activeMinPrice = 0;
 var activeMaxPrice = 0;
 
 
-// ===== PAGE START =====
+//page ready
 
 $(document).ready(function () {
 
@@ -43,7 +43,7 @@ $(document).ready(function () {
 });
 
 
-// ===== EVENTS =====
+//events
 
 function bindEvents() {
 
@@ -80,7 +80,7 @@ function bindEvents() {
 }
 
 
-// ===== LOAD PRODUCTS (BY CATEGORY) =====
+//loads products by category
 
 function loadProducts() {
 
@@ -108,8 +108,8 @@ function loadProducts() {
 }
 
 
-// ===== URL HELPERS =====
-
+//url helpers
+//get caterogy fromurl
 function getCategoryFromURL() {
 
   var params = new URLSearchParams(window.location.search);
@@ -118,6 +118,7 @@ function getCategoryFromURL() {
   return value;
 }
 
+//update category in url
 function updateCategoryInURL(category) {
 
   var params = new URLSearchParams(window.location.search);
@@ -139,8 +140,8 @@ function updateCategoryInURL(category) {
 }
 
 
-// ===== CATEGORIES DROPDOWN =====
-
+//categories dropdown loader
+//loads categories from xml into select
 function loadCategoriesIntoSelect() {
 
   return $.ajax({
@@ -176,7 +177,7 @@ function loadCategoriesIntoSelect() {
 }
 
 
-// ===== RENDER + INFINITE SCROLL =====
+//infinite scroll appender
 
 function appendNextPage() {
 
@@ -225,18 +226,17 @@ function appendNextPage() {
 }
 
 
-// ===== FILTERS + SLIDER =====
+//filters and sorting
 
 function recomputeFilteredProducts() {
 
-  // figure out slider max (fallback to activeMaxPrice)
+  
   var sliderMax = activeMaxPrice;
 
   if ($("#priceRangeSlider").length) {
     sliderMax = $("#priceRangeSlider").slider("option", "max");
   }
 
-  // decide if filters are active
   filtersActive = false;
 
   if (activeSort !== "") {
@@ -255,7 +255,6 @@ function recomputeFilteredProducts() {
   var results = [];
 
   for (var i = 0; i < allProducts.length; i++) {
-
     var p = allProducts[i];
     var price = Number(p.price);
 
@@ -288,6 +287,7 @@ function recomputeFilteredProducts() {
   }
 }
 
+//applies filters and resets paging and UI
 function applyFiltersAndReset() {
 
   recomputeFilteredProducts();
@@ -304,6 +304,7 @@ function applyFiltersAndReset() {
   appendNextPage();
 }
 
+//price range slider initializer
 function initPriceRangeSlider() {
 
   // find max price
@@ -321,7 +322,6 @@ function initPriceRangeSlider() {
   activeMinPrice = 0;
   activeMaxPrice = maxPrice;
 
-  // destroy old slider if needed
   if ($("#priceRangeSlider").hasClass("ui-slider")) {
     $("#priceRangeSlider").slider("destroy");
   }
@@ -332,14 +332,11 @@ function initPriceRangeSlider() {
     min: 0,
     max: maxPrice,
     values: [activeMinPrice, activeMaxPrice],
-
     slide: function (event, ui) {
       activeMinPrice = ui.values[0];
       activeMaxPrice = ui.values[1];
-
       $("#priceRangeLabel").text("$" + activeMinPrice + " – $" + activeMaxPrice);
     },
-
     change: function () {
       applyFiltersAndReset();
     }
@@ -349,7 +346,7 @@ function initPriceRangeSlider() {
 }
 
 
-// ===== BACK / FORWARD BUTTONS =====
+//back and forward buttons 
 
 window.addEventListener("popstate", function () {
 

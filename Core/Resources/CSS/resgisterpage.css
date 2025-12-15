@@ -7,7 +7,7 @@ body {
     position: relative;
 }
 
-/* Big moving starfield background */
+/* big moving starfield background */
 body::before {
     content: "";
     position: fixed;
@@ -33,7 +33,7 @@ body::before {
 
 
 
-/* Center main vertically + horizontally */
+/* center main vertically + horizontally */
 main {
     min-height: 100vh;
     display: flex;
@@ -42,7 +42,7 @@ main {
     align-items: center;
 }
 
-/* Circular logo */
+/* circular logo */
 .site-logo {
     width: 160px;
     height: 160px;
@@ -54,7 +54,7 @@ main {
     box-shadow: 0 0 15px rgba(255, 232, 31, 0.5);
 }
 
-/* Form card */
+/* form card */
 form {
     background: rgba(10, 10, 10, 0.9);
     width: 350px;
@@ -81,7 +81,7 @@ legend {
     letter-spacing: 1px;
 }
 
-/* Labels + inputs */
+/* labels + inputs */
 label {
     display: block;
     margin-bottom: 5px;

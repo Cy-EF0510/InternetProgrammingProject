@@ -1,3 +1,5 @@
-function startup() {
-    document.getElementById("r2d2Audio").play();
-}
+$(document).ready(function() {
+    HeaderModel.createHeader();
+    FooterModel.buildFooter();
+
+});

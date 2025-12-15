@@ -2,23 +2,21 @@ var totalSlides = 0;
 
 $(document).ready(function () {
 
-  // header + footer
+  //header + footer
   HeaderModel.createHeader();
-//  SearchUI.init();          // ← THIS LINE
-
   FooterModel.buildFooter();
 
-  // category nav
+  //category nav
   loadCategoryNav();
 
-  // hero slides count
+  //hero slides count
   totalSlides = $(".mySlides").length;
 
-  // start hero carousel
+  //start hero carousel
   updateCarousel();
   startAutoSlide();
 
-  // pause auto slide on hover
+  //pause auto slide on hover
   $(".hero-carousel").hover(
     function () {
       stopAutoSlide();
@@ -33,11 +31,82 @@ $(document).ready(function () {
 
   // load products for homepage rows
   loadHomeRows();
+
 });
 
 
-/* =========================  HOMEPAGE ROWS  ========================= */
+//hero carousel functions
 
+var slideIndex = 1;
+var autoSlideInterval = null;
+
+//next/previous controls
+function plusSlides(n) {
+  stopAutoSlide();
+
+  slideIndex = slideIndex + n;
+  wrapIndex();
+  updateCarousel();
+
+  startAutoSlide();
+}
+
+//current slide control
+function currentSlide(n) {
+  stopAutoSlide();
+
+  slideIndex = n;
+  wrapIndex();
+  updateCarousel();
+
+  startAutoSlide();
+}
+
+//auto slide
+function startAutoSlide() {
+  stopAutoSlide();
+
+  autoSlideInterval = setInterval(function () {
+    slideIndex = slideIndex + 1;
+    wrapIndex();
+    updateCarousel();
+  }, 5000);
+}
+
+
+//stop auto slide
+function stopAutoSlide() {
+  if (autoSlideInterval) {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = null;
+  }
+}
+
+//wrap slide index
+function wrapIndex() {
+  if (slideIndex > totalSlides) {
+    slideIndex = 1;
+  }
+
+  if (slideIndex < 1) {
+    slideIndex = totalSlides;
+  }
+}
+
+//update carousel display
+function updateCarousel() {
+  var offset = -(slideIndex - 1) * 100;
+
+  $(".hero-track").css("transform", "translateX(" + offset + "%)");
+
+  $(".dot").removeClass("active");
+  $(".dot").eq(slideIndex - 1).addClass("active");
+}
+
+
+//home page product rows
+
+//loasd products for home page rows
 function loadHomeRows() {
   ProductModel.getAllProducts()
     .done(function (products) {
@@ -46,11 +115,11 @@ function loadHomeRows() {
       var homeKitchen = getCategoryProducts(products, "Home & Kitchen", 12);
       renderRow(homeKitchen, "homeRow");
 
-      // Electronics
+      //Electronics
       var electronics = getCategoryProducts(products, "Electronics", 12);
       renderRow(electronics, "electronicsRow");
 
-      // Toys & Games
+      //Toys & Games
       var toys = getCategoryProducts(products, "Toys & Games", 12);
       renderRow(toys, "toysRow");
 
@@ -61,6 +130,7 @@ function loadHomeRows() {
     });
 }
 
+//get products by category 
 function getCategoryProducts(products, categoryName, limit) {
   var result = [];
   var count = 0;
@@ -80,70 +150,11 @@ function getCategoryProducts(products, categoryName, limit) {
 }
 
 
-/* ========================= HERO CAROUSEL  ========================= */
-
-var slideIndex = 1;
-var autoSlideInterval = null;
-
-function plusSlides(n) {
-  stopAutoSlide();
-
-  slideIndex = slideIndex + n;
-  wrapIndex();
-  updateCarousel();
-
-  startAutoSlide();
-}
-
-function currentSlide(n) {
-  stopAutoSlide();
-
-  slideIndex = n;
-  wrapIndex();
-  updateCarousel();
-
-  startAutoSlide();
-}
-
-function startAutoSlide() {
-  stopAutoSlide();
-
-  autoSlideInterval = setInterval(function () {
-    slideIndex = slideIndex + 1;
-    wrapIndex();
-    updateCarousel();
-  }, 5000);
-}
-
-function stopAutoSlide() {
-  if (autoSlideInterval) {
-    clearInterval(autoSlideInterval);
-    autoSlideInterval = null;
-  }
-}
-
-function wrapIndex() {
-  if (slideIndex > totalSlides) {
-    slideIndex = 1;
-  }
-
-  if (slideIndex < 1) {
-    slideIndex = totalSlides;
-  }
-}
-
-function updateCarousel() {
-  var offset = -(slideIndex - 1) * 100;
-
-  $(".hero-track").css("transform", "translateX(" + offset + "%)");
-
-  $(".dot").removeClass("active");
-  $(".dot").eq(slideIndex - 1).addClass("active");
-}
 
 
-/* =========================  PRODUCT ROWS  ========================= */
+//product row rendering and arrow controls
 
+//render products in a row
 function renderRow(products, containerId) {
   var track = $("#" + containerId);
   track.empty();
@@ -153,6 +164,7 @@ function renderRow(products, containerId) {
   }
 }
 
+//initialize row arrow button functionality
 function initRowArrows() {
   $(".product-row").each(function () {
 
@@ -190,9 +202,7 @@ function initRowArrows() {
 }
 
 
-/* =========================
-   CATEGORY NAV BAR
-========================= */
+//category navigation 
 
 function loadCategoryNav() {
   $.ajax({

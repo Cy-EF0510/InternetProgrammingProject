@@ -1,10 +1,4 @@
-
-
-
-/* =========================
-   ABOUT SECTION
-========================= */
-
+/* about page */
 .about-section{
   max-width: 1000px;
   margin: 80px auto 40px;
@@ -25,7 +19,7 @@
   text-align: center;
 }
 
-/* Title */
+/* title */
 .about-section h1{
   margin-bottom: 22px;
   font-size: 2.6rem;
@@ -34,7 +28,7 @@
   text-shadow: 0 0 22px rgba(255,232,31,.45);
 }
 
-/* Paragraphs */
+/* paragraphs */
 .about-section p{
   max-width: 720px;
   margin: 0 auto 18px;
@@ -43,26 +37,7 @@
   opacity: .9;
 }
 
-/* Mobile spacing */
-@media (max-width: 700px){
-  .about-section{
-    padding: 36px 24px;
-  }
-
-  .about-section h1{
-    font-size: 2.1rem;
-  }
-}
-
-
-
-
-
-
-
-
-
-/* Section */
+/* section */
 .team{
   max-width: 1200px;
   margin: 0 auto;
@@ -83,7 +58,7 @@
   gap: 28px;
 }
 
-/* Card */
+/* card */
 .team-card{
   position: relative;
   padding: 30px;
@@ -120,7 +95,7 @@
     inset 0 0 80px rgba(0,180,255,.14);
 }
 
-/* Glow overlay */
+/* glow overlay */
 .team-card::before{
   content:"";
   position:absolute;
@@ -135,7 +110,7 @@
 }
 
 
-/* Avatar */
+/* avatar */
 .team-avatar{
   width:96px;
   height:96px;
@@ -149,7 +124,7 @@
     0 0 45px rgba(0,180,255,.25);
 }
 
-/* Text */
+/* text */
 .team-card h3{
   margin: 0;
   font-size: 26px;
@@ -170,7 +145,7 @@
   opacity: .85;
 }
 
-/* Button */
+/* button */
 .team-btn{
   margin-top:auto;
   padding:14px;
@@ -189,7 +164,7 @@
   transform: translateY(-1px);
 }
 
-/* Responsive */
+/* responsive */
 @media(max-width:900px){
   .team-grid{ grid-template-columns: repeat(2,1fr); }
 }

@@ -12,6 +12,7 @@ var ProductModel = {
     return this.getProducts("");
   },
 
+  //creates a product box element
   createProductBox: function (product) {
 
     // get price and make sure it's a number

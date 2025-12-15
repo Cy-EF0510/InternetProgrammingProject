@@ -21,6 +21,10 @@
         <!--Authentication -->
         <script src="./Resources/JS/Modularity/AuthModel.js"></script>
 
+        <!--Live search-->
+        <script src="./Resources/JS/Modularity/SearchModel.js"></script> 
+        <script src="./Resources/JS/Modularity/SearchUI.js"></script>
+        
         <!--header and footer-->
         <script src="Resources/JS/Modularity/HeaderModel.js"></script>
         <script src="Resources/JS/Modularity/FooterModel.js"></script>
@@ -45,45 +49,34 @@
         </div>
 
         <div class="cart-layout">
-
             <section class="cart-items-wrapper">
-                <!-- LEFT: ITEMS -->
+                <!-- left: items -->
                 <section class="cart-items" id="cart-items"></section>
-
                 <a href="ProductListingPage.html" class="continue-shopping">
                     <i class="fa fa-arrow-left"></i> Continue Shopping
                 </a>
-
             </section>
 
-
-            <!-- RIGHT: SUMMARY -->
+            <!-- right: summary -->
             <aside class="cart-summary">
-            <h3>Order Summary</h3>
-
-            <div class="summary-row">
-                <span>Subtotal</span>
-                <span id="cart-subtotal">$0.00</span>
-            </div>
-
-            <div class="summary-row">
-                <span>Tax (15%)</span>
-                <span id="cart-tax">$0.00</span>
-            </div>
-
-            <div class="summary-row total">
-                <span>Total</span>
-                <span id="cart-total">$0.00</span>
-            </div>
-
-            <button class="checkout-btn">Proceed to Checkout</button>
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (15%)</span>
+                    <span id="cart-tax">$0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
             </aside>
         </div>
     </main>
 
-
-    <!--Using jquery to make footer-->
     <div id="footer-container"></div>
-
 </body>
 </html>

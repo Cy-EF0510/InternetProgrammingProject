@@ -1,4 +1,4 @@
-/* ===================== CART PAGE ===================== */
+/* cart page */
 .cart-page {
   max-width: 1200px;
   margin: 40px auto;
@@ -22,7 +22,7 @@
   gap: 18px;
 }
 
-/* Empty */
+/* empty */
 .cart-empty {
   text-align: center;
   opacity: 0.8;
@@ -33,7 +33,7 @@
   display: none;
 }
 
-/* CART ITEM */
+/* cart item */
 .cart-item {
   display: grid;
   grid-template-columns: 90px 1fr auto auto auto;
@@ -62,7 +62,7 @@
   color: var(--rebelYellow);
 }
 
-/* QTY */
+/* quantity */
 .qty-controls {
   display: flex;
   gap: 8px;
@@ -77,13 +77,13 @@
   cursor: pointer;
 }
 
-/* REMOVE */
+/* remove */
 .remove-btn {
   color: var(--danger);
   cursor: pointer;
 }
 
-/* SUMMARY */
+/* summary */
 .cart-summary {
   background: rgba(0,0,0,0.8);
   border: 1px solid var(--line);
@@ -112,7 +112,6 @@
   font-weight: bold;
   cursor: pointer;
 }
-
 
 .continue-shopping {
   display: inline-flex;

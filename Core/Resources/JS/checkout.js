@@ -1,20 +1,20 @@
 // totals we keep for the order
 var checkoutTotals = {
-  subtotal: 0,
-  tax: 0,
-  shipping: 0,
-  total: 0
+    subtotal: 0,
+    tax: 0,
+    shipping: 0,
+    total: 0
 };
 
 var TaxRate = 0.15;
 
 var ShippingPrices = {
-  standard: 0,
-  express: 9.99
+    standard: 0,
+    express: 9.99
 };
 
 $(document).ready(function () {
-  // ===== MUST BE LOGGED IN =====
+  //must be logged in
   if (!AuthModel.requireLogin("LoginPage.html")) {
     return;
   }
@@ -23,16 +23,16 @@ $(document).ready(function () {
   HeaderModel.createHeader();
   FooterModel.buildFooter();
 
-  // cart badge
+  //cart badge
   CartManagement.updateCartBadge();
 
-  // live validation
+  //live validation
   ValidatorModel.bindLive();
 
-  // first render
+  //first render
   renderCheckoutSummary();
 
-  // submit checkout
+  //submit checkout
   $("#checkoutForm").on("submit", function (e) {
     e.preventDefault();
 
@@ -53,30 +53,30 @@ $(document).ready(function () {
 
     saveLastOrderCookie(orderData);
 
-    // fake place order
+    //fake place order
     CartManagement.clearCart();
     window.location.href = "OrderConfirmationPage.html";
   });
 
-  // delivery changes shipping
+  //delivery changes shipping
   $("input[name='delivery']").on("change", function () {
     renderCheckoutSummary();
   });
 
-  // payment changes card fields
+  //payment changes card fields
   $("input[name='payment']").on("change", function () {
     togglePaymentUI();
   });
 
-  // run once so UI is correct on load
+  //run once so UI is correct on load
   togglePaymentUI();
 });
 
 
-/* =========================
-   HELPERS
-========================= */
 
+//functions to help build order and save cookie
+
+//build order data object
 function buildOrderData() {
   var orderNumber = makeOrderNumber();
 
@@ -90,17 +90,20 @@ function buildOrderData() {
   };
 }
 
+//generate random order number
 function makeOrderNumber() {
   var num = Math.floor(100000 + Math.random() * 900000);
   return "RM-" + num;
 }
 
+//save last order in cookie
 function saveLastOrderCookie(orderData) {
   document.cookie =
     "lastOrder=" + encodeURIComponent(JSON.stringify(orderData)) +
     "; path=/;"; 
 }
 
+//toggle payment UI
 function togglePaymentUI() {
   var method = $("input[name='payment']:checked").val();
 
@@ -114,9 +117,7 @@ function togglePaymentUI() {
 }
 
 
-/* =========================
-   RENDER SUMMARY
-========================= */
+//render checkout summary
 
 function renderCheckoutSummary() {
   var cart = CartManagement.getCart();
@@ -134,7 +135,7 @@ function renderCheckoutSummary() {
 
     var line =
       "<div class='summary-item'>" +
-      item.name + " × " + item.qty +
+      item.name + " x " + item.qty +
       "<span>$" + itemTotal.toFixed(2) + "</span>" +
       "</div>";
 
@@ -151,13 +152,13 @@ function renderCheckoutSummary() {
   var tax = subtotal * TaxRate;
   var total = subtotal + tax + shipping;
 
-  // save totals
+  //save totals
   checkoutTotals.subtotal = subtotal;
   checkoutTotals.tax = tax;
   checkoutTotals.shipping = shipping;
   checkoutTotals.total = total;
 
-  // update UI
+  //update UI
   $("#co-subtotal").text("$" + subtotal.toFixed(2));
   $("#co-tax").text("$" + tax.toFixed(2));
   $("#co-shipping").text("$" + shipping.toFixed(2));

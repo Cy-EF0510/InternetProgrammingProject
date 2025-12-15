@@ -1,31 +1,34 @@
 const TaxRate = 0.15;
 
 $(document).ready(function () {
-  // ===== MUST BE LOGGED IN =====
+  // must be logged in
   if (!AuthModel.requireLogin("LoginPage.html")) {
     return;
   }
     
-    HeaderModel.createHeader();
-    FooterModel.buildFooter();
+  HeaderModel.createHeader();
+  FooterModel.buildFooter();
 
-    CartManagement.updateCartBadge();
-    renderCart();
+  CartManagement.updateCartBadge();
+  renderCart();
 
-    $(".checkout-btn").on("click", function () {
-        window.location.href = "CheckoutPage.html";
-    });
-
+  $(".checkout-btn").on("click", function () {
+      window.location.href = "CheckoutPage.html";
+  });
 });
 
-/* ===================== RENDER CART ===================== */
+//render cart
   function createCartRow(item) {
     var row = $("<div/>");
     row.addClass("cart-item");
 
-    var img = $("<img/>");
-    img.attr("src", item.image);
-    img.attr("alt", item.name);
+  var img = $("<img/>");
+  img.attr(
+    "src",
+    (item.image || "") + "?id=" + item.id
+  );
+  img.attr("alt", item.name || "");
+
 
     var name = $("<div/>");
     name.addClass("cart-name");
@@ -125,8 +128,7 @@ $(document).ready(function () {
     updateSummary(subtotal);
   }
 
-/* ===================== SUMMARY ===================== */
-
+//summary
 function updateSummary(subtotal) {
 
   var tax = subtotal * TaxRate;

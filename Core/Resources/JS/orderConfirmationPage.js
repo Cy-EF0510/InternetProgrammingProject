@@ -1,22 +1,20 @@
 $(document).ready(function () {
-  // ===== MUST BE LOGGED IN =====
+  //must be logged in to view this page
   if (!AuthModel.requireLogin("LoginPage.html")) {
     return;
   }
-  // Build header
+  //Build header
   HeaderModel.createHeader();
 
-  // Build footer
+  //Build footer
   FooterModel.buildFooter();
 
 
-  // Load footer categories
-  FooterModel.loadCategories();
 
   // Update cart badge
   CartManagement.updateCartBadge();
 
-  // Load order info
+  //load order info
   loadOrderConfirmation();
 });
 
@@ -47,8 +45,12 @@ function loadOrderConfirmation() {
 
     var img = $("<img>");
     img.addClass("item-image");
-    img.attr("src", item.image);
-    img.attr("alt", item.name);
+    img.attr(
+      "src",
+      (item.image || "") + "?id=" + item.id
+    );
+    img.attr("alt", item.name || "");
+
 
     var details = $("<div>");
     details.addClass("item-details");
@@ -79,7 +81,7 @@ function loadOrderConfirmation() {
   $("#order-total").text("$" + order.total.toFixed(2));
 }
 
-
+//gets order info from cookie
 function getOrderFromCookie() {
 
   var cookieMatch = document.cookie.match(/(^| )lastOrder=([^;]+)/);

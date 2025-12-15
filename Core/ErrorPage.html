@@ -3,29 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="Resources/JS/Modularity/HeaderModel.js"></script>
-    <link rel="stylesheet" href="Resources/CSS/ErrorPage.css">
+
+    <!--Awesome UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Star Wars-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+    <!--Css Sheet-->
+    <link rel="stylesheet" href="./Resources/CSS/Moduler/base.css">
+    <link rel="stylesheet" href="Resources/CSS/ErrorPage.css">    
+   
+    <!--Models-->
+    <!--Authentication -->
+    <script src="./Resources/JS/Modularity/AuthModel.js"></script>
+
+    <!--Live search-->
+    <script src="./Resources/JS/Modularity/SearchModel.js"></script> 
+    <script src="./Resources/JS/Modularity/SearchUI.js"></script>
+
+    <!--header and footer-->
+    <script src="./Resources/JS/Modularity/HeaderModel.js"></script>
+    <script src="./Resources/JS/Modularity/FooterModel.js"></script>
+
+    
+    <!--Cart management Models-->
+    <script src="Resources/JS/Modularity/CartManagement.js"></script>
+
     <script src="Resources/JS/errorPage.js"></script>
-    <title>Document</title>
+
+    <title>Error 404</title>
+    <link rel="website icon" type="image/png" href="./Resources/IMG/circle.png"/>    
 </head>
-<body onload="startup()">
+<body>
     <!-- HEADER -->
     <div id="header-container"></div>
-    <script>
-    $(document).ready(function() {
-        HeaderModel.createHeader();
-    });
-    </script>
-
-    <!-- R2D2 Scream -->
-     <audio src="Resources/Miscellaneous/r2d2_scream_converted.mp3" autoplay loop></audio>
+    
     <main>
+        <div class="r2-float" aria-hidden="true">
+            <i class="fa-solid fa-robot"></i>
+        </div>
+
+        <div class="error-code">404 • LOST IN HYPERSPACE</div>
         <h1>Error R2-D2</h1>
-        <p>You've ventured too far, young Padawan
-            This page has been lost to the dark side. </p>
-        <a href="/">Return to Base</a>
+        <p>You've ventured too far, young Padawan. This page has been lost to the dark side.</p>
+        <a href="./HomePage.html"><i class="fa-solid fa-angles-left"></i> Return to Base</a>
     </main>
+
+    <div id="footer-container"></div>
+
 </body>
 </html>

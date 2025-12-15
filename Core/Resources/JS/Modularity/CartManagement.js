@@ -1,20 +1,25 @@
 var CartManagement = {
 
-
+  //cookie management
+  //saves cookie, and is used to store the cart data
   setCookie: function (name, value, days) {
     if (days === undefined || days === null) {
       days = 7;
     }
 
+    //days to milliseconds
     var ms = days * 24 * 60 * 60 * 1000;
     var expiresDate = new Date(Date.now() + ms);
     var expires = expiresDate.toUTCString();
 
+    //saves cookie
     document.cookie =
       name + "=" + encodeURIComponent(value) +
       "; expires=" + expires +
       "; path=/";
   },
+
+  //reads cookie and returns value
 
   getCookie: function (name) {
     var parts = document.cookie.split("; ");
@@ -32,15 +37,20 @@ var CartManagement = {
     return null;
   },
 
+  //deletes cookie
+
   deleteCookie: function (name) {
     document.cookie =
       name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
   },
 
-
+  //cart management
+  //gets the cookie key used to store the cart
   getCartKey: function () {
     return "rogueMarketCart";
   },
+
+  //gets the cart from the cookie and converts from json to array
 
   getCart: function () {
     var raw = this.getCookie(this.getCartKey());
@@ -56,15 +66,22 @@ var CartManagement = {
     }
   },
 
+  //saves cart array to cookie as json
+
   saveCart: function (cart) {
     this.setCookie(this.getCartKey(), JSON.stringify(cart), 7);
   },
 
+
+  //clears the cart and updated the amount 
   clearCart: function () {
     this.deleteCookie(this.getCartKey());
     this.updateCartBadge();
   },
 
+
+  //cart item management
+  //adds product to cart, or updates quantity if already exists
 
   addToCart: function (product, qty) {
     if (qty === undefined || qty === null) {
@@ -74,6 +91,7 @@ var CartManagement = {
     var cart = this.getCart();
     var productId = Number(product.id);
 
+    //checks if product already exists in cart
     var existing = null;
     for (var i = 0; i < cart.length; i++) {
       if (Number(cart[i].id) === productId) {
@@ -83,8 +101,10 @@ var CartManagement = {
     }
 
     if (existing) {
+      //incraese quantity
       existing.qty = Number(existing.qty) + Number(qty);
     } else {
+      //add new product
       cart.push({
         id: productId,
         name: product.name,
@@ -98,6 +118,8 @@ var CartManagement = {
     this.updateCartBadge();
   },
 
+
+  //updates quantity of item in cart
   updateQty: function (id, qty) {
     var cart = this.getCart();
 
@@ -125,6 +147,8 @@ var CartManagement = {
     this.updateCartBadge();
   },
 
+  //removes item from cart
+
   removeItem: function (id) {
     var cart = this.getCart();
     var newCart = [];
@@ -138,6 +162,8 @@ var CartManagement = {
     this.saveCart(newCart);
     this.updateCartBadge();
   },
+
+  //gets total item count in cart
 
   getItemCount: function () {
     var cart = this.getCart();
@@ -153,6 +179,8 @@ var CartManagement = {
 
     return count;
   },
+
+  //updates cart badge display with current item count
 
   updateCartBadge: function () {
     var count = this.getItemCount();

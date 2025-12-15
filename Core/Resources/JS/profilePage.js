@@ -1,18 +1,18 @@
 $(document).ready(function () {
-  // ===== MUST BE LOGGED IN =====
+  //must be login in
   if (!AuthModel.requireLogin("LoginPage.html")) {
     return;
   }
 
-  // ===== LAYOUT =====
+  // layout
   HeaderModel.createHeader();
   FooterModel.buildFooter();
   CartManagement.updateCartBadge();
 
-  // ===== LOAD PROFILE =====
+  // load profile
   loadProfile();
 
-  // ===== EVENTS =====
+  // events
   setupAvatarPreview();
   setupSaveButton();
   setupResetButton();
@@ -115,8 +115,6 @@ function findUserByEmail(email) {
       }
     })
     .done(function (res) {
-
-      // look through users on this page
       var users = res.data;
 
       for (var i = 0; i < users.length; i++) {

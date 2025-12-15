@@ -1,12 +1,10 @@
 
-/* ==========================================
-   CHECKOUT PAGE
-========================================== */
+/*CHECKOUT PAGE*/
 
 .checkout-page{
-  max-width: 1200px;
-  margin: 40px auto 80px;
-  padding: 0 24px;
+    max-width: 1200px;
+    margin: 40px auto 80px;
+    padding: 0 24px;
 }
 
 .checkout-page h2{
@@ -23,12 +21,8 @@
   align-items: start;
 }
 
-/* LEFT (FORM) */
-
-/* =========================
-   PAYMENT METHOD
-========================= */
-
+/* left (result) */
+/*payment method*/
 .payment-options {
   margin: 12px 0 20px;
   display: flex;
@@ -52,11 +46,9 @@
   accent-color: var(--kyber);
 }
 
-
 .card-fields {
   margin-top: 16px;
 }
-
 
 .card-row {
   display: grid;
@@ -67,9 +59,7 @@
   
 }
 
-
-
-/* PayPal info box */
+/* paypal info box */
 .paypal-message {
   margin-top: 16px;
   padding: 14px;
@@ -80,11 +70,10 @@
   margin-bottom: 20px;
 }
 
-/* Utility */
+/* utility */
 .hidden {
   display: none;
 }
-
 
 .checkout-form {
   background: linear-gradient(180deg, #05060a, #0b0d14);
@@ -132,9 +121,7 @@
   box-shadow: 0 0 0 2px rgba(255,232,31,0.15);
 }
 
-/* =========================
-   DELIVERY OPTIONS
-========================= */
+/* delivery options */
 
 h4 {
   color: var(--kyber);
@@ -157,7 +144,7 @@ h4 {
   color: var(--text);
 }
 
-/* Reset radio weird spacing */
+/* reset radio weird spacing */
 .delivery-option input[type="radio"] {
   margin: 0;
   accent-color: var(--kyber);
@@ -165,7 +152,7 @@ h4 {
   height: 16px;
 }
 
-/* Inner dot */
+/* inner dot */
 .delivery-option input[type="radio"]::before {
   content: "";
   width: 8px;
@@ -176,18 +163,18 @@ h4 {
   background: var(--rebelYellow);
 }
 
-/* Checked state */
+/* checked state */
 .delivery-option input[type="radio"]:checked::before {
   transform: scale(1);
 }
 
-/* Hover glow */
+/* hover glow */
 .delivery-option:hover input[type="radio"] {
   box-shadow: 0 0 8px rgba(0, 180, 255, 0.7);
 }
 
 
-/* BUTTON */
+/* button */
 .place-order-btn{
   margin-top: 18px;
   width: 100%;
@@ -206,7 +193,7 @@ h4 {
   filter: brightness(1.1);
 }
 
-/* RIGHT (SUMMARY) */
+/* right side (summary) */
 .checkout-summary{
   background: var(--panel);
   border: 1px solid var(--line);
@@ -251,7 +238,6 @@ h4 {
   color: var(--rebelYellow);
 }
 
-
 .input-error {
   border-color: #ff4d4d !important;
 }
@@ -261,14 +247,4 @@ h4 {
   font-size: 0.85rem;
   margin-top: 4px;
   display: block;
-}
-
-
-
-
-/* MOBILE */
-@media (max-width: 900px){
-  .checkout-layout{
-    grid-template-columns: 1fr;
-  }
 }

@@ -27,8 +27,12 @@ body::before {
 }
 
 @keyframes moveStars {
-    from { transform: translateY(0); }
-    to   { transform: translateY(-400px); }
+    from{ 
+        transform: translateY(0); 
+    }
+    to{ 
+        transform: translateY(-400px); 
+    }
 }
 
 

@@ -166,18 +166,14 @@
   box-shadow: 0 0 14px rgba(255,232,31,.18);
 }
 
-/* ===============================
-   QTY INPUT FIX
-================================ */
-
-/* Remove number input arrows (Chrome, Edge, Safari) */
+/* remove number input arrows (Chrome, Edge, Safari) */
 #qty-input::-webkit-outer-spin-button,
 #qty-input::-webkit-inner-spin-button{
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Remove arrows (Firefox) */
+/* remove arrows (Firefox) */
 #qty-input{
   -moz-appearance: textfield;
   appearance: textfield;
@@ -192,8 +188,6 @@
   border-color: rgba(255,232,31,.55);
   box-shadow: 0 0 14px rgba(255,232,31,.15);
 }
-
-
 
 #qty-input{
   width: 84px;
@@ -314,16 +308,13 @@
   color: #bfefff;
 }
 
-/* reviews *//* ===============================
-   REVIEWS
-================================ */
-
+/* reviews */
 .reviews-wrap{
   display: grid;
   gap: 14px;
 }
 
-/* Card */
+/* card */
 .review-card{
   background: rgba(0,0,0,.28);
   border: 1px solid rgba(0,180,255,.25);
@@ -338,7 +329,7 @@
   box-shadow: 0 0 18px rgba(255,232,31,.10);
 }
 
-/* Top row */
+/* top row */
 .review-top{
   display: flex;
   justify-content: space-between;
@@ -346,7 +337,7 @@
   align-items: baseline;
 }
 
-/* User + title */
+/* user + title */
 .review-name{
   font-weight: 800;
   color: rgba(245,245,245,.95);
@@ -360,7 +351,7 @@
   letter-spacing: .04em;
 }
 
-/* Stars */
+/* stars */
 .review-stars{
   color: var(--rebelYellow);
   letter-spacing: 2px;
@@ -368,7 +359,7 @@
   text-shadow: 0 0 10px rgba(255,232,31,.35);
 }
 
-/* Comment */
+/* comment */
 .review-text{
   margin-top: 10px;
   color: rgba(245,245,245,.82);
@@ -376,7 +367,7 @@
   letter-spacing: .05em;
 }
 
-/* Empty state */
+/* empty state */
 .review-empty{
   color: rgba(245,245,245,.65);
   font-style: italic;

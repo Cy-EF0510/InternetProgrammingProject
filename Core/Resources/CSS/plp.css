@@ -3,16 +3,17 @@
   --asideW: 280px;
   --headerH: 76px;
 }
-/* ==== GLOBAL PAGE STYLES ==== */
 
-* { box-sizing: border-box; }
+*{ 
+  box-sizing: border-box; 
+}
 
-/* Headings + nav font */
+/* headings + nav font */
 h1, h2, h3, nav a {
   letter-spacing: 0.08em;
 }
 
-/* ==== LAYOUT: ASIDE + MAIN ==== */
+/*layout: aside and main*/
 .plp-aside{
   position:fixed;
   top:var(--headerH);
@@ -103,9 +104,7 @@ h1, h2, h3, nav a {
   box-shadow:0 0 0 3px rgba(255,255,255,.15), 0 0 14px rgba(255,255,255,.55);
 }
 
-/* ============================
-   MAIN 
-============================ */
+/* main */
 main{
   margin-left: var(--asideW);
   margin-right: auto;
@@ -116,9 +115,7 @@ main{
 }
 
 
-/* ============================
-   PRODUCTS GRID
-============================ */
+/* product grid */
 .product-row{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -170,7 +167,9 @@ main{
   justify-content:center;
 }
 
-.product-img{ width:100%; height:100%; object-fit:contain; }
+.product-img{ 
+  width:100%; height:100%; object-fit:contain; 
+}
 
 .price-row{
   margin-top:10px;
@@ -203,7 +202,7 @@ main{
   margin-top:4px;
 }
 
-/* ==== FOOTER ==== */
+/* footer */
 #footer-slot footer, footer{
   margin-left: var(--asideW);
   width: calc(100% - var(--asideW));
