@@ -1,86 +1,121 @@
-
-let totalSlides = 0;
+var totalSlides = 0;
 
 $(document).ready(function () {
-    HeaderModel.createHeader();
-    
-    $("#footer-slot").append(FooterModel.createFooter());
-    FooterModel.loadCategories();
-    loadCategoryNav();
 
-    
-    totalSlides = $(".mySlides").length;
+  // header + footer
+  HeaderModel.createHeader();
+  $("#footer-slot").append(FooterModel.createFooter());
+  FooterModel.loadCategories();
 
-    updateCarousel();
-    startAutoSlide();
+  // category nav
+  loadCategoryNav();
 
-    $(".hero-carousel").hover(
-        () => stopAutoSlide(),
-        () => startAutoSlide()
-    );
+  // hero slides count
+  totalSlides = $(".mySlides").length;
 
-    
-    CartManagement.updateCartBadge();
+  // start hero carousel
+  updateCarousel();
+  startAutoSlide();
+
+  // pause auto slide on hover
+  $(".hero-carousel").hover(
+    function () {
+      stopAutoSlide();
+    },
+    function () {
+      startAutoSlide();
+    }
+  );
+
+  // cart badge
+  CartManagement.updateCartBadge();
+
+  // load products for homepage rows
+  loadHomeRows();
+});
 
 
-    // Load products and render featured products
+/* =========================
+   HOMEPAGE ROWS
+========================= */
 
+function loadHomeRows() {
   ProductModel.getAllProducts()
     .done(function (products) {
 
-      const homeKitchen = products
-        .filter(p => p.category === "Home & Kitchen")
-        .slice(0, 12);
+      // Home & Kitchen
+      var homeKitchen = getCategoryProducts(products, "Home & Kitchen", 12);
       renderRow(homeKitchen, "homeRow");
 
-      const electronics = products
-        .filter(p => p.category === "Electronics")
-        .slice(0, 12);
+      // Electronics
+      var electronics = getCategoryProducts(products, "Electronics", 12);
       renderRow(electronics, "electronicsRow");
 
-      const toys = products
-        .filter(p => p.category === "Toys & Games")
-        .slice(0, 12);
+      // Toys & Games
+      var toys = getCategoryProducts(products, "Toys & Games", 12);
       renderRow(toys, "toysRow");
 
       initRowArrows();
-
     })
     .fail(function (err) {
       console.error("Failed to load homepage products", err);
     });
-});
+}
+
+function getCategoryProducts(products, categoryName, limit) {
+  var result = [];
+  var count = 0;
+
+  for (var i = 0; i < products.length; i++) {
+    if (products[i].category === categoryName) {
+      result.push(products[i]);
+      count++;
+
+      if (count >= limit) {
+        break;
+      }
+    }
+  }
+
+  return result;
+}
 
 
-/************************************************
- * HERO CAROUSEL (W3Schools-style)
- ************************************************/
+/* =========================
+   HERO CAROUSEL
+========================= */
 
-let slideIndex = 1;
+var slideIndex = 1;
+var autoSlideInterval = null;
 
 function plusSlides(n) {
   stopAutoSlide();
-  slideIndex += n;
+
+  slideIndex = slideIndex + n;
   wrapIndex();
   updateCarousel();
+
   startAutoSlide();
 }
 
 function currentSlide(n) {
   stopAutoSlide();
+
   slideIndex = n;
   wrapIndex();
   updateCarousel();
+
   startAutoSlide();
 }
 
-let autoSlideInterval = null;
-
 function startAutoSlide() {
-  stopAutoSlide(); // prevent duplicates
-  autoSlideInterval = setInterval(() => {
-    plusSlides(1);
-  }, 5000); // 5 seconds
+  stopAutoSlide();
+
+  autoSlideInterval = setInterval(function () {
+    slideIndex = slideIndex + 1;
+    wrapIndex();
+    updateCarousel();
+  }, 5000);
 }
 
 function stopAutoSlide() {
@@ -91,101 +126,107 @@ function stopAutoSlide() {
 }
 
 function wrapIndex() {
-  if (slideIndex > totalSlides) slideIndex = 1;
-  if (slideIndex < 1) slideIndex = totalSlides;
+  if (slideIndex > totalSlides) {
+    slideIndex = 1;
+  }
+
+  if (slideIndex < 1) {
+    slideIndex = totalSlides;
+  }
 }
 
-
 function updateCarousel() {
-  const offset = -(slideIndex - 1) * 100;
+  var offset = -(slideIndex - 1) * 100;
 
-  $(".hero-track").css(
-    "transform",
-    `translateX(${offset}%)`
-  );
+  $(".hero-track").css("transform", "translateX(" + offset + "%)");
 
   $(".dot").removeClass("active");
   $(".dot").eq(slideIndex - 1).addClass("active");
 }
 
 
-
-
-/************************************************
- * FEATURED PRODUCTS (JSON + RANDOM)
- ************************************************/
-
-function getRandomProducts(products, count) {
-    const shuffled = [...products];
-
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-
-    return shuffled.slice(0, count);
-}
-
+/* =========================
+   PRODUCT ROWS
+========================= */
 
 function renderRow(products, containerId) {
-  const track = $("#" + containerId);
+  var track = $("#" + containerId);
   track.empty();
 
-  products.forEach(product => {
-    track.append(ProductModel.createProductBox(product));
-  });
+  for (var i = 0; i < products.length; i++) {
+    track.append(ProductModel.createProductBox(products[i]));
+  }
 }
-
 
 function initRowArrows() {
   $(".product-row").each(function () {
-    const $row = $(this);
-    const $track = $row.find(".row-track");
 
-    $row.find(".row-btn.left").off("click").on("click", function () {
-      const cardW = $track.find(".product-card").first().outerWidth(true) || 240;
-      $track[0].scrollBy({ left: -(cardW * 3), behavior: "smooth" });
+    var row = $(this);
+    var track = row.find(".row-track");
+
+    row.find(".row-btn.left").off("click").on("click", function () {
+      var firstCard = track.find(".product-card").first();
+      var cardWidth = firstCard.outerWidth(true);
+
+      if (!cardWidth) {
+        cardWidth = 240;
+      }
+
+      track[0].scrollBy({
+        left: -(cardWidth * 3),
+        behavior: "smooth"
+      });
     });
 
-    $row.find(".row-btn.right").off("click").on("click", function () {
-      const cardW = $track.find(".product-card").first().outerWidth(true) || 240;
-      $track[0].scrollBy({ left: (cardW * 3), behavior: "smooth" });
+    row.find(".row-btn.right").off("click").on("click", function () {
+      var firstCard = track.find(".product-card").first();
+      var cardWidth = firstCard.outerWidth(true);
+
+      if (!cardWidth) {
+        cardWidth = 240;
+      }
+
+      track[0].scrollBy({
+        left: cardWidth * 3,
+        behavior: "smooth"
+      });
     });
   });
 }
 
+
+/* =========================
+   CATEGORY NAV BAR
+========================= */
 
 function loadCategoryNav() {
   $.ajax({
     url: "Data/categories.xml",
     dataType: "xml"
   })
-  .done(function (xml) {
-    const nav = $("#categoryNav");
-    nav.empty();
+    .done(function (xml) {
+      var nav = $("#categoryNav");
+      nav.empty();
 
-    // All link
-    const all = $("<a/>")
-      .attr("href", "ProductListingPage.html")
-      .text("All");
+      // All link
+      var all = $("<a/>");
+      all.attr("href", "ProductListingPage.html");
+      all.text("All");
+      nav.append(all);
 
-    nav.append(all);
+      // category links
+      $(xml).find("category > name").each(function () {
+        var name = $(this).text().trim();
+        var encoded = encodeURIComponent(name);
 
-    $(xml).find("category > name").each(function () {
-      const name = $(this).text().trim();
-      const encoded = encodeURIComponent(name);
+        var link = $("<a/>");
+        link.attr("href", "ProductListingPage.html?category=" + encoded);
+        link.text(name);
 
-      const link = $("<a/>")
-        .attr("href", "ProductListingPage.html?category=" + encoded)
-        .text(name);
-
-      nav.append(link);
+        nav.append(link);
+      });
+    })
+    .fail(function () {
+      console.error("Failed to load categories");
     });
-  })
-  .fail(function () {
-    console.error("Failed to load categories");
-  });
 }
-
-
-

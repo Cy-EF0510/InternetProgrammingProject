@@ -1,47 +1,66 @@
 var AuthModel = {
+
   TOKEN_KEY: "authToken",
 
-  /* ===================== COOKIE HELPERS  ===================== */
+  /* ===================== COOKIE HELPERS ===================== */
+
   getCookie: function (name) {
-    const cookies = document.cookie.split("; ");
-    for (let i = 0; i < cookies.length; i++) {
-      const parts = cookies[i].split("=");
-      if (parts[0] === name) {
-        return decodeURIComponent(parts[1] || "");
+    var cookies = document.cookie.split("; ");
+
+    for (var i = 0; i < cookies.length; i++) {
+      var parts = cookies[i].split("=");
+      var key = parts[0];
+      var value = parts[1];
+
+      if (key === name) {
+        return decodeURIComponent(value || "");
       }
     }
+
     return null;
   },
 
   setCookie: function (name, value, seconds) {
     seconds = Number(seconds);
-    if (!Number.isFinite(seconds) || seconds <= 0) return;
 
-    document.cookie =
-      `${name}=${encodeURIComponent(value)}; path=/; max-age=${seconds}; SameSite=Lax`;
+    if (!seconds || seconds <= 0) {
+      return;
+    }
+
+    var cookie =
+      name + "=" + encodeURIComponent(value) +
+      "; path=/; max-age=" + seconds +
+      "; SameSite=Lax";
+
+    document.cookie = cookie;
   },
 
   deleteCookie: function (name) {
-    const exp = "Thu, 01 Jan 1970 00:00:00 GMT";
-    document.cookie = `${name}=; path=/; expires=${exp}; SameSite=Lax`;
-    document.cookie = `${name}=; path=/; expires=${exp}`;
-    document.cookie = `${name}=; path=/; expires=${exp}; SameSite=Lax; Secure`;
+    var expired = "Thu, 01 Jan 1970 00:00:00 GMT";
+
+    document.cookie = name + "=; path=/; expires=" + expired;
+    document.cookie = name + "=; path=/; expires=" + expired + "; SameSite=Lax";
   },
 
   /* ===================== AUTH LOGIC ===================== */
+
   login: function (token, email, seconds) {
-    if (!token) return false;
+    if (!token) {
+      return false;
+    }
 
     seconds = Number(seconds);
-    if (!Number.isFinite(seconds) || seconds <= 0) seconds = 3600;
+    if (!seconds || seconds <= 0) {
+      seconds = 3600;
+    }
 
-    const payload = {
+    var payload = {
       token: token,
       email: (email || "").trim(),
       exp: Date.now() + seconds * 1000
     };
 
-    // clear any old cookie first
+    // remove old auth cookie first
     this.deleteCookie(this.TOKEN_KEY);
 
     this.setCookie(
@@ -56,24 +75,31 @@ var AuthModel = {
   logout: function () {
     this.deleteCookie(this.TOKEN_KEY);
     window.location.href = "HomePage.html";
-
   },
 
   getAuth: function () {
-    const raw = this.getCookie(this.TOKEN_KEY);
-    if (!raw) return null;
+    var raw = this.getCookie(this.TOKEN_KEY);
+
+    if (!raw) {
+      return null;
+    }
 
     try {
-      const data = JSON.parse(raw);
+      var data = JSON.parse(raw);
 
-      // expired
+      // check expiration
       if (data.exp && Date.now() > data.exp) {
         this.logout();
         return null;
       }
 
-      return data.token ? data : null;
-    } catch {
+      if (data.token) {
+        return data;
+      }
+
+      return null;
+
+    } catch (e) {
       return null;
     }
   },
@@ -82,36 +108,53 @@ var AuthModel = {
     return this.getAuth() !== null;
   },
 
-  /* ===================== ROUTE GUARDS  ===================== */
-  requireLogin: function (redirectUrl = "LoginPage.html") {
+  /* ===================== ROUTE GUARDS ===================== */
+
+  requireLogin: function (redirectUrl) {
+    if (!redirectUrl) {
+      redirectUrl = "LoginPage.html";
+    }
+
     if (!this.isLoggedIn()) {
-      const next = encodeURIComponent(
-        window.location.pathname + window.location.search
+      var next =
+        encodeURIComponent(
+          window.location.pathname + window.location.search
+        );
+
+      window.location.replace(
+        redirectUrl + "?next=" + next
       );
-      window.location.replace(`${redirectUrl}?next=${next}`);
+
       return false;
     }
+
     return true;
   },
 
-  redirectAfterLogin: function (defaultUrl = "HomePage.html") {
-    const params = new URLSearchParams(window.location.search);
-    const next = params.get("next");
+  redirectAfterLogin: function (defaultUrl) {
+    if (!defaultUrl) {
+      defaultUrl = "HomePage.html";
+    }
 
-    // Allow only internal relative paths
-    if (next && next.startsWith("/")) {
+    var params = new URLSearchParams(window.location.search);
+    var next = params.get("next");
+
+    if (next && next.indexOf("/") === 0) {
       window.location.replace(next);
     } else {
       window.location.replace(defaultUrl);
     }
   },
 
-  forwardNextParam: function (linkSelector, targetPage){
-    const params = new URLSearchParams(window.location.search);
-    const next = params.get("next");
+  forwardNextParam: function (linkSelector, targetPage) {
+    var params = new URLSearchParams(window.location.search);
+    var next = params.get("next");
 
     if (next) {
-      $(linkSelector).attr("href",`${targetPage}?next=${encodeURIComponent(next)}`);
+      $(linkSelector).attr(
+        "href",
+        targetPage + "?next=" + encodeURIComponent(next)
+      );
     }
   }
 };

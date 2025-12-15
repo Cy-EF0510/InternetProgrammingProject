@@ -1,69 +1,85 @@
 $(document).ready(function () {
 
-  // header / footer / cart badge
+  // Header / footer / cart badge
   HeaderModel.createHeader();
-  $("#footer-slot").html(FooterModel.createFooter());
+
+  var footerHtml = FooterModel.createFooter();
+  $("#footer-slot").html(footerHtml);
+
   FooterModel.loadCategories();
   CartManagement.updateCartBadge();
 
-  // get id from url
-  var id = getParam("id");
+  // Get id from URL
+  var productId = getParam("id");
 
-  if (id == null || id === "") {
+  // Validate id
+  if (productId === null || productId === "") {
     $("#pdp-status").text("Missing product id in URL.");
     $("#pdp").addClass("hidden");
     return;
   }
 
-  // setup buttons
+  // Setup qty buttons
   setupQtyControls();
 
-  // load product
-  loadProductById(id);
+  // Load product data
+  loadProductById(productId);
 });
+
 
 function getParam(name) {
   var params = new URLSearchParams(window.location.search);
-  return params.get(name);
+  var value = params.get(name);
+  return value;
 }
 
+
 function loadProductById(id) {
-  $("#pdp-status").removeClass("hidden").text("Loading...");
+
+  $("#pdp-status").removeClass("hidden");
+  $("#pdp-status").text("Loading...");
   $("#pdp").addClass("hidden");
 
   $.getJSON("./Data/products.json")
     .done(function (data) {
 
-      // data might be array or {products:[]}
+      // products can be an array OR { products: [] }
       var products = [];
+
       if (Array.isArray(data)) {
         products = data;
       } else if (data && Array.isArray(data.products)) {
         products = data.products;
       }
 
-      var product = null;
+      // Find product by id
+      var foundProduct = null;
+
       for (var i = 0; i < products.length; i++) {
-        if (String(products[i].id) === String(id)) {
-          product = products[i];
+        var p = products[i];
+
+        if (String(p.id) === String(id)) {
+          foundProduct = p;
           break;
         }
       }
 
-      if (!product) {
+      // Not found
+      if (foundProduct === null) {
         $("#pdp-status").text("Product not found.");
         $("#pdp").addClass("hidden");
         return;
       }
 
-      renderPdp(product);
+      // Render main product UI
+      renderPdp(foundProduct);
 
-      // extra sections
-      renderRelatedProducts(product, products);
-      renderReviews(product);
-      setupAddToCart(product);
+      // Extra sections
+      renderRelatedProducts(foundProduct, products);
+      renderReviews(foundProduct);
+      setupAddToCart(foundProduct);
 
-      // show page
+      // Show page
       $("#pdp-status").addClass("hidden");
       $("#pdp").removeClass("hidden");
     })
@@ -73,156 +89,238 @@ function loadProductById(id) {
     });
 }
 
-function renderPdp(product) {
-  var price = Number(product.price);
-  var sku = product.sku ? product.sku : ("SKU-" + product.id);
 
+function renderPdp(product) {
+
+  var rawPrice = product.price;
+  var priceNumber = Number(rawPrice);
+
+  var skuText = "";
+  if (product.sku) {
+    skuText = product.sku;
+  } else {
+    skuText = "SKU-" + product.id;
+  }
+
+  // Determine stock
   var inStock = true;
+
   if (product.availability !== undefined) {
-    inStock = !!product.availability;
+    inStock = product.availability ? true : false;
   } else if (product.stock !== undefined) {
     inStock = Number(product.stock) > 0;
   }
 
-  $("#pdp-title").text(product.name || product.title || "Untitled Product");
-  $("#pdp-desc").text(product.description || "No description provided.");
+  // Title + description
+  var title = product.name || product.title || "Untitled Product";
+  $("#pdp-title").text(title);
 
-  if (!isNaN(price)) {
-    $("#pdp-price").text("$" + price.toFixed(2));
+  var desc = product.description || "No description provided.";
+  $("#pdp-desc").text(desc);
+
+  // Price
+  if (!isNaN(priceNumber)) {
+    $("#pdp-price").text("$" + priceNumber.toFixed(2));
   } else {
     $("#pdp-price").text("");
   }
 
-  $("#pdp-sku").text(sku);
+  // SKU
+  $("#pdp-sku").text(skuText);
 
+  // Image
   $("#pdp-img").attr("src", product.image || "");
-  $("#pdp-img").attr("alt", product.name || product.title || "Product image");
+  $("#pdp-img").attr("alt", title);
 
+  // Availability badge
   $("#pdp-availability").text(inStock ? "In Stock" : "Out of Stock");
   $("#pdp-availability").toggleClass("badge-ok", inStock);
   $("#pdp-availability").toggleClass("badge-bad", !inStock);
 
+  // Disable button if not in stock
   $("#add-to-cart").prop("disabled", !inStock);
 }
 
+
 function setupQtyControls() {
+
   $("#qty-minus").on("click", function () {
-    var v = Number($("#qty-input").val());
-    v = v - 1;
-    v = clampQty(v);
-    $("#qty-input").val(v);
+    var current = Number($("#qty-input").val());
+    var next = current - 1;
+    next = clampQty(next);
+    $("#qty-input").val(next);
   });
 
   $("#qty-plus").on("click", function () {
-    var v = Number($("#qty-input").val());
-    v = v + 1;
-    v = clampQty(v);
-    $("#qty-input").val(v);
+    var current = Number($("#qty-input").val());
+    var next = current + 1;
+    next = clampQty(next);
+    $("#qty-input").val(next);
   });
 
   $("#qty-input").on("input", function () {
-    var v = Number($("#qty-input").val());
-    $("#qty-input").val(clampQty(v));
+    var current = Number($("#qty-input").val());
+    var fixed = clampQty(current);
+    $("#qty-input").val(fixed);
   });
 }
 
+
 function clampQty(n) {
-  if (!Number.isFinite(n) || n < 1) return 1;
+  if (!Number.isFinite(n)) {
+    return 1;
+  }
+  if (n < 1) {
+    return 1;
+  }
   return Math.floor(n);
 }
 
+
 function setupAddToCart(product) {
-  $("#add-to-cart").off("click").on("click", function () {
-    var qty = clampQty(Number($("#qty-input").val()));
+
+  // Remove old click handler then add new
+  $("#add-to-cart").off("click");
+
+  $("#add-to-cart").on("click", function () {
+
+    var qtyInput = Number($("#qty-input").val());
+    var qty = clampQty(qtyInput);
 
     CartManagement.addToCart(product, qty);
 
     $("#cart-msg").text("Added " + qty + " to cart.");
+
     setTimeout(function () {
       $("#cart-msg").text("");
     }, 1500);
   });
 }
 
+
 /* ---------------- RELATED PRODUCTS ---------------- */
+
 var PDP_PAGE = "ProductDetailPage.html";
 
 function renderRelatedProducts(current, allProducts) {
+
   var currentId = String(current.id);
-  var currentCat = (current.category || "").toString().toLowerCase();
+
+  var currentCategory = "";
+  if (current.category) {
+    currentCategory = String(current.category).toLowerCase();
+  }
 
   var related = [];
 
-  // same category first
+  // Pick same-category products first
   for (var i = 0; i < allProducts.length; i++) {
-    var p = allProducts[i];
-    if (String(p.id) === currentId) continue;
 
-    var cat = (p.category || "").toString().toLowerCase();
-    if (currentCat && cat === currentCat) {
+    var p = allProducts[i];
+
+    if (String(p.id) === currentId) {
+      continue;
+    }
+
+    var cat = "";
+    if (p.category) {
+      cat = String(p.category).toLowerCase();
+    }
+
+    if (currentCategory !== "" && cat === currentCategory) {
       related.push(p);
     }
   }
 
-  // fallback random if not enough
+  // If not enough, fallback to random other items
   if (related.length < 4) {
+
     var fallback = [];
+
     for (var j = 0; j < allProducts.length; j++) {
-      if (String(allProducts[j].id) !== currentId) fallback.push(allProducts[j]);
+      if (String(allProducts[j].id) !== currentId) {
+        fallback.push(allProducts[j]);
+      }
     }
+
     related = shuffle(fallback);
   } else {
     related = shuffle(related);
   }
 
+  // Limit cards
   related = related.slice(0, 6);
 
   var grid = $("#related-grid");
   grid.empty();
 
   for (var k = 0; k < related.length; k++) {
+
     var item = related[k];
-    var price = Number(item.price);
 
-    var card = $("<div/>").addClass("rel-card").css("cursor", "pointer");
+    var itemPriceNum = Number(item.price);
 
+    var card = $("<div>");
+    card.addClass("rel-card");
+    card.css("cursor", "pointer");
+
+    // Use a function wrapper so each card keeps its own id
     card.on("click", (function (pid) {
       return function () {
         window.location.href = PDP_PAGE + "?id=" + pid;
       };
     })(item.id));
 
-    var img = $("<img/>").addClass("rel-img").attr({
-      src: item.image || "",
-      alt: item.name || item.title || ""
-    });
+    var img = $("<img>");
+    img.addClass("rel-img");
+    img.attr("src", item.image || "");
+    img.attr("alt", item.name || item.title || "");
 
-    var name = $("<div/>").addClass("rel-name").text(item.name || item.title || "Product");
-    var price = $("<div/>").addClass("rel-price");
-    price.text(isNaN(price) ? "" : ("$" + price.toFixed(2)));
+    var nameDiv = $("<div>");
+    nameDiv.addClass("rel-name");
+    nameDiv.text(item.name || item.title || "Product");
 
-    card.append(img, name, price);
+    var priceDiv = $("<div>");
+    priceDiv.addClass("rel-price");
+
+    if (!isNaN(itemPriceNum)) {
+      priceDiv.text("$" + itemPriceNum.toFixed(2));
+    } else {
+      priceDiv.text("");
+    }
+
+    card.append(img);
+    card.append(nameDiv);
+    card.append(priceDiv);
+
     grid.append(card);
   }
 }
 
+
 function shuffle(arr) {
-  var a = arr.slice();
-  for (var i = a.length - 1; i > 0; i--) {
+  var copy = arr.slice();
+
+  for (var i = copy.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
-    var tmp = a[i];
-    a[i] = a[j];
-    a[j] = tmp;
+    var temp = copy[i];
+    copy[i] = copy[j];
+    copy[j] = temp;
   }
-  return a;
+
+  return copy;
 }
 
+
 /* ---------------- REVIEWS (mock) ---------------- */
+
 function renderReviews(product) {
+
   var productId = String(product.id);
 
   $.getJSON("./Data/reviews.json")
     .done(function (data) {
+
       var entry = null;
 
       for (var i = 0; i < data.length; i++) {
@@ -233,7 +331,9 @@ function renderReviews(product) {
       }
 
       var reviews = [];
-      if (entry && entry.reviews) reviews = entry.reviews;
+      if (entry && entry.reviews) {
+        reviews = entry.reviews;
+      }
 
       paintReviews(reviews);
     })
@@ -243,41 +343,64 @@ function renderReviews(product) {
     });
 }
 
+
 function paintReviews(reviews) {
+
   var wrap = $("#reviews-wrap");
   wrap.empty();
 
   if (!reviews || reviews.length === 0) {
-    wrap.append(
-      $("<div/>").addClass("review-empty").text("No reviews yet.")
-    );
+    var empty = $("<div>");
+    empty.addClass("review-empty");
+    empty.text("No reviews yet.");
+    wrap.append(empty);
     return;
   }
 
   for (var i = 0; i < reviews.length; i++) {
+
     var r = reviews[i];
-    var stars = clampStars(Number(r.rating));
 
-    var card = $("<div/>").addClass("review-card");
-    var top = $("<div/>").addClass("review-top");
+    var ratingNumber = Number(r.rating);
+    var starCount = clampStars(ratingNumber);
 
-    var left = $("<div/>");
-    var user = $("<div/>").addClass("review-name").text(r.user || "Anonymous");
-    var title = $("<div/>").addClass("review-title").text(r.title || "");
-    left.append(user, title);
+    var card = $("<div>");
+    card.addClass("review-card");
 
-    var stars = $("<div/>")
-      .addClass("review-stars")
-      .text("★".repeat(stars) + "☆".repeat(5 - stars));
+    var top = $("<div>");
+    top.addClass("review-top");
 
-    top.append(left, stars);
+    var left = $("<div>");
 
-    var text = $("<div/>").addClass("review-text").text(r.comment || "");
+    var user = $("<div>");
+    user.addClass("review-name");
+    user.text(r.user || "Anonymous");
 
-    card.append(top, text);
+    var title = $("<div>");
+    title.addClass("review-title");
+    title.text(r.title || "");
+
+    left.append(user);
+    left.append(title);
+
+    var starsDiv = $("<div>");
+    starsDiv.addClass("review-stars");
+    starsDiv.text("★".repeat(starCount) + "☆".repeat(5 - starCount));
+
+    top.append(left);
+    top.append(starsDiv);
+
+    var text = $("<div>");
+    text.addClass("review-text");
+    text.text(r.comment || "");
+
+    card.append(top);
+    card.append(text);
+
     wrap.append(card);
   }
 }
+
 
 function clampStars(n) {
   if (!Number.isFinite(n)) return 0;

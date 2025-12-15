@@ -1,7 +1,4 @@
 var ProductModel = {
-
-  // "" or null => Data/products.json
-  // "Home & Kitchen" => Data/Home%20%26%20Kitchen.json
   getProducts: function (category) {
     const url = category
       ? ("./Data/" + encodeURIComponent(category) + ".json")
@@ -12,45 +9,69 @@ var ProductModel = {
 
   // backward compatible
   getAllProducts: function () {
-    
     return this.getProducts("");
   },
 
   createProductBox: function (product) {
-    const price = Number(product.price);
 
-    const card = $("<div/>")
-      .addClass("product-card")
-      .attr("data-id", product.id)
-      .css("cursor", "pointer");
+    // get price and make sure it's a number
+    var price = Number(product.price);
 
+    // create main card
+    var card = $("<div>");
+    card.addClass("product-card");
+    card.attr("data-id", product.id);
+    card.css("cursor", "pointer");
+
+    // click event to go to product detail page
     card.on("click", function () {
-      window.location.href = `ProductDetailPage.html?id=${product.id}`;
+      window.location.href = "ProductDetailPage.html?id=" + product.id;
     });
 
-    const imgWrap = $("<div/>").addClass("product-img-wrap");
+    // image wrapper
+    var imgWrap = $("<div>");
+    imgWrap.addClass("product-img-wrap");
 
-  const img = $("<img/>")
-      .addClass("product-img")
-      .attr("src", product.image + "?id=" + product.id)
-      .attr("alt", product.name);
-
+    // product image
+    var img = $("<img>");
+    img.addClass("product-img");
+    img.attr("src", product.image + "?id=" + product.id);
+    img.attr("alt", product.name);
 
     imgWrap.append(img);
 
-    const priceRow = $("<div/>").addClass("price-row");
-    priceRow.append(
-      $("<div/>").addClass("price").text(`$${price.toFixed(2)}`),
-      $("<div/>").addClass("stock").text(`Stock: ${product.stock}`)
-    );
+    // price + stock row
+    var priceRow = $("<div>");
+    priceRow.addClass("price-row");
 
-    card.append(
-      imgWrap,
-      priceRow,
-      $("<div/>").addClass("title").text(product.name),
-      $("<div/>").addClass("cat").text(product.category)
-    );
+    var priceDiv = $("<div>");
+    priceDiv.addClass("price");
+    priceDiv.text("$" + price.toFixed(2));
+
+    var stockDiv = $("<div>");
+    stockDiv.addClass("stock");
+    stockDiv.text("Stock: " + product.stock);
+
+    priceRow.append(priceDiv);
+    priceRow.append(stockDiv);
+
+    // product title
+    var titleDiv = $("<div>");
+    titleDiv.addClass("title");
+    titleDiv.text(product.name);
+
+    // product category
+    var categoryDiv = $("<div>");
+    categoryDiv.addClass("cat");
+    categoryDiv.text(product.category);
+
+    // put everything into the card
+    card.append(imgWrap);
+    card.append(priceRow);
+    card.append(titleDiv);
+    card.append(categoryDiv);
 
     return card;
   }
+
 };

@@ -18,109 +18,125 @@ $(document).ready(function () {
 });
 
 /* ===================== RENDER CART ===================== */
+  function createCartRow(item) {
+    var row = $("<div/>");
+    row.addClass("cart-item");
 
-function renderCart() {
-  const cart = CartManagement.getCart();
-  const $items = $("#cart-items");
-  const $empty = $("#cart-empty");
+    var img = $("<img/>");
+    img.attr("src", item.image);
+    img.attr("alt", item.name);
 
-  $items.empty();
+    var name = $("<div/>");
+    name.addClass("cart-name");
+    name.text(item.name);
 
-  if (!cart.length) {
-    $empty.removeClass("hidden");
-    updateSummary(0);
-    return;
-  }
+    var price = $("<div/>");
+    price.addClass("cart-price");
+    price.text("$" + Number(item.price).toFixed(2));
 
-  $empty.addClass("hidden");
+    var qtyControls = $("<div/>");
+    qtyControls.addClass("qty-controls");
 
-  let subtotal = 0;
+    var minus = $("<button/>");
+    minus.addClass("qty-minus");
+    minus.attr("type", "button");
+    minus.text("−");
 
-  cart.forEach(item => {
-    const itemSubtotal = item.price * item.qty;
-    subtotal += itemSubtotal;
+    var qty = $("<span/>");
+    qty.text(item.qty);
 
-    
-    const $row = $("<div/>").addClass("cart-item");
+    var plus = $("<button/>");
+    plus.addClass("qty-plus");
+    plus.attr("type", "button");
+    plus.text("+");
 
-    const $img = $("<img/>").attr({
-      src: item.image,
-      alt: item.name
-    });
+    qtyControls.append(minus);
+    qtyControls.append(qty);
+    qtyControls.append(plus);
 
-    const $name = $("<div/>").addClass("cart-name").text(item.name);
-
-    const $price = $("<div/>")
-      .addClass("cart-price")
-      .text("$" + Number(item.price).toFixed(2));
-
-    const $qtyControls = $("<div/>").addClass("qty-controls");
-
-    const $minus = $("<button/>")
-      .addClass("qty-minus")
-      .attr("type", "button")
-      .text("−");
-
-    const $qty = $("<span/>").text(item.qty);
-
-    const $plus = $("<button/>")
-      .addClass("qty-plus")
-      .attr("type", "button")
-      .text("+");
-
-    $qtyControls.append($minus, $qty, $plus);
-
-    const $subtotal = $("<div/>")
-      .addClass("cart-subtotal")
-      .text("$" + Number(itemSubtotal).toFixed(2));
-
-    const $remove = $("<div/>")
-      .addClass("remove-btn")
-      .text("✕");
-
-    // assemble row
-    $row.append(
-      $img,
-      $name,
-      $price,
-      $qtyControls,
-      $subtotal,
-      $remove
+    var lineSubtotal = $("<div/>");
+    lineSubtotal.addClass("cart-subtotal");
+    lineSubtotal.text(
+      "$" + (Number(item.price) * Number(item.qty)).toFixed(2)
     );
 
-    
+    var remove = $("<div/>");
+    remove.addClass("remove-btn");
+    remove.text("✕");
 
-    // qty -
-    $row.find(".qty-minus").on("click", () => {
+    row.append(img);
+    row.append(name);
+    row.append(price);
+    row.append(qtyControls);
+    row.append(lineSubtotal);
+    row.append(remove);
+
+    // minus
+    minus.on("click", function () {
       CartManagement.updateQty(item.id, item.qty - 1);
       renderCart();
+      CartManagement.updateCartBadge();
     });
 
-    // qty +
-    $row.find(".qty-plus").on("click", () => {
+    // plus
+    plus.on("click", function () {
       CartManagement.updateQty(item.id, item.qty + 1);
       renderCart();
+      CartManagement.updateCartBadge();
     });
 
     // remove
-    $row.find(".remove-btn").on("click", () => {
+    remove.on("click", function () {
       CartManagement.removeItem(item.id);
       renderCart();
+      CartManagement.updateCartBadge();
     });
 
-    $items.append($row);
-  });
+    return row;
+  }
 
-  updateSummary(subtotal);
-}
+  function renderCart() {
+    var cart = CartManagement.getCart();
+    var items = $("#cart-items");
+    var empty = $("#cart-empty");
+
+    items.empty();
+
+    if (!cart || cart.length === 0) {
+      empty.removeClass("hidden");
+      updateSummary(0);
+      return;
+    }
+
+    empty.addClass("hidden");
+
+    var subtotal = 0;
+
+    for (var i = 0; i < cart.length; i++) {
+      var item = cart[i];
+
+      subtotal = subtotal + (Number(item.price) * Number(item.qty));
+
+      var row = createCartRow(item); 
+      items.append(row);
+    }
+
+    updateSummary(subtotal);
+  }
 
 /* ===================== SUMMARY ===================== */
 
 function updateSummary(subtotal) {
-  const tax = subtotal * TaxRate;
-  const total = subtotal + tax;
 
-  $("#cart-subtotal").text(`$${subtotal.toFixed(2)}`);
-  $("#cart-tax").text(`$${tax.toFixed(2)}`);
-  $("#cart-total").text(`$${total.toFixed(2)}`);
+  var tax = subtotal * TaxRate;
+  var total = subtotal + tax;
+
+  var subtotalText = "$" + subtotal.toFixed(2);
+  var taxText = "$" + tax.toFixed(2);
+  var totalText = "$" + total.toFixed(2);
+
+  $("#cart-subtotal").text(subtotalText);
+  $("#cart-tax").text(taxText);
+  $("#cart-total").text(totalText);
 }
+

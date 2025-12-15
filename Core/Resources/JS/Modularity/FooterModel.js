@@ -2,116 +2,150 @@ var FooterModel = {
 
   createFooter: function () {
 
-    const footer = $("<footer/>");
-    const container = $("<div/>").addClass("footer-container");
+    // main footer
+    var footer = $("<footer/>");
 
-    /* ===== Categories (from XML) ===== */
-    const categoriesSection = $("<div/>").addClass("footer-section categories");
+    // container
+    var container = $("<div/>");
+    container.addClass("footer-container");
 
-    const categoriesWrap = $("<div/>").addClass("footer-categories-wrap");
-    const categoriesList = $("<ul/>").attr("id", "footerCategoryLinks");
+    /* ===== CATEGORIES ===== */
+    var categoriesSection = $("<div/>");
+    categoriesSection.addClass("footer-section categories");
 
-    categoriesWrap.append(
-      $("<h3/>").text("Categories"),
-      categoriesList
-    );
+    var categoriesWrap = $("<div/>");
+    categoriesWrap.addClass("footer-categories-wrap");
 
+    var categoriesTitle = $("<h3/>");
+    categoriesTitle.text("Categories");
+
+    var categoriesList = $("<ul/>");
+    categoriesList.attr("id", "footerCategoryLinks");
+
+    categoriesWrap.append(categoriesTitle);
+    categoriesWrap.append(categoriesList);
     categoriesSection.append(categoriesWrap);
 
-    /* ===== Contact ===== */
-    const contactSection = $("<div/>").addClass("footer-section").append(
-      $("<h3/>").text("Contact"),
-      $("<p/>").text("Email: RogueCompany@gmail.com"),
-      $("<p/>").text("Phone: +1 (514) 555-1234"),
-      $("<p/>").text("Address: 123 Main Street, Montreal")
-    );
+    /* ===== CONTACT ===== */
+    var contactSection = $("<div/>");
+    contactSection.addClass("footer-section");
 
-    /* ===== Newsletter ===== */
-    const newsletterSection = $("<div/>").addClass("footer-section");
-    const newsletterBox = $("<div/>").addClass("newsletter-box").append(
-      $("<input/>").attr({
-        type: "email",
-        placeholder: "Enter your email"
-      }),
-      $("<button/>").text("Sign Up")
-    );
+    var contactTitle = $("<h3/>").text("Contact");
+    var contactEmail = $("<p/>").text("Email: RogueCompany@gmail.com");
+    var contactPhone = $("<p/>").text("Phone: +1 (514) 555-1234");
+    var contactAddress = $("<p/>").text("Address: 123 Main Street, Montreal");
 
-    newsletterSection.append(
-      $("<h3/>").text("Newsletter"),
-      $("<p/>").text("Stay updated on deals and new products."),
-      newsletterBox
-    );
+    contactSection.append(contactTitle);
+    contactSection.append(contactEmail);
+    contactSection.append(contactPhone);
+    contactSection.append(contactAddress);
 
-    /* ===== Social ===== */
-    const socialSection = $("<div/>").addClass("footer-section footer-social");
-    const socialIcons = $("<div/>").addClass("social-icons").append(
-      $("<a/>", {
-        href: "https://instagram.com/",
-        target: "_blank",
-        "aria-label": "Instagram"
-      }).append($("<i/>").addClass("fa-brands fa-instagram")),
+    /* ===== NEWSLETTER ===== */
+    var newsletterSection = $("<div/>");
+    newsletterSection.addClass("footer-section");
 
-      $("<a/>", {
-        href: "https://facebook.com/",
-        target: "_blank",
-        "aria-label": "Facebook"
-      }).append($("<i/>").addClass("fa-brands fa-facebook")),
+    var newsletterTitle = $("<h3/>").text("Newsletter");
+    var newsletterText = $("<p/>").text("Stay updated on deals and new products.");
 
-      $("<a/>", {
-        href: "https://twitter.com/",
-        target: "_blank",
-        "aria-label": "Twitter / X"
-      }).append($("<i/>").addClass("fa-brands fa-x-twitter"))
-    );
+    var newsletterBox = $("<div/>");
+    newsletterBox.addClass("newsletter-box");
 
-    socialSection.append(
-      $("<h3/>").text("Follow Us"),
-      socialIcons
-    );
+    var newsletterInput = $("<input/>");
+    newsletterInput.attr("type", "email");
+    newsletterInput.attr("placeholder", "Enter your email");
 
-    /* ===== Assemble container ===== */
-    container.append(
-      categoriesSection,
-      contactSection,
-      newsletterSection,
-      socialSection
-    );
+    var newsletterBtn = $("<button/>");
+    newsletterBtn.text("Sign Up");
 
-    /* ===== Footer bottom ===== */
-    const footerBottom = $("<div/>")
-      .addClass("footer-bottom")
-      .html("&copy; 2025 The Rogue Market. All rights reserved.");
+    newsletterBox.append(newsletterInput);
+    newsletterBox.append(newsletterBtn);
 
-    footer.append(container, footerBottom);
+    newsletterSection.append(newsletterTitle);
+    newsletterSection.append(newsletterText);
+    newsletterSection.append(newsletterBox);
+
+    /* ===== SOCIAL ===== */
+    var socialSection = $("<div/>");
+    socialSection.addClass("footer-section footer-social");
+
+    var socialTitle = $("<h3/>");
+    socialTitle.text("Follow Us");
+
+    var socialIcons = $("<div/>");
+    socialIcons.addClass("social-icons");
+
+    var instaLink = $("<a/>");
+    instaLink.attr("href", "https://instagram.com/");
+    instaLink.attr("target", "_blank");
+    instaLink.attr("aria-label", "Instagram");
+    instaLink.append($("<i/>").addClass("fa-brands fa-instagram"));
+
+    var fbLink = $("<a/>");
+    fbLink.attr("href", "https://facebook.com/");
+    fbLink.attr("target", "_blank");
+    fbLink.attr("aria-label", "Facebook");
+    fbLink.append($("<i/>").addClass("fa-brands fa-facebook"));
+
+    var xLink = $("<a/>");
+    xLink.attr("href", "https://twitter.com/");
+    xLink.attr("target", "_blank");
+    xLink.attr("aria-label", "Twitter / X");
+    xLink.append($("<i/>").addClass("fa-brands fa-x-twitter"));
+
+    socialIcons.append(instaLink);
+    socialIcons.append(fbLink);
+    socialIcons.append(xLink);
+
+    socialSection.append(socialTitle);
+    socialSection.append(socialIcons);
+
+    /* ===== PUT SECTIONS INTO CONTAINER ===== */
+    container.append(categoriesSection);
+    container.append(contactSection);
+    container.append(newsletterSection);
+    container.append(socialSection);
+
+    /* ===== FOOTER BOTTOM ===== */
+    var footerBottom = $("<div/>");
+    footerBottom.addClass("footer-bottom");
+    footerBottom.html("&copy; 2025 The Rogue Market. All rights reserved.");
+
+    footer.append(container);
+    footer.append(footerBottom);
 
     return footer;
   },
 
-  /* ===== Load categories from XML ===== */
   loadCategories: function () {
     return $.ajax({
-      url: "Data/categories.xml",
+      url: "./Data/categories.xml",
       dataType: "xml"
     })
-    .done(function (xml) {
-      const $list = $("#footerCategoryLinks");
-      if (!$list.length) return;
+      .done(function (xml) {
+        var list = $("#footerCategoryLinks");
 
-      $list.empty();
+        if (!list.length) {
+          return;
+        }
 
-      $(xml).find("category > name").each(function () {
-        const name = $(this).text().trim();
-        const href = "ProductListingPage.html?category=" + encodeURIComponent(name);
+        list.empty();
 
-        $list.append(
-          $("<li/>").append(
-            $("<a/>").attr("href", href).text(name)
-          )
-        );
+        $(xml).find("category > name").each(function () {
+          var name = $(this).text().trim();
+          var href = "ProductListingPage.html?category=" + encodeURIComponent(name);
+
+          var link = $("<a/>");
+          link.attr("href", href);
+          link.text(name);
+
+          var li = $("<li/>");
+          li.append(link);
+
+          list.append(li);
+        });
+      })
+      .fail(function (xhr) {
+        console.error("Footer categories failed to load:", xhr.status);
       });
-    })
-    .fail(function (xhr) {
-      console.error("Footer categories failed to load:", xhr.status);
-    });
   }
 };

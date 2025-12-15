@@ -1,16 +1,22 @@
 var ValidatorModel = {
 
-  /* ===== Rules ===== */
+  //Regex checkings for email and password
   regEmail: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-  redEmail2:  /^[\w-]+@[a-z0-9]+\.(com|(co\.)?uk|(qc\.)?ca|net)$/i,
+  redEmail2: /^[\w-]+@[a-z0-9]+\.(com|(co\.)?uk|(qc\.)?ca|net)$/i,
 
   regPass: /^cityslicka$/i, // reqres demo password
   redPass2: /^(?=\S{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).*$/,
 
-  /* ===== Utils ===== */
+
+
+  //helper functions
+
+  //check if element exists
   exists: function (selector) {
     return $(selector).length > 0;
   },
+
+  //set and display an error message
 
   setError: function (input, error, msg) {
     error.text(msg);
@@ -18,118 +24,155 @@ var ValidatorModel = {
     return false;
   },
 
+
+  //clear error message
   clearError: function (input, error) {
     error.text("");
     input.removeClass("input-error");
     return true;
   },
 
-  /* ===== Field Validators ===== */
-  validateName: function () {
-    if (!this.exists("#name")) return true;
 
-    const input = $("#name");
-    const error = $("#nameError");
-    const value = input.val().trim();
+  //functions to validate the fields
+
+  //validate name
+  validateName: function () {
+    if (!this.exists("#name")) {
+      return true;
+    }
+
+    var input = $("#name");
+    var error = $("#nameError");
+    var value = input.val().trim();
 
     if (value === "") {
       return this.setError(input, error, "Name is required.");
     }
+
     return this.clearError(input, error);
   },
 
-  validateEmail: function () {
-    if (!this.exists("#email")) return true;
 
-    const input = $("#email");
-    const error = $("#emailError");
-    const value = input.val().trim();
+  //validate email
+  validateEmail: function () {
+    if (!this.exists("#email")) {
+      return true;
+    }
+
+    var input = $("#email");
+    var error = $("#emailError");
+    var value = input.val().trim();
 
     if (value === "") {
       return this.setError(input, error, "Email is required.");
     }
+
     if (!this.regEmail.test(value)) {
       return this.setError(input, error, "Please enter a valid email.");
     }
+
     return this.clearError(input, error);
   },
 
+  //validate password
   validatePassword: function () {
-    if (!this.exists("#pass")) return true;
+    if (!this.exists("#pass")) {
+      return true;
+    }
 
-    const input = $("#pass");
-    const error = $("#passError");
-    const value = input.val();
+    var input = $("#pass");
+    var error = $("#passError");
+    var value = input.val();
 
     if (value === "") {
-        return this.setError(input, error, "Password is required.");
+      return this.setError(input, error, "Password is required.");
     }
+
     if (!this.regPass.test(value)) {
-      return this.setError(input, error, 'Password must be At least 8 chars, 1 uppercase, 1 lowercase, 1 number, 1 special (cityslicka).');
+      return this.setError(
+        input,
+        error,
+        "Password must be At least 8 chars, 1 uppercase, 1 lowercase, 1 number, 1 special (cityslicka)."
+      );
     }
+
     return this.clearError(input, error);
   },
 
-  validateRePassword: function () {
-    if (!this.exists("#repass")) return true;
 
-    const pass = $("#pass").val();
-    const input = $("#repass");
-    const error = $("#repassError");
-    const value = input.val();
+  //validate re-entered password
+  validateRePassword: function () {
+    if (!this.exists("#repass")) {
+      return true;
+    }
+
+    var pass = $("#pass").val();
+    var input = $("#repass");
+    var error = $("#repassError");
+    var value = input.val();
 
     if (value === "") {
       return this.setError(input, error, "Re-enter password is required.");
     }
+
     if (value !== pass) {
       return this.setError(input, error, "Passwords do not match.");
     }
+
     return this.clearError(input, error);
   },
 
 
+  //validate phone number
   validatePhone: function () {
-  if (!this.exists("#phone")) return true;
-
-  const input = $("#phone");
-  const error = $("#phoneError");
-  const value = input.val().trim();
-
-  if (value === "") {
-    return this.setError(input, error, "Phone number is required.");
-  }
-
-  return this.clearError(input, error);
-},
-
-validateAddress: function () {
-  if (!this.exists("#address")) return true;
-
-  const input = $("#address");
-  const error = $("#addressError");
-  const value = input.val().trim();
-
-  if (value === "") {
-    return this.setError(input, error, "Shipping address is required.");
-  }
-
-  return this.clearError(input, error);
-},
-
-
-  validateCard: function () {
-
-    // If PayPal is selected → skip card validation
-    if ($("input[name='payment']:checked").val() === "paypal") {
+    if (!this.exists("#phone")) {
       return true;
     }
 
-    let valid = true;
+    var input = $("#phone");
+    var error = $("#phoneError");
+    var value = input.val().trim();
 
-    // Card Number
-    const card = $("#cardNumber");
-    const cardError = $("#cardNumberError");
-    const cardVal = card.val().replace(/\s+/g, "");
+    if (value === "") {
+      return this.setError(input, error, "Phone number is required.");
+    }
+
+    return this.clearError(input, error);
+  },
+
+
+  //validate address
+  validateAddress: function () {
+    if (!this.exists("#address")) {
+      return true;
+    }
+
+    var input = $("#address");
+    var error = $("#addressError");
+    var value = input.val().trim();
+
+    if (value === "") {
+      return this.setError(input, error, "Shipping address is required.");
+    }
+
+    return this.clearError(input, error);
+  },
+
+
+  //validate card info
+  validateCard: function () {
+    // if PayPal checked, skip card validation
+    var payment = $("input[name='payment']:checked").val();
+    if (payment === "paypal") {
+      return true;
+    }
+
+    var valid = true;
+
+    //card number validation
+    var card = $("#cardNumber");
+    var cardError = $("#cardNumberError");
+    var cardVal = card.val().replace(/\s+/g, "");
 
     if (!/^\d{16}$/.test(cardVal)) {
       this.setError(card, cardError, "Card number must be 16 digits.");
@@ -138,10 +181,10 @@ validateAddress: function () {
       this.clearError(card, cardError);
     }
 
-    // Expiry
-    const expiry = $("#cardExpiry");
-    const expiryError = $("#cardExpiryError");
-    const expiryVal = expiry.val();
+    //expiry date validation
+    var expiry = $("#cardExpiry");
+    var expiryError = $("#cardExpiryError");
+    var expiryVal = expiry.val();
 
     if (!/^\d{2}\/\d{2}$/.test(expiryVal)) {
       this.setError(expiry, expiryError, "Expiry must be MM/YY.");
@@ -150,10 +193,10 @@ validateAddress: function () {
       this.clearError(expiry, expiryError);
     }
 
-    // CVV
-    const cvv = $("#cardCvv");
-    const cvvError = $("#cardCvvError");
-    const cvvVal = cvv.val();
+    //CVV validation
+    var cvv = $("#cardCvv");
+    var cvvError = $("#cardCvvError");
+    var cvvVal = cvv.val();
 
     if (!/^\d{3}$/.test(cvvVal)) {
       this.setError(cvv, cvvError, "CVV must be 3 digits.");
@@ -166,85 +209,128 @@ validateAddress: function () {
   },
 
 
-  /* ===== Page-Level Checks ===== */
+
+
+  //page level validation checks
+
+  //validate login form
   checkLogin: function () {
-    const emailValid = this.validateEmail();
-    const passValid = this.validatePassword();
+    var emailValid = this.validateEmail();
+    var passValid = this.validatePassword();
 
     return emailValid && passValid;
   },
 
-
+  //validate registration form
   checkRegister: function () {
-    const nameValid = this.validateName();
-    const emailValid = this.validateEmail();
-    const passValid = this.validatePassword(); 
-    const rePassValid = this.validateRePassword();
+    var nameValid = this.validateName();
+    var emailValid = this.validateEmail();
+    var passValid = this.validatePassword();
+    var rePassValid = this.validateRePassword();
 
     return nameValid && emailValid && passValid && rePassValid;
   },
 
 
+  //validate checkout form
   checkCheckout: function () {
-    const nameValid = this.validateName();
-    const emailValid = this.validateEmail();
-    const phoneValid = this.validatePhone();
-    const addressValid = this.validateAddress();
+    var nameValid = this.validateName();
+    var emailValid = this.validateEmail();
+    var phoneValid = this.validatePhone();
+    var addressValid = this.validateAddress();
 
     return nameValid && emailValid && phoneValid && addressValid;
   },
 
 
-  /* ===== Alerts ===== */
-  showAlert: function (msg, type = "error") {
-    if (!this.exists("#loginAlert")) return;
+  //alert helpers
 
-    $("#loginAlert")
-      .removeClass()
-      .addClass(`alert-box alert-${type}`)
-      .text(msg)
-      .fadeIn();
+
+  //show alert message
+  showAlert: function (msg, type) {
+    if (type === undefined || type === null) {
+      type = "error";
+    }
+
+    if (!this.exists("#loginAlert")) {
+      return;
+    }
+
+    var box = $("#loginAlert");
+    box.removeClass();
+    box.addClass("alert-box alert-" + type);
+    box.text(msg);
+    box.fadeIn();
   },
 
+
+  //clear alert message
   clearAlert: function () {
     if (this.exists("#loginAlert")) {
       $("#loginAlert").fadeOut();
     }
   },
 
-  /* ===== Live Binding ===== */
+
+  
+  //live validation bindings
+
+  //live validation while typing
   bindLive: function () {
-    const self = this;
+    var self = this;
 
     if ($("#name").length) {
-      $("#name").on("input", function () { self.validateName(); });
+      $("#name").on("input", function () {
+        self.validateName();
+      });
     }
+
     if ($("#email").length) {
-      $("#email").on("input", function () { self.validateEmail(); });
+      $("#email").on("input", function () {
+        self.validateEmail();
+      });
     }
+
     if ($("#pass").length) {
-      $("#pass").on("input", function () { self.validatePassword(); });
+      $("#pass").on("input", function () {
+        self.validatePassword();
+      });
     }
+
     if ($("#repass").length) {
-      $("#repass").on("input", function () { self.validateRePassword(); });
+      $("#repass").on("input", function () {
+        self.validateRePassword();
+      });
     }
+
     if ($("#phone").length) {
-      $("#phone").on("input", function () { self.validatePhone(); });
+      $("#phone").on("input", function () {
+        self.validatePhone();
+      });
     }
+
     if ($("#address").length) {
-      $("#address").on("input", function () { self.validateAddress(); });
+      $("#address").on("input", function () {
+        self.validateAddress();
+      });
     }
+
     if ($("#cardNumber").length) {
-      $("#cardNumber").on("input", () => this.validateCard());
+      $("#cardNumber").on("input", function () {
+        self.validateCard();
+      });
     }
+
     if ($("#cardExpiry").length) {
-      $("#cardExpiry").on("input", () => this.validateCard());
+      $("#cardExpiry").on("input", function () {
+        self.validateCard();
+      });
     }
+
     if ($("#cardCvv").length) {
-      $("#cardCvv").on("input", () => this.validateCard());
+      $("#cardCvv").on("input", function () {
+        self.validateCard();
+      });
     }
-
-
   }
-
 };

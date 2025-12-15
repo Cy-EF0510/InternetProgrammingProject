@@ -1,12 +1,9 @@
-// filters.js
-// Requires jQuery loaded first
-
 var ProductFilterModule = {
 
   settings: {
-    allUrl: "Data/products.json",
+    allUrl: "./Data/products.json",
     categoryUrl: function (cat) {
-      return "Data/" + encodeURIComponent(cat) + ".json";
+      return "./Data/" + encodeURIComponent(cat) + ".json";
     },
     getPrice: function (p) { return Number(p.price); },
     getName: function (p) { return String(p.name || ""); },
@@ -33,7 +30,7 @@ var ProductFilterModule = {
     // normalize optional settings
     if (typeof this.settings.categoryUrl !== "function") {
       this.settings.categoryUrl = function (cat) {
-        return "Data/" + encodeURIComponent(cat) + ".json";
+        return "./Data/" + encodeURIComponent(cat) + ".json";
       };
     }
     if (typeof this.settings.getPrice !== "function") {

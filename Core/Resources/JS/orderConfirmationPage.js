@@ -1,53 +1,78 @@
-$(document).ready(function() {
-  
-        AuthModel.requireLogin();
+$(document).ready(function () {
 
-        HeaderModel.createHeader();
-        $("#footer-slot").append(FooterModel.createFooter());
-        FooterModel.loadCategories();
-        CartManagement.updateCartBadge();
-        loadOrderConfirmation();
+  // Force login first
+  AuthModel.requireLogin();
+
+  // Build header
+  HeaderModel.createHeader();
+
+  // Build footer
+  var footer = FooterModel.createFooter();
+  $("#footer-slot").append(footer);
+
+  // Load footer categories
+  FooterModel.loadCategories();
+
+  // Update cart badge
+  CartManagement.updateCartBadge();
+
+  // Load order info
+  loadOrderConfirmation();
 });
 
 
 function loadOrderConfirmation() {
-  const order = getOrderFromCookie();
 
-  if (!order) {
+  var order = getOrderFromCookie();
+
+  // No order found
+  if (order === null) {
     $(".order-summary").html("<p>No order found.</p>");
     return;
   }
 
+  // Order number
   $("#order-number").text(order.orderNumber);
 
-  const items = $("#order-items");
-  items.empty();
+  var itemsContainer = $("#order-items");
+  itemsContainer.empty();
 
+  // Loop through items
   for (var i = 0; i < order.items.length; i++) {
+
     var item = order.items[i];
 
-    var row = $("<div/>").addClass("item");
+    var row = $("<div>");
+    row.addClass("item");
 
-    var img = $("<img/>")
-      .addClass("item-image")
-      .attr("src", item.image)
-      .attr("alt", item.name);
+    var img = $("<img>");
+    img.addClass("item-image");
+    img.attr("src", item.image);
+    img.attr("alt", item.name);
 
-    var details = $("<div/>").addClass("item-details");
-    details.append(
-      $("<div/>").addClass("item-name").text(item.name + " × " + item.qty)
-    );
+    var details = $("<div>");
+    details.addClass("item-details");
 
-    var total = Number(item.price) * Number(item.qty);
-    var price = $("<div/>")
-      .addClass("item-price")
-      .text("$" + total.toFixed(2));
+    var name = $("<div>");
+    name.addClass("item-name");
+    name.text(item.name + " x " + item.qty);
 
-    row.append(img, details, price);
-    items.append(row);
-    
+    details.append(name);
+
+    var totalPrice = Number(item.price) * Number(item.qty);
+
+    var price = $("<div>");
+    price.addClass("item-price");
+    price.text("$" + totalPrice.toFixed(2));
+
+    row.append(img);
+    row.append(details);
+    row.append(price);
+
+    itemsContainer.append(row);
   }
 
+  // Totals
   $("#order-subtotal").text("$" + order.subtotal.toFixed(2));
   $("#order-tax").text("$" + order.tax.toFixed(2));
   $("#order-shipping").text("$" + order.shipping.toFixed(2));
@@ -56,13 +81,18 @@ function loadOrderConfirmation() {
 
 
 function getOrderFromCookie() {
-  const match = document.cookie.match(/(^| )lastOrder=([^;]+)/);
-  if (!match) return null;
+
+  var cookieMatch = document.cookie.match(/(^| )lastOrder=([^;]+)/);
+
+  if (!cookieMatch) {
+    return null;
+  }
 
   try {
-    return JSON.parse(decodeURIComponent(match[2]));
-  } catch {
+    var decoded = decodeURIComponent(cookieMatch[2]);
+    var orderObject = JSON.parse(decoded);
+    return orderObject;
+  } catch (e) {
     return null;
   }
 }
-
