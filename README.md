@@ -105,7 +105,7 @@ No backend or database required — all content is driven from static files.
   - `HeaderModel.js`, `FooterModel.js` – Injects dynamic header/footer
 
 - **Data Persistence**
-  - Cart: `localStorage`
+  - Cart: `cookie`
   - Profile: Cookies
   - Last Order: Cookie (`lastOrder`)
 
